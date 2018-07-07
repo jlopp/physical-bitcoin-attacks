@@ -21,6 +21,10 @@ August 15, 2016
 Toronto police arrest teens in string of bitcoin-related robberies
 https://www.toronto.com/news-story/6810325-toronto-police-arrest-teens-in-string-of-bitcoin-related-robberies/
 
+October 16, 2017
+Jameson Lopp SWATted and extorted
+https://www.cbs17.com/news/local-news/police-presence-in-durham-neighborhood-following-hostage-call/1036242798
+
 November 4, 2017
 NYC man robbed of $1.8M worth of ETH
 http://www.publicnow.com/view/7BEAC63306598D13497115D147873E3DF8B1B0ED
