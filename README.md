@@ -47,3 +47,6 @@ Jan 19, 2018
 Hong Kong bitcoin trader lured to bogus meeting and robbed of HK$1.4 million
 https://www.scmp.com/news/hong-kong/law-crime/article/2129665/hong-kong-bitcoin-trader-lured-bogus-meeting-and-robbed
 
+July 6, 2018
+Armed home invasion of Localbitcoins trader in Northborough, Massachussetts
+https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio
