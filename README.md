@@ -3,7 +3,7 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 
 | Date        | Victim  | Location | Description |
 | :---------: |:------: | :------: | :---------: |
-| December 29, 2014 | Hal Finney | Santa Barbara , California | [SWATTed after months of harrassment & extortion](https://www.wired.com/2014/12/finney-swat/) |
+| December 29, 2014 | Hal Finney | Santa Barbara , California | [SWATted after months of harrassment & extortion](https://www.wired.com/2014/12/finney-swat/) |
 | Jan 22, 2015 | Dean Katz | New York, New York | [Bitcoin trader robbed of $12,000 at gunpoint](http://observer.com/2015/02/bitcoin-crime-wave-breaks-out-in-nyc/) |
 | May 27, 2015 | Dwayne Richards | New York, New York | [Firefighter kidnapped, robbed of $1,100, & stabbed by crypto thieves](https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html/) |
 | July 27, 2015 | Steve Manos | West Palm Beach, Florida | [Bitcoin trader robbed of $28,000 at gunpoint](http://www.sun-sentinel.com/news/crime/fl-west-boynton-bitcoin-robbery-20160727-story.html) |
