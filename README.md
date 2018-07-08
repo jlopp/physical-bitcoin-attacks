@@ -4,9 +4,11 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | Date        | Victim  | Location | Description |
 | :---------: |:------: | :------: | :---------: |
 | December 29, 2014 | Hal Finney | Santa Barbara , California | [SWATted after months of harrassment & extortion](https://www.wired.com/2014/12/finney-swat/) |
-| Jan 22, 2015 | Dean Katz | New York, New York | [Bitcoin trader robbed of $12,000 at gunpoint](http://observer.com/2015/02/bitcoin-crime-wave-breaks-out-in-nyc/) |
+| January 22, 2015 | Martin Wismeijer | Amsterdam, Netherlands | [Thieves steal 2 bitcoin ATMs](https://www.parool.nl/amsterdam/dieven-stelen-twee-amsterdamse-bitcoin-betaalautomaten~a3853460/) |
+| February, 2015 | Dean Katz | New York, New York | [Bitcoin trader robbed of $12,000 at gunpoint](http://observer.com/2015/02/bitcoin-crime-wave-breaks-out-in-nyc/) |
 | May 27, 2015 | Dwayne Richards | New York, New York | [Firefighter kidnapped, robbed of $1,100, & stabbed by crypto thieves](https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html/) |
 | July 27, 2015 | Steve Manos | West Palm Beach, Florida | [Bitcoin trader robbed of $28,000 at gunpoint](http://www.sun-sentinel.com/news/crime/fl-west-boynton-bitcoin-robbery-20160727-story.html) |
+| November 16, 2015 | Robert Nederhoed | Delft, Netherlands | [Thieves steal bitcoin ATM containing 2,000 EUR](https://www.ad.nl/binnenland/dieven-stelen-2000-euro-uit-bitcoinautomaat-in-delft~a315113e/) |
 | August 14, 2016 | Multiple | Toronto, Ontario | [Police arrest teens in string of bitcoin-related robberies](https://www.toronto.com/news-story/6810325-toronto-police-arrest-teens-in-string-of-bitcoin-related-robberies/) |
 | November 6, 2016 | Tivoli Brasserie | Oudenbosch, Netherlands | [Dutch Bitcoin ATM Owner Laughs at Thieves Who Took His Machine](https://bitsonline.com/bitcoin-atm-stolen-netherlands/) |
 | February 16, 2017 | Josoj | London, England | [Description of robbery during Localbitcoins trade](https://localbitcoins.com/forums/#!/general-discussion:double-spending-cash-robb) with [Bitcoins Uncensored interview](https://soundcloud.com/bitcoinuncensored/uk-based-local-bitcoin-trader-robbed-in-broad-daylight-josoj-tells-his-story) and the [robber's side of the story](https://localbitcoins.com/forums/#!/general-discussion:unfreeze-my-account). |
