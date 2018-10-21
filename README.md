@@ -40,3 +40,4 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | June 13, 2018 | "Synth" | China | [Home invasion of Skycoin architect resulted in theft of 18.88 BTC and 6,466 SKY](https://bitsonline.com/skycoin-community-drama-synth/) | 
 | June 19, 2018 | Unidentified | Wels, Austria | [$250,000 in cryptocurrency taken by robbers posing as postmen](https://translate.google.com/translate?hl=en&sl=de&u=http://www.heute.at/oesterreich/oberoesterreich/story/Home-Invasion-Kryptowaehrung-Baby-52821906&prev=search) | 
 | July 6, 2018 | Austin Nedved | Northborough, Massachussetts | [Armed home invasion of Localbitcoins trader](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
+| October 15, 2018 | Unidentified | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://www.tv2.no/nyheter/10150048/) |
