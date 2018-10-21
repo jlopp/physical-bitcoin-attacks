@@ -31,6 +31,7 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | February 21, 2018 | \____ Tai | Taichung, Taiwan | [Four men assault bitcoin seller & transfer 18 BTC](http://www.arabnews.com/node/1251816/world) | 
 | February 23, 2018 | Yury Mayorov | Moscow, Russia | [Crypto Developer Beaten, Robbed Of 300 BTC](https://cointelegraph.com/news/russian-crypto-developer-beaten-robbed-of-300-btc-on-moscow-streets) | 
 | February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://cointelegraph.com/news/moscow-man-mutilated-and-mugged-for-1-million-in-bitcoin-local-sources-report) | 
+| March 2018 | Undisclosed woman | Killingly, Rhode Island | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](http://www.norwichbulletin.com/news/20181016/police-2-rhode-island-women-charged-in-killingly-home-invasion) | 
 | March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Bitcoin bandits target Dallas County cryptocurrency ATMs](http://www.fox4news.com/news/bitcoin-bandits-target-dallas-county-cryptocurrency-atms) | 
 | April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://www.straitstimes.com/singapore/courts-crime/malaysian-here-to-buy-bitcoins-ends-up-being-robbed-of-365000) | 
 | April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://www.miamiherald.com/news/local/crime/article208997064.html) | 
