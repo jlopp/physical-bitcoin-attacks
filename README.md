@@ -33,6 +33,7 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | February 23, 2018 | Yury Mayorov | Moscow, Russia | [Crypto Developer Beaten, Robbed Of 300 BTC](https://cointelegraph.com/news/russian-crypto-developer-beaten-robbed-of-300-btc-on-moscow-streets) | 
 | February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://cointelegraph.com/news/moscow-man-mutilated-and-mugged-for-1-million-in-bitcoin-local-sources-report) | 
 | March 2018 | Undisclosed woman | Killingly, Connecticut | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](http://www.norwichbulletin.com/news/20181016/police-2-rhode-island-women-charged-in-killingly-home-invasion) | 
+| March 2018| Unidentified Miner | Kiev, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://ain.ua/2018/11/26/zaderzhali-gryppy-kotoraja-vykrala-majnera/amp/)|
 | March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Bitcoin bandits target Dallas County cryptocurrency ATMs](http://www.fox4news.com/news/bitcoin-bandits-target-dallas-county-cryptocurrency-atms) | 
 | April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://www.straitstimes.com/singapore/courts-crime/malaysian-here-to-buy-bitcoins-ends-up-being-robbed-of-365000) | 
 | April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://www.miamiherald.com/news/local/crime/article208997064.html) | 
@@ -44,4 +45,3 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | July 6, 2018 | Austin Nedved | Northborough, Massachussetts | [Armed home invasion of Localbitcoins trader](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
 | September 7, 2018 | Nicholas Truglia | New York, New York | [Friends accused of torturing pal to steal his cryptocurrency](https://nypost.com/2018/11/06/friends-accused-of-torturing-pal-to-steal-his-cryptocurrency/) |
 | October 15, 2018 | Heikki Bjørklund Paltto | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://www.newsinenglish.no/2018/10/19/wanted-after-murder-and-robbery/) |
-| November 26, 2018| Unidentified | Kiev, Ukraine | [Police captured kidnappers of miner](https://ain.ua/2018/11/26/zaderzhali-gryppy-kotoraja-vykrala-majnera/amp/)|
