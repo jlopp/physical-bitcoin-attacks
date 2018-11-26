@@ -44,3 +44,4 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | July 6, 2018 | Austin Nedved | Northborough, Massachussetts | [Armed home invasion of Localbitcoins trader](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
 | September 7, 2018 | Nicholas Truglia | New York, New York | [Friends accused of torturing pal to steal his cryptocurrency](https://nypost.com/2018/11/06/friends-accused-of-torturing-pal-to-steal-his-cryptocurrency/) |
 | October 15, 2018 | Heikki Bjørklund Paltto | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://www.newsinenglish.no/2018/10/19/wanted-after-murder-and-robbery/) |
+| November 26, 2018| Unknown miner | Kiev, Ukraine | [Police captured kidnappers of miner](https://ain.ua/2018/11/26/zaderzhali-gryppy-kotoraja-vykrala-majnera/amp/)|
