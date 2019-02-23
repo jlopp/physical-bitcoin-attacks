@@ -47,3 +47,4 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | September 7, 2018 | Nicholas Truglia | New York, New York | [Friends accused of torturing pal to steal his cryptocurrency](https://nypost.com/2018/11/06/friends-accused-of-torturing-pal-to-steal-his-cryptocurrency/) |
 | October 15, 2018 | Heikki Bjørklund Paltto | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://www.newsinenglish.no/2018/10/19/wanted-after-murder-and-robbery/) |
 | November 16, 2018 | Andrew ______ | Lanseria, South Africa | [Bitcoin trader drugged, beaten, and tortured before transferring BTC to attackers](https://sowetourban.co.za/55082/man-beaten-drugged-tortured-coin/) |
+| February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill](https://www.telegraaf.nl/nieuws/3195788/gruwelijke-marteloverval-met-boor-bij-bitcoinhandelaar) |
