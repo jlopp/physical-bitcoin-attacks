@@ -35,15 +35,16 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://cointelegraph.com/news/moscow-man-mutilated-and-mugged-for-1-million-in-bitcoin-local-sources-report) | 
 | March 2018 | Undisclosed woman | Killingly, Connecticut | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](http://www.norwichbulletin.com/news/20181016/police-2-rhode-island-women-charged-in-killingly-home-invasion) | 
 | March 2018| Unidentified Miner | Kiev, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://ain.ua/2018/11/26/zaderzhali-gryppy-kotoraja-vykrala-majnera/amp/)|
-| March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Bitcoin bandits target Dallas County cryptocurrency ATMs](http://www.fox4news.com/news/bitcoin-bandits-target-dallas-county-cryptocurrency-atms) | 
-| April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://www.straitstimes.com/singapore/courts-crime/malaysian-here-to-buy-bitcoins-ends-up-being-robbed-of-365000) | 
-| April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://www.miamiherald.com/news/local/crime/article208997064.html) | 
-| April 25, 2018 | 2 unidentified Asian brothers | Dubai, United Arab Emirates | [Gang of 10 robbed two brothers of AED 7m ($1.9m) in cash who were looking to buy Bitcoin](https://www.khaleejtimes.com/news/crime/bitcoin-heist-dubai-police-arrest-10-recover-dh7-million) | 
-| June 6, 2018 | Unidentified 22-year-old | Milan, Italy | [Robbers attempt bitcoin purchase with counterfeit money, beat victims and fire gun, take 50,000 euros](https://milano.repubblica.it/cronaca/2018/06/07/news/milano_truffa_bitcoin_soldi_falsi_milano_arresti-198392710/) |
-| June 13, 2018 | "Synth" | China | [Home invasion of Skycoin architect resulted in theft of 18.88 BTC and 6,466 SKY](https://bitsonline.com/skycoin-community-drama-synth/) | 
-| June 19, 2018 | Unidentified | Wels, Austria | [$250,000 in cryptocurrency taken by robbers posing as postmen](https://translate.google.com/translate?hl=en&sl=de&u=http://www.heute.at/oesterreich/oberoesterreich/story/Home-Invasion-Kryptowaehrung-Baby-52821906&prev=search) | 
+| March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Bitcoin bandits target Dallas County cryptocurrency ATMs](https://archive.fo/rZXv0) | 
+| April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://archive.fo/IQMXP) | 
+| April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://archive.fo/wWiYd) | 
+| April 25, 2018 | 2 unidentified Asian brothers | Dubai, United Arab Emirates | [Gang of 10 robbed two brothers of AED 7m ($1.9m) in cash who were looking to buy Bitcoin](https://archive.fo/N5O0K) | 
+| June 6, 2018 | Unidentified 22-year-old | Milan, Italy | [Robbers attempt bitcoin purchase with counterfeit money, beat victims and fire gun, take 50,000 euros](https://archive.fo/ls1QA) |
+| June 13, 2018 | "Synth" | China | [Home invasion of Skycoin architect resulted in theft of 18.88 BTC and 6,466 SKY](https://archive.fo/fc3Mq) | 
+| June 19, 2018 | Unidentified | Wels, Austria | [$250,000 in cryptocurrency taken by robbers posing as postmen](https://archive.fo/kabJg) | 
 | July 6, 2018 | Austin Nedved | Northborough, Massachussetts | [Armed home invasion of Localbitcoins trader](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
-| September 7, 2018 | Nicholas Truglia | New York, New York | [Friends accused of torturing pal to steal his cryptocurrency](https://nypost.com/2018/11/06/friends-accused-of-torturing-pal-to-steal-his-cryptocurrency/) |
-| October 15, 2018 | Heikki Bjørklund Paltto | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://www.newsinenglish.no/2018/10/19/wanted-after-murder-and-robbery/) |
-| November 16, 2018 | Andrew ______ | Lanseria, South Africa | [Bitcoin trader drugged, beaten, and tortured before transferring BTC to attackers](https://sowetourban.co.za/55082/man-beaten-drugged-tortured-coin/) |
-| February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill](https://www.telegraaf.nl/nieuws/3195788/gruwelijke-marteloverval-met-boor-bij-bitcoinhandelaar) |
+| September 7, 2018 | Nicholas Truglia | New York, New York | [Friends accused of torturing pal to steal his cryptocurrency](https://archive.fo/PJYDN) |
+| October 15, 2018 | Heikki Bjørklund Paltto | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://archive.fo/WiFMj) |
+| November 16, 2018 | Andrew ______ | Lanseria, South Africa | [Bitcoin trader drugged, beaten, and tortured before transferring BTC to attackers](https://archive.fo/ASDBT) |
+| February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill](https://archive.fo/UONTD) |
+| March 12, 2019 | Costcutters | Far Cotton, Northampton, England | [Bitcoin machine stolen during robbery](https://archive.fo/0lCv5) |
