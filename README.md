@@ -8,6 +8,7 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | February, 2015 | Dean Katz | New York, New York | [Bitcoin trader robbed of $12,000 at gunpoint](https://archive.fo/QeCwu) |
 | May 27, 2015 | Dwayne Richards | New York, New York | [Firefighter kidnapped, robbed of $1,100, & stabbed by crypto thieves](https://web.archive.org/web/20170212084543/https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html) |
 | November 16, 2015 | Robert Nederhoed | Delft, Netherlands | [Thieves steal bitcoin ATM containing 2,000 EUR](https://www.ad.nl/binnenland/dieven-stelen-2000-euro-uit-bitcoinautomaat-in-delft~a315113e/) |
+| July 11, 2016 | Tadas Kasputis | Kaunas, Lithuania | [Cryptocurrency executive kidnapped at car wash](https://archive.fo/VDAjq) |
 | July 25, 2016 | Steve Manos | West Palm Beach, Florida | [Bitcoin trader robbed of $28,000 at gunpoint](https://archive.fo/fQdH7) |
 | August 14, 2016 | Multiple | Toronto, Ontario | [Police arrest teens in string of bitcoin-related robberies](https://www.toronto.com/news-story/6810325-toronto-police-arrest-teens-in-string-of-bitcoin-related-robberies/) |
 | November 6, 2016 | Tivoli Brasserie | Oudenbosch, Netherlands | [Dutch Bitcoin ATM Owner Laughs at Thieves Who Took His Machine](https://bitsonline.com/bitcoin-atm-stolen-netherlands/) |
