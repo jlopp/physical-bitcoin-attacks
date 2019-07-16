@@ -49,3 +49,4 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | November 16, 2018 | Andrew ______ | Lanseria, South Africa | [Bitcoin trader drugged, beaten, and tortured before transferring BTC to attackers](https://archive.fo/ASDBT) |
 | February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill](https://archive.fo/UONTD) |
 | March 12, 2019 | Costcutters | Far Cotton, Northampton, England | [Bitcoin machine stolen during robbery](https://archive.fo/0lCv5) |
+| June 30, 2019 | Luftan Shaikh, Mohammad Shazad, Malang Shah | Jaipur, Rajasthan, India | [Criminal Gang Abducts &amp; Tortures Cryptocurrency Traders, Demands 80 BTC Ransom](https://archive.fo/8PY9R) |
