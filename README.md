@@ -14,29 +14,29 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | November 6, 2016 | Tivoli Brasserie | Oudenbosch, Netherlands | [Dutch Bitcoin ATM Owner Laughs at Thieves Who Took His Machine](https://bitsonline.com/bitcoin-atm-stolen-netherlands/) |
 | February 16, 2017 | Josoj | London, England | [Description of robbery during Localbitcoins trade](https://localbitcoins.com/forums/#!/general-discussion:double-spending-cash-robb) with [Bitcoins Uncensored interview](https://soundcloud.com/bitcoinuncensored/uk-based-local-bitcoin-trader-robbed-in-broad-daylight-josoj-tells-his-story) and the [robber's side of the story](https://localbitcoins.com/forums/#!/general-discussion:unfreeze-my-account). |
 | February 26, 2017 | Rocelo Lopes' wife | Florianopolis, Brazil | [Wife of crypto exchange owner kidnapped and ransomed](https://translate.googleusercontent.com/translate_c?depth=1&hl=en&prev=search&rurl=translate.google.com&sl=pt-BR&sp=nmt4&u=https://www1.folha.uol.com.br/cotidiano/2017/05/1880569-bandidos-pedem-dinheiro-digital-para-libertar-refem-de-sequestro.shtml&xid=17259,15700002,15700019,15700124,15700149,15700168,15700186,15700190,15700201,15700208&usg=ALkJrhh0Ok2Seoc85twz3X488yGHyzXjkw) |
-| March 14, 2017 | 3 Indian Bitcoin traders | Dubai, United Arab Emirates | [3 Emiratis pose as cops, kidnap victims and rob them of 25 BTC](https://www.khaleejtimes.com/news/crime-and-courts/3-fake-dubai-cops-kidnap-traders-to-rob-bitcoins) |
+| March 14, 2017 | 3 Indian Bitcoin traders | Dubai, United Arab Emirates | [3 Emiratis pose as cops, kidnap victims and rob them of 25 BTC](https://archive.fo/P5S6u) |
 | June 17, 2017 | Miyuki Noda | Gifu, Japan | [Woman strangled, attacker takes 100,000 yen worth of BTC](https://archive.fo/OmqRM) |
-| September 4, 2017 | Alexey Sherstne | Kiev, Ukraine | [Man tortured for $50k in Bitcoins](https://www.obozrevatel.com/kiyany/crime/v-kieve-iz-parnya-vyibivali-bitcoin-na-summu-pochti-50-tyis-doll.htm ) |
-| October 16, 2017 | Jameson Lopp | Durham, North Carolina | [Bitcoin developer SWATted & extorted](https://www.cbs17.com/news/local-news/police-presence-in-durham-neighborhood-following-hostage-call/1036242798) |
-| October, 2017 | Multiple | Toulouse, France | [4 bitcoin traders robbed at gunpoint](https://www.20minutes.fr/toulouse/2180483-20171203-toulouse-quatre-jeunes-sequestres-forces-transferer-bitcoins) |
-| November 4, 2017 | Unidentified | New York, New York | [Man robbed of $1.8M of ETH](https://www.nydailynews.com/new-york/nyc-crime/ny-metro-crypto-robbery-arrests-20180612-story.html) |
-| November 15, 2017 | Unidentified | Istanbul, Turkey | [Gang stole $2.83M in BTC from businessman](https://www.dailysabah.com/investigations/2017/11/15/turkish-police-detain-gang-who-stole-bitcoins-worth-283m) |
+| September 4, 2017 | Alexey Sherstne | Kiev, Ukraine | [Man tortured for $50k in Bitcoins](https://archive.fo/2aCmP ) |
+| October 16, 2017 | Jameson Lopp | Durham, North Carolina | [Bitcoin developer SWATted & extorted](https://archive.fo/p5gEf) |
+| October, 2017 | Multiple | Toulouse, France | [4 bitcoin traders robbed at gunpoint](https://archive.fo/QHlfc) |
+| November 4, 2017 | Unidentified | New York, New York | [Man robbed of $1.8M of ETH](https://archive.fo/Lt2bJ) |
+| November 15, 2017 | Unidentified | Istanbul, Turkey | [Gang stole $2.83M in BTC from businessman](https://archive.fo/spoUT) |
 | December, 2017 | Unidentified | Reykjavik, Iceland | [600 Bitcoin ASICs stolen](https://www.nbcnews.com/news/world/bitcoin-heist-600-powerful-computers-stolen-iceland-n852811) |
-| December 26, 2017 | Pavel Lerner | Kiev, Ukraine | [Bitcoin exchange owner kidnapped & ransomed](https://www.reuters.com/article/us-ukraine-kidnapping/ukraine-kidnappers-free-bitcoin-analyst-after-1-mln-ransom-paid-idUSKBN1EN1QB) |
+| December 26, 2017 | Pavel Lerner | Kiev, Ukraine | [Bitcoin exchange owner kidnapped & ransomed](https://archive.fo/xsQAx) |
 | January 3, 2018 | "Dallas" | Milwaukee, Wisconsin | [Convicted felon accused of firing gun inside downtown Milwaukee condo during Bitcoin sale](https://fox6now.com/2018/01/11/convicted-felon-accused-of-firing-gun-inside-downtown-milwaukee-condo-during-bitcoin-argument/) |
-| January 14, 2018 | Pavel Nyashin | Leningrad Oblast, Russia | [Blogger Who Boasted About Crypto Wealth Beaten and Robbed For $425k](https://cointelegraph.com/news/russia-blogger-who-boasted-about-crypto-wealth-beaten-and-robbed-for-425k) |
-| January 15, 2018 | Maxsim Latsoka & Anna Nikurina | Phuket, Thailand | [Russian gang steals 100,000 Euros in BTC from young Russian couple](https://www.thaivisa.com/forum/topic/1020825-russian-gang-steal-bitcoin-worth-millions-from-young-russian-couple-in-phuket-condo-extortion/) |
+| January 14, 2018 | Pavel Nyashin | Leningrad Oblast, Russia | [Blogger Who Boasted About Crypto Wealth Beaten and Robbed For $425k](https://archive.fo/OaOlP) |
+| January 15, 2018 | Maxsim Latsoka & Anna Nikurina | Phuket, Thailand | [Russian gang steals 100,000 Euros in BTC from young Russian couple](https://archive.fo/9chQq) |
 | January 18, 2018 | \____ Lee | North Point, Hong Kong | [Bitcoin trader lured to bogus meeting and robbed of HK$1.4M](https://www.scmp.com/news/hong-kong/law-crime/article/2129665/hong-kong-bitcoin-trader-lured-bogus-meeting-and-robbed) | 
-| January 23, 2018 | Canadian Bitcoins | Ottawa, Canada | [Failed armed robbery attempt of Canadian bitcoin exchange](http://www.cbc.ca/news/canada/ottawa/robbery-ottawa-search-bitcoin-1.4501719) | 
-| January 27, 2018 | Danny Aston & Amy Jay | Moulsford, Oxfordshire, England | [Armed home invasion of Bitcoin trading firm owner](https://www.telegraph.co.uk/news/2018/01/28/britains-first-bitcoin-heist-trader-forced-gunpoint-transfer/) | 
-| January 29, 2018 | Unidentified | Cumming, Georgia | [Five men arrested for planning armed home invasion of bitcoin owner](https://www.11alive.com/article/news/crime/five-arrested-in-plot-to-break-into-forsyth-county-home-to-steal-bitcoin/85-551507487) | 
-| January 2018 | Unidentified | Odessa, Ukraine | [Several men pose as bitcoin sellers, beat and rob buyer of 1.5 Million UAH ($57,000 USD](https://bizlim.com/crypto/news/odessa-robbery-for-1-5-million-uah-on-the-sale-of-crypto-currency.html) | 
-| February 9, 2018 | Sailesh Bhatt | Amreli, India | [Police Officers Beat, Extorted 200 BTC from Businessman](https://www.indiatoday.in/crime/story/gujarat-cops-kidnap-surat-builder-extort-bitcoins-worth-rs-13-crore-1208579-2018-04-09) | 
-| February 21, 2018 | \____ Tai | Taichung, Taiwan | [Four men assault bitcoin seller & transfer 18 BTC](http://www.arabnews.com/node/1251816/world) | 
-| February 23, 2018 | Yury Mayorov | Moscow, Russia | [Crypto Developer Beaten, Robbed Of 300 BTC](https://cointelegraph.com/news/russian-crypto-developer-beaten-robbed-of-300-btc-on-moscow-streets) | 
-| February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://cointelegraph.com/news/moscow-man-mutilated-and-mugged-for-1-million-in-bitcoin-local-sources-report) | 
+| January 23, 2018 | Canadian Bitcoins | Ottawa, Canada | [Failed armed robbery attempt of Canadian bitcoin exchange](https://archive.fo/Qzqb5) | 
+| January 27, 2018 | Danny Aston & Amy Jay | Moulsford, Oxfordshire, England | [Armed home invasion of Bitcoin trading firm owner](https://archive.fo/rpCUg) | 
+| January 29, 2018 | Unidentified | Cumming, Georgia | [Five men arrested for planning armed home invasion of bitcoin owner](https://archive.fo/hVDKF) | 
+| January 2018 | Unidentified | Odessa, Ukraine | [Several men pose as bitcoin sellers, beat and rob buyer of 1.5 Million UAH ($57,000 USD](https://archive.fo/ho58l) | 
+| February 9, 2018 | Sailesh Bhatt | Amreli, India | [Police Officers Beat, Extorted 200 BTC from Businessman](https://archive.fo/VctPq) | 
+| February 21, 2018 | \____ Tai | Taichung, Taiwan | [Four men assault bitcoin seller & transfer 18 BTC](https://archive.fo/cGzd6) | 
+| February 23, 2018 | Yury Mayorov | Moscow, Russia | [Crypto Developer Beaten, Robbed Of 300 BTC](https://archive.fo/YDbVR) | 
+| February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://archive.fo/wUxu7) | 
 | March 2018 | Undisclosed woman | Killingly, Connecticut | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](http://www.norwichbulletin.com/news/20181016/police-2-rhode-island-women-charged-in-killingly-home-invasion) | 
-| March 2018| Unidentified Miner | Kiev, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://ain.ua/2018/11/26/zaderzhali-gryppy-kotoraja-vykrala-majnera/amp/)|
+| March 2018| Unidentified Miner | Kiev, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://archive.fo/ziAAR)|
 | March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Bitcoin bandits target Dallas County cryptocurrency ATMs](https://archive.fo/rZXv0) | 
 | April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://archive.fo/IQMXP) | 
 | April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://archive.fo/wWiYd) | 
@@ -52,4 +52,4 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | March 12, 2019 | Costcutters | Far Cotton, Northampton, England | [Bitcoin machine stolen during robbery](https://archive.fo/0lCv5) |
 | June 30, 2019 | Luftan Shaikh, Mohammad Shazad, Malang Shah | Jaipur, Rajasthan, India | [Criminal Gang Abducts &amp; Tortures Cryptocurrency Traders, Demands 80 BTC Ransom](https://archive.fo/8PY9R) |
 | July 15, 2019 | Bitcoin Exchange | Sparkhill, Birhingham, England | [Masked raiders hold up Bitcoin Exchange in front of dozens of witnesses](https://archive.fo/fAoh0) |
-| July 26, 2019 | Unidentified | Wels, Austria | [Man raided in office](https://archive.fo/HHicH) [(en)](https://archive.is/R7UjD)|
+| July 26, 2019 | Unidentified | Wels, Austria | [Man raided in office](https://archive.fo/HHicH) [(en)](https://archive.fo/R7UjD)|
