@@ -54,3 +54,4 @@ A list of known attacks against Bitcoin / crypto asset owning entities that occu
 | June 30, 2019 | Luftan Shaikh, Mohammad Shazad, Malang Shah | Jaipur, Rajasthan, India | [Criminal Gang Abducts &amp; Tortures Cryptocurrency Traders, Demands 80 BTC Ransom](https://archive.fo/8PY9R) |
 | July 15, 2019 | Bitcoin Exchange | Sparkhill, Birhingham, England | [Masked raiders hold up Bitcoin Exchange in front of dozens of witnesses](https://archive.fo/fAoh0) |
 | July 26, 2019 | Unidentified | Wels, Austria | [Man raided in office](https://archive.fo/HHicH) [(en)](https://archive.fo/R7UjD)|
+| August 26, 2019 | Abdul Shakoor | Dehradun, India | [Kingpin of Kerala bitcoin scam murdered in Dehradun](https://archive.fo/O4Wno)|
