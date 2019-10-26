@@ -1,5 +1,7 @@
 # Known Physical Bitcoin Attacks
-A list of known attacks against Bitcoin / crypto asset owning entities that occurred in meatspace.
+A list of known attacks against Bitcoin / crypto asset owning entities that occurred in meatspace. NOTE: this list is not comprehensive; many attacks are not publicly reported.
+
+Readers may be interested in this relevant presentation: ["The Hodlguard- a primer on physical security in Bitcoin"](https://vimeo.com/365979416#t=24m50s) and [slides](https://prezi.com/view/P46hHguLiPvqA7aZ7gYR).
 
 | Date        | Victim  | Location | Description |
 | :---------: |:------: | :------: | :---------: |
