@@ -24,7 +24,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October, 2017 | Multiple | Los Angeles, California | ["Discount Bitcoin Bandits" committed 5 robberies at gunpoint](https://archive.is/D7MJS) |
 | November 4, 2017 | Unidentified | New York, New York | [Man robbed of $1.8M of ETH](https://archive.fo/Lt2bJ) |
 | November 15, 2017 | Unidentified | Istanbul, Turkey | [Gang stole $2.83M in BTC from businessman](https://archive.fo/spoUT) |
-| December, 2017 | Unidentified | Reykjavik, Iceland | [600 Bitcoin ASICs stolen](https://www.nbcnews.com/news/world/bitcoin-heist-600-powerful-computers-stolen-iceland-n852811) |
+| December, 2017 | Unidentified | Reykjavik, Iceland | [600 Bitcoin ASICs stolen](https://www.nbcnews.com/news/world/bitcoin-heist-600-powerful-computers-stolen-iceland-n852811) [Follow-up Story](https://archive.is/np6rz)|
 | December 26, 2017 | Pavel Lerner | Kiev, Ukraine | [Bitcoin exchange owner kidnapped & ransomed](https://archive.fo/xsQAx) |
 | January 3, 2018 | "Dallas" | Milwaukee, Wisconsin | [Convicted felon accused of firing gun inside downtown Milwaukee condo during Bitcoin sale](https://fox6now.com/2018/01/11/convicted-felon-accused-of-firing-gun-inside-downtown-milwaukee-condo-during-bitcoin-argument/) |
 | January 14, 2018 | Pavel Nyashin | Leningrad Oblast, Russia | [Blogger Who Boasted About Crypto Wealth Beaten and Robbed For $425k](https://archive.fo/OaOlP) |
