@@ -21,6 +21,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | September 4, 2017 | Alexey Sherstne | Kiev, Ukraine | [Man tortured for $50k in Bitcoins](https://archive.fo/2aCmP ) |
 | October 16, 2017 | Jameson Lopp | Durham, North Carolina | [Bitcoin developer SWATted & extorted](https://archive.fo/p5gEf) |
 | October, 2017 | Multiple | Toulouse, France | [4 bitcoin traders robbed at gunpoint](https://archive.fo/QHlfc) |
+| October, 2017 | Multiple | Los Angeles, California | ["Discount Bitcoin Bandits" committed 5 robberies at gunpoint](https://archive.is/D7MJS) |
 | November 4, 2017 | Unidentified | New York, New York | [Man robbed of $1.8M of ETH](https://archive.fo/Lt2bJ) |
 | November 15, 2017 | Unidentified | Istanbul, Turkey | [Gang stole $2.83M in BTC from businessman](https://archive.fo/spoUT) |
 | December, 2017 | Unidentified | Reykjavik, Iceland | [600 Bitcoin ASICs stolen](https://www.nbcnews.com/news/world/bitcoin-heist-600-powerful-computers-stolen-iceland-n852811) |
