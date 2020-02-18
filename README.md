@@ -60,3 +60,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 26, 2019 | Unidentified | Wels, Austria | [Man raided in office](https://archive.fo/HHicH) [(en)](https://archive.fo/R7UjD)|
 | August 26, 2019 | Abdul Shakoor | Dehradun, India | [Kingpin of Kerala bitcoin scam murdered in Dehradun](https://archive.fo/O4Wno)|
 | January 8, 2020 | Mark Cheng Jin Quan | Bangkok, Thailand | [Blockchain advisor kidnapped, held at gunpoint, extorted for $60,000 in bitcoin](https://www.tnp.sg/news/singapore/man-out-bail-cheating-charges-allegedly-kidnapped-thailand)|
+| January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
