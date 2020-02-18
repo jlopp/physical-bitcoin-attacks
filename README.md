@@ -40,7 +40,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://archive.fo/wUxu7) | 
 | March 2018 | Undisclosed woman | Killingly, Connecticut | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](http://www.norwichbulletin.com/news/20181016/police-2-rhode-island-women-charged-in-killingly-home-invasion) | 
 | March 2018| Unidentified Miner | Kiev, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://archive.fo/ziAAR)|
-| March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Bitcoin bandits target Dallas County cryptocurrency ATMs](https://archive.fo/rZXv0) | 
+| March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Robbers douse clerks with pepper spray, steal from Bitcoin ATMs in Irving and Mesquite](https://archive.is/rODUM) | 
 | April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://archive.fo/IQMXP) | 
 | April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://archive.fo/wWiYd) | 
 | April 25, 2018 | 2 unidentified Asian brothers | Dubai, United Arab Emirates | [Gang of 10 robbed two brothers of AED 7m ($1.9m) in cash who were looking to buy Bitcoin](https://archive.fo/N5O0K) | 
