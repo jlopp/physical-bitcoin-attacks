@@ -6,6 +6,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | Date        | Victim  | Location | Description |
 | :---------: |:------: | :------: | :---------: |
 | December 29, 2014 | Hal Finney | Santa Barbara , California | [Bitcoin developer SWATted after months of harrassment & extortion](https://archive.fo/WvHB9) |
+| January 3, 2015 | Amanda McCollum | Atlanta, Georgia | [BTM thieves strike smoke shop, fire gun](https://archive.fo/R98Nn)|
 | January 22, 2015 | Martin Wismeijer | Amsterdam, Netherlands | [Thieves steal 2 bitcoin ATMs](https://archive.fo/aP649) |
 | February, 2015 | Dean Katz | New York, New York | [Bitcoin trader robbed of $12,000 at gunpoint](https://archive.fo/QeCwu) |
 | May 27, 2015 | Dwayne Richards | New York, New York | [Firefighter kidnapped, robbed of $1,100, & stabbed by crypto thieves](https://web.archive.org/web/20170212084543/https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html) |
