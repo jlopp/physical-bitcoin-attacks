@@ -63,3 +63,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January ?, 2020 | Iroro Wisdom Ovie | Abraka, Nigeria | [Man shot & killed by home invaders seeking $10,000 in bitcoin](https://archive.is/3JkYf)|
 | January 8, 2020 | Mark Cheng Jin Quan | Bangkok, Thailand | [Blockchain advisor kidnapped, held at gunpoint, extorted for $60,000 in bitcoin](https://www.tnp.sg/news/singapore/man-out-bail-cheating-charges-allegedly-kidnapped-thailand)|
 | January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
+| May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
