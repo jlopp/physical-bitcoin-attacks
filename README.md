@@ -65,3 +65,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
+| October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
