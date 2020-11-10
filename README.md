@@ -66,3 +66,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
+| October 28, 2020 | Dr. Behjath Hussain | Hyderabad, India | [Dentist kidnapped and demanded $1,300,000 as ransom](https://archive.fo/ZaWDF)|
