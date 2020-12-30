@@ -57,6 +57,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 14, 2019 | Undisclosed | Oslo, Norway | [Bitcoin millionaire escapes armed home invader by jumping off balcony](https://archive.is/HfBWe) |
 | June 30, 2019 | Luftan Shaikh, Mohammad Shazad, Malang Shah | Jaipur, Rajasthan, India | [Criminal Gang Abducts &amp; Tortures Cryptocurrency Traders, Demands 80 BTC Ransom](https://archive.fo/8PY9R) |
 | July 15, 2019 | Bitcoin Exchange | Sparkhill, Birhingham, England | [Masked raiders hold up Bitcoin Exchange in front of dozens of witnesses](https://archive.fo/fAoh0) |
+| July 25, 2019 | Tobiasz Niemiro | Olsztyn, poland | [Founder of BitMarket.pl is dead](https://archive.is/O5hWe) [(pl)](https://archive.is/O5hWe)|
 | July 26, 2019 | Unidentified | Wels, Austria | [Man raided in office](https://archive.fo/HHicH) [(en)](https://archive.fo/R7UjD)|
 | August 26, 2019 | Abdul Shakoor | Dehradun, India | [Kingpin of Kerala bitcoin scam murdered in Dehradun](https://archive.fo/O4Wno)|
 | November 19, 2019 | Simply Delicious Food Market | Vernon, British Columbia | [Thieves break into BTM](https://archive.ph/saynt)|
