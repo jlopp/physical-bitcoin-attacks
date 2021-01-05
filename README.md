@@ -67,4 +67,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
 | December 24, 2020 | Undisclosed | Ternopil, Ukraine | [Man kidnapped and tortured for $800k](https://archive.is/bx8kT)|
-| January 5, 2021 | 37 year old man, | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://www.scmp.com/news/hong-kong/law-and-crime/article/3116489/robbers-steal-over-hk3-million-worth-bitcoins-trader)|
+| January 5, 2021 | 37 year old man, | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
