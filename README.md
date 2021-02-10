@@ -70,3 +70,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 5, 2021 | 37 year old man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
 | January 18, 2021 | Unidentified Woman | Kwun Tong, Hong Kong | [Gang snatches HK$3.5 million from trader at knifepoint](https://archive.is/3mR44)|
 | January 23, 2021 | Physical Exchange Employees | Osztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.is/wip/YOvMq)|
+| February 4, 2021 | Married Couple | Stockholm, Sweden | [Armed robbers invade home and force owners to hand over 1M+ SEK in BTC](https://archive.is/5qCBI)|
