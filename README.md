@@ -50,7 +50,6 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | June 19, 2018 | Unidentified | Wels, Austria | [$250,000 in cryptocurrency taken by robbers posing as postmen](https://archive.fo/kabJg) | 
 | July 6, 2018 | Austin Nedved | Northborough, Massachussetts | [Armed home invasion of Localbitcoins trader](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
 | September 7, 2018 | Nicholas Truglia | New York, New York | [Friends accused of torturing pal to steal his cryptocurrency](https://archive.fo/PJYDN) |
-| October 15, 2018 | Heikki Bjørklund Paltto | Oslo, Norway | [24 year old man murdered in home after exchanging large sum of BTC](https://archive.fo/WiFMj) |
 | November 16, 2018 | Andrew ______ | Lanseria, South Africa | [Bitcoin trader drugged, beaten, and tortured before transferring BTC to attackers](https://archive.fo/ASDBT) |
 | February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill](https://archive.fo/UONTD) |
 | March 12, 2019 | Costcutters | Far Cotton, Northampton, England | [Bitcoin machine stolen during robbery](https://archive.fo/0lCv5) |
