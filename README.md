@@ -65,6 +65,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
+| December ?, 2020 | Undisclosed | Dubai, United Arab Emirates | [4 Ukrainian men attack Bitcoin buyer with deoderant](https://archive.is/yQIF7)|
 | December 24, 2020 | Undisclosed | Ternopil, Ukraine | [Man kidnapped and tortured for $800k](https://archive.is/bx8kT)|
 | January 5, 2021 | 37 year old man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
 | January 18, 2021 | Unidentified Woman | Kwun Tong, Hong Kong | [Gang snatches HK$3.5 million from trader at knifepoint](https://archive.is/3mR44)|
