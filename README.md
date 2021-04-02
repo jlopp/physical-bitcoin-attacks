@@ -67,10 +67,10 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
 | December ?, 2020 | Undisclosed | Dubai, United Arab Emirates | [4 Ukrainian men attack Bitcoin buyer with deoderant](https://archive.is/yQIF7)|
 | December 24, 2020 | Undisclosed | Ternopil, Ukraine | [Man kidnapped and tortured for $800k](https://archive.is/bx8kT)|
-| January 5, 2021 | 37 year old man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
+| January 5, 2021 | 37 y/o man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
 | January 18, 2021 | Unidentified Woman | Kwun Tong, Hong Kong | [Gang snatches HK$3.5 million from trader at knifepoint](https://archive.is/3mR44)|
 | January 23, 2021 | Physical Exchange Employees | Osztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.is/wip/YOvMq)|
 | February 4, 2021 | Married Couple | Stockholm, Sweden | [Armed robbers invade home and force owners to hand over 1M+ SEK in BTC](https://archive.is/5qCBI)|
 | February ?, 2021 | Swiss & German | Gujranwala, Pakistan | [Armed robbers take $93k in BTC at gunpoint](https://archive.is/Nmdes)|
-| March 16, 2021 | German trader | Munich, Germany | [Bitcoin-Raub in München: Täter erbeuten virtuelles Geld im Wert von knapp 100.000 Euro](https://www.stadtmagazin-muenchen24.de/bitcoin-raub-in-muenchen-taeter-erbeuten-virtuelles-geld-im-wert-von-knapp-100-000-euro-87276)|
+| March 16, 2021 | 29 y/o Berlin man | Munich, Germany | [Robbers steal bitcoin worth almost 100,000 Euros](https://archive.is/H8Qix)|
 | March 18, 2021 | "F.T." | Mendoza, Argentina | [Armed robbers steal iPhone, $5k at gunpoint](https://archive.is/DpOQe)|
