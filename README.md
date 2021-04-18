@@ -74,3 +74,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February ?, 2021 | Swiss & German | Gujranwala, Pakistan | [Armed robbers take $93k in BTC at gunpoint](https://archive.is/Nmdes)|
 | March 16, 2021 | 29 y/o Berlin man | Munich, Germany | [Robbers steal bitcoin worth almost 100,000 Euros](https://archive.is/H8Qix)|
 | March 18, 2021 | "F.T." | Mendoza, Argentina | [Armed robbers steal iPhone, $5k at gunpoint](https://archive.is/DpOQe)|
+| April 13, 2021 | Undisclosed | Calgary, Alberta, Canada | [Armed men force their way into Canyon Meadows home, steal cryptocurrency keys](https://archive.is/GP76C)|
