@@ -78,5 +78,6 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | April 8, 2021 | 30 year old miner | Zaporizhya, Ukraine | [Mining farm owner shoots at looters](https://archive.is/WT3sm)|
 | April 13, 2021 | Undisclosed | Calgary, Alberta, Canada | [Armed men force their way into Canyon Meadows home, steal cryptocurrency keys](https://archive.is/GP76C)|
 | June 14, 2021 | 22 y/o man | Kwun Tong, Hong Kong | [Trader temporarily blinded, HK$2 million stolen](https://archive.is/6h6UG)|
+| July 1, 2021 | Unidentified man | Unknown | [Bitcoin holder drugged and robbed by Tinder date](https://archive.is/uIMAl)|
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
 | August 8, 2021 | Wesley Pessano Santarem | Sao Pedro da Aldeia, Brazil | [Crypto Trader's Murder Blamed On Social Media Bragging](https://archive.is/2kfpq)|
