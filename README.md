@@ -64,6 +64,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 8, 2020 | Mark Cheng Jin Quan | Bangkok, Thailand | [Blockchain advisor kidnapped, held at gunpoint, extorted for $60,000 in bitcoin](https://www.tnp.sg/news/singapore/man-out-bail-cheating-charges-allegedly-kidnapped-thailand)|
 | January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
+| October 1, 2020 | Unidentified | Kiev, Ukraine | [Police kidnap a businessman, torture him, and force his wife to send them 7 bitcoin.](https://archive.is/LB3Nm)|
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
 | December ?, 2020 | Undisclosed | Dubai, United Arab Emirates | [4 Ukrainian men attack Bitcoin buyer with deoderant](https://archive.is/yQIF7)|
