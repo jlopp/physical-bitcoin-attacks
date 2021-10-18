@@ -79,8 +79,8 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 16, 2021 | 29 y/o Berlin man | Munich, Germany | [Robbers steal bitcoin worth almost 100,000 Euros](https://archive.is/H8Qix)|
 | March 18, 2021 | "F.T." | Mendoza, Argentina | [Armed robbers steal iPhone, $5k at gunpoint](https://archive.is/DpOQe)|
 | April 8, 2021 | 30 year old miner | Zaporizhya, Ukraine | [Mining farm owner shoots at looters](https://archive.is/WT3sm)|
-| April 13, 2021 | 14 y/o boy | Calgary, Alberta, Canada | [Armed men force their way into Canyon Meadows home, steal cryptocurrency keys](https://archive.is/GP76C)|
-| May, 2021 | Undisclosed | Bradford, UK | [Teen bitcoin trader kidnapped & ransomed](https://archive.is/SUsgH)|
+| April 13, 2021 | Undisclosed | Calgary, Alberta, Canada | [Armed men force their way into Canyon Meadows home, steal cryptocurrency keys](https://archive.is/GP76C)|
+| May, 2021 | 14 y/o boy | Bradford, UK | [Teen bitcoin trader kidnapped & ransomed](https://archive.is/SUsgH)|
 | June 14, 2021 | 22 y/o man | Kwun Tong, Hong Kong | [Trader temporarily blinded, HK$2 million stolen](https://archive.is/6h6UG)|
 | July 1, 2021 | Unidentified man | Unknown | [Bitcoin holder drugged and robbed by Tinder date](https://archive.is/uIMAl)|
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
