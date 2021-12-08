@@ -63,6 +63,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January ?, 2020 | Iroro Wisdom Ovie | Abraka, Nigeria | [Man shot & killed by home invaders seeking $10,000 in bitcoin](https://archive.is/3JkYf)|
 | January 8, 2020 | Mark Cheng Jin Quan | Bangkok, Thailand | [Blockchain advisor kidnapped, held at gunpoint, extorted for $60,000 in bitcoin](https://www.tnp.sg/news/singapore/man-out-bail-cheating-charges-allegedly-kidnapped-thailand)|
 | January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
+| May 17, 2020 | ____ Le | Ho Chi Minh City, Vietnam | [HCMC cops charged with $1.6 mln bitcoin robbery](https://archive.md/T9g5e)|
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
 | September, 2020 | Male Freshman | Kent, England | [Student robbed of bitcoin at knifepoint during first week at university.](https://archive.is/wH3Y2)|
 | October 1, 2020 | Unidentified | Kiev, Ukraine | [Police kidnap a businessman, torture him, and force his wife to send them 7 bitcoin.](https://archive.is/LB3Nm)|
@@ -87,6 +88,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
 | August 8, 2021 | Wesley Pessano Santarem | Sao Pedro da Aldeia, Brazil | [Crypto Trader's Murder Blamed On Social Media Bragging](https://archive.is/2kfpq)|
 | August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student killed for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
+| September 9, 2021 | Mark Geor | Westmere, New Zealand | [Safe containing $4M of cryptocurrency ripped from house](https://archive.md/y8m24)|
 | October 7, 2021 | Liquor Store | South Bay, California | [Thieves Break Into Liquor Store to Steal Bitcoin ATM](https://archive.is/1caUw)|
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
 | November 12, 2021 | GBTC Crypto Exchange | Barcelona, Spain | [Thieves rip bitcoin ATM from crypto store](https://archive.md/AsIGX)|
