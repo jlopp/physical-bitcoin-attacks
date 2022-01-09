@@ -89,10 +89,13 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
 | August 8, 2021 | Wesley Pessano Santarem | Sao Pedro da Aldeia, Brazil | [Crypto Trader's Murder Blamed On Social Media Bragging](https://archive.is/2kfpq)|
 | August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student killed for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
+| September ?, 2021 | Unidentified 31 y/o | Abkhazia | [Thieves break into garage, steal 20 mining servers worth $10,000.](https://archive.is/MPNwC)|
 | September 9, 2021 | Mark Geor | Westmere, New Zealand | [Safe containing $4M of cryptocurrency ripped from house](https://archive.md/y8m24)|
 | October 7, 2021 | Liquor Store | South Bay, California | [Thieves Break Into Liquor Store to Steal Bitcoin ATM](https://archive.is/1caUw)|
+| October 20, 2021 | Astamur Ardzibna | Abkhazia | [Man Shot Dead in Hail of Gunfire Over Crypto Mining Rigs](https://archive.is/zg4Kk)|
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
 | November 12, 2021 | GBTC Crypto Exchange | Barcelona, Spain | [Thieves rip bitcoin ATM from crypto store](https://archive.md/AsIGX)|
+| December ?, 2021 | Unidentified Family | Sukhumi, Abkhazia | [2 masked men break into home, hold family at gunpoint before escaping with three servers and $2,040 in cash.](https://archive.is/MPNwC)|
 | December 11, 2021 | Camilla Guadagnuolo & Principe Nerini | Bali, Indonesia | [Robbers take $400K in cash & bitcoin at knifepoint](https://archive.is/KJO7s)|
 | December 15, 2021 | Vincent Everts | Amsterdam, Netherlands | [Armed home invaders threaten TV personality during livestream](https://archive.md/tUbAz)|
 | December 27, 2021 | 2 unidentified males | Thunder Bay, Ontario, Canada | [11 Inmates take 2 inmates hostage, force them to transfer cryptocurrency](https://archive.is/5R0gB)|
