@@ -100,3 +100,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 15, 2021 | Vincent Everts | Amsterdam, Netherlands | [Armed home invaders threaten TV personality during livestream](https://archive.md/tUbAz)|
 | December 27, 2021 | 2 unidentified males | Thunder Bay, Ontario, Canada | [11 Inmates take 2 inmates hostage, force them to transfer cryptocurrency](https://archive.is/5R0gB)|
 | January 16, 2022 | Gas Station | Memphis, TN | [Suspects smash gas station with truck, steal Bitcoin ATM](https://archive.is/Zjfr2)|
+| February 2, 2022 | Vinay Naik | Pune, India | [Pune: 8 including cop arrested for kidnapping man to extort Bitcoin worth Rs 300 crore ( $50 million USD )](https://archive.is/UJG8J)|
