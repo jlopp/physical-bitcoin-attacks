@@ -94,6 +94,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October 7, 2021 | Liquor Store | South Bay, California | [Thieves Break Into Liquor Store to Steal Bitcoin ATM](https://archive.is/1caUw)|
 | October 20, 2021 | Astamur Ardzibna | Abkhazia | [Man Shot Dead in Hail of Gunfire Over Crypto Mining Rigs](https://archive.is/zg4Kk)|
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
+| November 6, 2021 | 39 y/o trader | Hong Kong | [Crypto trader kidnapped by Triad gang, beaten with hammers](https://archive.is/OnZVR)|
 | November 12, 2021 | GBTC Crypto Exchange | Barcelona, Spain | [Thieves rip bitcoin ATM from crypto store](https://archive.md/AsIGX)|
 | December ?, 2021 | Unidentified Family | Sukhumi, Abkhazia | [2 masked men break into home, hold family at gunpoint before escaping with three servers and $2,040 in cash.](https://archive.is/MPNwC)|
 | December 11, 2021 | Camilla Guadagnuolo & Principe Nerini | Bali, Indonesia | [Robbers take $400K in cash & bitcoin at knifepoint](https://archive.is/KJO7s)|
