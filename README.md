@@ -87,6 +87,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 1, 2021 | Unidentified man | Unknown | [Bitcoin holder drugged and robbed by Tinder date](https://archive.is/uIMAl)|
 | July 14, 2021 | Morakinyo Peter & Yusuf Dayo | Lagos, Nigeria | [Law Enforcement Officers rob 2 men of $50K USD in bitcoin at gunpoint](https://archive.md/Xdsmc)|
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
+| August ?, 2021 | 3 women | Dubai, United Arab Emirates | [4 Africans rob three women of $100,000 in a fake Bitcoin deal](https://archive.is/3dubt)|
 | August 8, 2021 | Wesley Pessano Santarem | Sao Pedro da Aldeia, Brazil | [Crypto Trader's Murder Blamed On Social Media Bragging](https://archive.is/2kfpq)|
 | August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student killed for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
 | September ?, 2021 | Unidentified 31 y/o | Abkhazia | [Thieves break into garage, steal 20 mining servers worth $10,000.](https://archive.is/MPNwC)|
