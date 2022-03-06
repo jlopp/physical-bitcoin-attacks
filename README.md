@@ -105,3 +105,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 2, 2022 | Vinay Naik | Pune, India | [Pune: 8 including cop arrested for kidnapping man to extort Bitcoin worth Rs 300 crore ( $50 million USD )](https://archive.is/UJG8J)|
 | February 3, 2022 | Vinay Jain | Surat, India | [Auto parts businessman brings suitcase full of $260K worth of cash to do an in-person crypto trade, gets beaten and robbed by 8 men.](https://archive.is/hMOJh)|
 | February 3, 2022 | Ilya Basin | Brooklyn, New York | [Crypto consultant hog-tied, beaten during home invasion.](https://archive.is/DEA2C)|
+| March 2, 2022 | Unidentified man | Miami, FL | [Businessman ambushed by armed robber, has $1M watch & crypto wallet taken.](https://archive.ph/tyzQa)|
