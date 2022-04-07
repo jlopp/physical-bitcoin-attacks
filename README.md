@@ -102,6 +102,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 15, 2021 | Vincent Everts | Amsterdam, Netherlands | [Armed home invaders threaten TV personality during livestream](https://archive.md/tUbAz)|
 | December 27, 2021 | 2 unidentified males | Thunder Bay, Ontario, Canada | [11 Inmates take 2 inmates hostage, force them to transfer cryptocurrency](https://archive.is/5R0gB)|
 | January 16, 2022 | Gas Station | Memphis, TN | [Suspects smash gas station with truck, steal Bitcoin ATM](https://archive.is/Zjfr2)|
+| January 21, 2022 | 34 y/o teacher | Hoboken, Belgium | [3 men invade home, fail to force owner to hand over 3M Euros of BTC](https://archive.ph/LgqrJ)|
 | February 2, 2022 | Vinay Naik | Pune, India | [Pune: 8 including cop arrested for kidnapping man to extort Bitcoin worth Rs 300 crore ( $50 million USD )](https://archive.is/UJG8J)|
 | February 3, 2022 | Vinay Jain | Surat, India | [Auto parts businessman brings suitcase full of $260K worth of cash to do an in-person crypto trade, gets beaten and robbed by 8 men.](https://archive.is/hMOJh)|
 | February 3, 2022 | Ilya Basin | Brooklyn, New York | [Crypto consultant hog-tied, beaten during home invasion.](https://archive.is/DEA2C)|
