@@ -108,3 +108,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 3, 2022 | Ilya Basin | Brooklyn, New York | [Crypto consultant hog-tied, beaten during home invasion.](https://archive.is/DEA2C)|
 | March 2, 2022 | Unidentified man | Miami, FL | [Businessman ambushed by armed robber, has $1M watch & crypto wallet taken.](https://archive.ph/tyzQa)|
 | March 16, 2022 | Pierrick Jamaux | New York, NY | [Crypto expert shot 5 times by robber seeking Richard Mille watch.](https://archive.ph/LRGHO)|
+| April 20, 2022 | Unidentified couple | Norrköping, Sweden | [Couple tied up and beaten, forced to transfer cryptocurrency.](https://archive.ph/waBom)|
