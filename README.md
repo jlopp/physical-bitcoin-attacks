@@ -111,3 +111,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 16, 2022 | Pierrick Jamaux | New York, NY | [Crypto expert shot 5 times by robber seeking Richard Mille watch.](https://archive.ph/LRGHO)|
 | April 21, 2022 | Unidentified couple | Norrköping, Sweden | [Couple tied up and beaten, forced to transfer cryptocurrency.](https://archive.ph/waBom)|
 | May, 2022 | Unidentified man | Dubai, UAE | [Crypto expert assaulted & robbed by investors for losing money.](https://archive.ph/Kvu77)|
+| May 20, 2022 | Factory Owner | Klang, Malaysia | [12 men rob aluminum factory, steal 180 Bitcoin ASICs.](https://archive.ph/JjfwB)|
