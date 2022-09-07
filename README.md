@@ -110,6 +110,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 3, 2022 | Vinay Jain | Surat, India | [Auto parts businessman brings suitcase full of $260K worth of cash to do an in-person crypto trade, gets beaten and robbed by 8 men.](https://archive.is/hMOJh)|
 | February 3, 2022 | Ilya Basin | Brooklyn, New York | [Crypto consultant hog-tied, beaten during home invasion.](https://archive.is/DEA2C)|
 | March 2, 2022 | Unidentified man | Miami, FL | [Businessman ambushed by armed robber, has $1M watch & crypto wallet taken.](https://archive.ph/tyzQa)|
+| March 4, 2022 | Unidentified man | Pune, India | [Woman cop suspended for bid to extort crypto from trader](https://timesofindia.indiatimes.com/city/pune/woman-cop-suspended-for-bid-to-extort-crypto-from-trader/articleshow/89980215.cms)|
 | March 16, 2022 | Pierrick Jamaux | New York, NY | [Crypto expert shot 5 times by robber seeking Richard Mille watch.](https://archive.ph/LRGHO)|
 | April 21, 2022 | Unidentified couple | Norrköping, Sweden | [Couple tied up and beaten, forced to transfer cryptocurrency.](https://archive.ph/waBom)|
 | May, 2022 | 4 victims | London, UK | [Multiple incidents of crypto muggings around London.](https://archive.ph/rlae2)|
