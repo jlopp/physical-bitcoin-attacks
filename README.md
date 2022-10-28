@@ -79,6 +79,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 23, 2021 | Physical Exchange Employees | Osztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.is/wip/YOvMq)|
 | February 4, 2021 | Married Couple | Stockholm, Sweden | [Armed robbers invade home and force owners to hand over 1M+ SEK in BTC](https://archive.is/5qCBI)|
 | February ?, 2021 | Swiss & German | Gujranwala, Pakistan | [Armed robbers take $93k in BTC at gunpoint](https://archive.is/Nmdes)|
+| March 10, 2021 | Bank director | Recife, Brazil | [Man kidnapped by a gang , tied up, and had two teeth knocked out. He was released after he instructed his partner to transfer 4.78 BTC to the attackers.](https://archive.ph/KrFtE)|
 | March 16, 2021 | 29 y/o Berlin man | Munich, Germany | [Robbers steal bitcoin worth almost 100,000 Euros](https://archive.is/H8Qix)|
 | March 18, 2021 | "F.T." | Mendoza, Argentina | [Armed robbers steal iPhone, $5k at gunpoint](https://archive.is/DpOQe)|
 | April 8, 2021 | 30 year old miner | Zaporizhya, Ukraine | [Mining farm owner shoots at looters](https://archive.is/WT3sm)|
