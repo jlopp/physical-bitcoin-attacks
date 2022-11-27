@@ -56,11 +56,12 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 12, 2019 | Costcutters | Far Cotton, Northampton, England | [Bitcoin machine stolen during robbery](https://archive.fo/0lCv5) |
 | May 14, 2019 | Undisclosed | Oslo, Norway | [Bitcoin millionaire escapes armed home invader by jumping off balcony](https://archive.is/HfBWe) |
 | June 30, 2019 | Luftan Shaikh, Mohammad Shazad, Malang Shah | Jaipur, Rajasthan, India | [Criminal Gang Abducts &amp; Tortures Cryptocurrency Traders, Demands 80 BTC Ransom](https://archive.fo/8PY9R) |
-| July 15, 2019 | Bitcoin Exchange | Sparkhill, Birhingham, England | [Masked raiders hold up Bitcoin Exchange in front of dozens of witnesses](https://archive.fo/fAoh0) |
+| July 15, 2019 | Bitcoin Exchange | Sparkhill, Birmingham, England | [Masked raiders hold up Bitcoin Exchange in front of dozens of witnesses](https://archive.fo/fAoh0) |
 | July 26, 2019 | Unidentified | Wels, Austria | [Man raided in office](https://archive.fo/HHicH) [(en)](https://archive.fo/R7UjD)|
 | August 26, 2019 | Abdul Shakoor | Dehradun, India | [Kingpin of Kerala bitcoin scam murdered in Dehradun](https://archive.fo/O4Wno)|
 | November 19, 2019 | Simply Delicious Food Market | Vernon, British Columbia | [Thieves break into BTM](https://archive.ph/saynt)|
 | January ?, 2020 | Iroro Wisdom Ovie | Abraka, Nigeria | [Man shot & killed by home invaders seeking $10,000 in bitcoin](https://archive.is/3JkYf)|
+| January ?, 2020 | 17 y/o trader | Preston, Lancashire, England | [Trader lured to apartment, kidnapped, driven around in car trunk.](https://archive.ph/61KsO)|
 | January 8, 2020 | Mark Cheng Jin Quan | Bangkok, Thailand | [Blockchain advisor kidnapped, held at gunpoint, extorted for $60,000 in bitcoin](https://www.tnp.sg/news/singapore/man-out-bail-cheating-charges-allegedly-kidnapped-thailand)|
 | January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
 | February 10, 2020 | Unidentified couple | Carlisle, England | [Home invaders force victims to create crypto exchange accounts](https://archive.ph/yLi4j) |
