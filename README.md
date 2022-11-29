@@ -17,7 +17,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 6, 2016 | Tivoli Brasserie | Oudenbosch, Netherlands | [Dutch Bitcoin ATM Owner Laughs at Thieves Who Took His Machine](https://bitsonline.com/bitcoin-atm-stolen-netherlands/) |
 | February 16, 2017 | Josoj | London, England | [Description of robbery during Localbitcoins trade](https://localbitcoins.com/forums/#!/general-discussion:double-spending-cash-robb) with [Bitcoins Uncensored interview](https://soundcloud.com/bitcoinuncensored/uk-based-local-bitcoin-trader-robbed-in-broad-daylight-josoj-tells-his-story) and the [robber's side of the story](https://localbitcoins.com/forums/#!/general-discussion:unfreeze-my-account). |
 | February 26, 2017 | Rocelo Lopes' wife | Florianopolis, Brazil | [Wife of crypto exchange owner kidnapped and ransomed](https://translate.googleusercontent.com/translate_c?depth=1&hl=en&prev=search&rurl=translate.google.com&sl=pt-BR&sp=nmt4&u=https://www1.folha.uol.com.br/cotidiano/2017/05/1880569-bandidos-pedem-dinheiro-digital-para-libertar-refem-de-sequestro.shtml&xid=17259,15700002,15700019,15700124,15700149,15700168,15700186,15700190,15700201,15700208&usg=ALkJrhh0Ok2Seoc85twz3X488yGHyzXjkw) |
-| March 14, 2017 | 3 Indian Bitcoin traders | Dubai, United Arab Emirates | [3 Emiratis pose as cops, kidnap victims and rob them of 25 BTC](https://archive.fo/P5S6u) |
+| March 14, 2017 | 3 Indian Bitcoin traders | Dubai, UAE | [3 Emiratis pose as cops, kidnap victims and rob them of 25 BTC](https://archive.fo/P5S6u) |
 | June 17, 2017 | Miyuki Noda | Gifu, Japan | [Woman strangled, attacker takes 100,000 yen worth of BTC](https://archive.fo/OmqRM) |
 | September 4, 2017 | Alexey Sherstne | Kiev, Ukraine | [Man tortured for $50k in Bitcoins](https://archive.fo/2aCmP ) |
 | October 16, 2017 | Jameson Lopp | Durham, North Carolina | [Bitcoin developer SWATted & extorted](https://archive.fo/p5gEf) |
@@ -44,7 +44,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Robbers douse clerks with pepper spray, steal from Bitcoin ATMs in Irving and Mesquite](https://archive.is/rODUM) | 
 | April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://archive.fo/IQMXP) | 
 | April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://archive.fo/wWiYd) | 
-| April 25, 2018 | 2 unidentified Asian brothers | Dubai, United Arab Emirates | [Gang of 10 robbed two brothers of AED 7m ($1.9m) in cash who were looking to buy Bitcoin](https://archive.fo/N5O0K) | 
+| April 25, 2018 | 2 unidentified Asian brothers | Dubai, UAE | [Gang of 10 robbed two brothers of AED 7m ($1.9m) in cash who were looking to buy Bitcoin](https://archive.fo/N5O0K) | 
 | June 6, 2018 | Unidentified 22-year-old | Milan, Italy | [Robbers attempt bitcoin purchase with counterfeit money, beat victims and fire gun, take 50,000 euros](https://archive.fo/ls1QA) |
 | June 13, 2018 | "Synth" | China | [Home invasion of Skycoin architect resulted in theft of 18.88 BTC and 6,466 SKY](https://archive.fo/fc3Mq) | 
 | June 19, 2018 | Unidentified | Wels, Austria | [$250,000 in cryptocurrency taken by robbers posing as postmen](https://archive.fo/kabJg) | 
@@ -72,7 +72,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October 1, 2020 | Unidentified | Kiev, Ukraine | [Police kidnap a businessman, torture him, and force his wife to send them 7 bitcoin.](https://archive.is/LB3Nm)|
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
-| December ?, 2020 | Undisclosed | Dubai, United Arab Emirates | [4 Ukrainian men attack Bitcoin buyer with deoderant](https://archive.is/yQIF7)|
+| December ?, 2020 | Undisclosed | Dubai, UAE | [4 Ukrainian men attack Bitcoin buyer with deoderant](https://archive.is/yQIF7)|
 | December 24, 2020 | Undisclosed | Ternopil, Ukraine | [Man kidnapped and tortured for $800k](https://archive.is/bx8kT)|
 | Unknown, 2021 | Dillon Attard | Sliema, Malta | [Victim describes his disbelief as $700,000 stolen in front of him](https://archive.is/ypS03)|
 | January 5, 2021 | 37 y/o man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
@@ -93,7 +93,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 1, 2021 | Unidentified man | Unknown | [Bitcoin holder drugged and robbed by Tinder date](https://archive.is/uIMAl)|
 | July 14, 2021 | Morakinyo Peter & Yusuf Dayo | Lagos, Nigeria | [Law Enforcement Officers rob 2 men of $50K USD in bitcoin at gunpoint](https://archive.md/Xdsmc)|
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
-| August ?, 2021 | 3 women | Dubai, United Arab Emirates | [4 Africans rob three women of $100,000 in a fake Bitcoin deal](https://archive.is/3dubt)|
+| August ?, 2021 | 3 women | Dubai, UAE | [4 Africans rob three women of $100,000 in a fake Bitcoin deal](https://archive.is/3dubt)|
 | August 8, 2021 | Wesley Pessano Santarem | Sao Pedro da Aldeia, Brazil | [Crypto Trader's Murder Blamed On Social Media Bragging](https://archive.is/2kfpq)|
 | August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student killed for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
 | September ?, 2021 | Unidentified 31 y/o | Abkhazia | [Thieves break into garage, steal 20 mining servers worth $10,000.](https://archive.is/MPNwC)|
