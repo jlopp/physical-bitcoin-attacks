@@ -121,6 +121,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May, 2022 | 4 victims | London, UK | [Multiple incidents of crypto muggings around London.](https://archive.ph/rlae2)|
 | May, 2022 | Unidentified man | Dubai, UAE | [Crypto expert assaulted & robbed by investors for losing money.](https://archive.ph/Kvu77)|
 | May 20, 2022 | Factory Owner | Klang, Malaysia | [12 men rob aluminum factory, steal 180 Bitcoin ASICs.](https://archive.ph/JjfwB)|
+| July, 2022 | Asian Investor | Dubai, UAE | [Man suffers home invasion, loses ~$50,000 after attempting a face-to-face cash trade to buy bitcoin..](https://archive.ph/OLid3)|
 | July, 2022 | Vkusvill Supermarket | Kuchino, Russia | [4 armed mask men rob warehouse, steal 100 GPUs.](https://archive.ph/vg0Lo)|
 | August 6, 2022 | 30 y/o broker | Manerba, Italy | [3 men follow a man home, hold him at knifepoint for BTC.](https://archive.ph/qB84G)|
 | August 7, 2022 | Arjun Bhargav | Vrindavan Yojana, India | [3 men trick, abduct, torture realtor for 8 BTC.](https://archive.ph/UlCSo)|
