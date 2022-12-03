@@ -128,3 +128,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | September 6, 2022 | 19 y/o hacker | Lincolnshire, U.K. | [3 men, 1 posing as a cop, arrested while attempting home invasion.](https://archive.ph/K58cR)|
 | September 12, 2022 | 19 y/o man | Winnipeg, Canada | [Man held at gunpoint, assaulted and tied up during Bitcoin trade.](https://archive.ph/psytU)|
 | September 15, 2022 | Russian Couple | Koh Samui, Thailand | [Russian couple extorted by gang of foreign men at coffee shop.](https://archive.ph/VmHZx)|
+| December 1, 2022 | Russian Businessman | Moscow, Russia | [Man kidnapped from his Bentley by 4 men, forced to give access to bitcoin wallet.](https://archive.ph/zC9Tf)|
