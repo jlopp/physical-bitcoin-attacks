@@ -98,6 +98,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student killed for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
 | September ?, 2021 | Unidentified 31 y/o | Abkhazia | [Thieves break into garage, steal 20 mining servers worth $10,000.](https://archive.is/MPNwC)|
 | September 9, 2021 | Mark Geor | Westmere, New Zealand | [Safe containing $4M of cryptocurrency ripped from house](https://archive.md/y8m24)|
+| October, 2021 | Miner | Tomsk, Russia | [Armed Robbers attack Miner at his Home, Steal 86 BTC](https://archive.is/n1IfA)|
 | October 7, 2021 | Liquor Store | South Bay, California | [Thieves Break Into Liquor Store to Steal Bitcoin ATM](https://archive.is/1caUw)|
 | October 20, 2021 | Astamur Ardzibna | Abkhazia | [Man Shot Dead in Hail of Gunfire Over Crypto Mining Rigs](https://archive.is/zg4Kk)|
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
