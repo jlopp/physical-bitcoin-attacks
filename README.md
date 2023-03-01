@@ -134,3 +134,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.is/tAU6I)|
 | February, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.is/2R05l)|
+| February 27, 2023 | German man | Medellin, Colombia | [20 year old Venezuelan woman drugs and robs man of 1 BTC.](https://archive.is/ZhIn5)|
