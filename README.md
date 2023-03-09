@@ -90,6 +90,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | June 11, 2021 | 40 y/o man | Gyeonggi Province, South Korea | [Woman drugs man she met on chat app, steals $87K from his phone.](https://archive.ph/e6FKx)|
 | June 14, 2021 | 22 y/o man | Kwun Tong, Hong Kong | [Trader temporarily blinded, HK$2 million stolen](https://archive.is/6h6UG)|
 | June 24, 2021 | 39 y/o man | Leeuwarden, Netherlands | [3 men posing as service technicians beat password out of Bitcoin owner](https://archive.md/xviCX)|
+| July, 2021 | Unidentified man | Omsk, Russia | [3 men kidnap and extort over $1M in crypto from victim](https://archive.is/Pvkcr)|
 | July 1, 2021 | Unidentified man | Unknown | [Bitcoin holder drugged and robbed by Tinder date](https://archive.is/uIMAl)|
 | July 14, 2021 | Morakinyo Peter & Yusuf Dayo | Lagos, Nigeria | [Law Enforcement Officers rob 2 men of $50K USD in bitcoin at gunpoint](https://archive.md/Xdsmc)|
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.is/CeCA8)|
