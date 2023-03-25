@@ -131,6 +131,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | September 6, 2022 | 19 y/o hacker | Lincolnshire, U.K. | [3 men, 1 posing as a cop, arrested while attempting home invasion.](https://archive.ph/K58cR)|
 | September 12, 2022 | 19 y/o man | Winnipeg, Canada | [Man held at gunpoint, assaulted and tied up during Bitcoin trade.](https://archive.ph/psytU)|
 | September 15, 2022 | Russian Couple | Koh Samui, Thailand | [Russian couple extorted by gang of foreign men at coffee shop.](https://archive.ph/VmHZx)|
+| December, 2022 | Aiden Pleterski | Toronto, Ontario | ["Crypto king" abducted, tortured, and beaten for days as his kidnappers sought millions in ransom](https://archive.is/0rqSm)|
 | December 1, 2022 | Russian Businessman | Moscow, Russia | [Man kidnapped from his Bentley by 4 men, forced to give access to bitcoin wallet.](https://archive.ph/zC9Tf)|
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.is/tAU6I)|
