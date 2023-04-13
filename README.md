@@ -117,7 +117,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March, 2022 | bitcoin trader | Dubai, UAE | [4 men invade home, tie up man, steal $450K from safe.](https://archive.ph/Ri5N9)|
 | March 2, 2022 | Unidentified man | Miami, FL | [Businessman ambushed by armed robber, has $1M watch & crypto wallet taken.](https://archive.ph/tyzQa)|
 | March 4, 2022 | Electronics Dealer | Pune, India | [Woman cop suspended for bid to extort crypto from trader](https://archive.ph/wPxv4)|
-| March 16, 2022 | Pierrick Jamaux | New York, NY | [Crypto expert shot 5 times by robber seeking Richard Mille watch.](https://archive.ph/LRGHO)|
+| March 16, 2022 | Pierrick Jamaux | New York, New York | [Crypto expert shot 5 times by robber seeking Richard Mille watch.](https://archive.ph/LRGHO)|
 | April, 2022 | Unidentified trader | Dubai, UAE | [9 robbers invaded the office of a bitcoin trader and took over $1,000,000 in cash.](https://archive.ph/MkVof)|
 | April 21, 2022 | Unidentified couple | Norrköping, Sweden | [Couple tied up and beaten, forced to transfer cryptocurrency.](https://archive.ph/waBom)|
 | May, 2022 | 4 victims | London, UK | [Multiple incidents of crypto muggings around London.](https://archive.ph/rlae2)|
@@ -138,3 +138,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 25, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.is/2R05l)|
 | February 27, 2023 | German man | Medellin, Colombia | [20 year old Venezuelan woman drugs and robs man of 1 BTC.](https://archive.is/ZhIn5)|
 | March 20, 2023 | Virendra Malik | Noida, India | [Couple stages robbery to steal bitcoin from their friend, but he doesn't comply.](https://archive.is/iJ7td)|
+| April, 2023 | Unidentified Woman | Dubai, UAE | [Driver & 3 friends lured an investor into a fake deal, robbed, electrocuted, stripped naked, and took blackmail videos.](https://archive.is/geUM5)|
