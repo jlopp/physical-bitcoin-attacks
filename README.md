@@ -137,5 +137,6 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.is/tAU6I)|
 | February 25, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.is/2R05l)|
 | February 27, 2023 | German man | Medellin, Colombia | [20 year old Venezuelan woman drugs and robs man of 1 BTC.](https://archive.is/ZhIn5)|
+| March 9, 2023 | Peter Vuong | Sydney, Australia | [Gang kidnaps boyfriend of crypto trader's relative, demands $5M ransom while torturing him for 6 days.](https://archive.is/YommD)|
 | March 20, 2023 | Virendra Malik | Noida, India | [Couple stages robbery to steal bitcoin from their friend, but he doesn't comply.](https://archive.is/iJ7td)|
 | April, 2023 | Unidentified Woman | Dubai, UAE | [Driver & 3 friends lured an investor into a fake deal, robbed, electrocuted, stripped naked, and took blackmail videos.](https://archive.is/geUM5)|
