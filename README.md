@@ -140,3 +140,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 9, 2023 | Peter Vuong | Sydney, Australia | [Gang kidnaps boyfriend of crypto trader's relative, demands $5M ransom while torturing him for 6 days.](https://archive.is/YommD)|
 | March 20, 2023 | Virendra Malik | Noida, India | [Couple stages robbery to steal bitcoin from their friend, but he doesn't comply.](https://archive.is/iJ7td)|
 | April, 2023 | Unidentified Woman | Dubai, UAE | [Driver & 3 friends lured an investor into a fake deal, robbed, electrocuted, stripped naked, and took blackmail videos.](https://archive.is/geUM5)|
+| April, 2023 | Unidentified Elderly couple | Durham, NC | [Durham couple held hostage, robbed in home invasion in Forest Hills neighborhood](https://archive.is/4nmC8)|
