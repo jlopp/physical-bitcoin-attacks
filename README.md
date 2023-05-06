@@ -141,3 +141,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 20, 2023 | Virendra Malik | Noida, India | [Couple stages robbery to steal bitcoin from their friend, but he doesn't comply.](https://archive.is/iJ7td)|
 | April, 2023 | Unidentified Woman | Dubai, UAE | [Driver & 3 friends lured an investor into a fake deal, robbed, electrocuted, stripped naked, and took blackmail videos.](https://archive.is/geUM5)|
 | April 12, 2023 | 76 y/o couple | Durham, NC | [2 men posing as construction workers invade home, force transfer of $250K in crypto.](https://archive.is/Vp5J6)|
+| May 3, 2023 | Unidentified man | Benalmádena, Spain | [3 men kidnap crypto businessman, demand €1 million ransom. He was rescued by police.](https://archive.is/AJHuG)|
