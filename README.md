@@ -144,3 +144,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 3, 2023 | Unidentified man | Benalmádena, Spain | [3 men kidnap crypto businessman, demand €1 million ransom. He was rescued by police.](https://archive.is/AJHuG)|
 | May 26, 2023 | Smoke Shop | Houston, TX | [7 men arrested after ramming store with stolen truck in failed attempt to steal Bitcoin ATM.](https://archive.is/j7PbE)|
 | June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv (Hebrew)](https://archive.is/mgD0B)|
+| July 16, 2023 | Unknown Couple | Queens, NY | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.is/iSRCc)|
