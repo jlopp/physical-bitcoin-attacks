@@ -145,5 +145,5 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 26, 2023 | Smoke Shop | Houston, TX | [7 men arrested after ramming store with stolen truck in failed attempt to steal Bitcoin ATM.](https://archive.is/j7PbE)|
 | June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv (Hebrew)](https://archive.is/mgD0B)|
 | July 16, 2023 | Unknown Couple | Queens, NY | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.is/iSRCc)|
-| July 27, 2023 | Fernando Pérez Algaba | Ingeniero Budge, Argentina | [Missing millionaire crypto influencer found dismembered in suitcase](https://archive.ph/WWk5)|
+| July 27, 2023 | Fernando Pérez Algaba | Ingeniero Budge, Argentina | [Missing millionaire crypto influencer found dismembered in suitcase](https://archive.ph/WWk5L)|
 | August 15, 2023 | Christian Peev | Sofia, Bulgaria | [Missing US crypto king found chopped up and stuffed down toilet by horrified plumbers](https://archive.ph/c2eEF)|
