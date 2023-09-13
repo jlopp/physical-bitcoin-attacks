@@ -145,3 +145,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 26, 2023 | Smoke Shop | Houston, TX | [7 men arrested after ramming store with stolen truck in failed attempt to steal Bitcoin ATM.](https://archive.is/j7PbE)|
 | June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv (Hebrew)](https://archive.is/mgD0B)|
 | July 16, 2023 | Unknown Couple | Queens, NY | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.is/iSRCc)|
+| September 3, 2023 | Italian man | Phuket, Thailand | [Russian MMA fighter & twin brother rob man of watches, seek Ledger wallet.](https://archive.ph/oSGRU)|
