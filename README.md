@@ -19,14 +19,14 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 26, 2017 | Rocelo Lopes' wife | Florianopolis, Brazil | [Wife of crypto exchange owner kidnapped and ransomed](https://archive.ph/3Tzc8) |
 | March 14, 2017 | 3 Indian Bitcoin traders | Dubai, UAE | [3 Emiratis pose as cops, kidnap victims and rob them of 25 BTC](https://archive.fo/P5S6u) |
 | June 17, 2017 | Miyuki Noda | Gifu, Japan | [Woman strangled, attacker takes 100,000 yen worth of BTC](https://archive.fo/OmqRM) |
-| September 4, 2017 | Alexey Sherstne | Kiev, Ukraine | [Man tortured for $50k in Bitcoins](https://archive.fo/2aCmP ) |
+| September 4, 2017 | Alexey Sherstne | Kyiv, Ukraine | [Man tortured for $50k in Bitcoins](https://archive.fo/2aCmP ) |
 | October 16, 2017 | Jameson Lopp | Durham, North Carolina | [Bitcoin developer SWATted & extorted](https://archive.fo/p5gEf) |
 | October, 2017 | Multiple | Toulouse, France | [4 bitcoin traders robbed at gunpoint](https://archive.fo/QHlfc) |
 | October, 2017 | Multiple | Los Angeles, California | ["Discount Bitcoin Bandits" committed 5 robberies at gunpoint](https://archive.is/D7MJS) |
 | November 4, 2017 | Unidentified | New York, New York | [Man robbed of $1.8M of ETH](https://archive.fo/Lt2bJ) |
 | November 15, 2017 | Unidentified | Istanbul, Turkey | [Gang stole $2.83M in BTC from businessman](https://archive.fo/spoUT) |
 | December, 2017 | Unidentified | Reykjavik, Iceland | [600 Bitcoin ASICs stolen](https://archive.is/0guO1) and [Follow-up Story](https://archive.is/np6rz)|
-| December 26, 2017 | Pavel Lerner | Kiev, Ukraine | [Bitcoin exchange owner kidnapped & ransomed](https://archive.fo/xsQAx) |
+| December 26, 2017 | Pavel Lerner | Kyiv, Ukraine | [Bitcoin exchange owner kidnapped & ransomed](https://archive.fo/xsQAx) |
 | January 3, 2018 | "Dallas" | Milwaukee, Wisconsin | [Convicted felon accused of firing gun inside downtown Milwaukee condo during Bitcoin sale](https://archive.is/Sj4Op) |
 | January 14, 2018 | Pavel Nyashin | Leningrad Oblast, Russia | [Blogger Who Boasted About Crypto Wealth Beaten and Robbed For $425k](https://archive.fo/OaOlP) |
 | January 15, 2018 | Maxsim Latsoka & Anna Nikurina | Phuket, Thailand | [Russian gang steals 100,000 Euros in BTC from young Russian couple](https://archive.fo/9chQq) |
@@ -40,7 +40,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 23, 2018 | Yury Mayorov | Moscow, Russia | [Crypto Developer Beaten, Robbed Of 300 BTC](https://archive.fo/YDbVR) | 
 | February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://archive.fo/wUxu7) | 
 | March 2018 | Undisclosed woman | Killingly, Connecticut | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](https://archive.ph/wcpmV) | 
-| March 2018| Unidentified Miner | Kiev, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://archive.fo/ziAAR)|
+| March 2018| Unidentified Miner | Kyiv, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://archive.fo/ziAAR)|
 | March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas | [Robbers douse clerks with pepper spray, steal from Bitcoin ATMs in Irving and Mesquite](https://archive.is/rODUM) | 
 | April 8, 2018 | Pang Joon Hau | Singapore | [Man seeking to buy BTC robbed of $365,000](https://archive.fo/IQMXP) | 
 | April 11, 2018 | Ryan Rice | Miami, Florida | [Bitcoin buyer shoots robber in self defense](https://archive.fo/wWiYd) | 
@@ -69,7 +69,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
 | May 23, 2020 | Ellis Pinsky | Irvinton, NY | [2 men commit home invasion of hacker, seeking tens of millions of dollars in bitcoin](https://archive.ph/ldlEZ)|
 | September, 2020 | Male Freshman | Kent, England | [Student robbed of bitcoin at knifepoint during first week at university.](https://archive.is/wH3Y2)|
-| October 1, 2020 | Unidentified | Kiev, Ukraine | [Police kidnap a businessman, torture him, and force his wife to send them 7 bitcoin.](https://archive.is/LB3Nm)|
+| October 1, 2020 | Unidentified | Kyiv, Ukraine | [Police kidnap a businessman, torture him, and force his wife to send them 7 bitcoin.](https://archive.is/LB3Nm)|
 | October 7, 2020 | Mike's Produce | Kelowna, BC, Canada | [Botched Bitcoin theft destroys deli](https://archive.is/xk8r2)|
 | October 22, 2020 | Undisclosed | Riga, Latvia | [Man arrested for planning kidnapping and killing owners of cryptocurrencies](https://archive.fo/3LnrJ)|
 | December ?, 2020 | Undisclosed | Dubai, UAE | [4 Ukrainian men attack Bitcoin buyer with deoderant](https://archive.is/yQIF7)|
