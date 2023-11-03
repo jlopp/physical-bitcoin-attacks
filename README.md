@@ -65,7 +65,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 8, 2020 | Mark Cheng Jin Quan | Bangkok, Thailand | [Blockchain advisor kidnapped, held at gunpoint, extorted for $60,000 in bitcoin](https://archive.ph/ad8AS)|
 | January 21, 2020 | Mayfair Quick Mart | Philadelphia, Pennsylvania | [2 men break into BTM, steal cash box](https://archive.fo/MMAtb)|
 | February 10, 2020 | Unidentified couple | Carlisle, England | [Home invaders force victims to create crypto exchange accounts](https://archive.ph/yLi4j) |
-| March 18, 2020 | Unidentified | Blantyre, Scotland | [Home invader forces victime to transfer $200,000 of BTC](https://archive.ph/d20ps) |
+| March 18, 2020 | Unidentified siblings | Blantyre, Scotland | [Home invader beats woman with Toblerone, forces victim to transfer $200,000 of BTC](https://archive.ph/TZ9oq) |
 | May 17, 2020 | Le Duc Nguyen | Ho Chi Minh City, Vietnam | [HCMC cops charged with $1.6 mln bitcoin robbery.](https://archive.md/T9g5e) [Follow-up article here.](https://archive.is/GOKD6)|
 | May 19, 2020 | Exxon Gas Station | East Lansdowne, Pennsylvania | [2 subjects pry open BTM in broad daylight](https://www.facebook.com/ELPOLICE/videos/277210370075309/)|
 | May 23, 2020 | Ellis Pinsky | Irvinton, NY | [2 men commit home invasion of hacker, seeking tens of millions of dollars in bitcoin](https://archive.ph/ldlEZ)|
