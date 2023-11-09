@@ -149,3 +149,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 16, 2023 | Unknown Couple | Queens, NY | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.is/iSRCc)|
 | September 3, 2023 | Italian man | Phuket, Thailand | [Russian MMA fighter & twin brother rob man of watches, seek Ledger wallet.](https://archive.ph/oSGRU)|
 | October 30, 2023 | Crypto Exchange | Tbilisi, Georgia | [6 men rob exchange office, take $900K USD in crypto.](https://archive.ph/zHpPv)|
+| November 6, 2023 | Middle-aged couple | Rönninge, Sweden | [Couple tied up, beaten, and threatened with their own kitchen knives.](https://archive.is/ODWxI)|
