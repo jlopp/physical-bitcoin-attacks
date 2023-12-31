@@ -112,6 +112,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 27, 2021 | 2 unidentified males | Thunder Bay, Ontario, Canada | [11 Inmates take 2 inmates hostage, force them to transfer cryptocurrency](https://archive.is/5R0gB)|
 | January 16, 2022 | Gas Station | Memphis, TN | [Suspects smash gas station with truck, steal Bitcoin ATM](https://archive.is/Zjfr2)|
 | January 21, 2022 | 34 y/o teacher | Hoboken, Belgium | [3 men invade home, fail to force owner to hand over 3M Euros of BTC](https://archive.ph/LgqrJ)|
+| February, 2022 | John Forsyth | Missouri | [Crypto founder kidnapped, zip-tied, threatened to be thrown off bridge.](https://archive.is/Qhvjs)|
 | February 2, 2022 | Vinay Naik | Pune, India | [Pune: 8 including cop arrested for kidnapping man to extort Bitcoin worth Rs 300 crore ( $50 million USD )](https://archive.is/UJG8J)|
 | February 3, 2022 | Vinay Jain | Surat, India | [Auto parts businessman brings suitcase full of $260K worth of cash to do an in-person crypto trade, gets beaten and robbed by 8 men.](https://archive.is/hMOJh)|
 | February 3, 2022 | Ilya Basin | Brooklyn, New York | [Crypto consultant hog-tied, beaten during home invasion.](https://archive.is/DEA2C)|
@@ -152,3 +153,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October 30, 2023 | Crypto Exchange | Tbilisi, Georgia | [6 men rob exchange office, take $900K USD in crypto.](https://archive.ph/zHpPv)|
 | November 6, 2023 | Middle-aged couple | Rönninge, Sweden | [Couple tied up, beaten, and threatened with their own kitchen knives.](https://archive.is/ODWxI)|
 | November 10, 2023 | Binance Client | Montenegro | [Executives lured into fake business trip, kidnapped, forced to empty wallets of $12M USDT.](https://archive.is/3jxou)|
+| December 25, 2023 | 23 y/o miner | Izhevsk, Russia | [Miner kidnapped from home, ransomed, rescued by police.](https://archive.is/XIPFP)|
