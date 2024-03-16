@@ -155,3 +155,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 10, 2023 | Binance Client | Montenegro | [Executives lured into fake business trip, kidnapped, forced to empty wallets of $12M USDT.](https://archive.is/3jxou)|
 | December 25, 2023 | 23 y/o miner | Izhevsk, Russia | [Miner kidnapped from home, ransomed, rescued by police.](https://archive.is/XIPFP)|
 | January 16, 2024 | 42 y/o man | Cluj, Romania | [Restaurant owner kidnapped, doused in diesel, force fed alcohol, has finger cut off, until he transferred $200K USD in crypto.](https://archive.is/eqj4y)
+| March 15, 2024 | ___ Yevgini | Samui Island, Thailand | [Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.](https://archive.is/EnzIt)
