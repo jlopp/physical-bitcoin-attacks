@@ -158,4 +158,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 10, 2024 | Young Couple | Montreal, Quebec, Canada | [Gang of 4 kidnaps couple and robs them of $25,000 in cryptocurrency.](https://archive.ph/tZB6N)
 | March 15, 2024 | ___ Yevgini | Samui Island, Thailand | [Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.](https://archive.ph/EnzIt)
 | April 18, 2024 | 11 Traders | Lianhe Zaobao, Singapore | [4 men rob suspected Chinese crypto gambling ring of $3M USD.](https://archive.ph/ZW6GW)
-| June 17, 2024 | Man robbed by 3 machete wielding robbers | [Twitter](https://twitter.com/hiddentao/status/1802779486347206981)
+| June 17, 2024 | Hiddentao | London, United Kingdon | [Man robbed by 3 machete wielding robbers](https://twitter.com/hiddentao/status/1802779486347206981)
