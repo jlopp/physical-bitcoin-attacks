@@ -133,10 +133,13 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | September, 2022 | Middle Aged Couple | Richmond, B.C., Canada | [Multiple suspects posing as police invade home, tie up residents, steal $10M in crypto.](https://archive.ph/WtZ5A)|
 | September 6, 2022 | 19 y/o hacker | Lincolnshire, U.K. | [3 men, 1 posing as a cop, arrested while attempting home invasion.](https://archive.ph/K58cR)|
 | September 12, 2022 | 19 y/o man | Winnipeg, Canada | [Man held at gunpoint, assaulted and tied up during Bitcoin trade.](https://archive.ph/psytU)|
+| September 12, 2022 | Unidentified couple | Delray Beach, Florida | [Armed gang invades home, takes jewelry, electronics, cash. Tried but failed to drain Gemini account.](https://archive.ph/34qpX)|
 | September 15, 2022 | Russian Couple | Koh Samui, Thailand | [Russian couple extorted by gang of foreign men at coffee shop.](https://archive.ph/VmHZx)|
+| September 15, 2022 | Unidentified young man | Homestead, Florida | [Armed gang invades home, takes jewelery, electronics. Kidnapped & tortured victim, failed to find his bitcoin.](https://archive.ph/34qpX)|
 | December, 2022 | Aiden Pleterski | Toronto, Ontario | ["Crypto king" abducted, tortured, and beaten for days as his kidnappers sought millions in ransom](https://archive.ph/0rqSm)|
 | December 1, 2022 | Russian Businessman | Moscow, Russia | [Man kidnapped from his Bentley by 4 men, forced to give access to bitcoin wallet.](https://archive.ph/zC9Tf)|
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
+| December 22, 2022 | Unidentified man | Little Elm, Texas | [Armed gang invades home, torture victims for 3 hours, take jewelery, fail to find hardware wallet with $1.4m.](https://archive.ph/34qpX)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.ph/tAU6I)|
 | February 25, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.ph/2R05l)|
 | February 27, 2023 | German man | Medellin, Colombia | [20 year old Venezuelan woman drugs and robs man of 1 BTC.](https://archive.ph/ZhIn5)|
