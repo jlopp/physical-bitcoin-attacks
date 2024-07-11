@@ -162,3 +162,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 15, 2024 | ___ Yevgini | Samui Island, Thailand | [Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.](https://archive.ph/EnzIt)
 | April 18, 2024 | 11 Traders | Lianhe Zaobao, Singapore | [4 men rob suspected Chinese crypto gambling ring of $3M USD.](https://archive.ph/ZW6GW)
 | June 17, 2024 | Ramesh Nair | London, England | [3 men armed with machetes invade home, force owner to transfer 1,000+ ETH.](https://archive.ph/u3sUN)
+| July 3, 2024 | 3-year-old boy | Tseung Kwan, Hong Kong | [2 women abduct toddler from mall, demand $660,000 USDT ransom.](https://archive.ph/gMmvr)
