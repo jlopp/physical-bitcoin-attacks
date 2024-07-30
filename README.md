@@ -158,10 +158,12 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 10, 2023 | Binance Client | Montenegro | [Executives lured into fake business trip, kidnapped, forced to empty wallets of $12M USDT.](https://archive.ph/3jxou)|
 | December 25, 2023 | 23 y/o miner | Izhevsk, Russia | [Miner kidnapped from home, ransomed, rescued by police.](https://archive.ph/XIPFP)|
 | January 16, 2024 | 42 y/o man | Cluj, Romania | [Restaurant owner kidnapped, doused in diesel, force fed alcohol, has finger cut off, until he transferred $200K USD in crypto.](https://archive.ph/eqj4y)
+| January 31, 2024 | Belarusian couple (23 y/o man) | Phuket, Thailand | [5 "Russians" arrested in crypto abduction case (~USD 801,200)](https://archive.is/IcEmQ)
 | March 10, 2024 | Young Couple | Montreal, Quebec, Canada | [Gang of 4 kidnaps couple and robs them of $25,000 in cryptocurrency.](https://archive.ph/tZB6N)
 | March 15, 2024 | ___ Yevgini | Samui Island, Thailand | [Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.](https://archive.ph/EnzIt)
 | April 18, 2024 | 11 Traders | Lianhe Zaobao, Singapore | [4 men rob suspected Chinese crypto gambling ring of $3M USD.](https://archive.ph/ZW6GW)
 | June 17, 2024 | Ramesh Nair | London, England | [3 men armed with machetes invade home, force owner to transfer 1,000+ ETH.](https://archive.ph/u3sUN)
 | July 3, 2024 | 3-year-old boy | Tseung Kwan, Hong Kong | [2 women abduct toddler from mall, demand $660,000 USDT ransom.](https://archive.ph/gMmvr)
 | July 12, 2024 | British Crypto Trader | Bangkok, Thailand | [5 people tie up trader, assault, and rob him.](https://archive.ph/gDRlQ)
-| July 28, 2024 | 29 y/o man | Kyiv, Ukraine | [4 men kidnap foreigner, rob, & murder him for 3 BTC.](https://archive.is/GbuTI)
+| July 29, 2024 | 29 y/o "foreigner" | Kyiv, Ukraine | [Foreigner was kidnapped and killed in Kyiv for ~$170k in bitcoins](https://archive.is/V5Iju)
+
