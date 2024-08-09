@@ -165,4 +165,5 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | June 17, 2024 | Ramesh Nair | London, England | [3 men armed with machetes invade home, force owner to transfer 1,000+ ETH.](https://archive.ph/u3sUN)
 | July 3, 2024 | 3-year-old boy | Tseung Kwan, Hong Kong | [2 women abduct toddler from mall, demand $660,000 USDT ransom.](https://archive.ph/gMmvr)
 | July 12, 2024 | British Crypto Trader | Bangkok, Thailand | [5 people tie up trader, assault, and rob him.](https://archive.ph/gDRlQ)
-| July 28, 2024 | 29 y/o Moroccan man | Kyiv, Ukraine | [4 men kidnap foreigner, rob, & murder him for 3 BTC.](https://archive.is/GbuTI)
+| July 28, 2024 | 29 y/o Moroccan man | Kyiv, Ukraine | [4 men kidnap foreigner, rob, & murder him for 3 BTC.](https://archive.ph/GbuTI)
+| August 7, 2024 | 11 Israelis | Puntarenas, Costa Rica | [8 men, possibly police, overpower security guard, rob 11 tourists of 10+ BTC.](https://archive.ph/ouViV)
