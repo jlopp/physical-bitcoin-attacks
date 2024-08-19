@@ -168,3 +168,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 12, 2024 | British Crypto Trader | Bangkok, Thailand | [5 people tie up trader, assault, and rob him.](https://archive.ph/gDRlQ)
 | July 28, 2024 | 29 y/o Moroccan man | Kyiv, Ukraine | [4 men kidnap foreigner, rob, & murder him for 3 BTC.](https://archive.ph/GbuTI)
 | August 7, 2024 | 11 Israelis | Puntarenas, Costa Rica | [8 men, possibly police, overpower security guard, rob 11 tourists of 10+ BTC.](https://archive.ph/ouViV)
+| August 4, 2024 | Ke Jibao | Bangkok, Thailand | [Gang of 4 Chinese nationals sneak into gated estate, commit armed home invasion, rob $2M USD of cryptocurrency.](https://archive.ph/5LxCt)
