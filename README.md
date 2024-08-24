@@ -138,6 +138,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | September 15, 2022 | Unidentified young man | Homestead, Florida | [Armed gang invades home, takes jewelery, electronics. Kidnapped & tortured victim, failed to find his bitcoin.](https://archive.ph/34qpX)|
 | December, 2022 | Aiden Pleterski | Toronto, Ontario | ["Crypto king" abducted, tortured, and beaten for days as his kidnappers sought millions in ransom](https://archive.ph/0rqSm)|
 | December 1, 2022 | Russian Businessman | Moscow, Russia | [Man kidnapped from his Bentley by 4 men, forced to give access to bitcoin wallet.](https://archive.ph/zC9Tf)|
+| December 3, 2022 | Unidentified man | Lelystad, Netherlands | [Man responds to ad to sell his bitcoin, is attacked by several men & forced to transfer 30K EUR worth of BTC & ETH.](https://archive.ph/JNkaq)|
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
 | December 22, 2022 | Unidentified man | Little Elm, Texas | [Armed gang invades home, torture victims for 3 hours, take jewelery, fail to find hardware wallet with $1.4m.](https://archive.ph/34qpX)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.ph/tAU6I)|
