@@ -27,6 +27,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 15, 2017 | Unidentified | Istanbul, Turkey | [Gang stole $2.83M in BTC from businessman](https://archive.ph/spoUT) |
 | December, 2017 | Unidentified | Reykjavik, Iceland | [600 Bitcoin ASICs stolen](https://archive.ph/0guO1) and [Follow-up Story](https://archive.ph/np6rz)|
 | December 26, 2017 | Pavel Lerner | Kyiv, Ukraine | [Bitcoin exchange owner kidnapped & ransomed](https://archive.ph/xsQAx) |
+| ?, 2018 | "T.W." | Los Angeles, CA | [Home invasion by FBI impersonator who demanded laptop passwords to access cryptocurrency.](https://archive.is/IX5jj)|
 | January 3, 2018 | "Dallas" | Milwaukee, Wisconsin | [Convicted felon accused of firing gun inside downtown Milwaukee condo during Bitcoin sale](https://archive.ph/Sj4Op) |
 | January 14, 2018 | Pavel Nyashin | Leningrad Oblast, Russia | [Blogger Who Boasted About Crypto Wealth Beaten and Robbed For $425k](https://archive.ph/OaOlP) |
 | January 15, 2018 | Maxsim Latsoka & Anna Nikurina | Phuket, Thailand | [Russian gang steals 100,000 Euros in BTC from young Russian couple](https://archive.ph/9chQq) |
@@ -106,6 +107,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
 | November 6, 2021 | 39 y/o trader | Hong Kong | [Crypto trader kidnapped by Triad gang, beaten with hammers](https://archive.ph/OnZVR)|
 | November 12, 2021 | GBTC Crypto Exchange | Barcelona, Spain | [Thieves rip bitcoin ATM from crypto store](https://archive.md/AsIGX)|
+| November 21, 2021 | "E.Z." | Los Angeles, CA | [Attempted robbery & kidnapping at gunpoint by business associate](https://archive.is/IX5jj)|
 | December ?, 2021 | Unidentified Family | Sukhumi, Abkhazia | [2 masked men break into home, hold family at gunpoint before escaping with three servers and $2,040 in cash.](https://archive.ph/MPNwC)|
 | December 11, 2021 | Camilla Guadagnuolo & Principe Nerini | Bali, Indonesia | [Robbers take $400K in cash & bitcoin at knifepoint](https://archive.ph/KJO7s)|
 | December 15, 2021 | Vincent Everts | Amsterdam, Netherlands | [Armed home invaders threaten TV personality during livestream](https://archive.md/tUbAz)|
@@ -120,6 +122,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 2, 2022 | Unidentified man | Miami, FL | [Businessman ambushed by armed robber, has $1M watch & crypto wallet taken.](https://archive.ph/tyzQa)|
 | March 4, 2022 | Electronics Dealer | Pune, India | [Woman cop suspended for bid to extort crypto from trader](https://archive.ph/wPxv4)|
 | March 16, 2022 | Pierrick Jamaux | New York, New York | [Crypto expert shot 5 times by robber seeking Richard Mille watch.](https://archive.ph/LRGHO)|
+| March 30, 2022 | "E.Z." | Los Angeles, CA | [Attempted home invasion by 3 armed men; victim fired gun at attackers, who fled.](https://archive.is/IX5jj)|
 | April, 2022 | Unidentified trader | Dubai, UAE | [9 robbers invaded the office of a bitcoin trader and took over $1,000,000 in cash.](https://archive.ph/MkVof)|
 | April 21, 2022 | Unidentified couple | Norrköping, Sweden | [Couple tied up and beaten, forced to transfer cryptocurrency.](https://archive.ph/waBom)|
 | May, 2022 | 4 victims | London, England | [Multiple incidents of crypto muggings around London.](https://archive.ph/rlae2)|
