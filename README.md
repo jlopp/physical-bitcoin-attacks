@@ -177,4 +177,8 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | August 25, 2024 | Radhika & Suchil Chetal | Danbury, CT | [Parents of $243M heist thieves get carjacked & kidnapped in botched ransom plot.](https://archive.is/4qSqM)
 | August 29, 2024 | 19 y/o | Hougang, Singapore | [Man seeks p2p trade of cash for USDT, punched by attackers, successfully escapes.](https://archive.ph/01kOx)
 | November 6, 2024 | Dean Skurka | Toronto, Ontario | [WonderFi CEO kidnapped during rush hour, held until $1M ransom paid.](https://archive.is/st5SP)
+<<<<<<< Updated upstream
 | November 10, 2024 | Viacheslav Leibov | Phuket, Thailand | [Ukrainian robbed of B8m in digital money in Phuket.](https://archive.is/wRbOB)
+=======
+| November 8, 2024 | Viacheslav Leibov | Phuket, Thailand | [Tourist robbed by armed gang in friend's hotel room, forced to transfer $250K USDT.](https://archive.is/wRbOB)
+>>>>>>> Stashed changes
