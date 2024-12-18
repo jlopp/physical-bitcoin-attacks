@@ -145,6 +145,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
 | December 22, 2022 | Unidentified man | Little Elm, Texas | [Armed gang invades home, torture victims for 3 hours, take jewelery, fail to find hardware wallet with $1.4m.](https://archive.ph/34qpX)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.ph/tAU6I)|
+| February, 2023 | Saudi Royal | Melbourne, Australia | [TikTok influencer lures Saudi royal to her home where he was imprisoned until he handed over $40K in BTC.](https://archive.is/K2OW1)|
 | February 25, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.ph/2R05l)|
 | February 27, 2023 | German man | Medellin, Colombia | [20 year old Venezuelan woman drugs and robs man of 1 BTC.](https://archive.ph/ZhIn5)|
 | March 9, 2023 | Peter Vuong | Sydney, Australia | [Gang kidnaps boyfriend of crypto trader's relative, demands $5M ransom while torturing him for 6 days.](https://archive.ph/YommD)|
@@ -163,6 +164,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 25, 2023 | 23 y/o miner | Izhevsk, Russia | [Miner kidnapped from home, ransomed, rescued by police.](https://archive.ph/XIPFP)|
 | January 16, 2024 | 42 y/o man | Cluj, Romania | [Restaurant owner kidnapped, doused in diesel, force fed alcohol, has finger cut off, until he transferred $200K USD in crypto.](https://archive.ph/eqj4y)
 | January 31, 2024 | Belarusian couple (23 y/o man) | Phuket, Thailand | [5 "Russians" arrested in crypto abduction case (~USD 801,200)](https://archive.is/IcEmQ)
+| March, 2024 | Uber Riders | Scottsdale, Arizona | [Fake Uber driver stole $200K+ in crypto from customers' Coinbase accounts by taking their phones.](https://archive.is/MfJer)
 | March 10, 2024 | Young Couple | Montreal, Quebec, Canada | [Gang of 4 kidnaps couple and robs them of $25,000 in cryptocurrency.](https://archive.ph/tZB6N)
 | March 15, 2024 | ___ Yevgini | Samui Island, Thailand | [Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.](https://archive.ph/EnzIt)
 | April 18, 2024 | 11 Traders | Lianhe Zaobao, Singapore | [4 men rob suspected Chinese crypto gambling ring of $3M USD.](https://archive.ph/ZW6GW)
