@@ -183,3 +183,5 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 20, 2024 | Gen Z Quant kid | Unknown | [13 year old's dog stolen after he rug pulled a token on pump.fun](https://archive.is/tqqpY)
 | December 3, 2024 | Coinflip ATM | Melbourne, Australia | [Crypto ATM stolen from shopping center.](https://archive.is/l7rYI)
 | December 24, 2024 | Influencer's Wife | Brussels, Belgium | [Wife of crypto influencer who bragged about wealth was kidnapped by 3 men, police chase led to car crash.](https://archive.is/6PkiL)
+| January 1, 2025 | Influencer's father | Saint-Genis-Pouilly, France | [Crypto influencer's father was kidnapped on New Year's Eve](https://archive.is/ATZ7u)
+
