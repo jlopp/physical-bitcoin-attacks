@@ -187,3 +187,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 25, 2024 | Arsalan | Karachi, Pakistan | [Crypto trader in Karachi, Pakistan abducted by 5 men in a police van and forced to transfer $340,000 at gunpoint.](https://archive.is/vUHzn)
 | January 1, 2025 | Influencer's father | Saint-Genis-Pouilly, France | [Crypto influencer's father was kidnapped on New Year's Eve](https://archive.is/ATZ7u)
 | January 5, 2025 | Russian Man | Phuket, Thailand | [Man attacked and tied up in hotel, refuses to give up phone password, is knocked out and has cash stolen.](https://archive.is/eI12f)
+| January 14, 2025 | Masis Erkol | Pattaya, Thailand | [Man tied up in condo, forced to transfer $290,000 in cryptocurrency.](https://archive.is/ktr2P)
