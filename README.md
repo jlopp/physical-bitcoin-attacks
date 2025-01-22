@@ -189,3 +189,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 5, 2025 | Russian Man | Phuket, Thailand | [Man attacked and tied up in hotel, refuses to give up phone password, is knocked out and has cash stolen.](https://archive.is/eI12f)
 | January 13, 2025 | Miami Jeweler | Miami, Florida | [Gang of 4 men arrested by FBI on their way to rob jeweler of $2M.](https://www.local10.com/news/local/2025/01/15/feds-arrest-goons-they-say-plotted-to-kidnap-rob-miami-jeweler-one-good-bop-should-do-it/)
 | January 14, 2025 | Masis Erkol | Pattaya, Thailand | [Man tied up in condo, forced to transfer $290,000 in cryptocurrency.](https://archive.is/ktr2P)
+| January 20, 2025 | Chinese National | Jeju, South Korea | [Gang of 6 people meet OTC trader in luxury hotel, assault and rob him of $580K in cash and crypto.](https://btc-pulse.com/south-korean-police-arrest-gang-of-chinese-crypto/)
