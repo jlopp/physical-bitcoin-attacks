@@ -138,12 +138,12 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | September 12, 2022 | 19 y/o man | Winnipeg, Canada | [Man held at gunpoint, assaulted and tied up during Bitcoin trade.](https://archive.ph/psytU)|
 | September 12, 2022 | Unidentified couple | Delray Beach, Florida | [Armed gang invades home, takes jewelry, electronics, cash. Tried but failed to drain Gemini account.](https://archive.ph/34qpX)|
 | September 15, 2022 | Russian Couple | Koh Samui, Thailand | [Russian couple extorted by gang of foreign men at coffee shop.](https://archive.ph/VmHZx)|
-| September 15, 2022 | Unidentified young man | Homestead, Florida | [Armed gang invades home, takes jewelery, electronics. Kidnapped & tortured victim, failed to find his bitcoin.](https://archive.ph/34qpX)|
+| September 15, 2022 | Unidentified young man | Homestead, Florida | [Armed gang invades home, takes jewelry, electronics. Kidnapped & tortured victim, failed to find his bitcoin.](https://archive.ph/34qpX)|
 | December, 2022 | Aiden Pleterski | Toronto, Ontario | ["Crypto king" abducted, tortured, and beaten for days as his kidnappers sought millions in ransom](https://archive.ph/0rqSm)|
 | December 1, 2022 | Russian Businessman | Moscow, Russia | [Man kidnapped from his Bentley by 4 men, forced to give access to bitcoin wallet.](https://archive.ph/zC9Tf)|
 | December 3, 2022 | Unidentified man | Lelystad, Netherlands | [Man responds to ad to sell his bitcoin, is attacked by several men & forced to transfer 30K EUR worth of BTC & ETH.](https://archive.ph/JNkaq)|
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
-| December 22, 2022 | Unidentified man | Little Elm, Texas | [Armed gang invades home, torture victims for 3 hours, take jewelery, fail to find hardware wallet with $1.4m.](https://archive.ph/34qpX)|
+| December 22, 2022 | Unidentified man | Little Elm, Texas | [Armed gang invades home, torture victims for 3 hours, take jewelry, fail to find hardware wallet with $1.4m.](https://archive.ph/34qpX)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.ph/tAU6I)|
 | February, 2023 | Saudi Royal | Melbourne, Australia | [TikTok influencer lures Saudi royal to her home where he was imprisoned until he handed over $40K in BTC.](https://archive.is/K2OW1)|
 | February 25, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.ph/2R05l)|
@@ -189,4 +189,5 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 5, 2025 | Russian Man | Phuket, Thailand | [Man attacked and tied up in hotel, refuses to give up phone password, is knocked out and has cash stolen.](https://archive.is/eI12f)
 | January 13, 2025 | Miami Jeweler | Miami, Florida | [Gang of 4 men arrested by FBI on their way to rob jeweler of $2M.](https://www.local10.com/news/local/2025/01/15/feds-arrest-goons-they-say-plotted-to-kidnap-rob-miami-jeweler-one-good-bop-should-do-it/)
 | January 14, 2025 | Masis Erkol | Pattaya, Thailand | [Man tied up in condo, forced to transfer $290,000 in cryptocurrency.](https://archive.is/ktr2P)
+| January 16, 2025 | Taehwa Kim | Makati, Philippines | [Korean bitcoin trader kidnapped, held hostage for 3 days. No crypto taken.](https://archive.is/FbOdh)
 | January 20, 2025 | Chinese National | Jeju, South Korea | [Gang of 6 people meet OTC trader in luxury hotel, assault and rob him of $580K in cash and crypto.](https://btc-pulse.com/south-korean-police-arrest-gang-of-chinese-crypto/)
