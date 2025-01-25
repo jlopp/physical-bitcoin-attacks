@@ -98,13 +98,12 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 28, 2021 | 39 y/o man | Tsim Sha Tsui, Hong Kong | [Trader robbed of HK$3 million at knifepoint](https://archive.ph/CeCA8)|
 | August ?, 2021 | 3 women | Dubai, UAE | [4 Africans rob three women of $100,000 in a fake Bitcoin deal](https://archive.ph/3dubt)|
 | August 8, 2021 | Wesley Pessano Santarem | Sao Pedro da Aldeia, Brazil | [Crypto Trader's Murder Blamed On Social Media Bragging](https://archive.ph/2kfpq)|
-| August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student killed for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
+| August 18, 2021 | Simon Arthuis | Plancher-Bas, France | [Computer engineering student drugged, tortured, and killed by 5 men for €200,000 in cryptocurrency](https://archive.md/7mvSY)|
 | September ?, 2021 | Unidentified 31 y/o | Abkhazia | [Thieves break into garage, steal 20 mining servers worth $10,000.](https://archive.ph/MPNwC)|
 | September 9, 2021 | Mark Geor | Westmere, New Zealand | [Safe containing $4M of cryptocurrency ripped from house](https://archive.md/y8m24)|
 | October, 2021 | Miner | Tomsk, Russia | [Armed Robbers attack Miner at his Home, Steal 86 BTC](https://archive.ph/n1IfA)|
 | October 7, 2021 | Liquor Store | South Bay, California | [Thieves Break Into Liquor Store to Steal Bitcoin ATM](https://archive.ph/1caUw)|
 | October 20, 2021 | Astamur Ardzibna | Abkhazia | [Man Shot Dead in Hail of Gunfire Over Crypto Mining Rigs](https://archive.ph/zg4Kk)|
-| October 23, 2021 | 19yo killed | Haute-Saône, France | [For €200,000 worth of cryptocurrency, he was tortured and then dumped in a pond aged just 19](https://archive.is/3kFDq)|
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
 | November 6, 2021 | 39 y/o trader | Hong Kong | [Crypto trader kidnapped by Triad gang, beaten with hammers](https://archive.ph/OnZVR)|
 | November 12, 2021 | GBTC Crypto Exchange | Barcelona, Spain | [Thieves rip bitcoin ATM from crypto store](https://archive.md/AsIGX)|
