@@ -104,6 +104,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October, 2021 | Miner | Tomsk, Russia | [Armed Robbers attack Miner at his Home, Steal 86 BTC](https://archive.ph/n1IfA)|
 | October 7, 2021 | Liquor Store | South Bay, California | [Thieves Break Into Liquor Store to Steal Bitcoin ATM](https://archive.ph/1caUw)|
 | October 20, 2021 | Astamur Ardzibna | Abkhazia | [Man Shot Dead in Hail of Gunfire Over Crypto Mining Rigs](https://archive.ph/zg4Kk)|
+| October 23, 2021 | 19yo killed | Haute-Saône, France | [For €200,000 worth of cryptocurrency, he was tortured and then dumped in a pond aged just 19](https://archive.is/3kFDq)|
 | November 2, 2021 | Zaryn Dentzel | Madrid, Spain | [Home invaders torture social media founder, take tens of millions of euros in bitcoin](https://archive.md/f5nIJ)|
 | November 6, 2021 | 39 y/o trader | Hong Kong | [Crypto trader kidnapped by Triad gang, beaten with hammers](https://archive.ph/OnZVR)|
 | November 12, 2021 | GBTC Crypto Exchange | Barcelona, Spain | [Thieves rip bitcoin ATM from crypto store](https://archive.md/AsIGX)|
