@@ -192,3 +192,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 16, 2025 | Taehwa Kim | Makati, Philippines | [Korean bitcoin trader kidnapped, held hostage for 3 days. No crypto taken.](https://archive.is/FbOdh)
 | January 20, 2025 | Chinese National | Jeju, South Korea | [Gang of 6 people meet OTC trader in luxury hotel, assault and rob him of $580K in cash and crypto.](https://archive.is/16EQW)
 | January 21, 2025 | David Balland & Wife | Vierzon, France | [Ledger co-founder & wife kidnapped and ransomed, his finger was severed, rescued by GIGN. Ransom was partially paid but later seized via Tether](https://archive.is/J4nQB)
+| January 24, 2025 | 30 y/o man | Troyes, France | [Crypto entrepreneur was lured to a meeting, taken hostage, 20K EUR ransom demanded. Police rescued him & arrested 4 suspects.](https://archive.is/1ULsg)
