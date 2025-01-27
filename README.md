@@ -114,6 +114,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 27, 2021 | 2 unidentified males | Thunder Bay, Ontario, Canada | [11 Inmates take 2 inmates hostage, force them to transfer cryptocurrency](https://archive.ph/5R0gB)|
 | January 16, 2022 | Gas Station | Memphis, TN | [Suspects smash gas station with truck, steal Bitcoin ATM](https://archive.ph/Zjfr2)|
 | January 21, 2022 | 34 y/o teacher | Hoboken, Belgium | [3 men invade home, fail to force owner to hand over 3M Euros of BTC](https://archive.ph/LgqrJ)|
+| January 26, 2022 | Owen Simonin | France | [Fake insurance adjustor attempts armed home invasion, gets pushed and locked out by victim.](https://archive.is/746C7) Victim later [recorded a video detailing the ordeal](https://www.youtube.com/watch?v=yWPMHy7zB8M).|
 | February, 2022 | John Forsyth | Missouri | [Crypto founder kidnapped, zip-tied, threatened to be thrown off bridge.](https://archive.ph/Qhvjs)|
 | February 2, 2022 | Vinay Naik | Pune, India | [Pune: 8 including cop arrested for kidnapping man to extort Bitcoin worth Rs 300 crore ( $50 million USD )](https://archive.ph/UJG8J)|
 | February 3, 2022 | Vinay Jain | Surat, India | [Auto parts businessman brings suitcase full of $260K worth of cash to do an in-person crypto trade, gets beaten and robbed by 8 men.](https://archive.ph/hMOJh)|
@@ -170,6 +171,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | April 18, 2024 | 11 Traders | Lianhe Zaobao, Singapore | [4 men rob suspected Chinese crypto gambling ring of $3M USD.](https://archive.ph/ZW6GW)
 | June 17, 2024 | Ramesh Nair | London, England | [3 men armed with machetes invade home, force owner to transfer 1,000+ ETH.](https://archive.ph/u3sUN)
 | July 3, 2024 | 3 y/o boy | Tseung Kwan, Hong Kong | [2 women abduct toddler from mall, demand $660,000 USDT ransom.](https://archive.ph/gMmvr)
+| July 10, 2024 | Undisclosed Man | Angers, France | [2 men invade home, threaten victim with knife & crowbar, demand 10,000 EUR.](https://archive.is/bVBGi)
 | July 11, 2024 | Chinese National | Cyberjaya, Malaysia | [18 people kidnap 2 victims, hold them for $1.2M ransom, get in shootout with police.](https://archive.ph/foteq)
 | July 12, 2024 | British Crypto Trader | Bangkok, Thailand | [5 people tie up trader, assault, and rob him.](https://archive.ph/gDRlQ)
 | July 28, 2024 | 29 y/o Moroccan man | Kyiv, Ukraine | [4 men kidnap foreigner, rob, & murder him for 3 BTC.](https://archive.ph/GbuTI)
