@@ -145,7 +145,9 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 3, 2022 | Unidentified man | Lelystad, Netherlands | [Man responds to ad to sell his bitcoin, is attacked by several men & forced to transfer 30K EUR worth of BTC & ETH.](https://archive.ph/JNkaq)|
 | December 11, 2022 | 2 Russians | Phuket, Thailand | [2 men who work on a cryptocurrency were kidnapped and robbed.](https://archive.vn/el9Sc)|
 | December 22, 2022 | Unidentified man | Little Elm, Texas | [Armed gang invades home, torture victims for 3 hours, take jewelry, fail to find hardware wallet with $1.4m.](https://archive.ph/34qpX)|
+| Early January, 2023 | Karl Johnson | Salford, England | [Man knocks on door, threatens to assault victim, leaves after he sends some cryptocurrency.](https://archive.is/GTCVg)|
 | January 14, 2023 | Crypto Company | Barcelona, Spain | [5 men stormed into a company's office armed with tasers and zip ties.](https://archive.ph/tAU6I)|
+| Late January, 2023 | Karl Johnson | Salford, England | [2 men knock on door, threaten victim with knife, leave after he sends cryptocurrency.](https://archive.is/GTCVg)|
 | February, 2023 | Saudi Royal | Melbourne, Australia | [TikTok influencer lures Saudi royal to her home where he was imprisoned until he handed over $40K in BTC.](https://archive.is/K2OW1)|
 | February 25, 2023 | Yuri Boytsov | Bali, Indonesia | [4 men invade crypto blogger's home, beat him until he transfers $284,000 in BTC.](https://archive.ph/2R05l)|
 | February 27, 2023 | German man | Medellin, Colombia | [20 year old Venezuelan woman drugs and robs man of 1 BTC.](https://archive.ph/ZhIn5)|
@@ -159,9 +161,12 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv (Hebrew)](https://archive.ph/mgD0B)|
 | July 16, 2023 | Unknown Couple | Queens, NY | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.ph/iSRCc)|
 | September 3, 2023 | Italian man | Phuket, Thailand | [Russian MMA fighter & twin brother rob man of watches, seek Ledger wallet.](https://archive.ph/oSGRU)|
+| October, 2023 | Karl Johnson | Cardishead, England | [Victim dragged into a flat, tied up, assaulted, locked in a cupboard all night until they received cryptocurrency.](https://archive.is/GTCVg)|
+| October, 2023 | Karl Johnson | Salford, England | [Days after previous attack, victim was kidnapped, had bag placed over head, released after sending cryptocurrency.](https://archive.is/GTCVg)|
 | October 30, 2023 | Crypto Exchange | Tbilisi, Georgia | [6 men rob exchange office, take $900K USD in crypto.](https://archive.ph/zHpPv)|
 | November 6, 2023 | Middle-aged couple | Rönninge, Sweden | [Couple tied up, beaten, and threatened with their own kitchen knives.](https://archive.ph/ODWxI)|
 | November 10, 2023 | Binance Client | Montenegro | [Executives lured into fake business trip, kidnapped, forced to empty wallets of $12M USDT.](https://archive.ph/3jxou)|
+| November 30, 2023 | Karl Johnson | Salford, England | [Victim was kidnapped from a friend's house, had bag placed over head, rescued by police after anonymous tip sent.](https://archive.is/GTCVg)|
 | December 25, 2023 | 23 y/o miner | Izhevsk, Russia | [Miner kidnapped from home, ransomed, rescued by police.](https://archive.ph/XIPFP)|
 | January 16, 2024 | 42 y/o man | Cluj, Romania | [Restaurant owner kidnapped, doused in diesel, force fed alcohol, has finger cut off, until he transferred $200K USD in crypto.](https://archive.ph/eqj4y)
 | January 31, 2024 | Belarusian couple (23 y/o man) | Phuket, Thailand | [5 "Russians" arrested in crypto abduction case (~USD 801,200)](https://archive.is/IcEmQ)
