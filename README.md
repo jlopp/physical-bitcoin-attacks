@@ -191,6 +191,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 6, 2024 | Dean Skurka | Toronto, Ontario | [WonderFi CEO kidnapped during rush hour, held until $1M ransom paid.](https://archive.is/st5SP)
 | November 8, 2024 | Viacheslav Leibov | Phuket, Thailand | [Tourist robbed by armed gang in friend's hotel room, forced to transfer $250K USDT.](https://archive.is/wRbOB) Robbers were [captured a few days later.](https://archive.is/Vl1td)
 | November 20, 2024 | Gen Z Quant kid | Unknown | [13 year old's dog stolen after he rug pulled a token on pump.fun](https://archive.is/tqqpY)
+| November 22, 2024 | Undisclosed Man | Las Vegas, Nevada | [Sex worker accused of kidnapping, stealing $300K in crypto from man she met at nightclub.](https://archive.is/jXCz4) |
 | December 3, 2024 | Coinflip ATM | Melbourne, Australia | [Crypto ATM stolen from shopping center.](https://archive.is/l7rYI)
 | December 15, 2024 | Igor Lermakov | Ungasan, Bali | [A Russian gang of 4 men ambushed a Ukrainian on the road in Bali. The victim was kidnapped and beaten until he handed over $200,000 in cryptocurrency from his Binance account. The gang leader was arrested a month later trying to flee to Dubai.](https://archive.is/gIh5V)
 | December 19, 2024 | Benjamin Appiah Boateng | Laboma Beach, Ghana | [Businessman lured to meeting, handcuffed, beaten, electrocuted for 15 hours before being rescued by police.](https://archive.is/7xNoz)
