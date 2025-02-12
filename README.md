@@ -187,6 +187,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | August ?, 2024 | Nick Drakon | Undisclosed | [Crypto executive surveilled, armed home invasion, forced to transfer personal & company assets.](https://archive.ph/FUl3U)
 | August 25, 2024 | Radhika & Suchil Chetal | Danbury, Connecticut | [Parents of $243M heist thieves get carjacked & kidnapped in botched ransom plot.](https://archive.is/4qSqM)
 | August 29, 2024 | 19 y/o | Hougang, Singapore | [Man seeks p2p trade of cash for USDT, punched by attackers, successfully escapes.](https://archive.ph/01kOx)
+| October 27, 2024 | 3 Family Members and a Nanny | Chicago, Illinois | [6 men accused of kidnapping family from Chicago townhouse and forcing a transfer of $15 million in cryptocurrency] (https://archive.is/TFbsx)
 | November 4 & 8, 2024 | Forum Moderator | Victoriaville, Québec | [Attempted kidnapping by 4 individuals who wanted to torture him to steal forum mod's bitcoins.](https://archive.is/Zc8ak)
 | November 6, 2024 | Dean Skurka | Toronto, Ontario | [WonderFi CEO kidnapped during rush hour, held until $1M ransom paid.](https://archive.is/st5SP)
 | November 8, 2024 | Viacheslav Leibov | Phuket, Thailand | [Tourist robbed by armed gang in friend's hotel room, forced to transfer $250K USDT.](https://archive.is/wRbOB) Robbers were [captured a few days later.](https://archive.is/Vl1td)
