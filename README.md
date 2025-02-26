@@ -197,7 +197,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | December 15, 2024 | Igor Lermakov | Ungasan, Bali | [A Russian gang of 4 men ambushed a Ukrainian on the road in Bali. The victim was kidnapped and beaten until he handed over $200,000 in cryptocurrency from his Binance account. The gang leader was arrested a month later trying to flee to Dubai.](https://archive.is/gIh5V)
 | December 19, 2024 | Benjamin Appiah Boateng | Laboma Beach, Ghana | [Businessman lured to meeting, handcuffed, beaten, electrocuted for 15 hours before being rescued by police.](https://archive.is/7xNoz)
 | December 24, 2024 | Influencer's Wife | Brussels, Belgium | [Wife of crypto influencer who bragged about wealth was kidnapped by 3 men, police chase led to car crash.](https://archive.is/6PkiL)
-| December 25, 2024 | Arsalan | Karachi, Pakistan | [Crypto trader in Karachi, Pakistan abducted by 5 men in a police van and forced to transfer $340,000 at gunpoint.](https://archive.is/vUHzn)
+| December 25, 2024 | Arsalan Malik | Karachi, Pakistan | [Crypto trader in Karachi, Pakistan abducted by 5 men in a police van and forced to transfer $340,000 at gunpoint.](https://archive.is/vUHzn)
 | January 1, 2025 | Influencer's father | Saint-Genis-Pouilly, France | [Crypto influencer's father was kidnapped on New Year's Eve](https://archive.is/ATZ7u)
 | January 5, 2025 | Russian Man | Phuket, Thailand | [Man attacked and tied up in hotel, refuses to give up phone password, is knocked out and has cash stolen.](https://archive.is/eI12f)
 | January 13, 2025 | Miami Jeweler | Miami, Florida | [Gang of 4 men arrested by FBI on their way to rob jeweler of $2M.](https://archive.is/Zn7dK)
@@ -208,3 +208,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 24, 2025 | 30 y/o man | Troyes, France | [Crypto entrepreneur was lured to a meeting, taken hostage, 20K EUR ransom demanded. Police rescued him & arrested 4 suspects.](https://archive.is/1ULsg)
 | January 30, 2025 | Brazilian Family | Campo Limpo Paulista, Brazil | [Criminals invade home, hold family hostage, force transfer of $16,000 USD in cryptocurrencies](https://archive.is/gCRLe)
 | February 2, 2025 | 34 y/o man | Costa del Sol, Spain | [Crypto trader randomly met men at a hotel and told them what he did for a living. They later invited him over, took him hostage, demanded 30K EUR ransom. Trader called friend who alerted police and rescued him.](https://archive.is/bX3sr)
+| February 24, 2025 | 30 y/o Chinese Man | Jeju City, South Korea | [4 Chinese suspects stab man lured to perform a trade in hotel room, steal 85 million won.](https://archive.is/IZwbJ)
