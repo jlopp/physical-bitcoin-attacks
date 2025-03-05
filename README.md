@@ -79,7 +79,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | Unknown, 2021 | Dillon Attard | Sliema, Malta | [Victim describes his disbelief as $700,000 stolen in front of him](https://archive.ph/ypS03)|
 | January 5, 2021 | 37 y/o man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.ph/ps31W)|
 | January 18, 2021 | Unidentified Woman | Kwun Tong, Hong Kong | [Gang snatches HK$3.5 million from trader at knifepoint](https://archive.ph/3mR44)|
-| January 23, 2021 | Physical Exchange Employees | Osztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.ph/wip/YOvMq)|
+| January 23, 2021 | Physical Exchange Employees | Olsztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.ph/wip/YOvMq)|
 | February 4, 2021 | Married Couple | Stockholm, Sweden | [Armed robbers invade home and force owners to hand over 1M+ SEK in BTC](https://archive.ph/5qCBI)|
 | February ?, 2021 | Swiss & German | Gujranwala, Pakistan | [Armed robbers take $93k in BTC at gunpoint](https://archive.ph/Nmdes)|
 | March 10, 2021 | Bank director | Recife, Brazil | [Man kidnapped by a gang , tied up, and had two teeth knocked out. He was released after he instructed his partner to transfer 4.78 BTC to the attackers.](https://archive.ph/KrFtE)|
