@@ -211,3 +211,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 24, 2025 | 30 y/o Chinese Man | Jeju City, South Korea | [4 Chinese suspects stab man lured to perform a trade in hotel room, steal 85 million won.](https://archive.is/IZwbJ)
 | February 28, 2025 | Chinese Man | Ho Chi Minh City, Vietnam | [Chinese gang kidnaps victim, extorts 600,000 USDT, are quickly apprehended by police.](https://archive.is/qIgny)
 | March 2, 2025 | Kaitlyn Siragusa | Houston, Texas | [Popular Streamer Amouranth posts screenshot of $20M BTC wallet, becomes victim of armed home invasion. She successfully defended herself by shooting an attacker.](https://archive.is/Yn8mp)
+| March 13, 2025 | 41 y/o Wong | Lai Chi Kok, Hong Kong | [Man sells HK $318,000 worth of cryptocurrency, is then beaten with a stick and robbed of the cash he received.](https://archive.is/bhCYH)
