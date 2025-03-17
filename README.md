@@ -79,7 +79,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | Unknown, 2021 | Dillon Attard | Sliema, Malta | [Victim describes his disbelief as $700,000 stolen in front of him](https://archive.ph/ypS03)|
 | January 5, 2021 | 37 y/o man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.ph/ps31W)|
 | January 18, 2021 | Unidentified Woman | Kwun Tong, Hong Kong | [Gang snatches HK$3.5 million from trader at knifepoint](https://archive.ph/3mR44)|
-| January 23, 2021 | Physical Exchange Employees | Osztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.ph/wip/YOvMq)|
+| January 23, 2021 | Physical Exchange Employees | Olsztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.ph/wip/YOvMq)|
 | February 4, 2021 | Married Couple | Stockholm, Sweden | [Armed robbers invade home and force owners to hand over 1M+ SEK in BTC](https://archive.ph/5qCBI)|
 | February ?, 2021 | Swiss & German | Gujranwala, Pakistan | [Armed robbers take $93k in BTC at gunpoint](https://archive.ph/Nmdes)|
 | March 10, 2021 | Bank director | Recife, Brazil | [Man kidnapped by a gang , tied up, and had two teeth knocked out. He was released after he instructed his partner to transfer 4.78 BTC to the attackers.](https://archive.ph/KrFtE)|
@@ -210,4 +210,6 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February, 2025 | Unidentified man | Okota, Lagos | [Woman conspires with brother & gang to rob her boyfriend of 3 iPhones and $10K USD of bitcoin.](https://archive.is/snVgV)
 | February 2, 2025 | 34 y/o man | Costa del Sol, Spain | [Crypto trader randomly met men at a hotel and told them what he did for a living. They later invited him over, took him hostage, demanded 30K EUR ransom. Trader called friend who alerted police and rescued him.](https://archive.is/bX3sr)
 | February 24, 2025 | 30 y/o Chinese Man | Jeju City, South Korea | [4 Chinese suspects stab man lured to perform a trade in hotel room, steal 85 million won.](https://archive.is/IZwbJ)
+| February 28, 2025 | Chinese Man | Ho Chi Minh City, Vietnam | [Chinese gang kidnaps victim, extorts 600,000 USDT, are quickly apprehended by police.](https://archive.is/qIgny)
 | March 2, 2025 | Kaitlyn Siragusa | Houston, Texas | [Popular Streamer Amouranth posts screenshot of $20M BTC wallet, becomes victim of armed home invasion. She successfully defended herself by shooting an attacker.](https://archive.is/Yn8mp)
+| March 13, 2025 | 41 y/o Wong | Lai Chi Kok, Hong Kong | [Man sells HK $318,000 worth of cryptocurrency, is then beaten with a stick and robbed of the cash he received.](https://archive.is/bhCYH)
