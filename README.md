@@ -193,6 +193,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | November 8, 2024 | Viacheslav Leibov | Phuket, Thailand | [Tourist robbed by armed gang in friend's hotel room, forced to transfer $250K USDT.](https://archive.is/wRbOB) Robbers were [captured a few days later.](https://archive.is/Vl1td)
 | November 20, 2024 | Gen Z Quant kid | Unknown | [13 year old's dog stolen after he rug pulled a token on pump.fun](https://archive.is/tqqpY)
 | November 22, 2024 | Undisclosed Man | Las Vegas, Nevada | [Sex worker accused of kidnapping, stealing $300K in crypto from man she met at nightclub.](https://archive.is/jXCz4) |
+| December 1, 2024 | Wang Shu | Chengdu, China | [Software engineer lured by X account promising sex, ambushed at hotel by a gang that robbed him of 6 BTC.](https://archive.is/moqsn)
 | December 3, 2024 | Coinflip ATM | Melbourne, Australia | [Crypto ATM stolen from shopping center.](https://archive.is/l7rYI)
 | December 15, 2024 | Igor Lermakov | Ungasan, Bali | [A Russian gang of 4 men ambushed a Ukrainian on the road in Bali. The victim was kidnapped and beaten until he handed over $200,000 in cryptocurrency from his Binance account. The gang leader was arrested a month later trying to flee to Dubai.](https://archive.is/gIh5V)
 | December 19, 2024 | Benjamin Appiah Boateng | Laboma Beach, Ghana | [Businessman lured to meeting, handcuffed, beaten, electrocuted for 15 hours before being rescued by police.](https://archive.is/7xNoz)
@@ -214,3 +215,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | February 28, 2025 | Chinese Man | Ho Chi Minh City, Vietnam | [Chinese gang kidnaps victim, extorts 600,000 USDT, are quickly apprehended by police.](https://archive.is/qIgny)
 | March 2, 2025 | Kaitlyn Siragusa | Houston, Texas | [Popular Streamer Amouranth posts screenshot of $20M BTC wallet, becomes victim of armed home invasion. She successfully defended herself by shooting an attacker.](https://archive.is/Yn8mp)
 | March 13, 2025 | 41 y/o Wong | Lai Chi Kok, Hong Kong | [Man sells HK $318,000 worth of cryptocurrency, is then beaten with a stick and robbed of the cash he received.](https://archive.is/bhCYH)
+| March 27, 2025 | 27 y/o Turkish man | Tsim Sha Tsui, Hong Kong | [Man brought a bag containing €5 million in cash to trade for crypto when he was attacked by two assailants, one of whom slashed him with a knife. He fought them off and they were later arrested.](https://archive.is/d6Fi1)
