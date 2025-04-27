@@ -184,7 +184,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | July 29, 2024 | Tim Heath | Talinn, Estonia | [Crypto billionaire attacked at rental home by men posing at painters, successfully fights them off and prevents kidnapping.](https://archive.is/b26vs)
 | August 7, 2024 | 11 Israelis | Puntarenas, Costa Rica | [8 men, possibly police, overpower security guard, rob 11 tourists of 10+ BTC.](https://archive.ph/ouViV)
 | August 4, 2024 | Ke Jibao | Bangkok, Thailand | [Gang of 4 Chinese nationals sneak into gated estate, commit armed home invasion, rob $2M USD of cryptocurrency.](https://archive.ph/5LxCt)
-| August ?, 2024 | Nick Drakon | Undisclosed | [Crypto executive surveilled, armed home invasion, forced to transfer personal & company assets.](https://archive.ph/FUl3U)
+| August 15, 2024 | Undisclosed | Verdun, Quebec | [3 men invade home of crypto entrepreneur, torture him for hours until he transfers $15K.](https://archive.is/xTNpu)
 | August 25, 2024 | Radhika & Suchil Chetal | Danbury, Connecticut | [Parents of $243M heist thieves get carjacked & kidnapped in botched ransom plot.](https://archive.is/4qSqM)
 | August 29, 2024 | 19 y/o | Hougang, Singapore | [Man seeks p2p trade of cash for USDT, punched by attackers, successfully escapes.](https://archive.ph/01kOx)
 | October 27, 2024 | 3 Family Members and a Nanny | Chicago, Illinois | [6 men accused of kidnapping family from Chicago townhouse and forcing a transfer of $15 million in cryptocurrency](https://archive.is/TFbsx)
