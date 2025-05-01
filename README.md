@@ -166,6 +166,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | October 30, 2023 | Crypto Exchange | Tbilisi, Georgia | [6 men rob exchange office, take $900K USD in crypto.](https://archive.ph/zHpPv)|
 | November 6, 2023 | Middle-aged couple | Rönninge, Sweden | [Couple tied up, beaten, and threatened with their own kitchen knives.](https://archive.ph/ODWxI)|
 | November 10, 2023 | Binance Client | Montenegro | [Executives lured into fake business trip, kidnapped, forced to empty wallets of $12M USDT.](https://archive.ph/3jxou)|
+| November 10, 2023 | 21 y/o man | Portland, Oregon | [4 men fly from FL to OR, kidnap target from apartment, torture him until he revealed seed phrase.](https://archive.is/pFhaX)|
 | November 30, 2023 | Karl Johnson | Salford, England | [Victim was kidnapped from a friend's house, had bag placed over head, rescued by police after anonymous tip sent.](https://archive.is/GTCVg)|
 | December 25, 2023 | 23 y/o miner | Izhevsk, Russia | [Miner kidnapped from home, ransomed, rescued by police.](https://archive.ph/XIPFP)|
 | January 16, 2024 | 42 y/o man | Cluj, Romania | [Restaurant owner kidnapped, doused in diesel, force fed alcohol, has finger cut off, until he transferred $200K USD in crypto.](https://archive.ph/eqj4y)
@@ -218,3 +219,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 23, 2025 | Spanish Businessman | Ipiranga, Brazil | [Man kidnapped by 2 fake police officers, held for a week and drugged, demanded $50M, escaped on his own.](https://archive.is/WnpO6)
 | March 27, 2025 | 27 y/o Turkish man | Tsim Sha Tsui, Hong Kong | [Man brought a bag containing €5 million in cash to trade for crypto when he was attacked by two assailants, one of whom slashed him with a knife. He fought them off and they were later arrested.](https://archive.is/d6Fi1)
 | March 29, 2025 | Anson Que | Mecauayan, Bulacan, Phillipines | [Businessman lured by woman to house & taken hostage. Attackers demanded $20M in cryptocurrency & received over $3M in multiple tranches. They killed the victim anyway.](https://archive.is/PHT9w)
+| April 13, 2025 | Ismail | PIB Colony, Pakistan | [Gang poses as police, kidnaps victim, forces him to hand over Bitcoin.](https://archive.is/fpCPj)
