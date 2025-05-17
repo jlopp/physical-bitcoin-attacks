@@ -223,4 +223,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | April 13, 2025 | Ismail | PIB Colony, Pakistan | [Gang poses as police, kidnaps victim, forces him to hand over Bitcoin.](https://archive.is/fpCPj)
 | May 1, 2025 | Undisclosed man | Paris, France | [Father of crypto millionaire abducted in broad daylight, 5M EUR ransom demanded, finger severed before being rescued by police.](https://archive.is/AC9zg)
 | May 13, 2025 | Pierre Noizat's daughter | Paris, France | [Attempted abduction of crypto exchange CEO's daughter in broad daylight, caught on camera, attackers were fought off by her partner & bystanders.](https://archive.is/xCoD6)
-
+| May 14, 2025 | Mining Facility | Coronel Bogado, Paraguay | [3 Chinese citizens entered Paraguay illegally, tried to rob a mining facility, got in a shootout with police, were deported.](https://archive.is/rm7nw)
