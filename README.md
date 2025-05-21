@@ -38,8 +38,8 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | January 2018 | Unidentified | Odessa, Ukraine | [Several men pose as bitcoin sellers, beat and rob buyer of 1.5 Million UAH ($57,000 USD](https://archive.ph/ho58l) | 
 | February 9, 2018 | Sailesh Bhatt | Amreli, India | [Police Officers Beat, Extorted 200 BTC from Businessman](https://archive.ph/VctPq) | 
 | February 21, 2018 | \____ Tai | Taichung, Taiwan | [Four men assault bitcoin seller & transfer 18 BTC](https://archive.ph/cGzd6) | 
+| February 19, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://archive.ph/wUxu7) | 
 | February 23, 2018 | Yury Mayorov | Moscow, Russia | [Crypto Developer Beaten, Robbed Of 300 BTC](https://archive.ph/YDbVR) | 
-| February 23, 2018 | Unidentified | Moscow, Russia | [Crypto investor has face mutilated, robbed of $1M in BTC](https://archive.ph/wUxu7) | 
 | March 2018 | Undisclosed woman | Killingly, Connecticut, United States | [2 women invaded home of another woman who had opened a "Bitcoin account" in the name of one of the attackers and used it to steal her money.](https://archive.ph/wcpmV) | 
 | March 2018| Unidentified Miner | Kyiv, Ukraine | [Miner kidnapped, extorted for $50,000. Kidnappers caught 8 months later.](https://archive.ph/ziAAR)|
 | March 22, 2018 | Multiple gas stations | Irving & Mesquite, Texas, United States | [Robbers douse clerks with pepper spray, steal from Bitcoin ATMs in Irving and Mesquite](https://archive.ph/rODUM) | 
@@ -49,11 +49,11 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | June 6, 2018 | Unidentified 22-year-old | Milan, Italy | [Robbers attempt bitcoin purchase with counterfeit money, beat victims and fire gun, take 50,000 euros](https://archive.ph/ls1QA) |
 | June 13, 2018 | "Synth" | China | [Home invasion of Skycoin architect resulted in theft of 18.88 BTC and 6,466 SKY](https://archive.ph/fc3Mq) | 
 | June 19, 2018 | Unidentified | Wels, Austria | [$250,000 in cryptocurrency taken by robbers posing as postmen](https://archive.ph/kabJg) | 
-| July 6, 2018 | Austin Nedved | Northborough, Massachussetts, United States | [Armed home invasion of Localbitcoins trader](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
+| July 6, 2018 | Austin Nedved | Northborough, Massachussetts, United States | [Armed home invasion of Localbitcoins trader](https://archive.is/4of2h), [forum post by victim](https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio) |
 | September 7, 2018 | Nicholas Truglia | New York, New York, United States | [Friends accused of torturing pal to steal his cryptocurrency](https://archive.ph/PJYDN) |
 | November ?, 2018 | Kieran Hamilton | Manchester, England | [Crypto trader stabbed, robbed by home invaders](https://archive.ph/kAi7c) |
 | November 16, 2018 | Andrew ______ | Lanseria, South Africa | [Bitcoin trader drugged, beaten, and tortured before transferring BTC to attackers](https://archive.ph/ASDBT) |
-| February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill](https://archive.ph/UONTD) |
+| February 10, 2019 | Tjeerd H. | Drouwenerveen, Netherlands | [Bitcoin trader tortured with drill in front of daughter.](https://archive.is/drBqh) |
 | March 12, 2019 | Costcutters | Far Cotton, Northampton, England | [Bitcoin machine stolen during robbery](https://archive.ph/0lCv5) |
 | May 14, 2019 | Undisclosed | Oslo, Norway | [Bitcoin millionaire escapes armed home invader by jumping off balcony](https://archive.ph/HfBWe) |
 | June 30, 2019 | Luftan Shaikh, Mohammad Shazad, Malang Shah | Jaipur, Rajasthan, India | [Criminal Gang Abducts &amp; Tortures Cryptocurrency Traders, Demands 80 BTC Ransom](https://archive.ph/8PY9R) |
