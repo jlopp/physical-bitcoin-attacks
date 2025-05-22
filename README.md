@@ -222,5 +222,6 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | March 29, 2025 | Anson Que | Mecauayan, Bulacan, Phillipines | [Businessman lured by woman to house & taken hostage. Attackers demanded $20M in cryptocurrency & received over $3M in multiple tranches. They killed the victim anyway.](https://archive.is/PHT9w)
 | April 13, 2025 | Ismail | PIB Colony, Pakistan | [Gang poses as police, kidnaps victim, forces him to hand over Bitcoin.](https://archive.is/fpCPj)
 | May 1, 2025 | Undisclosed man | Paris, France | [Father of crypto millionaire abducted in broad daylight, 5M EUR ransom demanded, finger severed before being rescued by police.](https://archive.is/AC9zg)
+| May 9, 2025 | Jacob Irwin-Cline | London, UK | [US investor lost $123K in Bitcoin, XRP after allegedly being drugged and robbed in London](https://archive.is/uVNow)
 | May 13, 2025 | Pierre Noizat's daughter | Paris, France | [Attempted abduction of crypto exchange CEO's daughter in broad daylight, caught on camera, attackers were fought off by her partner & bystanders.](https://archive.is/xCoD6)
 | May 14, 2025 | Mining Facility | Coronel Bogado, Paraguay | [3 Chinese citizens entered Paraguay illegally, tried to rob a mining facility, got in a shootout with police, were deported.](https://archive.is/rm7nw)
