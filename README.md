@@ -160,6 +160,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 26, 2023 | Smoke Shop | Houston, Texas, United States | [7 men arrested after ramming store with stolen truck in failed attempt to steal Bitcoin ATM.](https://archive.ph/j7PbE)|
 | June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv (Hebrew)](https://archive.ph/mgD0B)|
 | July 16, 2023 | Unknown Couple | Queens, New York, United States | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.ph/iSRCc)|
+| July 18, 2023 | Fernando Pérez Algaba | Buenos Aires, Argentina | [The dismembered remains of missing millionaire crypto influencer were found inside a suitcase](https://archive.ph/1MOo9)|
 | September 3, 2023 | Italian man | Phuket, Thailand | [Russian MMA fighter & twin brother rob man of watches, seek Ledger wallet.](https://archive.ph/oSGRU)|
 | October, 2023 | Karl Johnson | Cardishead, England | [Victim dragged into a flat, tied up, assaulted, locked in a cupboard all night until they received cryptocurrency.](https://archive.is/GTCVg)|
 | October, 2023 | Karl Johnson | Salford, England | [Days after previous attack, victim was kidnapped, had bag placed over head, released after sending cryptocurrency.](https://archive.is/GTCVg)|
