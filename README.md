@@ -226,3 +226,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 9, 2025 | Jacob Irwin-Cline | London, England | [American tourist drugged by fake Uber driver who drained wallets of $123K in BTC & XRP.](https://archive.is/zHpk2)
 | May 13, 2025 | Pierre Noizat's daughter | Paris, France | [Attempted abduction of crypto exchange CEO's daughter in broad daylight, caught on camera, attackers were fought off by her partner & bystanders.](https://archive.is/xCoD6)
 | May 14, 2025 | Mining Facility | Coronel Bogado, Paraguay | [3 Chinese citizens entered Paraguay illegally, tried to rob a mining facility, got in a shootout with police, were deported.](https://archive.is/rm7nw)
+| May 23, 2025 | John Woeltz | Manhattan, New York, United States | [Crypto investor from Kentucky faces charges after an Italian tourist escaped weeks of captivity and torture.](https://archive.ph/Ex6VP)
