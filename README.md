@@ -158,7 +158,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | April 12, 2023 | 76 y/o couple | Durham, North Carolina, United States | [2 men posing as construction workers invade home, force transfer of $250K in crypto.](https://archive.ph/Vp5J6)|
 | May 3, 2023 | Unidentified man | Benalmádena, Spain | [3 men kidnap crypto businessman, demand €1 million ransom. He was rescued by police.](https://archive.ph/AJHuG)|
 | May 26, 2023 | Smoke Shop | Houston, Texas, United States | [7 men arrested after ramming store with stolen truck in failed attempt to steal Bitcoin ATM.](https://archive.ph/j7PbE)|
-| June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv (Hebrew)](https://archive.ph/mgD0B)|
+| June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv](https://archive.ph/mgD0B)|
 | July 16, 2023 | Unknown Couple | Queens, New York, United States | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.ph/iSRCc)|
 | September 3, 2023 | Italian man | Phuket, Thailand | [Russian MMA fighter & twin brother rob man of watches, seek Ledger wallet.](https://archive.ph/oSGRU)|
 | October, 2023 | Karl Johnson | Cardishead, England | [Victim dragged into a flat, tied up, assaulted, locked in a cupboard all night until they received cryptocurrency.](https://archive.is/GTCVg)|
@@ -226,3 +226,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 9, 2025 | Jacob Irwin-Cline | London, England | [American tourist drugged by fake Uber driver who drained wallets of $123K in BTC & XRP.](https://archive.is/zHpk2)
 | May 13, 2025 | Pierre Noizat's daughter | Paris, France | [Attempted abduction of crypto exchange CEO's daughter in broad daylight, caught on camera, attackers were fought off by her partner & bystanders.](https://archive.is/xCoD6)
 | May 14, 2025 | Mining Facility | Coronel Bogado, Paraguay | [3 Chinese citizens entered Paraguay illegally, tried to rob a mining facility, got in a shootout with police, were deported.](https://archive.is/rm7nw)
+| May 17, 2025 | Festo Ivaibi | Kampala, Uganda | [Crypto founder abducted by men posing as military, forced to transfer $500,000 at gunpoint. One suspect later arrested.](https://archive.is/UfCv4)
