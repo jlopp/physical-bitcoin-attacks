@@ -228,3 +228,5 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 14, 2025 | Mining Facility | Coronel Bogado, Paraguay | [3 Chinese citizens entered Paraguay illegally, tried to rob a mining facility, got in a shootout with police, were deported.](https://archive.is/rm7nw)
 | May 17, 2025 | Festo Ivaibi | Kampala, Uganda | [Crypto founder abducted by men posing as military, forced to transfer $500,000 at gunpoint. One suspect later arrested.](https://archive.is/UfCv4)
 | May 21, 2025 | Unidentified man | Seoul, South Korea | [Russian nationals lure victim to hotel for crypto trade, attempt to rob him of 1 billion won, but victim escaped.](https://archive.is/2kDp5)
+| May 26, 2025 | Crypto Entrepreneur | Nantes, France | [Police arrest 10 men in balaclavas, foiling their attempted kidnapping of a crypto entrepreneur.](https://www.youtube.com/watch?v=9N41nuB0LPU)
+| May 27, 2025 | Russian Couple | Buenos Aires, Argentina | [Chechens invite victims to dinner, take them hostage and demand ransom. A friend sends them $43,000 and they flee to UAE.](https://archive.is/2EHz4)
