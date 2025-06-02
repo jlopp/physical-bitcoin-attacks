@@ -188,6 +188,7 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | August 15, 2024 | Undisclosed | Verdun, Quebec, Canada | [3 men invade home of crypto entrepreneur, torture him for hours until he transfers $15K.](https://archive.is/xTNpu)
 | August 25, 2024 | Radhika & Suchil Chetal | Danbury, Connecticut, United States | [Parents of $243M heist thieves get carjacked & kidnapped in botched ransom plot.](https://archive.is/4qSqM)
 | August 29, 2024 | 19 y/o | Hougang, Singapore | [Man seeks p2p trade of cash for USDT, punched by attackers, successfully escapes.](https://archive.ph/01kOx)
+| September 13, 2024 | Gabriel Di Noto | Villa Carlos Paz, Argentina | [Accountant / crypto trader met a woman on Tinder, likely drugged, beaten by several men, forced to transfer funds, then murdered.](https://archive.is/fwQC9)
 | October 27, 2024 | 3 Family Members and a Nanny | Chicago, Illinois, United States | [6 men accused of kidnapping family from Chicago townhouse and forcing a transfer of $15 million in cryptocurrency](https://archive.is/TFbsx)
 | November, 2024 | Unidentified man | Las Vegas, Nevada, United States | [3 teens kidnap man who hosted a crypto event. Drove him out to the desert, forced him to transfer $4 million at gunpoint.](https://archive.is/suvfl)
 | November 4 & 8, 2024 | Forum Moderator | Victoriaville, Québec, Canada | [Attempted kidnapping by 4 individuals who wanted to torture him to steal forum mod's bitcoins.](https://archive.is/Zc8ak)
