@@ -236,3 +236,4 @@ Readers may be interested in this relevant presentation: ["The Hodlguard- a prim
 | May 26, 2025 | Crypto Entrepreneur | Nantes, France | [Police arrest 10 men in balaclavas, foiling their attempted kidnapping of a crypto entrepreneur.](https://www.youtube.com/watch?v=9N41nuB0LPU) Ringleader was [later arrested.](https://archive.is/0do15)
 | May 27, 2025 | Russian Couple | Buenos Aires, Argentina | [Chechens invite victims to dinner, take them hostage and demand ransom. A friend sends them $43,000 and they flee to UAE.](https://archive.is/2EHz4)
 | June 13, 2025 | 26 y/o man | Juvisy-sur-Orge, France | [TikTok trader kidnapped by 4 men as he was returning home, attackers demanded 50K EUR, released after opening his wallet and finding a tiny balance.](https://archive.is/0DPMl)
+| June 17, 2025 | 23 y/o man | Maisons-Alfort, France | [A 23-year-old man was held for several hours, and the kidnappers demanded a 5k ransom from his wife.](https://archive.is/YXMOD)
