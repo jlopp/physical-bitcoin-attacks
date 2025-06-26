@@ -1,7 +1,9 @@
 # Known Physical Bitcoin Attacks
 A list of known attacks against Bitcoin / crypto asset owning entities that occurred in meatspace. NOTE: this list is not comprehensive; many attacks are not publicly reported.
 
-Readers may be interested in this relevant presentation: ["The Hodlguard- a primer on physical security in Bitcoin"](https://www.youtube.com/watch?v=HUgPhPkS2yc) and [slides](https://prezi.com/view/P46hHguLiPvqA7aZ7gYR).
+Readers may be interested in this 2020 presentation: ["The Hodlguard- a primer on physical security in Bitcoin"](https://www.youtube.com/watch?v=HUgPhPkS2yc) and [slides](https://prezi.com/view/P46hHguLiPvqA7aZ7gYR).
+Also, my [2025 presentation](https://www.youtube.com/watch?v=bxjKAtxy6J4) with updated metrics and takeaways.
+Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical attacks using Bitcointalk as a data source.
 
 | Date        | Victim  | Location | Description |
 | :---------: |:------: | :------: | :---------: |
