@@ -241,3 +241,4 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | June 17, 2025 | 23 y/o man | Maisons-Alfort, France | [A 23-year-old man was held for several hours, and the kidnappers demanded a 5k ransom from his wife.](https://archive.is/YXMOD)
 | June 25, 2025 | 33 y/o businessman | Bengaluru, India | [OTC trade of $240,000 worth of rupees into USDT. Half a dozen men interrupted the transaction and robbed him.](https://archive.is/fVpB3)
 | June 30, 2025 | 3 people | Bangkok, Thailand | [OTC trade of $100,000 USD worth of baht for crypto in a mall parking garage. 7 suspects had done smaller trades with the victims previously.](https://archive.is/60ICY)
+| July 7, 2025 | Woman | Suresnes, France | [A woman holding cryptocurrencies was attacked at her home in Suresnes, France, in front of her husband and children.](https://archive.ph/fg6Kt)
