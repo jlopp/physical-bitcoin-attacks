@@ -242,3 +242,4 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | June 25, 2025 | 33 y/o businessman | Bengaluru, India | [OTC trade of $240,000 worth of rupees into USDT. Half a dozen men interrupted the transaction and robbed him.](https://archive.is/fVpB3)
 | June 30, 2025 | 3 people | Bangkok, Thailand | [OTC trade of $100,000 USD worth of baht for crypto in a mall parking garage. The 7 suspects had done smaller trades with the victims previously.](https://archive.is/60ICY)
 | July 7, 2025 | Woman | Suresnes, France | [A woman was attacked at her home and punched 10 times in front of her husband and children.](https://archive.ph/fg6Kt)
+| July 15, 2025 | Prince Pandey | Ahmedabad, India | [3 men lured a trader into a trap and assaulted him while demanding 50,000 USDT. The victim's father contacted police and they managed to find and rescue him.](https://archive.is/C0MNZ)
