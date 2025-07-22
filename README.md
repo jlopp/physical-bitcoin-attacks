@@ -178,6 +178,7 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | March 10, 2024 | Young Couple | Montreal, Quebec, Canada | [Gang of 4 kidnaps couple and robs them of $25,000 in cryptocurrency.](https://archive.ph/tZB6N)
 | March 15, 2024 | ___ Yevgini | Samui Island, Thailand | [Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.](https://archive.ph/EnzIt)
 | April 18, 2024 | 11 Traders | Lianhe Zaobao, Singapore | [4 men rob suspected Chinese crypto gambling ring of $3M USD.](https://archive.ph/ZW6GW)
+| May 5, 2024 | Quentin Cepeljac | London, England | [A kidnap gang dumped a celebrity barber at a railway station after mistaking him for a cryptocurrency billionaire.](https://archive.ph/EBmqW#selection-1601.0-1601.114)
 | June 17, 2024 | Ramesh Nair | London, England | [3 men armed with machetes invade home, force owner to transfer 1,000+ ETH.](https://archive.ph/u3sUN)
 | July 3, 2024 | 3 y/o boy | Tseung Kwan, Hong Kong | [2 women abduct toddler from mall, demand $660,000 USDT ransom.](https://archive.ph/gMmvr)
 | July 10, 2024 | Undisclosed Man | Angers, France | [2 men invade home, threaten victim with knife & crowbar, demand 10,000 EUR.](https://archive.is/bVBGi)
