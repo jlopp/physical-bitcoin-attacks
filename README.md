@@ -222,6 +222,7 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | February 8, 2025 | 20 y/o man | Paris, France | [Crypto investor lured to meeting by woman, abducted by 3 men who demand 40K EUR.](https://archive.is/jH9pD)
 | February 24, 2025 | 30 y/o Chinese Man | Jeju City, South Korea | [4 Chinese suspects stab man lured to perform a trade in hotel room, steal 85 million won.](https://archive.is/IZwbJ)
 | February 28, 2025 | Chinese Man | Ho Chi Minh City, Vietnam | [Chinese gang kidnaps victim, extorts 600,000 USDT, are quickly apprehended by police.](https://archive.is/qIgny)
+| March, 2025 | 30 y/o man | Sweden | [Victim kidnapped by gang who took him into the woods, kicked and punched him, poured gasoline over him, threatened to set him on fire, placed pliers to his hand, and threatened to cut off his fingers.](https://archive.is/JGtEj)
 | March 2, 2025 | Kaitlyn Siragusa | Houston, Texas, United States | [Popular Streamer Amouranth posts screenshot of $20M BTC wallet, becomes victim of armed home invasion. She successfully defended herself by shooting an attacker.](https://archive.is/Yn8mp)
 | March 13, 2025 | 41 y/o Wong | Lai Chi Kok, Hong Kong | [Man sells HK $318,000 worth of cryptocurrency, is then beaten with a stick and robbed of the cash he received.](https://archive.is/bhCYH)
 | March 23, 2025 | Spanish Businessman | Ipiranga, Brazil | [Man kidnapped by 2 fake police officers, held for a week and drugged, demanded $50M, escaped on his own.](https://archive.is/WnpO6)
