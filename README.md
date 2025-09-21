@@ -142,6 +142,7 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | September 12, 2022 | Unidentified couple | Delray Beach, Florida, United States | [Armed gang invades home, takes jewelry, electronics, cash. Tried but failed to drain Gemini account.](https://archive.ph/34qpX)|
 | September 15, 2022 | Russian Couple | Koh Samui, Thailand | [Russian couple extorted by gang of foreign men at coffee shop.](https://archive.ph/VmHZx)|
 | September 15, 2022 | Unidentified young man | Homestead, Florida, United States | [Armed gang invades home, takes jewelry, electronics. Kidnapped & tortured victim, failed to find his bitcoin.](https://archive.ph/34qpX)|
+| November 1, 2022 | Female "A.T." | Barrie, Ontario, Canada | [A woman was kidnapped, tied to a chair, stripped naked, hit in the legs with a hammer, and burned while attackers demanded $1 million in bitcoin. Attackers were eventually caught.](https://archive.ph/Krld4)|
 | December, 2022 | Aiden Pleterski | Toronto, Ontario, Canada | ["Crypto king" abducted, tortured, and beaten for days as his kidnappers sought millions in ransom](https://archive.ph/0rqSm)|
 | December 1, 2022 | Russian Businessman | Moscow, Russia | [Man kidnapped from his Bentley by 4 men, forced to give access to bitcoin wallet.](https://archive.ph/zC9Tf)|
 | December 3, 2022 | Unidentified man | Lelystad, Netherlands | [Man responds to ad to sell his bitcoin, is attacked by several men & forced to transfer 30K EUR worth of BTC & ETH.](https://archive.ph/JNkaq)|
