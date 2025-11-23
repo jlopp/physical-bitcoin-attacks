@@ -7,16 +7,16 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 
 | Date        | Victim  | Location | Description |
 | :---------: |:------: | :------: | :---------: |
-| December 29, 2014 | Hal Finney | Santa Barbara, California, United States | [Bitcoin developer SWATted after months of harrassment & extortion](https://archive.is/WvHB9) |
-| January 3, 2015 | Amanda McCollum | Atlanta, Georgia, United States | [BTM thieves strike smoke shop, fire gun](https://archive.is/R98Nn)|
-| January 22, 2015 | Martin Wismeijer | Amsterdam, Netherlands | [Thieves steal 2 bitcoin ATMs](https://archive.is/aP649) |
-| February, 2015 | Dean Katz | New York, New York, United States | [Bitcoin trader robbed of $12,000 at gunpoint](https://archive.is/QeCwu) |
-| May 27, 2015 | Dwayne Richards | New York, New York, United States | [Firefighter kidnapped, robbed of $1,100, & stabbed by crypto thieves](https://web.archive.org/web/20170212084543/https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html) |
-| November 16, 2015 | Robert Nederhoed | Delft, Netherlands | [Thieves steal bitcoin ATM containing 2,000 EUR](https://archive.is/jjSYk) |
-| July 11, 2016 | Tadas Kasputis | Kaunas, Lithuania | [Cryptocurrency executive kidnapped at car wash](https://archive.is/VDAjq) |
-| July 25, 2016 | Steve Manos | West Palm Beach, Florida, United States | [Bitcoin trader robbed of $28,000 at gunpoint](https://archive.is/fQdH7) |
-| August 14, 2016 | Multiple | Toronto, Ontario, Canada | [Police arrest teens in string of bitcoin-related robberies](https://archive.is/wmHQ3) |
-| November 6, 2016 | Tivoli Brasserie | Oudenbosch, Netherlands | [Dutch Bitcoin ATM Owner Laughs at Thieves Who Took His Machine](https://archive.is/ERN61) |
+| December 29, 2014 | Hal Finney | Santa Barbara, California, United States | [Bitcoin developer SWATted after months of harrassment & extortion](https://archive.is/WvHB9) [(original link)](http://www.wired.com/2014/12/finney-swat/) |
+| January 3, 2015 | Amanda McCollum | Atlanta, Georgia, United States | [BTM thieves strike smoke shop, fire gun](https://archive.is/R98Nn) [(original link)](https://www.coindesk.com/bitcoin-atm-thieves-strike-atlanta-smoke-shop) |
+| January 22, 2015 | Martin Wismeijer | Amsterdam, Netherlands | [Thieves steal 2 bitcoin ATMs](https://archive.is/aP649) [(original link)](https://www.parool.nl/amsterdam/dieven-stelen-twee-amsterdamse-bitcoin-betaalautomaten~a3853460/) |
+| February, 2015 | Dean Katz | New York, New York, United States | [Bitcoin trader robbed of $12,000 at gunpoint](https://archive.is/QeCwu) [(original link)](http://observer.com/2015/02/bitcoin-crime-wave-breaks-out-in-nyc/) |
+| May 27, 2015 | Dwayne Richards | New York, New York, United States | [Firefighter kidnapped, robbed of $1,100, & stabbed by crypto thieves](https://web.archive.org/web/20170212084543/https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html) [(original link)](https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html) |
+| November 16, 2015 | Robert Nederhoed | Delft, Netherlands | [Thieves steal bitcoin ATM containing 2,000 EUR](https://archive.is/jjSYk) [(original link)](https://www.ad.nl/binnenland/dieven-stelen-2000-euro-uit-bitcoinautomaat-in-delft~a315113e/) |
+| July 11, 2016 | Tadas Kasputis | Kaunas, Lithuania | [Cryptocurrency executive kidnapped at car wash](https://archive.is/VDAjq) [(original link)](http://kauno.diena.lt/naujienos/kaunas/nusikaltimai-ir-nelaimes/ne-bernvakario-pokstas-kaune-buvo-pagrobtas-bitkoinu-prekeivis-827044) |
+| July 25, 2016 | Steve Manos | West Palm Beach, Florida, United States | [Bitcoin trader robbed of $28,000 at gunpoint](https://archive.is/fQdH7) [(original link)](http://touch.sun-sentinel.com/#section/-1/article/p2p-87972478/) |
+| August 14, 2016 | Multiple | Toronto, Ontario, Canada | [Police arrest teens in string of bitcoin-related robberies](https://archive.is/wmHQ3) [(original link)](https://www.toronto.com/news-story/6810325-toronto-police-arrest-teens-in-string-of-bitcoin-related-robberies/) |
+| November 6, 2016 | Tivoli Brasserie | Oudenbosch, Netherlands | [Dutch Bitcoin ATM Owner Laughs at Thieves Who Took His Machine](https://archive.is/ERN61) [(original link)](https://bitsonline.com/bitcoin-atm-stolen-netherlands/) |
 | February 16, 2017 | Josoj | London, England | [Description of robbery during Localbitcoins trade](https://localbitcoins.com/forums/#!/general-discussion:double-spending-cash-robb) with [Bitcoin Uncensored interview](https://soundcloud.com/bitcoinuncensored/uk-based-local-bitcoin-trader-robbed-in-broad-daylight-josoj-tells-his-story) and the [robber's side of the story](https://localbitcoins.com/forums/#!/general-discussion:unfreeze-my-account). |
 | February 26, 2017 | Rocelo Lopes' wife | Florianopolis, Brazil | [Wife of crypto exchange owner kidnapped and ransomed](https://archive.is/3Tzc8) |
 | March 14, 2017 | 3 Indian Bitcoin traders | Dubai, UAE | [3 Emiratis pose as cops, kidnap victims and rob them of 25 BTC](https://archive.is/P5S6u) |
@@ -81,7 +81,7 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | Unknown, 2021 | Dillon Attard | Sliema, Malta | [Victim describes his disbelief as $700,000 stolen in front of him](https://archive.is/ypS03)|
 | January 5, 2021 | 37 y/o man | Chai Wan, Hong Kong | [Robbers take US$387,000 in cash, 15BTC from man after in-person trade](https://archive.is/ps31W)|
 | January 18, 2021 | Unidentified Woman | Kwun Tong, Hong Kong | [Gang snatches HK$3.5 million from trader at knifepoint](https://archive.is/3mR44)|
-| January 23, 2021 | Physical Exchange Employees | Olsztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.is/wip/YOvMq)|
+| January 23, 2021 | Physical Exchange Employees | Olsztyn, Poland | [Two employees shot at physical Bitcoin exchange FlyingAtom](https://archive.is/YOvMq)|
 | February 4, 2021 | Married Couple | Stockholm, Sweden | [Armed robbers invade home and force owners to hand over 1M+ SEK in BTC](https://archive.is/5qCBI)|
 | February ?, 2021 | Swiss & German | Gujranwala, Pakistan | [Armed robbers take $93k in BTC at gunpoint](https://archive.is/Nmdes)|
 | March 10, 2021 | Bank director | Recife, Brazil | [Man kidnapped by a gang , tied up, and had two teeth knocked out. He was released after he instructed his partner to transfer 4.78 BTC to the attackers.](https://archive.is/KrFtE)|
