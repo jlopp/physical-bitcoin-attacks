@@ -167,11 +167,11 @@ Finally, [this academic paper](./Wrench_Attacks_Research.pdf) analyzing physical
 | June 2023 | Crypto Entrepreneur | Tel Aviv, Israel | [Crypto entrepreneur robbed at gunpoint in his home in Tel Aviv](https://archive.is/mgD0B)|
 | July 16, 2023 | Unknown Couple | Queens, New York, United States | [Fake FBI agents in Porsche tase and tie up couple, steal Mercedes, $40K in cash, crypto](https://archive.is/iSRCc)|
 | September 3, 2023 | Italian man | Phuket, Thailand | [Russian MMA fighter & twin brother rob man of watches, seek Ledger wallet.](https://archive.is/oSGRU)|
-| October, 2023 | Unidentified | Södertälje, Sweden | [Home invasion, man tortured to extract his bitcoin.](https://archive.is/ODWxI)[original link](https://cointelegraph.com/news/swedish-bitcoiners-targeted-by-armed-criminals)|
 | October, 2023 | Karl Johnson | Cardishead, England | [Victim dragged into a flat, tied up, assaulted, locked in a cupboard all night until they received cryptocurrency.](https://archive.is/GTCVg)|
 | October, 2023 | Karl Johnson | Salford, England | [Days after previous attack, victim was kidnapped, had bag placed over head, released after sending cryptocurrency.](https://archive.is/GTCVg)|
+| October 3, 2023 | Unidentified couple | Södertälje, Sweden | [4 masked robbers invaded home, tied up victims.](https://archive.is/muwGi)[(original link)](https://www.lt.se/2023-11-08/ranarna-ar-ute-efter-bitcoin)|
 | October 30, 2023 | Crypto Exchange | Tbilisi, Georgia | [6 men rob exchange office, take $900K USD in crypto.](https://archive.is/zHpPv)|
-| November 6, 2023 | Middle-aged couple | Rönninge, Sweden | [Couple tied up, beaten, and threatened with their own kitchen knives.](https://archive.is/ODWxI)|
+| November 6, 2023 | Middle-aged couple | Rönninge, Sweden | [Couple tied up, beaten, and threatened with their own kitchen knives.](https://archive.is/OJ6ii) [(original link)](https://www.aftonbladet.se/nyheter/a/EQPmnG/grovt-ran-soder-om-stockholm-bundna-i-timmar-enligt-uppgift)|
 | November 10, 2023 | Binance Client | Montenegro | [Executives lured into fake business trip, kidnapped, forced to empty wallets of $12M USDT.](https://archive.is/3jxou)|
 | November 10, 2023 | 21 y/o man | Portland, Oregon, United States | [4 men fly from FL to OR, kidnap target from apartment, torture him until he revealed seed phrase.](https://archive.is/pFhaX)|
 | November 30, 2023 | Karl Johnson | Salford, England | [Victim was kidnapped from a friend's house, had bag placed over head, rescued by police after anonymous tip sent.](https://archive.is/GTCVg)|
