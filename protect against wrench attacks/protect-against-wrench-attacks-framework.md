@@ -11,9 +11,9 @@ A wrench attack is any situation where the attacker bypasses technical securit
 
 The term originates from the [*xkcd* webcomic](https://xkcd.com/538/), which satirically illustrated that sophisticated 4096-bit RSA encryption could be bypassed more effectively by a $5 wrench than by a supercomputer.
 
-![xkcd comics](security.png)
+![xkcd comics](security.png "XKCD comic #538: Security - high-tech encryption vs. a $5 wrench")
 
-### Why this matters now?
+### Why does this matters now?
 
 - Growth of self‑custody, non‑custodial wallets, and on‑chain treasuries means more value is directly controlled by a small number of individuals, often without institutional physical security.
 - Public on‑chain data, social media signaling, and leaks make it easier for adversaries to identify likely high‑value targets and correlate them with real‑world identities.
@@ -175,7 +175,7 @@ These principles guide all subsequent controls, ensuring wallet architectures an
     
     Threshold schemes where no single key share enables spending.
 
-![Multisig](multisig.png)
+![Multisig](multisig.png "Diagram of a 2-of-3 multisig Bitcoin transaction process")
 
 ### Geographically decoupled key storage
 
@@ -273,7 +273,7 @@ OpSec shrinks the real-world attack surface by reducing what adversaries can lea
     
 - **Children and vulnerable contacts**
     
-    Age-appropriate rules like *"never open door for strangers”* or *“never share phone screens"*, school pick-up codes, and emergency family assembly points.
+    Age-appropriate rules like *"never open the door for strangers"* or *“never share phone screens"*, school pick-up codes, and emergency family assembly points.
     
 
 ### Physical routine hardening
@@ -295,11 +295,11 @@ OpSec shrinks the real-world attack surface by reducing what adversaries can lea
 
 - **Standard responses to probes**
     
-    *I don't handle that"* or "*Ask my lawyer/colleagues"* for any crypto questions. Never confirm or deny holdings.
+    *"I don't handle that"* or "*Ask my lawyer/colleagues"* for any crypto questions. Never confirm or deny holdings.
     
 - **Fake stories**
     
-    Plausible cover narratives like *"Everything's in custody"* or *"Team handles treasury”* consistent across family/staff to deflect without raising suspicion.
+    Plausible cover narratives like *"Everything's in custody"* or *"Team handles treasury"* consistent across family/staff to deflect without raising suspicion.
     
 - **Regular audits**
     
@@ -404,7 +404,7 @@ Insider leaks home address, device types, etc, to external criminals. Victim pre
 - Insider threat program with regular access reviews, exit interviews with key rotation, NDAs with enforcement.
 - Staff authorized to refuse under any pressure; refusal never results in penalty.
 
-![Typical Scenarios](scenarios.png)
+![Typical Scenarios](scenarios.png "Donut chart showing typical crime and safety scenarios - source: stats.glok.me - date: 2026-01-24")
 
 ## Incident response
 
@@ -539,7 +539,7 @@ Run quarterly tabletop exercises simulating coercion, kidnapping, and insider th
 - [ ]  Conduct third-party penetration tests targeting technical infrastructure.
 - [ ]  Conduct third-party penetration tests targeting staff social engineering.
 
-## More ressources
+## More resources
 
 Here you will find more valuable resources to dig further:
 
@@ -552,4 +552,3 @@ Here you will find more valuable resources to dig further:
 [Physical Violence In Crypto](https://stats.glok.me/)
 
 [Physical Security Checklist](https://glok.me/checklist/download-pdf/)
-
