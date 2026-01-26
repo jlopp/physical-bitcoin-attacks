@@ -11,7 +11,6 @@ A wrench attack is any situation where the attacker bypasses technical securit
 
 The term originates from the [*xkcd* webcomic](https://xkcd.com/538/), which satirically illustrated that sophisticated 4096-bit RSA encryption could be bypassed more effectively by a $5 wrench than by a supercomputer.
 
-![xkcd comics](security.png "XKCD comic #538: Security - high-tech encryption vs. a $5 wrench")
 
 ### Why does this matters now?
 
@@ -174,8 +173,7 @@ These principles guide all subsequent controls, ensuring wallet architectures an
 - **MPC (multi-party computation)**
     
     Threshold schemes where no single key share enables spending.
-
-![Multisig](multisig.png "Diagram of a 2-of-3 multisig Bitcoin transaction process")
+  
 
 ### Geographically decoupled key storage
 
@@ -404,7 +402,6 @@ Insider leaks home address, device types, etc, to external criminals. Victim pre
 - Insider threat program with regular access reviews, exit interviews with key rotation, NDAs with enforcement.
 - Staff authorized to refuse under any pressure; refusal never results in penalty.
 
-![Typical Scenarios](scenarios.png "Donut chart showing typical crime and safety scenarios - source: stats.glok.me - date: 2026-01-24")
 
 ## Incident response
 
