@@ -1,4 +1,4 @@
-# How to Protect Against Wrench
+# How to Protect Against Wrench Attacks
 
 In cases of physical aggression or violence, **immediately notify your local law enforcement**.
 If crypto assets have been stolen, contact [**SEAL911**](https://securityalliance.org/our-work/seal-911).
