@@ -542,7 +542,7 @@ Here you will find more valuable resources to dig further:
 
 [Securing Cryptocurrency Organizations | Google Cloud Blog](https://cloud.google.com/blog/topics/threat-intelligence/securing-cryptocurrency-organizations/?hl=en)
 
-[Wrench attacks: A closer look at prevalence and prevention - Unchained](https://www.unchained.com/blog/wrench-attacks)
+[Wrench attacks: A closer look at prevalence and prevention - Unchained](https://blog.casa.io/how-to-protect-your-bitcoin-from-5-wrench-attacks/)
 
 [SEAL Framework](https://frameworks.securityalliance.org/intro/introduction)
 
