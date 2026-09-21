@@ -104,6 +104,37 @@
   #theme-select:hover { box-shadow: 0 0 12px color-mix(in srgb, var(--cyan) 60%, transparent); }
   #theme-select option { background: var(--bg2); color: var(--text); }
 
+  /* ---------- Metric toggle (per capita / total) ---------- */
+  .metric-pick { display: flex; align-items: center; gap: 8px; }
+  .metric-pick label {
+    font-family: var(--font-display); font-size: 0.625rem; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 1.5px; white-space: nowrap;
+  }
+  /* switch */
+  .metric-pick input[type="checkbox"] {
+    appearance: none; -webkit-appearance: none;
+    width: 34px; height: 18px; margin: 0; cursor: pointer; position: relative;
+    background: color-mix(in srgb, var(--border) 90%, transparent);
+    border: 1px solid var(--cyan);
+    clip-path: polygon(var(--clip) 0, 100% 0, 100% calc(100% - var(--clip)), calc(100% - var(--clip)) 100%, 0 100%, 0 var(--clip));
+    transition: background 0.15s ease;
+  }
+  .metric-pick input[type="checkbox"]::after {
+    content: ""; position: absolute; top: 1px; left: 1px;
+    width: 14px; height: 14px;
+    background: var(--muted);
+    clip-path: polygon(var(--clip) 0, 100% 0, 100% calc(100% - var(--clip)), calc(100% - var(--clip)) 100%, 0 100%, 0 var(--clip));
+    transition: left 0.15s ease, background 0.15s ease;
+  }
+  .metric-pick input[type="checkbox"]:checked {
+    background: var(--pink);
+    box-shadow: 0 0 10px color-mix(in srgb, var(--pink) 70%, transparent);
+  }
+  .metric-pick input[type="checkbox"]:checked::after {
+    left: 17px;
+    background: var(--bg);
+  }
+
   /* ---------- Year filter ---------- */
   #year-filter {
     display: flex; align-items: center; gap: 12px; flex: 1; min-width: 300px;
@@ -416,6 +447,8 @@
     #year-filter label { display: none; } /* icon-only row on phones */
     #year-label { min-width: 86px; font-size: 0.625rem; }
     #theme-select { max-width: 130px; font-size: 0.688rem; }
+    .metric-pick { order: 4; margin-left: auto; }
+    .metric-pick label { font-size: 0.562rem; }
     #btn-all, #btn-latest { padding: 6px 8px; font-size: 0.500rem; }
 
     /* --- Bigger touch targets for slider thumbs --- */
@@ -480,6 +513,11 @@
     <label for="theme-select">Theme</label>
     <select id="theme-select"></select>
   </div>
+  <div class="metric-pick">
+    <label for="metric-switch">Per capita</label>
+    <input type="checkbox" id="metric-switch" role="switch" aria-checked="true"
+           aria-label="Color countries by attacks per capita instead of total attacks" checked>
+  </div>
   <button id="btn-world" style="display:none">← World view</button>
 </div>
 
@@ -522,15 +560,36 @@ const NAME_FALLBACKS = {
 const YEARS = { MIN: 2014, MAX: 2026 };
 
 // ======================= Populations (millions, ~2025 estimates) =======================
-// Used to compute attacks per million citizens for the choropleth + tooltips.
+// Covers every country in the world geojson (johan/world.geo.json), not just
+// those with attacks, so tooltips and per-capita math work everywhere.
+// Entries with effectively zero population (Antarctica etc.) are omitted and
+// fall back to "population data unavailable".
 const POP_M = {
-  ARE: 9.5, ARG: 46, AUT: 9.1, AUS: 26, BEL: 11.7, BGR: 6.4, BRA: 213,
-  CAN: 39, CHN: 1410, COL: 52, CRI: 5.1, CYP: 1.3, DEU: 84, EST: 1.4, ESP: 48,
-  FRA: 66, GBR: 68, GEO: 3.7, GHA: 34, HKG: 7.5, IDN: 283, ISR: 9.8, IND: 1440,
-  ISL: 0.39, ITA: 59, JPN: 123, KOR: 52, LKA: 23, LTU: 2.8, LVA: 1.9, MLT: 0.55,
-  MNE: 0.6, MEX: 130, MYS: 35, NGA: 235, NLD: 18, NOR: 5.6, NZL: 5.2, PHL: 116,
-  PAK: 245, POL: 37, PRY: 6.9, ROU: 19, RUS: 144, SWE: 10.5, SGP: 6, THA: 72,
-  TUR: 86, TTO: 1.5, TWN: 23, UKR: 37, UGA: 50, USA: 335, VNM: 100, ZAF: 63,
+  AFG: 42, AGO: 37, ALB: 2.8, ARE: 9.5, ARG: 46, ARM: 2.8, AUS: 26, AUT: 9.1,
+  AZE: 10.2,   BDI: 13, BEL: 11.7, BEN: 14, BFA: 24, BGD: 175, BGR: 6.4,
+  BHS: 0.41, BIH: 3.2, BLR: 9.2, BLZ: 0.42, BMU: 0.064, BOL: 12.4, BRA: 213, BRN: 0.46,
+  BTN: 0.79, BWA: 2.7, CAF: 5.7, CAN: 39, CHE: 8.9, CHL: 19.6, CHN: 1410,
+  CIV: 29, CMR: 29, "CS-KM": 1.6, COD: 106, COG: 6.1, COL: 52, CRI: 5.1, CUB: 11,
+  CYP: 1.3, CZE: 10.9, DEU: 84, DJI: 1.1, DNK: 5.9, DOM: 11.3, DZA: 46,
+  ECU: 18.1, EGY: 113, ERI: 3.7, ESP: 48, EST: 1.4, ETH: 129, FIN: 5.6,
+  FJI: 0.93, FLK: 0.0037, FRA: 66, GAB: 2.4, GBR: 68, GEO: 3.7, GHA: 34,
+  GIN: 14, GMB: 2.8, GNB: 2.1, GNQ: 1.7, GRC: 10.4, GRE: 10.4, GRL: 0.057,
+  GUF: 0.3, GTM: 18, GUY: 0.81, HKG: 7.5, HND: 10.6, HRV: 3.9, HTI: 11.7, HUN: 9.6,
+  IDN: 283, IND: 1440, IRL: 5.3, IRN: 90, IRQ: 46, ISL: 0.39, ISR: 9.8,
+  ITA: 59, JAM: 2.8, JOR: 11.3, JPN: 123, KAZ: 20, KEN: 56, KGZ: 7.1,
+  KHM: 17, KOR: 52, KWT: 4.3, LAO: 7.6, LBN: 5.4, LBR: 5.4, LBY: 7.3,
+  LKA: 23, LSO: 2.3, LTU: 2.8, LUX: 0.67, LVA: 1.9, MAR: 38, MDA: 2.5,
+  MDG: 31, MEX: 130, MKD: 1.8, MLT: 0.55, MLI: 23, MMR: 55, MNE: 0.6, MNG: 3.4,
+  MOZ: 34, MRT: 4.9, MWI: 21, MYS: 35, NAM: 2.6, NCL: 0.29, NER: 27,
+  NGA: 235, NIC: 7, NLD: 18, NOR: 5.6, NPL: 30, NZL: 5.2, OMN: 4.6,
+  PAK: 245, PAN: 4.5, PER: 34, PHL: 116, PNG: 10.3, POL: 37, PRI: 3.2,
+  PRK: 26, PRT: 10.3, PRY: 6.9, PSE: 5.4, QAT: 2.7, ROU: 19, RUS: 144,
+  RWA: 14, SAU: 33,   SDN: 50, SEN: 18, SGP: 6, SLB: 0.74, SLE: 8.8, SSD: 11,
+  SLV: 6.4, SOM: 18, SRB: 6.6, SUR: 0.62, SVK: 5.4, SVN: 2.1, SWE: 10.5,
+  SWZ: 1.2, SYR: 23, TCD: 18, TGO: 9.3, THA: 72, TJK: 10, TKM: 6.5,
+  TLS: 1.4, TTO: 1.5, TUN: 12, TUR: 86, TWN: 23, TZA: 68, UGA: 50,
+  UKR: 37, URY: 3.4, USA: 335, UZB: 36, VEN: 28, VNM: 100, VUT: 0.33,
+  YEM: 34, ZAF: 63, ZMB: 21, ZWE: 16.7,
 };
 
 // ======================= App state =======================
@@ -541,14 +600,50 @@ let worldLayer = null;      // choropleth layer
 let cityLayer = null;       // circles when zoomed into country
 let counts = {};            // iso3 -> filtered attack count
 let rates = {};             // iso3 -> attacks per million citizens
+let colorMetric = "perCapita"; // "perCapita" (default) | "total"
 
 // attacks per million citizens (0 if population unknown)
 function perMillion(iso3, count) {
   const pop = POP_M[iso3];
   return pop ? count / pop : 0;
 }
+// max per-capita rate, EXCLUDING countries with only 1 attack so a single
+// incident in a micro-state can't dominate the scale
 function maxRate() {
-  return Math.max(1e-9, ...Object.values(rates));
+  let m = 1e-9;
+  for (const [iso3, r] of Object.entries(rates)) {
+    if ((counts[iso3] || 0) >= 2 && r > m) m = r;
+  }
+  return m;
+}
+function maxCount() {
+  return Math.max(1, ...Object.values(counts));
+}
+// The value driving a country's heat color under the current metric.
+// Countries with only 1 attack are excluded from the per-capita range and
+// pinned to the median (midpoint) ramp color instead — a single incident
+// says nothing about per-capita intensity, and micro-states would otherwise
+// dominate the scale. Returns { value } or { forcedFill } to pin a color.
+function choroValue(iso3) {
+  const c = counts[iso3] || 0;
+  if (colorMetric === "total") return { value: c };
+  if (c === 1) return { forced: true };
+  return { value: rates[iso3] || 0 };
+}
+function choroMax() {
+  return colorMetric === "total" ? maxCount() : maxRate();
+}
+// fill color for a country under the current metric (handles the 1-attack pin)
+function choroFill(iso3, max) {
+  const v = choroValue(iso3);
+  if (v.forced) {
+    // median color = midpoint of the theme ramp
+    const t = THEMES[currentThemeKey];
+    const mid = t.ramp[Math.floor(t.ramp.length / 2)];
+    const rgb = mid[1];
+    return { fill: `rgb(${rgb.join(",")})`, v: null };
+  }
+  return { fill: heatColor(v.value, max).fill, v: v.value };
 }
 
 // ======================= Init map =======================
@@ -643,34 +738,44 @@ function scheduleViewRebuild() {
 map.on("zoomend moveend", scheduleViewRebuild);
 
 // ======================= Country-internal details =======================
-// Faint admin-1 boundaries (states / provinces / regions) drawn over the
-// choropleth so countries read as more than flat silhouettes. Loaded from
-// Natural Earth 110m admin-1 (via unpkg mirror of the geojson repo).
+// Admin-1 boundaries (states / provinces / regions) drawn over the choropleth
+// so countries read as more than flat silhouettes, and — prominently — as
+// the selected country's region outlines on drill-down. The 110m file only
+// contains US states, so we use the 10m dataset (4.6k features, global);
+// it's large, so it loads lazily on first drill-in.
 let detailsData = null;          // GeoJSON FeatureCollection
-let detailsLayer = null;         // Leaflet layer group
+let detailsLayer = null;         // Leaflet layer group (faint global texture)
 let detailsLoading = false;
 let detailsRenderer = null;      // shared canvas renderer (perf on mobile)
+let detailsFetchPromise = null;  // in-flight fetch (prevents duplicate loads)
 
-const DETAILS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_1_states_provinces.geojson";
+const DETAILS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson";
 
 async function loadDetails() {
-  if (detailsData || detailsLoading) return;
+  if (detailsData || detailsLoading) return detailsFetchPromise;
   detailsLoading = true;
-  try {
-    const res = await fetch(DETAILS_URL);
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    detailsData = await res.json();
-    detailsLoading = false;
-    buildDetails();
-  } catch (e) {
-    detailsLoading = false;
-    console.warn("internal details unavailable:", e.message);
-  }
+  detailsFetchPromise = (async () => {
+    try {
+      const res = await fetch(DETAILS_URL);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      detailsData = await res.json();
+      detailsLoading = false;
+      buildDetails();
+    } catch (e) {
+      detailsLoading = false;
+      detailsFetchPromise = null;
+      console.warn("internal details unavailable:", e.message);
+    }
+  })();
+  return detailsFetchPromise;
 }
 
 function buildDetails() {
   if (detailsLayer) { map.removeLayer(detailsLayer); detailsLayer = null; }
-  if (!detailsData) { loadDetails(); return; }
+  // No eager fetch here: the 10m admin-1 file is ~40MB, so it's only
+  // downloaded on first drill-in (via showRegionOutlines). If it happens
+  // to be loaded, draw the faint global texture as before.
+  if (!detailsData) return;
 
   const style = getComputedStyle(document.documentElement);
   // derive a faint line color from the theme: muted grid color
@@ -693,6 +798,64 @@ function buildDetails() {
     },
   });
   detailsLayer.addTo(map);
+  // If the user drilled in while the data was still downloading, the
+  // selected country's outlines couldn't be drawn then — draw them now.
+  if (selectedCountryISO3) showRegionOutlines(selectedCountryISO3);
+}
+
+// ======================= Selected-country admin-1 outlines =======================
+// When zoomed into a country, draw its state/province borders prominently
+// (above the faint global texture). Uses the same Natural Earth admin-1 data
+// already loaded by buildDetails(); falls back gracefully if it's still loading.
+let regionOutlineLayer = null;
+
+// ISO3 -> display name from the loaded world geojson (matches the choropleth
+// tooltips), with fallbacks for names the datasets disagree on.
+function countryName(iso3) {
+  if (window.worldData) {
+    const f = window.worldData.features.find(f => f.id === iso3);
+    if (f) return f.properties.name || iso3;
+  }
+  return (NAME_FALLBACKS[iso3] && NAME_FALLBACKS[iso3][0]) || iso3;
+}
+
+async function showRegionOutlines(iso3) {
+  hideRegionOutlines();
+  if (!iso3) return;
+  if (!detailsData) {
+    // fetch on demand; draw once available
+    await loadDetails();
+    if (selectedCountryISO3 !== iso3 || !detailsData) return;
+  }
+  const style = getComputedStyle(document.documentElement);
+  const borderColor = style.getPropertyValue("--border").trim() || "#888";
+
+  const name = countryName(iso3);
+  const feats = detailsData.features.filter(f =>
+    f.properties && (
+      f.properties.admin === name ||
+      f.properties.admin === name + " S.A.R." ||
+      f.properties.geonunit === name || f.properties.geonunit === name + " S.A.R."
+    )
+  );
+  if (!feats.length) return;
+
+  regionOutlineLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
+    pane: "details",
+    renderer: detailsRenderer,
+    style: {
+      color: borderColor,
+      weight: 1.8,
+      opacity: 0.95,
+      fill: false,
+      interactive: false,
+    },
+  });
+  regionOutlineLayer.addTo(map);
+}
+
+function hideRegionOutlines() {
+  if (regionOutlineLayer) { map.removeLayer(regionOutlineLayer); regionOutlineLayer = null; }
 }
 
 // ======================= Country name labels (legibility-aware) =======================
@@ -750,7 +913,7 @@ function ringCentroid(ring) {
 function buildCountryLabels() {
   if (countryLabelLayer) { map.removeLayer(countryLabelLayer); countryLabelLayer = null; }
   if (!window.worldData) return;
-  const max = maxRate();
+  const max = choroMax();
   const style = getComputedStyle(document.documentElement);
   const brightText = style.getPropertyValue("--text").trim() || "#fff";
   const darkText = "#0a0618";
@@ -788,7 +951,7 @@ function buildCountryLabels() {
     if (textW > wPx * 0.9 || textH > hPx * 0.9) continue; // doesn't fit inside borders
 
     // pick text color by the fill's luminance
-    const fill = heatColor(rates[f.id] || 0, max).fill;
+    const fill = choroFill(f.id, max).fill;
     const lum = relLuminance(fill);
     const useDark = lum > 0.35;
     const color = useDark ? darkText : brightText;
@@ -1153,6 +1316,19 @@ function initThemePicker() {
   sel.addEventListener("change", () => applyTheme(sel.value));
 }
 
+// ======================= Metric toggle (per capita / total) =======================
+const metricSwitch = document.getElementById("metric-switch");
+const metricLabel = document.querySelector(".metric-pick label");
+metricSwitch.addEventListener("change", () => {
+  colorMetric = metricSwitch.checked ? "perCapita" : "total";
+  metricLabel.textContent = metricSwitch.checked ? "Per capita" : "Total attacks";
+  metricSwitch.setAttribute("aria-checked", String(metricSwitch.checked));
+  if (window.worldData) rebuild();
+  announce(metricSwitch.checked
+    ? "Heatmap now shows attacks per capita."
+    : "Heatmap now shows total attacks.");
+});
+
 // ======================= Heat colors (theme ramp) =======================
 function heatColor(count, max) {
   const t = THEMES[currentThemeKey];
@@ -1171,25 +1347,25 @@ function heatColor(count, max) {
 // ======================= World choropleth layer =======================
 function buildWorldLayer() {
   if (worldLayer) { map.removeLayer(worldLayer); worldLayer = null; }
-  const max = maxRate();
+  const max = choroMax();
 
   worldLayer = L.geoJSON(window.worldData, {
     pane: "world-choro",
     style: feature => {
       const c = counts[feature.id] || 0;
-      const rate = rates[feature.id] || 0;
-      const col = heatColor(rate, max);
+      const f = choroFill(feature.id, max);
       return {
-        color: c ? col.stroke : THEMES[currentThemeKey].dim,
+        color: c ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim,
         weight: c ? 1.2 : 0.5,
-        fillColor: col.fill,
-        fillOpacity: c ? 0.55 + 0.45 * Math.min(1, rate / max) : 0.3,
-        opacity: col.opacity,
+        fillColor: f.fill,
+        fillOpacity: c ? 0.55 + 0.45 * (f.v === null ? 0.5 : Math.min(1, f.v / max)) : 0.3,
+        opacity: 1,
       };
     },
     onEachFeature: (feature, layer) => {
       const c = counts[feature.id] || 0;
       const rate = rates[feature.id] || 0;
+      const f = choroFill(feature.id, max);
       const name = feature.properties.name || feature.id;
       const perM = POP_M[feature.id]
         ? `${rate.toFixed(2)} attack${rate === 1 ? "" : "s"} per million citizens`
@@ -1208,11 +1384,10 @@ function buildWorldLayer() {
       });
       layer.on("mouseout", () => {
         if (selectedCountryISO3) return;
-        const col = heatColor(rate, max);
         layer.setStyle({
           weight: c ? 1.2 : 0.5,
-          color: c ? col.stroke : THEMES[currentThemeKey].dim,
-          fillOpacity: c ? 0.55 + 0.45 * Math.min(1, rate / max) : 0.3,
+          color: c ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim,
+          fillOpacity: c ? 0.55 + 0.45 * (f.v === null ? 0.5 : Math.min(1, f.v / max)) : 0.3,
         });
       });
       layer.on("click", () => {
@@ -1228,6 +1403,8 @@ function buildWorldLayer() {
 
 // ======================= Legend =======================
 function updateLegend(max) {
+  document.querySelector("#legend h3").textContent =
+    colorMetric === "perCapita" ? "Attacks per million citizens" : "Attacks per country";
   const sw = document.getElementById("legend-swatches");
   sw.innerHTML = "";
   for (let i = 0; i < 8; i++) {
@@ -1307,6 +1484,7 @@ function selectCountry(iso3, name) {
   }
 
   drawCityCircles(inCountry);
+  showRegionOutlines(iso3);
   panelWorldClosed = false; // drilling in resets the close state
   openPanel(name, inCountry);
   announceCountry(iso3, name, inCountry.length);
@@ -1442,6 +1620,7 @@ document.getElementById("panel-expand").addEventListener("click", () => {
 // ======================= World view reset =======================
 function worldView() {
   selectedCountryISO3 = null;
+  hideRegionOutlines();
   if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
   document.getElementById("btn-world").style.display = "none";
   goWorldView();
