@@ -672,7 +672,11 @@ worldChoroPane.style.pointerEvents = "auto";
 map.createPane("details");
 const detailsPane = map.getPane("details");
 detailsPane.style.zIndex = 402;
-detailsPane.style.pointerEvents = "none";
+// pointer-events must be "auto" so the drill-in regional choropleth receives
+// hover events (region tooltips). The faint global texture layer does not
+// block the world-layer tooltips beneath — the choropleth rects don't fill
+// the whole details pane where there are no regions.
+detailsPane.style.pointerEvents = "auto";
 
 // ======================= Graticule (topographic markings) =======================
 // Latitude/longitude grid with degree labels, styled per theme.
@@ -838,9 +842,9 @@ function buildDetails() {
     },
   });
   detailsLayer.addTo(map);
-  // If the user drilled in while the data was still downloading, the
-  // selected country's outlines couldn't be drawn then — draw them now.
-  if (selectedCountryISO3) showRegionOutlines(selectedCountryISO3);
+  // No re-trigger of showRegionOutlines here — the awaiting showRegionOutlines
+  // (which is what initiated loadDetails) continues drawing once its await
+  // resolves. Re-triggering here would double-render the region layers.
 }
 
 // ======================= Selected-country admin-1 regions =======================
@@ -849,6 +853,8 @@ function buildDetails() {
 // prominently. Uses the same Natural Earth admin-1 data as buildDetails().
 let regionOutlineLayer = null; // region choropleth layer for the zoomed country
 let regionEdgeLayer = null;   // internal region border lines (no country outline)
+let regionOutlineRenderer = null; // tracked so hideRegionOutlines can remove its <svg> DOM node
+let regionEdgeRenderer = null;
 
 // ISO3 -> display name from the loaded world geojson (matches the choropleth
 // tooltips), with fallbacks for names the datasets disagree on.
@@ -987,11 +993,18 @@ async function showRegionOutlines(iso3) {
   // convert to Leaflet [lat, lng]
   const edgeLines = internalEdges.map(([a, b]) => [[a[1], a[0]], [b[1], b[0]]]);
 
+  // The pane must be set on the RENDERER (L.svg ignores the layer's pane
+  // option); otherwise region paths land in overlayPane (z 400) underneath
+  // the world-choro pane (z 401) and never receive hover/click events.
+  // Track the renderer so hideRegionOutlines can destroy its DOM container —
+  // Leaflet's ref-counted renderer cleanup leaves orphan <svg>s behind when
+  // layers are removed before being re-added.
+  regionOutlineRenderer = L.svg({ padding: 0.5, pane: "details" });
   regionOutlineLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
     pane: "details",
     // NOTE: don't reuse the canvas detailsRenderer here — canvas-rendered
     // layers don't get reliable hover/mouse events (needed for tooltips).
-    renderer: L.svg({ padding: 0.5 }),
+    renderer: regionOutlineRenderer,
     style: feature => {
       const v = regionValue(feature);
       const fill = v.forced ? midFill : heatColor(v.value, maxRegion).fill;
@@ -1025,10 +1038,12 @@ async function showRegionOutlines(iso3) {
   });
   regionOutlineLayer.addTo(map);
 
-  // internal region borders, drawn on top of the fills
+  // internal region borders, drawn on top of the fills. Non-interactive so
+  // hover passes through to the region fills below.
+  regionEdgeRenderer = L.svg({ padding: 0.5, pane: "details" });
   regionEdgeLayer = L.polyline(edgeLines, {
     pane: "details",
-    renderer: detailsRenderer,
+    renderer: regionEdgeRenderer,
     color: borderColor,
     weight: 2.5,
     opacity: 1,
@@ -1039,6 +1054,18 @@ async function showRegionOutlines(iso3) {
 function hideRegionOutlines() {
   if (regionOutlineLayer) { map.removeLayer(regionOutlineLayer); regionOutlineLayer = null; }
   if (regionEdgeLayer) { map.removeLayer(regionEdgeLayer); regionEdgeLayer = null; }
+  // Clean up the renderer <svg> containers — Leaflet's ref-counted SVG
+  // cleanup doesn't always remove them when layers are added/removed in
+  // quick succession (drill-in → drill-out → drill-in), which leaves
+  // orphaned region fills visible on the world map.
+  if (regionOutlineRenderer && regionOutlineRenderer._container) {
+    regionOutlineRenderer._container.remove();
+    regionOutlineRenderer = null;
+  }
+  if (regionEdgeRenderer && regionEdgeRenderer._container) {
+    regionEdgeRenderer._container.remove();
+    regionEdgeRenderer = null;
+  }
 }
 
 // ======================= Country name labels (legibility-aware) =======================
