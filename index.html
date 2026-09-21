@@ -107,12 +107,12 @@
   /* ---------- Year filter ---------- */
   #year-filter {
     display: flex; align-items: center; gap: 12px; flex: 1; min-width: 300px;
+    flex-wrap: wrap; /* let the year text drop below the slider if space runs out */
   }
   #year-filter label {
     font-family: var(--font-display); font-size: 0.625rem; color: var(--muted);
     white-space: nowrap; text-transform: uppercase; letter-spacing: 1.5px;
   }
-  .range-wrap { position: relative; flex: 1; height: 26px; min-width: 160px; }
   .range-track {
     position: absolute; left: 0; right: 0; top: 12px; height: 4px;
     background: color-mix(in srgb, var(--border) 90%, transparent); border-radius: 2px;
@@ -144,6 +144,7 @@
     color: var(--pink); white-space: nowrap; min-width: 130px;
     text-shadow: 0 0 8px color-mix(in srgb, var(--pink) 80%, transparent);
   }
+  .range-wrap { position: relative; flex: 1 1 160px; height: 26px; min-width: 120px; }
 
   /* ---------- Year slider thumb tooltip ---------- */
   #thumb-tip {
@@ -529,6 +530,13 @@ function goWorldView() {
 goWorldView();
 map.createPane("cities");
 map.getPane("cities").style.zIndex = 450;
+// Choropleth pane: above terrain tiles (200) and tint (399), below city
+// circles (450). Kept at 75% opacity so the topographic basemap shows through.
+map.createPane("world-choro");
+const worldChoroPane = map.getPane("world-choro");
+worldChoroPane.style.zIndex = 401;
+worldChoroPane.style.opacity = "0.75";
+worldChoroPane.style.pointerEvents = "auto";
 
 // ======================= Topographic basemap (theme-aware) =======================
 // Base terrain: OpenTopoMap (real topographic contours — free, no API key).
@@ -559,19 +567,12 @@ function setBasemap(key) {
   const s = BASEMAP_STYLES[key] || BASEMAP_STYLES.cyberpunk;
   if (basemapLayer) { map.removeLayer(basemapLayer); basemapLayer = null; }
   if (basemapLabelsLayer) { map.removeLayer(basemapLabelsLayer); basemapLabelsLayer = null; }
+  // CARTO label-only tiles removed: they conflicted with the theme-drawn
+  // graticule and country/city labels.
   basemapLayer = L.tileLayer(TERRAIN_URL, {
     attribution: TERRAIN_ATTR, subdomains: "abc", maxZoom: 12, minZoom: 2,
     className: s.dark ? "basemap-tinted" : "basemap-plain",
   }).addTo(map);
-  if (s.labels) {
-    // CARTO's label-only tiles add city street-level names when zoomed in.
-    // (Keyless endpoints; see https://carto.com/basemaps if this changes.)
-    basemapLabelsLayer = L.tileLayer(
-      s.dark ? "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png"
-             : "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",
-      { subdomains: "abcd", maxZoom: 12, minZoom: 2, className: "basemap-labels" }
-    ).addTo(map);
-  }
   // tint overlay div sits between tiles and vectors, colored per theme
   const tintEl = document.getElementById("basemap-tint");
   if (tintEl) {
@@ -1057,6 +1058,7 @@ function buildWorldLayer() {
   const max = Math.max(1, ...Object.values(counts));
 
   worldLayer = L.geoJSON(window.worldData, {
+    pane: "world-choro",
     style: feature => {
       const c = counts[feature.id] || 0;
       const col = heatColor(c, max);
@@ -1118,35 +1120,51 @@ function selectCountry(iso3, name) {
   const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
   if (!inCountry.length) return;
 
-  // Zoom so the country fills the page. If the country's polygon is much wider
-  // than the spread of actual attack locations (Alaska/Hawaii for US, overseas
-  // territories for France), zoom to the data instead so the view stays tight.
+  // Zoom so the country is centered and fills ~75% of the screen.
   const layer = findFeatureLayer(iso3);
   if (layer) {
     let b = layer.getBounds();
-    const polyWidth = b.getEast() - b.getWest();
-    const pts = inCountry.filter(a => a.lat !== null && a.lng !== null);
-    const dataBounds = L.latLngBounds(pts.map(a => [a.lat, a.lng]));
-    if (dataBounds.isValid()) {
-      const dataWidth = dataBounds.getEast() - dataBounds.getWest();
-      if (polyWidth > 60 && polyWidth > dataWidth * 2.5) {
-        b = dataBounds;
+
+    // USA: zoom to the mainland (contiguous states) only — the full polygon
+    // (Alaska + Hawaii) would zoom the map out to near world scale.
+    if (iso3 === "USA") {
+      b = L.latLngBounds([[24.5, -125], [49.5, -66.5]]);
+    } else {
+      // Other countries with far-flung territory (France, etc.): if the
+      // polygon is much wider than the actual attack data, zoom to the data.
+      const polyWidth = b.getEast() - b.getWest();
+      const pts = inCountry.filter(a => a.lat !== null && a.lng !== null);
+      const dataBounds = L.latLngBounds(pts.map(a => [a.lat, a.lng]));
+      if (dataBounds.isValid()) {
+        const dataWidth = dataBounds.getEast() - dataBounds.getWest();
+        if (polyWidth > 60 && polyWidth > dataWidth * 2.5) {
+          b = dataBounds;
+        }
       }
     }
-    // Extra padding on small screens where header + bottom sheet eat the viewport
-    const pad = window.innerWidth < 900 ? 0.45 : 0.25;
-    map.fitBounds(b.pad(pad), { animate: true });
+
+    // 75% fill: pad each side by 12.5% of the viewport. On small screens,
+    // pad extra at top/bottom so the header + bottom sheet don't cover it.
+    const size = map.getSize();
+    const px = size.x * 0.125;
+    let py = size.y * 0.125;
+    if (window.innerWidth < 900) py += 30;
+    map.fitBounds(b, {
+      paddingTopLeft: L.point(Math.round(px), Math.round(py)),
+      paddingBottomRight: L.point(Math.round(px), Math.round(py)),
+      animate: true,
+    });
   }
 
-  // Dim world layer, highlight selected with theme border glow
+  // Keep the world choropleth fully in place (pane never hides on drill-down):
+  // heat fills stay, only the selected country's border is highlighted.
   if (worldLayer) {
     worldLayer.eachLayer(l => {
       const sel = l.feature.id === iso3;
       l.setStyle({
-        fillOpacity: sel ? 0.12 : 0.04,
-        opacity: sel ? 1 : 0.15,
-        weight: sel ? 2 : 0.5,
         color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim,
+        weight: sel ? 2.5 : 0.5,
+        opacity: sel ? 1 : 0.6,
       });
     });
   }
@@ -1336,9 +1354,10 @@ function syncYears() {
   computeCounts();
   buildWorldLayer();
   if (selectedCountryISO3 && worldLayer) {
+    // keep heat fills; only re-highlight the selected country's border
     worldLayer.eachLayer(l => {
       const sel = l.feature.id === selectedCountryISO3;
-      l.setStyle({ fillOpacity: sel ? 0.12 : 0.04, opacity: sel ? 1 : 0.15, weight: sel ? 2 : 0.5, color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim });
+      l.setStyle({ color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim, weight: sel ? 2.5 : 0.5, opacity: sel ? 1 : 0.6 });
     });
   }
 }
@@ -1359,9 +1378,10 @@ function rebuild() {
   buildWorldLayer();
   buildCountryLabels();
   if (selectedCountryISO3) {
+    // keep heat fills; only re-highlight the selected country's border
     worldLayer.eachLayer(l => {
       const sel = l.feature.id === selectedCountryISO3;
-      l.setStyle({ fillOpacity: sel ? 0.12 : 0.04, opacity: sel ? 1 : 0.15, weight: sel ? 2 : 0.5, color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim });
+      l.setStyle({ color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim, weight: sel ? 2.5 : 0.5, opacity: sel ? 1 : 0.6 });
     });
   }
 }
