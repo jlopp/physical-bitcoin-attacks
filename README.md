@@ -1,7 +1,8 @@
 # Known Physical Bitcoin Attacks
 A list of known attacks against Bitcoin / crypto asset owning entities that occurred in meatspace. NOTE: this list is not comprehensive; many attacks are not publicly reported. If you are aware of an attack that is not listed, please open an issue or pull request — see [CONTRIBUTING.md](./CONTRIBUTING.md) for what qualifies and how to add entries.
 
-For more comprehensive statistical breakdowns of attack attributes, check out [stats.gart.io](https://stats.gart.io/)
+For interactive visual dashboards of this data, check out [our map](https://jlopp.github.io/physical-bitcoin-attacks/) and the [Crypto Crime Dashboard](https://cryptocrime-dashboard.vercel.app/)
+For more comprehensive statistical breakdowns of attack attributes, check out [gart.io](https://gart.io/stats)
 
 For high level analyses and best practices, readers may be interested in this 2020 presentation: ["The Hodlguard- a primer on physical security in Bitcoin"](https://www.youtube.com/watch?v=HUgPhPkS2yc) and [slides](https://prezi.com/view/P46hHguLiPvqA7aZ7gYR).
 Also, Jameson's [2025 presentation](https://www.youtube.com/watch?v=bxjKAtxy6J4) with updated metrics and advice.
