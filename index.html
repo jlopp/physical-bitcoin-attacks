@@ -361,6 +361,12 @@
     .neon-pulse { display: none; }
     body::before { animation: none !important; }
   }
+
+  /* Touch devices: backdrop-filter blur is a major pan-jank source on mobile
+     GPUs — swap it for solid (slightly translucent) backgrounds instead. */
+  @media (pointer: coarse) {
+    #header, #panel, #legend { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+  }
   /* High contrast text helpers */
   .sr-only {
     position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
@@ -424,8 +430,8 @@
     /* --- Tooltip closer to the thumb --- */
     #thumb-tip { top: 32px; font-size: 0.625rem; }
 
-    /* --- Panel: taller sheet, collapsible header --- */
-    #panel { max-height: 62vh; height: 62vh; }
+    /* --- Panel: shorter sheet on phones so the map stays visible --- */
+    #panel { max-height: 40vh; height: 40vh; }
     #panel-head { padding: 10px 12px; }
     .attack-item { padding: 8px 12px; }
 
@@ -599,7 +605,20 @@ function buildGraticule() {
   }
 }
 
-map.on("zoomend moveend", () => { buildGraticule(); buildCountryLabels(); });
+// Rebuild the graticule + labels when view changes, debounced — on mobile the
+// rebuild on every pan stop was the main source of jank. Short delay on
+// touch devices lets the pan/zoom animation settle before we pay the cost.
+let viewRebuildTimer = 0;
+const VIEW_REBUILD_DELAY = matchMedia("(pointer: coarse)").matches ? 180 : 60;
+function scheduleViewRebuild() {
+  clearTimeout(viewRebuildTimer);
+  viewRebuildTimer = setTimeout(() => {
+    viewRebuildTimer = 0;
+    buildGraticule();
+    buildCountryLabels();
+  }, VIEW_REBUILD_DELAY);
+}
+map.on("zoomend moveend", scheduleViewRebuild);
 
 // ======================= Country-internal details =======================
 // Faint admin-1 boundaries (states / provinces / regions) drawn over the
@@ -608,6 +627,7 @@ map.on("zoomend moveend", () => { buildGraticule(); buildCountryLabels(); });
 let detailsData = null;          // GeoJSON FeatureCollection
 let detailsLayer = null;         // Leaflet layer group
 let detailsLoading = false;
+let detailsRenderer = null;      // shared canvas renderer (perf on mobile)
 
 const DETAILS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_1_states_provinces.geojson";
 
@@ -634,8 +654,14 @@ function buildDetails() {
   // derive a faint line color from the theme: muted grid color
   const lineColor = style.getPropertyValue("--grid-color").trim() || "rgba(0,240,255,0.10)";
 
+  // Canvas renderer: ~3k admin-1 paths as SVG was a major per-frame cost on
+  // mobile. A single canvas draw call for the whole layer pans smoothly.
+  if (!detailsRenderer) {
+    detailsRenderer = L.canvas({ padding: 0.5 });
+  }
   detailsLayer = L.geoJSON(detailsData, {
     pane: "details",
+    renderer: detailsRenderer,
     style: {
       color: lineColor,
       weight: 0.6,
@@ -1208,13 +1234,24 @@ function selectCountry(iso3, name) {
     }
 
     // 75% fill: pad each side by 12.5% of the viewport. On small screens,
-    // pad extra at top/bottom so the header + bottom sheet don't cover it.
+    // the bottom sheet (country attack list) covers the lower part of the
+    // map — put that occluded height into the bottom padding so the country
+    // centers in the area visible ABOVE the sheet.
     const size = map.getSize();
     const px = size.x * 0.125;
     let py = size.y * 0.125;
-    if (window.innerWidth < 900) py += 30;
+    if (window.innerWidth < 900) {
+      py += 30;
+      // The bottom sheet with the attack list covers the lower part of the
+      // map on mobile. It's 40vh on phones (<=640px) and 55vh up to 900px.
+      // We fitBounds BEFORE the sheet opens, so estimate its height and put
+      // that occluded space into the bottom padding — the country then
+      // centers in the visible area above the sheet.
+      const sheetVh = window.innerWidth <= 640 ? 0.40 : 0.55;
+      py += size.y * sheetVh * 0.8;
+    }
     map.fitBounds(b, {
-      paddingTopLeft: L.point(Math.round(px), Math.round(py)),
+      paddingTopLeft: L.point(Math.round(px), Math.round(size.y * 0.10)),
       paddingBottomRight: L.point(Math.round(px), Math.round(py)),
       animate: true,
     });
