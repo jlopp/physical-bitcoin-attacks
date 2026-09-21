@@ -1,5 +1,5 @@
 # Known Physical Bitcoin Attacks
-A list of known attacks against Bitcoin / crypto asset owning entities that occurred in meatspace. NOTE: this list is not comprehensive; many attacks are not publicly reported. If you are aware of an attack that is not listed, please open an issue or pull request.
+A list of known attacks against Bitcoin / crypto asset owning entities that occurred in meatspace. NOTE: this list is not comprehensive; many attacks are not publicly reported. If you are aware of an attack that is not listed, please open an issue or pull request — see [CONTRIBUTING.md](./CONTRIBUTING.md) for what qualifies and how to add entries.
 
 For more comprehensive statistical breakdowns of attack attributes, check out [stats.gart.io](https://stats.gart.io/)
 
