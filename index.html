@@ -848,6 +848,7 @@ function buildDetails() {
 // its relative number of attacks (theme gradient), with region borders drawn
 // prominently. Uses the same Natural Earth admin-1 data as buildDetails().
 let regionOutlineLayer = null; // region choropleth layer for the zoomed country
+let regionEdgeLayer = null;   // internal region border lines (no country outline)
 
 // ISO3 -> display name from the loaded world geojson (matches the choropleth
 // tooltips), with fallbacks for names the datasets disagree on.
@@ -955,7 +956,36 @@ async function showRegionOutlines(iso3) {
   // Match the country exterior border color (theme border, e.g. neon cyan),
   // not the faint CSS --border var — region borders must read clearly.
   const borderColor = THEMES[currentThemeKey].border;
-  const hoverColor = getComputedStyle(document.documentElement).getPropertyValue("--cyan").trim() || "#fff";
+
+  // ---- Internal region borders only (no outline around the whole country) ----
+  // Stroking every region polygon would also trace the country's exterior
+  // perimeter brightly. Instead: count each boundary segment across all
+  // region rings — segments shared by two regions are internal borders and
+  // get drawn; segments appearing once form the country outline and are
+  // skipped. (Coordinates quantized to ~1e-5° for exact matching.)
+  const segs = new Map(); // key -> { a, b, n }
+  for (const f of feats) {
+    const polys = f.geometry.type === "Polygon" ? [f.geometry.coordinates]
+      : f.geometry.type === "MultiPolygon" ? f.geometry.coordinates : [];
+    for (const poly of polys) {
+      const ring = poly[0]; // outer boundary
+      for (let i = 0; i < ring.length - 1; i++) {
+        const p = ring[i], q = ring[i + 1];
+        const ka = p[0].toFixed(5) + "," + p[1].toFixed(5);
+        const kb = q[0].toFixed(5) + "," + q[1].toFixed(5);
+        const key = ka < kb ? ka + "|" + kb : kb + "|" + ka;
+        const rec = segs.get(key) || { a: [p[0], p[1]], b: [q[0], q[1]], n: 0 };
+        rec.n++;
+        segs.set(key, rec);
+      }
+    }
+  }
+  const internalEdges = [];
+  for (const rec of segs.values()) {
+    if (rec.n >= 2) internalEdges.push([rec.a, rec.b]); // [lng, lat] pairs
+  }
+  // convert to Leaflet [lat, lng]
+  const edgeLines = internalEdges.map(([a, b]) => [[a[1], a[0]], [b[1], b[0]]]);
 
   regionOutlineLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
     pane: "details",
@@ -963,13 +993,14 @@ async function showRegionOutlines(iso3) {
     style: feature => {
       const v = regionValue(feature);
       const fill = v.forced ? midFill : heatColor(v.value, maxRegion).fill;
-      const rel = v.forced ? 0.5 : Math.min(1, v.value / maxRegion);
+      // Country-specific heatmap: opaque fills so the region gradient fully
+      // replaces the global country color inside the zoomed country. Regions
+      // with no data use the theme's "empty" color (still fully opaque).
+      const hasData = regionAttacks.get(feature).length > 0;
       return {
-        color: borderColor,
-        weight: 2.5,
-        opacity: 1,
-        fillColor: fill,
-        fillOpacity: regionAttacks.get(feature).length ? 0.55 + 0.45 * rel : 0.12,
+        stroke: false, // borders drawn separately (internal edges only)
+        fillColor: hasData ? fill : THEMES[currentThemeKey].empty,
+        fillOpacity: 1,
       };
     },
     onEachFeature: (feature, layer) => {
@@ -982,8 +1013,8 @@ async function showRegionOutlines(iso3) {
         (popM > 0 ? `<br>${(c / popM).toFixed(2)} per million citizens` : ""),
         { className: "map-tooltip", sticky: true }
       );
-      layer.on("mouseover", () => layer.setStyle({ weight: 3.5, color: hoverColor }));
-      layer.on("mouseout", () => layer.setStyle({ weight: 2.5, color: borderColor }));
+      layer.on("mouseover", () => layer.setStyle({ fillOpacity: 0.8 }));
+      layer.on("mouseout", () => layer.setStyle({ fillOpacity: 1 }));
       // Click: list this region's attacks in the side panel
       layer.on("click", () => {
         if (c) openPanel(`${name}`, items);
@@ -991,10 +1022,21 @@ async function showRegionOutlines(iso3) {
     },
   });
   regionOutlineLayer.addTo(map);
+
+  // internal region borders, drawn on top of the fills
+  regionEdgeLayer = L.polyline(edgeLines, {
+    pane: "details",
+    renderer: detailsRenderer,
+    color: borderColor,
+    weight: 2.5,
+    opacity: 1,
+    interactive: false,
+  }).addTo(map);
 }
 
 function hideRegionOutlines() {
   if (regionOutlineLayer) { map.removeLayer(regionOutlineLayer); regionOutlineLayer = null; }
+  if (regionEdgeLayer) { map.removeLayer(regionEdgeLayer); regionEdgeLayer = null; }
 }
 
 // ======================= Country name labels (legibility-aware) =======================
@@ -1511,10 +1553,18 @@ function buildWorldLayer() {
       const perM = POP_M[feature.id]
         ? `${rate.toFixed(2)} attack${rate === 1 ? "" : "s"} per million citizens`
         : "population data unavailable";
+      // Country tooltip content is built here, but the tooltip is only
+      // active in world view — see the tooltipopen gate below. On drill-in
+      // the whole-country tooltip is suppressed so only per-region
+      // tooltips appear.
       layer.bindTooltip(
         `<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"} total<br>${perM}`,
         { className: "map-tooltip", sticky: true }
       );
+      // gate: never show the whole-country tooltip while zoomed into a country
+      layer.on("tooltipopen", ev => {
+        if (selectedCountryISO3) map.closeTooltip(ev.tooltip);
+      });
       layer.on("mouseover", () => {
         if (selectedCountryISO3) return;
         layer.setStyle({
