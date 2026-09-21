@@ -487,15 +487,14 @@
 <div id="grid-ocean" aria-hidden="true"></div>
 <div id="horizon-glow" aria-hidden="true"></div>
 <div id="map" role="application"
-     aria-label="Interactive world map of physical Bitcoin attacks. Countries are colored by attacks per capita; select a country to zoom in and view city-level details. Use the year sliders to filter by year."></div>
+     aria-label="Interactive world map of physical Bitcoin attacks. Countries are colored by attacks per capita; select a country to zoom in and view region-level details. Use the year sliders to filter by year."></div>
 
 <!-- Screen reader announcements for filter/selection changes -->
 <div id="sr-live" class="sr-only" role="status" aria-live="polite"></div>
 
 <div id="header">
-  <h1>⚠ Physical Bitcoin Attacks <span>— meatspace attacks against crypto owners</span></h1>
+  <h1>⚠ Bitcoin Wrench Attacks <span></span></h1>
   <div id="year-filter">
-    <label>Year range</label>
     <div class="range-wrap" id="range-wrap">
       <div class="range-track" aria-hidden="true"></div>
       <div class="range-fill" id="range-fill" aria-hidden="true"></div>
@@ -597,7 +596,6 @@ let attacks = [];
 let yearMin = YEARS.MIN, yearMax = YEARS.MAX;
 let selectedCountryISO3 = null;
 let worldLayer = null;      // choropleth layer
-let cityLayer = null;       // circles when zoomed into country
 let counts = {};            // iso3 -> filtered attack count
 let rates = {};             // iso3 -> attacks per million citizens
 let colorMetric = "perCapita"; // "perCapita" (default) | "total"
@@ -803,11 +801,11 @@ function buildDetails() {
   if (selectedCountryISO3) showRegionOutlines(selectedCountryISO3);
 }
 
-// ======================= Selected-country admin-1 outlines =======================
-// When zoomed into a country, draw its state/province borders prominently
-// (above the faint global texture). Uses the same Natural Earth admin-1 data
-// already loaded by buildDetails(); falls back gracefully if it's still loading.
-let regionOutlineLayer = null;
+// ======================= Selected-country admin-1 regions =======================
+// On drill-down, each state/province of the selected country is colored by
+// its relative number of attacks (theme gradient), with region borders drawn
+// prominently. Uses the same Natural Earth admin-1 data as buildDetails().
+let regionOutlineLayer = null; // region choropleth layer for the zoomed country
 
 // ISO3 -> display name from the loaded world geojson (matches the choropleth
 // tooltips), with fallbacks for names the datasets disagree on.
@@ -819,6 +817,49 @@ function countryName(iso3) {
   return (NAME_FALLBACKS[iso3] && NAME_FALLBACKS[iso3][0]) || iso3;
 }
 
+// All admin-1 features belonging to the given country (ISO3), matching the
+// dataset's naming quirks (e.g. admin "Hong Kong S.A.R.").
+function regionFeatures(iso3) {
+  if (!detailsData) return [];
+  const name = countryName(iso3);
+  return detailsData.features.filter(f =>
+    f.properties && (
+      f.properties.admin === name ||
+      f.properties.admin === name + " S.A.R." ||
+      f.properties.geonunit === name || f.properties.geonunit === name + " S.A.R."
+    )
+  );
+}
+
+// --- point-in-polygon (GeoJSON: coordinates are [lng, lat]) ---
+function pointInRing(lat, lng, ring) {
+  let inside = false;
+  const x = lng, y = lat;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i++) {
+    const xi = ring[i][0], yi = ring[i][1];
+    const xj = ring[j][0], yj = ring[j][1];
+    if ((yi > y) !== (yj > y)) {
+      const xint = (xj - xi) * (y - yi) / (yj - yi) + xi;
+      if (x < xint) inside = !inside;
+    }
+  }
+  return inside;
+}
+function pointInGeometry(lat, lng, geom) {
+  if (!geom) return false;
+  const polys = geom.type === "Polygon" ? [geom.coordinates]
+    : geom.type === "MultiPolygon" ? geom.coordinates : [];
+  for (const poly of polys) {
+    if (pointInRing(lat, lng, poly[0])) {
+      if (!poly.slice(1).some(hole => pointInRing(lat, lng, hole))) return true;
+    }
+  }
+  return false;
+}
+
+// Build the region choropleth for the zoomed-in country: assign each
+// geocoded attack in the country to its admin-1 region via point-in-polygon,
+// then color regions on the theme gradient relative to the busiest one.
 async function showRegionOutlines(iso3) {
   hideRegionOutlines();
   if (!iso3) return;
@@ -827,28 +868,51 @@ async function showRegionOutlines(iso3) {
     await loadDetails();
     if (selectedCountryISO3 !== iso3 || !detailsData) return;
   }
-  const style = getComputedStyle(document.documentElement);
-  const borderColor = style.getPropertyValue("--border").trim() || "#888";
-
-  const name = countryName(iso3);
-  const feats = detailsData.features.filter(f =>
-    f.properties && (
-      f.properties.admin === name ||
-      f.properties.admin === name + " S.A.R." ||
-      f.properties.geonunit === name || f.properties.geonunit === name + " S.A.R."
-    )
-  );
+  const feats = regionFeatures(iso3);
   if (!feats.length) return;
+
+  // Assign each geocoded attack to its admin-1 region
+  const regionCount = new Map(); // feature -> attack count
+  const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
+  for (const f of feats) regionCount.set(f, 0);
+  for (const a of inCountry) {
+    if (a.lat === null || a.lng === null) continue;
+    for (const f of feats) {
+      if (pointInGeometry(a.lat, a.lng, f.geometry)) {
+        regionCount.set(f, regionCount.get(f) + 1);
+        break;
+      }
+    }
+  }
+  const maxRegion = Math.max(1, ...regionCount.values());
+  // Match the country exterior border color (theme border, e.g. neon cyan),
+  // not the faint CSS --border var — region borders must read clearly.
+  const borderColor = THEMES[currentThemeKey].border;
+  const hoverColor = getComputedStyle(document.documentElement).getPropertyValue("--cyan").trim() || "#fff";
 
   regionOutlineLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
     pane: "details",
     renderer: detailsRenderer,
-    style: {
-      color: borderColor,
-      weight: 1.8,
-      opacity: 0.95,
-      fill: false,
-      interactive: false,
+    style: feature => {
+      const c = regionCount.get(feature) || 0;
+      const col = heatColor(c, maxRegion);
+      return {
+        color: borderColor,
+        weight: 2.5,
+        opacity: 1,
+        fillColor: col.fill,
+        fillOpacity: c ? 0.55 + 0.45 * Math.min(1, c / maxRegion) : 0.12,
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const c = regionCount.get(feature) || 0;
+      const name = feature.properties.name || feature.properties.gn_name || "Region";
+      layer.bindTooltip(
+        `<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"}`,
+        { className: "map-tooltip", sticky: true }
+      );
+      layer.on("mouseover", () => layer.setStyle({ weight: 3.5, color: hoverColor }));
+      layer.on("mouseout", () => layer.setStyle({ weight: 2.5, color: borderColor }));
     },
   });
   regionOutlineLayer.addTo(map);
@@ -1293,7 +1357,7 @@ function applyTheme(key) {
     rebuild();
     if (selectedCountryISO3) {
       const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
-      drawCityCircles(inCountry);
+      showRegionOutlines(selectedCountryISO3);
       const layer = findFeatureLayer(selectedCountryISO3);
       openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
     }
@@ -1483,7 +1547,6 @@ function selectCountry(iso3, name) {
     });
   }
 
-  drawCityCircles(inCountry);
   showRegionOutlines(iso3);
   panelWorldClosed = false; // drilling in resets the close state
   openPanel(name, inCountry);
@@ -1496,54 +1559,6 @@ function findFeatureLayer(iso3) {
   let found = null;
   worldLayer.eachLayer(l => { if (l.feature.id === iso3) found = l; });
   return found;
-}
-
-function drawCityCircles(inCountry) {  if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
-  // group by city coordinate
-  const byCity = new Map();
-  for (const a of inCountry) {
-    const key = `${a.city}|${a.lat}|${a.lng}`;
-    if (!byCity.has(key)) byCity.set(key, { city: a.city, lat: a.lat, lng: a.lng, items: [] });
-    byCity.get(key).items.push(a);
-  }
-  const groups = [...byCity.values()].sort((x, y) => y.items.length - x.items.length);
-  const maxCount = groups[0].items.length;
-  const minCount = groups[groups.length - 1].items.length;
-
-  cityLayer = L.layerGroup().addTo(map);
-  for (const g of groups) {
-    const t = maxCount === minCount ? 1 : (g.items.length - minCount) / (maxCount - minCount);
-    const radius = 10 + 30 * Math.sqrt(t);
-    const heat = heatColor(g.items.length, maxCount);
-    const circle = L.circleMarker([g.lat, g.lng], {
-      radius,
-      color: THEMES[currentThemeKey].border,
-      weight: 2,
-      fillColor: heat.fill,
-      fillOpacity: 0.8,
-      pane: "cities",
-      className: "neon-city",
-    });
-    // pulsing halo
-    const halo = L.circleMarker([g.lat, g.lng], {
-      radius: radius + 6,
-      stroke: false,
-      fillColor: heat.fill,
-      fillOpacity: 0.25,
-      pane: "cities",
-      className: "neon-pulse",
-      interactive: false,
-    });
-    circle.bindTooltip(
-      `<strong>${g.city}</strong><br>${g.items.length} attack${g.items.length === 1 ? "" : "s"}`,
-      { className: "map-tooltip" }
-    );
-    circle.on("click", () => {
-      openPanel(g.city ? `${g.city}` : "Region", g.items, g.items[0].country);
-    });
-    cityLayer.addLayer(halo);
-    cityLayer.addLayer(circle);
-  }
 }
 
 // ======================= Side panel =======================
@@ -1621,7 +1636,6 @@ document.getElementById("panel-expand").addEventListener("click", () => {
 function worldView() {
   selectedCountryISO3 = null;
   hideRegionOutlines();
-  if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
   document.getElementById("btn-world").style.display = "none";
   goWorldView();
   rebuild();
@@ -1742,9 +1756,9 @@ function syncYears() {
   announceFilterState._t = setTimeout(announceFilterState, 300);
 
   if (selectedCountryISO3) {
-    // stay in country view, refresh circles + panel
+    // stay in country view, refresh region choropleth + panel
     const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
-    drawCityCircles(inCountry);
+    showRegionOutlines(selectedCountryISO3);
     const layer = findFeatureLayer(selectedCountryISO3);
     openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
   } else if (window.worldData && !panelWorldClosed) {
