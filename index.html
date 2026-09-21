@@ -295,6 +295,19 @@
     opacity: 0.35;
   }
 
+  /* ---------- Country name labels (over choropleth) ---------- */
+  .country-label {
+    font-family: var(--font-display);
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    pointer-events: none;
+    white-space: nowrap;
+    display: flex; align-items: center; justify-content: center;
+    transform: translate(-50%, -50%);
+  }
+  .country-label span { opacity: 0.95; }
+
   /* ---------- Basemap tint & terrain styling ---------- */
   #basemap-tint {
     position: absolute; inset: 0; z-index: 399; pointer-events: none;
@@ -502,43 +515,42 @@ let counts = {};            // iso3 -> filtered attack count
 // ======================= Init map =======================
 const map = L.map("map", { zoomControl: true, minZoom: 2, maxBounds: [[-85, -180], [85, 180]] });
 
-// Default world view: frame the populated world so Antarctica's northern coast
-// (~-60°, its lat of highest attack-relevant land) just clips the bottom edge.
+// Default world view: one zoom level (double-click) in from the full-globe
+// framing. We fit the full bounds (Antarctica coast clipped at the bottom),
+// then step zoom +1 while keeping the same center.
 function worldViewBounds() {
-  return L.latLngBounds([[83, -170], [-60.5, 170]]);
+  return L.latLngBounds([[83, -170], [-60.5, 170]]); // full frame, saved for reference
 }
-map.fitBounds(worldViewBounds());
+function goWorldView() {
+  const b = L.latLngBounds([[83, -170], [-60.5, 170]]);
+  const z = map.getBoundsZoom(b);
+  map.setView(b.getCenter(), z + 1, { animate: true });
+}
+goWorldView();
 map.createPane("cities");
 map.getPane("cities").style.zIndex = 450;
 
 // ======================= Topographic basemap (theme-aware) =======================
-// Each theme gets a matching terrain tile style. All are free/open, no API key.
+// Base terrain: OpenTopoMap (real topographic contours — free, no API key).
+// Place-name labels come from our own theme-aware label layer (see buildCountryLabels)
+// plus CARTO's label-only tiles for city-level detail at high zoom.
 const BASEMAP_STYLES = {
-  cyberpunk:    { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#160b3d", tintOp: 0.55 },
-  synthwave:    { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#2d1b4e", tintOp: 0.55 },
-  matrix:       { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#021200", tintOp: 0.6 },
-  bladerunner:  { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#1a1d26", tintOp: 0.55 },
-  vaporwave:    { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#2f2a52", tintOp: 0.5 },
-  outrun:       { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#180a2e", tintOp: 0.55 },
-  miami:        { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#1e2a48", tintOp: 0.5 },
-  tokyo:        { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#171a23", tintOp: 0.5 },
-  goldrush:     { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#1a1408", tintOp: 0.55 },
-  terminal:     { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#161006", tintOp: 0.6 },
-  arctic:       { url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: false,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#102033", tintOp: 0.35 },
-  colorblind:   { url: "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
-                   attr: "© OpenStreetMap contributors © CARTO", dark: false, tint: null, tintOp: 0 },
+  cyberpunk:    { terrain: true, labels: true, dark: true, tint: "#160b3d", tintOp: 0.55 },
+  synthwave:    { terrain: true, labels: true, dark: true, tint: "#2d1b4e", tintOp: 0.55 },
+  matrix:       { terrain: true, labels: true, dark: true, tint: "#021200", tintOp: 0.6 },
+  bladerunner:  { terrain: true, labels: true, dark: true, tint: "#1a1d26", tintOp: 0.55 },
+  vaporwave:    { terrain: true, labels: true, dark: true, tint: "#2f2a52", tintOp: 0.5 },
+  outrun:       { terrain: true, labels: true, dark: true, tint: "#180a2e", tintOp: 0.55 },
+  miami:        { terrain: true, labels: true, dark: true, tint: "#1e2a48", tintOp: 0.5 },
+  tokyo:        { terrain: true, labels: true, dark: true, tint: "#171a23", tintOp: 0.5 },
+  goldrush:     { terrain: true, labels: true, dark: true, tint: "#1a1408", tintOp: 0.55 },
+  terminal:     { terrain: true, labels: true, dark: true, tint: "#161006", tintOp: 0.6 },
+  arctic:       { terrain: true, labels: false, dark: true, tint: "#102033", tintOp: 0.35 },
+  colorblind:   { terrain: true, labels: true, dark: false, tint: null, tintOp: 0 },
 };
+
+const TERRAIN_URL = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png";
+const TERRAIN_ATTR = "Map data: © OpenStreetMap contributors, SRTM | Map style: © OpenTopoMap (CC-BY-SA)";
 
 let basemapLayer = null;
 let basemapLabelsLayer = null;
@@ -547,15 +559,16 @@ function setBasemap(key) {
   const s = BASEMAP_STYLES[key] || BASEMAP_STYLES.cyberpunk;
   if (basemapLayer) { map.removeLayer(basemapLayer); basemapLayer = null; }
   if (basemapLabelsLayer) { map.removeLayer(basemapLabelsLayer); basemapLabelsLayer = null; }
-  basemapLayer = L.tileLayer(s.url, {
-    attribution: s.attr, subdomains: "abcd", maxZoom: 12, minZoom: 2,
+  basemapLayer = L.tileLayer(TERRAIN_URL, {
+    attribution: TERRAIN_ATTR, subdomains: "abc", maxZoom: 12, minZoom: 2,
     className: s.dark ? "basemap-tinted" : "basemap-plain",
   }).addTo(map);
   if (s.labels) {
-    // separate high-contrast label layer keeps place names readable over the tint
+    // CARTO's label-only tiles add city street-level names when zoomed in.
+    // (Keyless endpoints; see https://carto.com/basemaps if this changes.)
     basemapLabelsLayer = L.tileLayer(
-      s.dark ? "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa"
-             : "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa",
+      s.dark ? "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png"
+             : "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png",
       { subdomains: "abcd", maxZoom: 12, minZoom: 2, className: "basemap-labels" }
     ).addTo(map);
   }
@@ -613,7 +626,68 @@ function buildGraticule() {
   }
 }
 
-map.on("zoomend moveend", buildGraticule);
+map.on("zoomend moveend", () => { buildGraticule(); buildCountryLabels(); });
+
+// ======================= Country name labels (legibility-aware) =======================
+// Draw each country's name at its polygon centroid, on top of the choropleth.
+// Text color adapts to the underlying heat color: bright fills (high attack
+// counts -> yellows/neons) get DARK text; dark fills get bright theme text.
+let countryLabelLayer = null;
+
+function relLuminance(rgbStr) {
+  // parse "rgb(r, g, b)" or "#rrggbb" -> 0..1 relative luminance (WCAG)
+  let m = rgbStr.match(/\d+/g);
+  if (!m) return 0;
+  const [r, g, b] = m.slice(0, 3).map(Number);
+  const f = v => { v /= 255; return v <= 0.03928 ? v / 12.92 : Math.pow((v + 0.055) / 1.055, 2.4); };
+  return 0.2126 * f(r) + 0.7152 * f(g) + 0.0722 * f(b);
+}
+
+function buildCountryLabels() {
+  if (countryLabelLayer) { map.removeLayer(countryLabelLayer); countryLabelLayer = null; }
+  if (!window.worldData) return;
+  const max = Math.max(1, ...Object.values(counts));
+  const style = getComputedStyle(document.documentElement);
+  const brightText = style.getPropertyValue("--text").trim() || "#fff";
+  const darkText = "#0a0618";
+  const strokeLight = style.getPropertyValue("--bg").trim() || "#000";
+
+  countryLabelLayer = L.layerGroup().addTo(map);
+  for (const f of window.worldData.features) {
+    const c = counts[f.id] || 0;
+    const name = f.properties.name || f.id;
+    // small countries at low zoom produce unreadable clutter; label all, tiny font for small lands
+    let center, area = 0;
+    try {
+      const l = L.geoJSON(f);
+      const b = l.getBounds();
+      // skip countries entirely outside the current view
+      if (!map.getBounds().intersects(b)) { l.remove(); continue; }
+      center = b.getCenter();
+      area = (b.getEast() - b.getWest()) * (b.getNorth() - b.getSouth());
+      l.remove();
+    } catch (e) { continue; }
+
+    // pick text color by the fill's luminance
+    const fill = heatColor(c, max).fill;
+    const lum = relLuminance(fill);
+    // luminance threshold ~0.35: brighter fills -> dark text for contrast
+    const useDark = lum > 0.35;
+    const color = useDark ? darkText : brightText;
+    // halo stroke is the opposite tone for edge legibility
+    const halo = useDark ? "rgba(255,255,255,0.55)" : strokeLight;
+
+    // font size scales with country size and zoom, clamped
+    const zoom = map.getZoom();
+    let fs = Math.min(18, Math.max(9, Math.sqrt(area) * (zoom * 0.9 + 2)));
+    const icon = L.divIcon({
+      className: "country-label",
+      html: `<span style="color:${color};text-shadow:0 0 3px ${halo},0 0 6px ${halo},0 1px 2px ${halo};font-size:${fs.toFixed(0)}px">${escapeHtml(name)}</span>`,
+      iconSize: [0, 0],
+    });
+    L.marker(center, { icon, interactive: false, pane: "cities", keyboard: false }).addTo(countryLabelLayer);
+  }
+}
 
 // ======================= Load data =======================
 async function loadAll() {
@@ -1178,7 +1252,7 @@ function worldView() {
   if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
   document.getElementById("panel").classList.remove("open");
   document.getElementById("btn-world").style.display = "none";
-  map.fitBounds(worldViewBounds());
+  goWorldView();
   rebuild();
   announceFilterState();
 }
@@ -1283,6 +1357,7 @@ document.getElementById("btn-latest").addEventListener("click", () => {
 function rebuild() {
   computeCounts();
   buildWorldLayer();
+  buildCountryLabels();
   if (selectedCountryISO3) {
     worldLayer.eachLayer(l => {
       const sel = l.feature.id === selectedCountryISO3;
