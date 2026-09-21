@@ -989,7 +989,9 @@ async function showRegionOutlines(iso3) {
 
   regionOutlineLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
     pane: "details",
-    renderer: detailsRenderer,
+    // NOTE: don't reuse the canvas detailsRenderer here — canvas-rendered
+    // layers don't get reliable hover/mouse events (needed for tooltips).
+    renderer: L.svg({ padding: 0.5 }),
     style: feature => {
       const v = regionValue(feature);
       const fill = v.forced ? midFill : heatColor(v.value, maxRegion).fill;
@@ -1561,9 +1563,10 @@ function buildWorldLayer() {
         `<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"} total<br>${perM}`,
         { className: "map-tooltip", sticky: true }
       );
-      // gate: never show the whole-country tooltip while zoomed into a country
+      // gate: never show the whole-country tooltip for the SELECTED country
+      // (per-region tooltips cover it); other countries keep their tooltips.
       layer.on("tooltipopen", ev => {
-        if (selectedCountryISO3) map.closeTooltip(ev.tooltip);
+        if (selectedCountryISO3 === feature.id) map.closeTooltip(ev.tooltip);
       });
       layer.on("mouseover", () => {
         if (selectedCountryISO3) return;
@@ -1590,6 +1593,33 @@ function buildWorldLayer() {
   }).addTo(map);
 
   updateLegend(max);
+}
+
+// ======================= Drill-down world-layer styling =======================
+// While a country is drilled in, style every country in the world choropleth:
+// the SELECTED country's whole-country fill and stroke are completely removed
+// (only its regional choropleth renders), and every OTHER country reverts to
+// its normal country-level color and country tooltip. Called on every
+// selectCountry / syncYears / rebuild with a selected country so the states
+// stay consistent across year filters, theme changes, and metric toggles.
+function applyDrillStyles(iso3) {
+  if (!worldLayer) return;
+  worldLayer.eachLayer(l => {
+    const sel = iso3 && l.feature.id === iso3;
+    l.setStyle(sel
+      ? { fillOpacity: 0, opacity: 0, weight: 0 } // hide whole-country color/stroke
+      : (function () {
+          const c = counts[l.feature.id] || 0;
+          const f = choroFill(l.feature.id, choroMax());
+          return {
+            color: c ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim,
+            weight: c ? 1.2 : 0.5,
+            fillColor: f.fill,
+            fillOpacity: c ? 0.55 + 0.45 * (f.v === null ? 0.5 : Math.min(1, f.v / choroMax())) : 0.3,
+            opacity: 1,
+          };
+        })());
+  });
 }
 
 // ======================= Legend =======================
@@ -1661,18 +1691,10 @@ function selectCountry(iso3, name) {
     });
   }
 
-  // Keep the world choropleth fully in place (pane never hides on drill-down).
-  // No highlight rectangle around the selected country — the region borders
-  // of the drill-down view provide the country boundary instead.
-  if (worldLayer) {
-    worldLayer.eachLayer(l => {
-      l.setStyle({
-        color: THEMES[currentThemeKey].dim,
-        weight: 0.5,
-        opacity: 0.6,
-      });
-    });
-  }
+  // Drilled-in view: the selected country's whole-country fill and stroke are
+  // completely removed — ONLY the regional choropleth (built by
+  // showRegionOutlines) renders inside it, so region colors read independently.
+  applyDrillStyles(iso3);
 
   showRegionOutlines(iso3);
   panelWorldClosed = false; // drilling in resets the close state
@@ -1892,14 +1914,9 @@ function syncYears() {
     // world view: collapsed header box with the filtered total
     openPanel("All attacks", filteredAttacks(), null, "world");
   }
-  computeCounts();
-  buildWorldLayer();
-  if (selectedCountryISO3 && worldLayer) {
-    // no highlight rectangle on the selected country (region borders draw it)
-    worldLayer.eachLayer(l => {
-      l.setStyle({ color: THEMES[currentThemeKey].dim, weight: 0.5, opacity: 0.6 });
-    });
-  }
+    computeCounts();
+    buildWorldLayer();
+    if (selectedCountryISO3 && worldLayer) applyDrillStyles(selectedCountryISO3);
 }
 
 yrMin.addEventListener("input", syncYears);
@@ -1914,16 +1931,11 @@ document.getElementById("btn-latest").addEventListener("click", () => {
 });
 
 function rebuild() {
-  computeCounts();
-  buildWorldLayer();
-  buildDetails();
-  buildCountryLabels();
-  if (selectedCountryISO3) {
-    // no highlight rectangle on the selected country (region borders draw it)
-    worldLayer.eachLayer(l => {
-      l.setStyle({ color: THEMES[currentThemeKey].dim, weight: 0.5, opacity: 0.6 });
-    });
-  }
+    computeCounts();
+    buildWorldLayer();
+    buildDetails();
+    buildCountryLabels();
+    if (selectedCountryISO3 && worldLayer) applyDrillStyles(selectedCountryISO3);
 }
 
 initThemePicker();
