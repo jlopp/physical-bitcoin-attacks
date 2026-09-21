@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Physical Bitcoin Attacks — Interactive Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  :root {
+    /* Defaults = Cyberpunk. Overridden at runtime by applyTheme(). */
+    --bg: #05010d;
+    --bg2: #0a0618;
+    --panel: rgba(5, 1, 13, 0.88);
+    --border: #2b1b4d;
+    --text: #eae6ff;
+    --muted: #8f8ab0;
+    --pink: #ff2ec4;
+    --cyan: #00f0ff;
+    --yellow: #ffe600;
+    --purple: #9d4edd;
+    --glow1: rgba(255, 46, 196, 0.18);
+    --glow2: rgba(0, 240, 255, 0.14);
+    --glow3: rgba(157, 78, 221, 0.18);
+    --grid-color: rgba(0, 240, 255, 0.10);
+    --horizon-color: rgba(255, 46, 196, 0.6);
+    --scanline-opacity: 0.35;
+    --font-display: "Orbitron", sans-serif;
+    --font-body: "Rajdhani", sans-serif;
+    --clip: 8px;
+    --radius: 0;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html { height: 100%; font-size: 1.000rem; }
+  /* Respect user font-size preferences: all rem units below scale from this */
+  body { height: 100%; font-size: 1rem; }
+  body {
+    font-family: var(--font-body);
+    background: var(--bg);
+    color: var(--text);
+    overflow: hidden;
+  }
+
+  /* ---------- Animated backdrop (visible behind the map) ---------- */
+  body::before {
+    content: "";
+    position: fixed; inset: 0; z-index: 0; pointer-events: none;
+    background:
+      radial-gradient(ellipse 80% 60% at 50% 120%, var(--glow1), transparent 60%),
+      radial-gradient(ellipse 60% 50% at 15% -10%, var(--glow2), transparent 60%),
+      radial-gradient(ellipse 50% 40% at 90% 0%, var(--glow3), transparent 60%),
+      linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+  }
+  /* scanline overlay */
+  body::after {
+    content: "";
+    position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.22) 0 1px, transparent 1px 3px);
+    opacity: var(--scanline-opacity); mix-blend-mode: overlay;
+  }
+
+  #map {
+    position: absolute; inset: 0; height: 100%; width: 100%;
+    background: transparent; z-index: 1;
+  }
+
+  /* ---------- Header ---------- */
+  #header {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 1000;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--bg2) 97%, transparent) 0%, color-mix(in srgb, var(--bg2) 88%, transparent) 80%, transparent 100%);
+    border-bottom: 1px solid var(--pink);
+    box-shadow: 0 0 18px color-mix(in srgb, var(--pink) 45%, transparent), inset 0 0 24px color-mix(in srgb, var(--cyan) 7%, transparent);
+    padding: 10px 18px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+    backdrop-filter: blur(8px);
+  }
+  #header h1 {
+    font-family: var(--font-display);
+    font-size: 0.938rem; font-weight: 900; letter-spacing: 1px;
+    color: var(--cyan); white-space: nowrap;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--cyan) 90%, transparent), 0 0 24px color-mix(in srgb, var(--cyan) 50%, transparent);
+    text-transform: uppercase;
+  }
+  #header h1 span {
+    color: var(--text); font-family: var(--font-body); font-weight: 600;
+    font-size: 0.812rem; letter-spacing: 0.5px; text-transform: none;
+    text-shadow: none;
+  }
+
+  /* ---------- Theme picker ---------- */
+  .theme-pick { display: flex; align-items: center; gap: 8px; }
+  .theme-pick label {
+    font-family: var(--font-display); font-size: 0.625rem; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 1.5px; white-space: nowrap;
+  }
+  #theme-select {
+    font-family: var(--font-body); font-weight: 600;
+    background: color-mix(in srgb, var(--bg2) 90%, transparent); color: var(--text);
+    border: 1px solid var(--cyan);
+    padding: 5px 10px; font-size: 0.750rem; cursor: pointer; border-radius: var(--radius);
+    text-shadow: 0 0 6px color-mix(in srgb, var(--cyan) 40%, transparent);
+    max-width: 180px;
+  }
+  #theme-select:hover { box-shadow: 0 0 12px color-mix(in srgb, var(--cyan) 60%, transparent); }
+  #theme-select option { background: var(--bg2); color: var(--text); }
+
+  /* ---------- Year filter ---------- */
+  #year-filter {
+    display: flex; align-items: center; gap: 12px; flex: 1; min-width: 300px;
+  }
+  #year-filter label {
+    font-family: var(--font-display); font-size: 0.625rem; color: var(--muted);
+    white-space: nowrap; text-transform: uppercase; letter-spacing: 1.5px;
+  }
+  .range-wrap { position: relative; flex: 1; height: 26px; min-width: 160px; }
+  .range-track {
+    position: absolute; left: 0; right: 0; top: 12px; height: 4px;
+    background: color-mix(in srgb, var(--border) 90%, transparent); border-radius: 2px;
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.8);
+  }
+  .range-fill {
+    position: absolute; top: 12px; height: 4px; border-radius: 2px;
+    background: linear-gradient(90deg, var(--cyan), var(--pink));
+    box-shadow: 0 0 10px color-mix(in srgb, var(--pink) 80%, transparent), 0 0 20px color-mix(in srgb, var(--cyan) 50%, transparent);
+  }
+  input[type="range"].yr {
+    position: absolute; left: 0; top: 3px; width: 100%; margin: 0;
+    -webkit-appearance: none; appearance: none; background: none; pointer-events: none; height: 22px;
+  }
+  input[type="range"].yr::-webkit-slider-thumb {
+    -webkit-appearance: none; pointer-events: auto;
+    width: 16px; height: 16px; border-radius: 2px;
+    background: var(--yellow); border: 2px solid var(--bg); cursor: pointer;
+    box-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 90%, transparent);
+  }
+  input[type="range"].yr::-moz-range-thumb {
+    pointer-events: auto;
+    width: 13px; height: 13px; border-radius: 2px;
+    background: var(--yellow); border: 2px solid var(--bg); cursor: pointer;
+    box-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 90%, transparent);
+  }
+  #year-label {
+    font-family: var(--font-display); font-size: 0.750rem; font-weight: 700;
+    color: var(--pink); white-space: nowrap; min-width: 130px;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--pink) 80%, transparent);
+  }
+
+  /* ---------- Year slider thumb tooltip ---------- */
+  #thumb-tip {
+    position: absolute; top: 30px; z-index: 1100;
+    font-family: var(--font-display); font-size: 0.688rem; font-weight: 700;
+    color: var(--bg); background: var(--yellow);
+    padding: 3px 10px; border-radius: 2px; pointer-events: none;
+    transform: translateX(-50%);
+    box-shadow: 0 0 12px color-mix(in srgb, var(--yellow) 90%, transparent);
+    opacity: 0; transition: opacity 0.12s ease;
+    white-space: nowrap;
+  }
+  #thumb-tip::after {
+    content: ""; position: absolute; bottom: 100%; left: 50%;
+    margin-left: -5px; border: 5px solid transparent; border-bottom-color: var(--yellow);
+  }
+  #thumb-tip.visible { opacity: 1; }
+
+  /* ---------- Buttons ---------- */
+  button, select {
+    font-family: var(--font-display);
+    background: color-mix(in srgb, var(--bg2) 88%, transparent); color: var(--cyan);
+    border: 1px solid var(--cyan);
+    border-radius: var(--radius); padding: 6px 14px; font-size: 0.625rem; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px; cursor: pointer;
+    clip-path: polygon(var(--clip) 0, 100% 0, 100% calc(100% - var(--clip)), calc(100% - var(--clip)) 100%, 0 100%, 0 var(--clip));
+    transition: all 0.15s ease;
+    text-shadow: 0 0 6px color-mix(in srgb, var(--cyan) 60%, transparent);
+  }
+  button:hover {
+    background: var(--cyan); color: var(--bg); text-shadow: none;
+    box-shadow: 0 0 16px color-mix(in srgb, var(--cyan) 90%, transparent);
+  }
+  button.active {
+    background: var(--pink); color: var(--bg); border-color: var(--pink); text-shadow: none;
+    box-shadow: 0 0 16px color-mix(in srgb, var(--pink) 90%, transparent);
+  }
+  #panel-close { color: var(--pink); border-color: var(--pink); text-shadow: 0 0 6px color-mix(in srgb, var(--pink) 60%, transparent); }
+  #panel-close:hover { background: var(--pink); color: var(--bg); box-shadow: 0 0 14px color-mix(in srgb, var(--pink) 90%, transparent); }
+
+  /* ---------- Legend ---------- */
+  #legend {
+    position: absolute; bottom: 12px; right: 12px; z-index: 1000;
+    background: var(--panel); border: 1px solid var(--cyan);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--cyan) 35%, transparent);
+    clip-path: polygon(12px 0, 100% 0, 100% calc(100% - 12px), calc(100% - 12px) 100%, 0 100%, 0 12px);
+    padding: 10px 14px; font-size: 0.750rem; backdrop-filter: blur(8px);
+  }
+  #legend h3 {
+    font-family: var(--font-display); font-size: 0.625rem; color: var(--cyan);
+    margin-bottom: 6px; text-transform: uppercase; letter-spacing: 1.5px;
+    text-shadow: 0 0 8px color-mix(in srgb, var(--cyan) 70%, transparent);
+  }
+  #legend .swatches { display: flex; gap: 2px; margin-bottom: 4px; }
+  #legend .swatches div { width: 22px; height: 12px; }
+  #legend .labels { display: flex; justify-content: space-between; color: var(--muted); }
+
+  /* ---------- Side panel (country view) ---------- */
+  #panel {
+    position: absolute; top: 56px; right: 0; bottom: 0; width: 340px; z-index: 1000;
+    background: linear-gradient(180deg, color-mix(in srgb, var(--bg2) 96%, transparent), color-mix(in srgb, var(--bg) 96%, transparent));
+    border-left: 1px solid var(--pink);
+    box-shadow: -6px 0 24px color-mix(in srgb, var(--pink) 25%, transparent);
+    transform: translateX(100%); transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; flex-direction: column; backdrop-filter: blur(10px);
+  }
+  #panel.open { transform: translateX(0); }
+  #panel-head {
+    padding: 14px 16px; border-bottom: 1px solid var(--border);
+    display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
+    background: linear-gradient(90deg, color-mix(in srgb, var(--pink) 12%, transparent), transparent);
+  }
+  #panel-head h2 {
+    font-family: var(--font-display); font-size: 0.938rem; font-weight: 700;
+    color: var(--yellow); text-transform: uppercase; letter-spacing: 1px;
+    text-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 60%, transparent);
+  }
+  #panel-head .sub { font-size: 0.750rem; color: var(--muted); margin-top: 3px; }
+  #panel-list { overflow-y: auto; padding: 8px 0; flex: 1; }
+  #panel-list::-webkit-scrollbar { width: 8px; }
+  #panel-list::-webkit-scrollbar-track { background: var(--bg2); }
+  #panel-list::-webkit-scrollbar-thumb { background: var(--purple); }
+  .attack-item {
+    padding: 10px 16px; border-bottom: 1px solid color-mix(in srgb, var(--border) 60%, transparent); cursor: pointer;
+    border-left: 2px solid transparent; transition: all 0.12s ease;
+  }
+  .attack-item:hover {
+    background: color-mix(in srgb, var(--cyan) 7%, transparent);
+    border-left: 2px solid var(--cyan);
+  }
+  .attack-item .date {
+    font-family: var(--font-display); font-size: 0.625rem; color: var(--pink); font-weight: 700;
+    letter-spacing: 0.8px; text-shadow: 0 0 6px color-mix(in srgb, var(--pink) 60%, transparent);
+  }
+  .attack-item .loc { font-size: 0.750rem; color: var(--cyan); margin-top: 2px; }
+  .attack-item .desc { font-size: 0.750rem; margin-top: 4px; line-height: 1.45; color: var(--text); }
+  .attack-item a {
+    color: var(--cyan); text-decoration: none; font-weight: 600;
+  }
+  .attack-item a:hover { color: var(--yellow); }
+
+  /* ---------- Tooltip ---------- */
+  .map-tooltip {
+    background: color-mix(in srgb, var(--bg2) 95%, transparent); border: 1px solid var(--yellow); color: var(--text);
+    border-radius: var(--radius); padding: 6px 10px; font-size: 0.750rem; font-family: var(--font-body);
+    box-shadow: 0 0 14px color-mix(in srgb, var(--yellow) 40%, transparent), 4px 4px 12px rgba(0,0,0,0.6);
+  }
+  .map-tooltip strong {
+    color: var(--pink); font-family: var(--font-display); font-size: 0.688rem;
+    text-shadow: 0 0 6px color-mix(in srgb, var(--pink) 70%, transparent);
+  }
+
+  /* ---------- Leaflet control theme ---------- */
+  .leaflet-bar {
+    border: 1px solid var(--cyan) !important;
+    box-shadow: 0 0 12px color-mix(in srgb, var(--cyan) 40%, transparent) !important;
+  }
+  .leaflet-bar a {
+    background: color-mix(in srgb, var(--bg2) 95%, transparent) !important; color: var(--cyan) !important;
+    border-bottom: 1px solid var(--border) !important;
+  }
+  .leaflet-bar a:hover { background: var(--cyan) !important; color: var(--bg) !important; }
+  .leaflet-container { font-family: var(--font-body); background: transparent; }
+
+  /* ---------- Pulse animations ---------- */
+  .neon-pulse { animation: cityPulse 2.2s ease-in-out infinite; }
+  @keyframes cityPulse {
+    0%, 100% { opacity: 0.35; }
+    50% { opacity: 0.05; }
+  }
+  .leaflet-interactive { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--cyan) 50%, transparent)); }
+  .cities .leaflet-interactive { filter: drop-shadow(0 0 8px color-mix(in srgb, var(--pink) 90%, transparent)) drop-shadow(0 0 16px color-mix(in srgb, var(--cyan) 50%, transparent)); cursor: pointer; }
+  .cities .leaflet-interactive:hover { filter: drop-shadow(0 0 12px var(--yellow)); }
+
+  /* ---------- Synthwave grid ocean (colors via theme vars) ---------- */
+  #grid-ocean {
+    position: absolute; inset: 0; z-index: 0; pointer-events: none;
+    background-image:
+      linear-gradient(var(--grid-color) 1px, transparent 1px),
+      linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 70% 55% at 50% 115%, black 0%, transparent 70%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 55% at 50% 115%, black 0%, transparent 70%);
+  }
+  #horizon-glow {
+    position: absolute; left: 0; right: 0; top: 38%; height: 3px; z-index: 0; pointer-events: none;
+    background: linear-gradient(90deg, transparent, var(--horizon-color), color-mix(in srgb, var(--cyan) 60%, transparent), transparent);
+    box-shadow: 0 0 22px 4px color-mix(in srgb, var(--pink) 45%, transparent);
+    opacity: 0.35;
+  }
+
+  /* ---------- Basemap tint & terrain styling ---------- */
+  #basemap-tint {
+    position: absolute; inset: 0; z-index: 399; pointer-events: none;
+    mix-blend-mode: multiply;
+  }
+  .basemap-tinted { filter: saturate(0.9) contrast(1.05); }
+  .basemap-plain { filter: none; }
+  .basemap-labels { opacity: 0.9; }
+
+  /* ---------- Graticule labels ---------- */
+  .graticule-label {
+    font-family: var(--font-display);
+    font-size: 0.563rem;
+    letter-spacing: 0.5px;
+    pointer-events: none;
+    white-space: nowrap;
+    text-shadow: 0 0 4px color-mix(in srgb, var(--bg) 90%, transparent), 0 0 8px color-mix(in srgb, var(--bg) 90%, transparent);
+  }
+  .graticule-label span { opacity: 0.85; }
+
+  /* ======================= Accessibility ======================= */
+  /* Visible keyboard focus on all interactive elements */
+  button:focus-visible,
+  select:focus-visible,
+  input:focus-visible,
+  a:focus-visible,
+  [tabindex]:focus-visible {
+    outline: 3px solid var(--yellow);
+    outline-offset: 2px;
+    box-shadow: 0 0 10px color-mix(in srgb, var(--yellow) 80%, transparent);
+  }
+  /* Attack list rows are keyboard-focusable */
+  .attack-item { outline: none; }
+  .attack-item:focus-visible {
+    outline: 3px solid var(--yellow); outline-offset: -3px;
+    background: color-mix(in srgb, var(--cyan) 10%, transparent);
+    border-left: 2px solid var(--yellow);
+  }
+  /* Reduced motion: disable all decorative animation */
+  @media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+    .neon-pulse { display: none; }
+    body::before { animation: none !important; }
+  }
+  /* High contrast text helpers */
+  .sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+  }
+
+  /* ======================= Responsive / Mobile ======================= */
+  @media (max-width: 900px) {
+    /* --- Compact header: two tidy rows --- */
+    #header {
+      padding: 8px 12px;
+      gap: 8px 12px;
+    }
+    #header h1 { font-size: 0.750rem; flex: 1 1 100%; }
+    #header h1 span { display: none; } /* drop subtitle on small screens */
+    #year-filter { order: 3; flex-basis: 100%; min-width: 0; gap: 8px; }
+    #year-filter label { font-size: 0.562rem; }
+    #year-label { min-width: 96px; font-size: 0.688rem; }
+    .theme-pick { margin-left: auto; }
+    button { padding: 6px 10px; font-size: 0.562rem; }
+
+    /* --- Side panel becomes a bottom sheet --- */
+    #panel {
+      top: auto; left: 0; right: 0; bottom: 0; width: 100%;
+      max-height: 55vh; height: 55vh;
+      border-left: none; border-top: 1px solid var(--pink);
+      box-shadow: 0 -6px 24px color-mix(in srgb, var(--pink) 25%, transparent);
+      transform: translateY(100%);
+    }
+    #panel.open { transform: translateY(0); }
+    #panel-head h2 { font-size: 0.812rem; }
+
+    /* --- Legend shrinks & moves above the bottom sheet --- */
+    #legend { bottom: 10px; right: 10px; padding: 7px 10px; font-size: 0.625rem; }
+    #legend .swatches div { width: 14px; height: 9px; }
+    #legend h3 { font-size: 0.500rem; }
+  }
+
+  @media (max-width: 640px) {
+    /* --- Phone: single compact control row + full-width controls --- */
+    #header { gap: 6px 8px; }
+    #header h1 { font-size: 0.688rem; letter-spacing: 0.5px; }
+    #year-filter { gap: 6px; }
+    #year-filter label { display: none; } /* icon-only row on phones */
+    #year-label { min-width: 86px; font-size: 0.625rem; }
+    #theme-select { max-width: 130px; font-size: 0.688rem; }
+    #btn-all, #btn-latest { padding: 6px 8px; font-size: 0.500rem; }
+
+    /* --- Bigger touch targets for slider thumbs --- */
+    input[type="range"].yr { top: 0; height: 26px; }
+    input[type="range"].yr::-webkit-slider-thumb {
+      width: 22px; height: 22px; border-width: 3px;
+    }
+    input[type="range"].yr::-moz-range-thumb {
+      width: 18px; height: 18px; border-width: 3px;
+    }
+
+    /* --- Tooltip closer to the thumb --- */
+    #thumb-tip { top: 32px; font-size: 0.625rem; }
+
+    /* --- Panel: taller sheet, collapsible header --- */
+    #panel { max-height: 62vh; height: 62vh; }
+    #panel-head { padding: 10px 12px; }
+    .attack-item { padding: 8px 12px; }
+
+    /* --- Legend: minimal --- */
+    #legend { padding: 5px 8px; }
+
+    /* --- Leaflet zoom controls tucked under the header --- */
+    .leaflet-top.leaflet-left { margin-top: 96px; }
+  }
+
+  /* Touch devices: dismiss thumb tooltip on drag end */
+  @media (pointer: coarse) {
+    #thumb-tip { transition: opacity 0.25s ease; }
+  }
+</style>
+</head>
+<body>
+
+<div id="grid-ocean" aria-hidden="true"></div>
+<div id="horizon-glow" aria-hidden="true"></div>
+<div id="basemap-tint" aria-hidden="true"></div>
+<div id="map" role="application"
+     aria-label="Interactive world map of physical Bitcoin attacks. Countries are colored by number of attacks; select a country to zoom in and view city-level details. Use the year sliders to filter by year."></div>
+
+<!-- Screen reader announcements for filter/selection changes -->
+<div id="sr-live" class="sr-only" role="status" aria-live="polite"></div>
+
+<div id="header">
+  <h1>⚠ Physical Bitcoin Attacks <span>— meatspace attacks against crypto owners</span></h1>
+  <div id="year-filter">
+    <label>Year range</label>
+    <div class="range-wrap" id="range-wrap">
+      <div class="range-track" aria-hidden="true"></div>
+      <div class="range-fill" id="range-fill" aria-hidden="true"></div>
+      <input type="range" class="yr" id="yr-min" min="2014" max="2026" value="2014"
+             title="Minimum year" aria-label="Filter: minimum year">
+      <input type="range" class="yr" id="yr-max" min="2014" max="2026" value="2026"
+             title="Maximum year" aria-label="Filter: maximum year">
+      <div id="thumb-tip" aria-hidden="true"></div>
+    </div>
+    <span id="year-label">All years (2014–2026)</span>
+  </div>
+  <button id="btn-all">All years</button>
+  <button id="btn-latest">Latest year</button>
+  <div class="theme-pick">
+    <label for="theme-select">Theme</label>
+    <select id="theme-select"></select>
+  </div>
+  <button id="btn-world" style="display:none">← World view</button>
+</div>
+
+<div id="legend">
+  <h3>Attacks per country</h3>
+  <div class="swatches" id="legend-swatches"></div>
+  <div class="labels"><span>0</span><span id="legend-max">max</span></div>
+</div>
+
+<div id="panel">
+  <div id="panel-head">
+    <div>
+      <h2 id="panel-title">Country</h2>
+      <div class="sub" id="panel-sub"></div>
+    </div>
+    <button id="panel-close">✕</button>
+  </div>
+  <div id="panel-list"></div>
+</div>
+
+<script>
+// ======================= ISO2 -> ISO3 (only countries present in the data) =======================
+const ISO2_TO_3 = {
+  AE:"ARE", AR:"ARG", AT:"AUT", AU:"AUS", BE:"BEL", BG:"BGR", BR:"BRA",
+  CA:"CAN", CN:"CHN", CO:"COL", CR:"CRI", CY:"CYP", DE:"DEU", EE:"EST", ES:"ESP", FR:"FRA",
+  GB:"GBR", GE:"GEO", GH:"GHA", HK:"HKG", ID:"IDN", IL:"ISR", IN:"IND", IS:"ISL", IT:"ITA",
+  JP:"JPN", KR:"KOR", LK:"LKA", LT:"LTU", LV:"LVA", MT:"MLT", ME:"MNE", MX:"MEX", MY:"MYS",
+  NG:"NGA", NL:"NLD", NO:"NOR", NZ:"NZL", PH:"PHL", PK:"PAK", PL:"POL", PY:"PRY", RO:"ROU",
+  RU:"RUS", SE:"SWE", SG:"SGP", TH:"THA", TR:"TUR", TT:"TTO", TW:"TWN", UA:"UKR", UG:"UGA",
+  US:"USA", VN:"VNM", ZA:"ZAF",
+};
+// Aliases used by johan/world.geo.json & some datasets for Taiwan etc.
+const NAME_FALLBACKS = {
+  TWN: ["Taiwan"], PSE: [],};
+// The johan dataset uses ISO3 in feature.id. Hong Kong & Singapore are separate features there.
+
+const YEARS = { MIN: 2014, MAX: 2026 };
+
+// ======================= App state =======================
+let attacks = [];
+let yearMin = YEARS.MIN, yearMax = YEARS.MAX;
+let selectedCountryISO3 = null;
+let worldLayer = null;      // choropleth layer
+let cityLayer = null;       // circles when zoomed into country
+let counts = {};            // iso3 -> filtered attack count
+
+// ======================= Init map =======================
+const map = L.map("map", { zoomControl: true, minZoom: 2, maxBounds: [[-85, -180], [85, 180]] });
+
+// Default world view: frame the populated world so Antarctica's northern coast
+// (~-60°, its lat of highest attack-relevant land) just clips the bottom edge.
+function worldViewBounds() {
+  return L.latLngBounds([[83, -170], [-60.5, 170]]);
+}
+map.fitBounds(worldViewBounds());
+map.createPane("cities");
+map.getPane("cities").style.zIndex = 450;
+
+// ======================= Topographic basemap (theme-aware) =======================
+// Each theme gets a matching terrain tile style. All are free/open, no API key.
+const BASEMAP_STYLES = {
+  cyberpunk:    { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#160b3d", tintOp: 0.55 },
+  synthwave:    { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#2d1b4e", tintOp: 0.55 },
+  matrix:       { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#021200", tintOp: 0.6 },
+  bladerunner:  { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#1a1d26", tintOp: 0.55 },
+  vaporwave:    { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#2f2a52", tintOp: 0.5 },
+  outrun:       { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#180a2e", tintOp: 0.55 },
+  miami:        { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#1e2a48", tintOp: 0.5 },
+  tokyo:        { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#171a23", tintOp: 0.5 },
+  goldrush:     { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#1a1408", tintOp: 0.55 },
+  terminal:     { url: "https://{s}.basemaps.cartocdn.com/dark_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#161006", tintOp: 0.6 },
+  arctic:       { url: "https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: false,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: true, tint: "#102033", tintOp: 0.35 },
+  colorblind:   { url: "https://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa", labels: true,
+                   attr: "© OpenStreetMap contributors © CARTO", dark: false, tint: null, tintOp: 0 },
+};
+
+let basemapLayer = null;
+let basemapLabelsLayer = null;
+
+function setBasemap(key) {
+  const s = BASEMAP_STYLES[key] || BASEMAP_STYLES.cyberpunk;
+  if (basemapLayer) { map.removeLayer(basemapLayer); basemapLayer = null; }
+  if (basemapLabelsLayer) { map.removeLayer(basemapLabelsLayer); basemapLabelsLayer = null; }
+  basemapLayer = L.tileLayer(s.url, {
+    attribution: s.attr, subdomains: "abcd", maxZoom: 12, minZoom: 2,
+    className: s.dark ? "basemap-tinted" : "basemap-plain",
+  }).addTo(map);
+  if (s.labels) {
+    // separate high-contrast label layer keeps place names readable over the tint
+    basemapLabelsLayer = L.tileLayer(
+      s.dark ? "https://{s}.basemaps.cartocdn.com/dark_only_labels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa"
+             : "https://{s}.basemaps.cartocdn.com/light_only_labels/{z}/{x}/{y}{r}.png?key=cb1_3rq8_1_d27f08ac4e1d146d8db912aa",
+      { subdomains: "abcd", maxZoom: 12, minZoom: 2, className: "basemap-labels" }
+    ).addTo(map);
+  }
+  // tint overlay div sits between tiles and vectors, colored per theme
+  const tintEl = document.getElementById("basemap-tint");
+  if (tintEl) {
+    tintEl.style.background = s.tint || "transparent";
+    tintEl.style.opacity = s.tintOp;
+  }
+}
+
+// ======================= Graticule (topographic markings) =======================
+// Latitude/longitude grid with degree labels, styled per theme.
+let graticuleLayer = null;
+
+function buildGraticule() {
+  if (graticuleLayer) { map.removeLayer(graticuleLayer); graticuleLayer = null; }
+  const style = getComputedStyle(document.documentElement);
+  const lineColor = style.getPropertyValue("--grid-color").trim() || "rgba(0,240,255,0.10)";
+  const textColor = style.getPropertyValue("--muted").trim() || "#888";
+
+  graticuleLayer = L.layerGroup().addTo(map);
+  const addLabel = (lat, lng, text) => {
+    const icon = L.divIcon({
+      className: "graticule-label",
+      html: `<span style="color:${textColor}">${text}</span>`,
+      iconSize: [0, 0],
+    });
+    L.marker([lat, lng], { icon, interactive: false }).addTo(graticuleLayer);
+  };
+
+  const step = map.getZoom() >= 5 ? 5 : (map.getZoom() >= 3 ? 10 : 20);
+  const bounds = map.getBounds();
+  // latitude lines
+  for (let lat = -80; lat <= 80; lat += step) {
+    if (lat === 0) continue; // equator drawn separately, bolder
+    L.polyline([[lat, -180], [lat, 180]], {
+      color: lineColor, weight: 0.7, opacity: 0.7, interactive: false,
+    }).addTo(graticuleLayer);
+    addLabel(lat, bounds.getWest() + 1, `${Math.abs(lat)}°${lat > 0 ? "N" : "S"}`);
+  }
+  // equator — emphasized
+  L.polyline([[0, -180], [0, 180]], {
+    color: lineColor, weight: 1.6, opacity: 0.95, interactive: false, dashArray: "8 6",
+  }).addTo(graticuleLayer);
+  addLabel(0, bounds.getWest() + 1, "0° Equator");
+
+  // longitude lines
+  const w = Math.ceil(bounds.getWest() / step) * step;
+  for (let lng = w; lng <= bounds.getEast(); lng += step) {
+    L.polyline([[-85, lng], [85, lng]], {
+      color: lineColor, weight: 0.7, opacity: 0.7, interactive: false,
+    }).addTo(graticuleLayer);
+    addLabel(bounds.getNorth() - 1, lng, `${Math.abs(lng)}°${lng > 0 ? "E" : lng < 0 ? "W" : ""}`);
+  }
+}
+
+map.on("zoomend moveend", buildGraticule);
+
+// ======================= Load data =======================
+async function loadAll() {
+  // Attack data lives in attacks.json next to this file.
+  // (Same-origin fetch: serve over HTTP, e.g. `python3 -m http.server`)
+  const [attackRes, worldRes] = await Promise.all([
+    fetch("attacks.json"),
+    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"),
+  ]);
+  if (!attackRes.ok) throw new Error(`Failed to load attacks.json (HTTP ${attackRes.status})`);
+  attacks = await attackRes.json();
+  // normalize country code -> ISO3
+  for (const a of attacks) {
+    a.iso3 = ISO2_TO_3[a.country_code] || null;
+  }
+  const world = await worldRes.json();
+  // Hong Kong may be missing from johan dataset; provide a minimal polygon so it's clickable.
+  const haveIds = new Set(world.features.map(f => f.id));
+  if (!haveIds.has("HKG")) {
+    world.features.push({
+      type: "Feature", id: "HKG", properties: { name: "Hong Kong" },
+      geometry: { type: "Polygon", coordinates: [[
+        [113.83, 22.15], [114.41, 22.15], [114.41, 22.57], [113.83, 22.57], [113.83, 22.15]
+      ]] }
+    });
+  }
+  if (!haveIds.has("SGP")) {
+    world.features.push({
+      type: "Feature", id: "SGP", properties: { name: "Singapore" },
+      geometry: { type: "Polygon", coordinates: [[
+        [103.62, 1.15], [104.05, 1.15], [104.05, 1.47], [103.62, 1.47], [103.62, 1.15]
+      ]] }
+    });
+  }
+  window.worldData = world;
+  rebuild();
+}
+
+// ======================= Accessibility helpers =======================
+const srLive = document.getElementById("sr-live");
+
+function announce(message) {
+  if (!srLive) return;
+  srLive.textContent = "";
+  // slight delay ensures screen readers re-announce changed content
+  setTimeout(() => { srLive.textContent = message; }, 50);
+}
+
+function announceFilterState() {
+  const shown = filteredAttacks();
+  const countries = new Set(shown.map(a => a.iso3).filter(Boolean));
+  announce(
+    `Showing ${shown.length} attacks across ${countries.size} countries, ` +
+    (yearMin === yearMax ? `year ${yearMin}.` : `years ${yearMin} to ${yearMax}.`)
+  );
+}
+
+function announceCountry(iso3, name, count) {
+  announce(`${name} selected: ${count} attacks. Attack details listed in the side panel.`);
+}
+
+// ======================= Filtering =======================
+function filteredAttacks() {
+  return attacks.filter(a => a.date.year !== null && a.date.year >= yearMin && a.date.year <= yearMax);
+}
+
+function computeCounts() {
+  counts = {};
+  for (const a of filteredAttacks()) {
+    if (!a.iso3) continue;
+    counts[a.iso3] = (counts[a.iso3] || 0) + 1;
+  }
+}
+
+// ======================= Themes =======================
+// Each theme: css vars + heat ramp (array of [t, [r,g,b]]) + flags.
+const THEMES = {
+  cyberpunk: {
+    name: "Cyberpunk Neon",
+    vars: {
+      "--bg": "#05010d", "--bg2": "#0a0618", "--panel": "rgba(5, 1, 13, 0.88)",
+      "--border": "#2b1b4d", "--text": "#eae6ff", "--muted": "#b8b3d0",
+      "--pink": "#ff2ec4", "--cyan": "#00f0ff", "--yellow": "#ffe600", "--purple": "#9d4edd",
+      "--glow1": "rgba(255, 46, 196, 0.18)", "--glow2": "rgba(0, 240, 255, 0.14)",
+      "--glow3": "rgba(157, 78, 221, 0.18)",
+      "--grid-color": "rgba(0, 240, 255, 0.10)", "--horizon-color": "rgba(255, 46, 196, 0.6)",
+      "--scanline-opacity": "0.35",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "8px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [30, 60, 255]],   // electric blue
+      [0.25, [0, 240, 255]],   // neon cyan
+      [0.50, [57, 255, 20]],   // neon green
+      [0.75, [255, 46, 196]],  // hot magenta
+      [1.00, [255, 230, 0]],   // warning yellow
+    ],
+    border: "#00f0ff", dim: "#3a2a5f", empty: "#120a26",
+  },
+  synthwave: {
+    name: "Synthwave Sunset",
+    vars: {
+      "--bg": "#1a0b2e", "--bg2": "#2d1b4e", "--panel": "rgba(26, 11, 46, 0.9)",
+      "--border": "#4a2b73", "--text": "#ffe9f7", "--muted": "#b58fc9",
+      "--pink": "#ff6ec7", "--cyan": "#7df9ff", "--yellow": "#ffb347", "--purple": "#c77dff",
+      "--glow1": "rgba(255, 110, 199, 0.22)", "--glow2": "rgba(125, 249, 255, 0.15)",
+      "--glow3": "rgba(199, 125, 255, 0.20)",
+      "--grid-color": "rgba(255, 110, 199, 0.10)", "--horizon-color": "rgba(255, 179, 71, 0.7)",
+      "--scanline-opacity": "0.25",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "8px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [76, 0, 153]], [0.35, [199, 0, 57]], [0.65, [255, 179, 71]],
+      [0.85, [255, 238, 147]], [1.00, [255, 255, 255]],
+    ],
+    border: "#7df9ff", dim: "#4a2b73", empty: "#241441",
+  },
+  matrix: {
+    name: "Matrix Green",
+    vars: {
+      "--bg": "#000500", "--bg2": "#021200", "--panel": "rgba(0, 5, 0, 0.9)",
+      "--border": "#0d3d0d", "--text": "#c8ffc8", "--muted": "#4e8f4e",
+      "--pink": "#00ff41", "--cyan": "#00ff41", "--yellow": "#aaff00", "--purple": "#00b32d",
+      "--glow1": "rgba(0, 255, 65, 0.15)", "--glow2": "rgba(0, 255, 65, 0.10)",
+      "--glow3": "rgba(0, 179, 45, 0.12)",
+      "--grid-color": "rgba(0, 255, 65, 0.08)", "--horizon-color": "rgba(0, 255, 65, 0.5)",
+      "--scanline-opacity": "0.45",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "0px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [2, 35, 10]], [0.35, [8, 92, 24]], [0.60, [30, 160, 48]],
+      [0.85, [110, 255, 130]], [1.00, [220, 255, 220]],
+    ],
+    border: "#00ff41", dim: "#0d3d0d", empty: "#020c02",
+  },
+  bladerunner: {
+    name: "Blade Runner 2049",
+    vars: {
+      "--bg": "#0d0f14", "--bg2": "#1a1d26", "--panel": "rgba(13, 15, 20, 0.9)",
+      "--border": "#3a3f4d", "--text": "#e8dcd0", "--muted": "#8a8577",
+      "--pink": "#ff9a3c", "--cyan": "#d23669", "--yellow": "#ffc78f", "--purple": "#6b4f8a",
+      "--glow1": "rgba(255, 154, 60, 0.16)", "--glow2": "rgba(210, 54, 105, 0.13)",
+      "--glow3": "rgba(107, 79, 138, 0.15)",
+      "--grid-color": "rgba(255, 154, 60, 0.07)", "--horizon-color": "rgba(255, 154, 60, 0.5)",
+      "--scanline-opacity": "0.3",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "6px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [43, 48, 58]], [0.35, [107, 79, 138]], [0.65, [210, 54, 105]],
+      [0.85, [255, 154, 60]], [1.00, [255, 240, 220]],
+    ],
+    border: "#ffc78f", dim: "#3a3f4d", empty: "#16181f",
+  },
+  vaporwave: {
+    name: "Vaporwave Pastel",
+    vars: {
+      "--bg": "#1e1b3a", "--bg2": "#2f2a52", "--panel": "rgba(30, 27, 58, 0.9)",
+      "--border": "#57537a", "--text": "#f3efff", "--muted": "#a7a3c9",
+      "--pink": "#ff9ff3", "--cyan": "#a8e6cf", "--yellow": "#fff5a2", "--purple": "#c3aed6",
+      "--glow1": "rgba(255, 159, 243, 0.18)", "--glow2": "rgba(168, 230, 207, 0.14)",
+      "--glow3": "rgba(195, 174, 214, 0.16)",
+      "--grid-color": "rgba(255, 159, 243, 0.09)", "--horizon-color": "rgba(255, 159, 243, 0.5)",
+      "--scanline-opacity": "0.18",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "12px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [82, 77, 140]], [0.35, [150, 130, 200]], [0.65, [255, 159, 243]],
+      [0.85, [255, 245, 162]], [1.00, [255, 255, 255]],
+    ],
+    border: "#a8e6cf", dim: "#57537a", empty: "#282348",
+  },
+  outrun: {
+    name: "Outrun Purple Rain",
+    vars: {
+      "--bg": "#0b0217", "--bg2": "#180a2e", "--panel": "rgba(11, 2, 23, 0.9)",
+      "--border": "#3d1f66", "--text": "#e8dcff", "--muted": "#9d86c4",
+      "--pink": "#b967ff", "--cyan": "#ff71ce", "--yellow": "#01cdfe", "--purple": "#05ffa1",
+      "--glow1": "rgba(185, 103, 255, 0.20)", "--glow2": "rgba(1, 205, 254, 0.12)",
+      "--glow3": "rgba(5, 255, 161, 0.10)",
+      "--grid-color": "rgba(185, 103, 255, 0.10)", "--horizon-color": "rgba(255, 113, 206, 0.6)",
+      "--scanline-opacity": "0.3",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "8px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [40, 16, 80]], [0.35, [110, 45, 180]], [0.65, [185, 103, 255]],
+      [0.85, [255, 113, 206]], [1.00, [5, 255, 161]],
+    ],
+    border: "#01cdfe", dim: "#3d1f66", empty: "#160a28",
+  },
+  miami: {
+    name: "Miami Vice",
+    vars: {
+      "--bg": "#141a2e", "--bg2": "#1e2a48", "--panel": "rgba(20, 26, 46, 0.9)",
+      "--border": "#2e3f66", "--text": "#eef4ff", "--muted": "#7f96c4",
+      "--pink": "#ff4fa3", "--cyan": "#38f4d8", "--yellow": "#ffd166", "--purple": "#7b6cf6",
+      "--glow1": "rgba(255, 79, 163, 0.16)", "--glow2": "rgba(56, 244, 216, 0.12)",
+      "--glow3": "rgba(123, 108, 246, 0.14)",
+      "--grid-color": "rgba(56, 244, 216, 0.08)", "--horizon-color": "rgba(255, 79, 163, 0.5)",
+      "--scanline-opacity": "0.15",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "8px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [46, 62, 105]], [0.35, [123, 108, 246]], [0.65, [255, 79, 163]],
+      [0.85, [255, 209, 102]], [1.00, [255, 255, 255]],
+    ],
+    border: "#38f4d8", dim: "#2e3f66", empty: "#1a2440",
+  },
+  tokyo: {
+    name: "Tokyo Night",
+    vars: {
+      "--bg": "#0f1117", "--bg2": "#171a23", "--panel": "rgba(15, 17, 23, 0.9)",
+      "--border": "#2d3142", "--text": "#e6edf3", "--muted": "#8892b0",
+      "--pink": "#ff5c8a", "--cyan": "#64ffda", "--yellow": "#ffd43b", "--purple": "#7c6ff0",
+      "--glow1": "rgba(255, 92, 138, 0.15)", "--glow2": "rgba(100, 255, 218, 0.10)",
+      "--glow3": "rgba(124, 111, 240, 0.13)",
+      "--grid-color": "rgba(100, 255, 218, 0.06)", "--horizon-color": "rgba(255, 92, 138, 0.5)",
+      "--scanline-opacity": "0.08",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "6px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [35, 42, 62]], [0.35, [124, 111, 240]], [0.65, [255, 92, 138]],
+      [0.85, [255, 212, 59]], [1.00, [255, 255, 255]],
+    ],
+    border: "#64ffda", dim: "#2d3142", empty: "#16181f",
+  },
+  goldrush: {
+    name: "Bitcoin Gold Rush",
+    vars: {
+      "--bg": "#0e0a02", "--bg2": "#1a1408", "--panel": "rgba(14, 10, 2, 0.9)",
+      "--border": "#3d2e14", "--text": "#fff6df", "--muted": "#a8905c",
+      "--pink": "#f7931a", "--cyan": "#ffd700", "--yellow": "#ffb347", "--purple": "#c98a2d",
+      "--glow1": "rgba(247, 147, 26, 0.18)", "--glow2": "rgba(255, 215, 0, 0.12)",
+      "--glow3": "rgba(201, 138, 45, 0.14)",
+      "--grid-color": "rgba(255, 215, 0, 0.07)", "--horizon-color": "rgba(247, 147, 26, 0.5)",
+      "--scanline-opacity": "0.1",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "6px", "--radius": "0",
+    },
+    ramp: [
+      [0.00, [61, 46, 20]], [0.35, [133, 96, 24]], [0.65, [201, 138, 45]],
+      [0.85, [247, 147, 26]], [1.00, [255, 240, 200]],
+    ],
+    border: "#ffd700", dim: "#3d2e14", empty: "#171005",
+  },
+  terminal: {
+    name: "Amber Terminal",
+    vars: {
+      "--bg": "#0c0802", "--bg2": "#161006", "--panel": "rgba(12, 8, 2, 0.92)",
+      "--border": "#3d2e10", "--text": "#ffcc66", "--muted": "#997a3d",
+      "--pink": "#ffaa00", "--cyan": "#ffd21e", "--yellow": "#fff2a8", "--purple": "#cc8800",
+      "--glow1": "rgba(255, 170, 0, 0.15)", "--glow2": "rgba(255, 210, 30, 0.10)",
+      "--glow3": "rgba(204, 136, 0, 0.12)",
+      "--grid-color": "rgba(255, 170, 0, 0.06)", "--horizon-color": "rgba(255, 170, 0, 0.5)",
+      "--scanline-opacity": "0.4",
+      "--font-display": '"Courier New", monospace', "--font-body": '"Courier New", monospace',
+      "--clip": "0px", "--radius": "2px",
+    },
+    ramp: [
+      [0.00, [50, 36, 10]], [0.35, [120, 84, 15]], [0.65, [204, 136, 0]],
+      [0.85, [255, 200, 80]], [1.00, [255, 245, 215]],
+    ],
+    border: "#ffd21e", dim: "#3d2e10", empty: "#141005",
+  },
+  arctic: {
+    name: "Arctic Ice",
+    vars: {
+      "--bg": "#0a1420", "--bg2": "#102033", "--panel": "rgba(10, 20, 32, 0.9)",
+      "--border": "#1f3a52", "--text": "#e0f4ff", "--muted": "#6f9ab5",
+      "--pink": "#5cc8ff", "--cyan": "#7fe3ff", "--yellow": "#bfefff", "--purple": "#3a7ca5",
+      "--glow1": "rgba(92, 200, 255, 0.16)", "--glow2": "rgba(127, 227, 255, 0.12)",
+      "--glow3": "rgba(58, 124, 165, 0.14)",
+      "--grid-color": "rgba(127, 227, 255, 0.08)", "--horizon-color": "rgba(92, 200, 255, 0.5)",
+      "--scanline-opacity": "0",
+      "--font-display": '"Orbitron", sans-serif', "--font-body": '"Rajdhani", sans-serif',
+      "--clip": "6px", "--radius": "4px",
+    },
+    ramp: [
+      [0.00, [23, 42, 60]], [0.35, [58, 124, 165]], [0.65, [92, 200, 255]],
+      [0.85, [170, 230, 255]], [1.00, [255, 255, 255]],
+    ],
+    border: "#7fe3ff", dim: "#1f3a52", empty: "#0d1a29",
+  },
+  colorblind: {
+    name: "Colorblind Safe (Viridis)",
+    vars: {
+      "--bg": "#f5f5f5", "--bg2": "#ffffff", "--panel": "rgba(255, 255, 255, 0.92)",
+      "--border": "#cccccc", "--text": "#1a1a1a", "--muted": "#5f5f5f",
+      "--pink": "#3b528b", "--cyan": "#21918c", "--yellow": "#fde725", "--purple": "#440154",
+      "--glow1": "rgba(59, 82, 139, 0.10)", "--glow2": "rgba(33, 145, 140, 0.08)",
+      "--glow3": "rgba(68, 1, 84, 0.08)",
+      "--grid-color": "rgba(33, 145, 140, 0.10)", "--horizon-color": "rgba(59, 82, 139, 0.4)",
+      "--scanline-opacity": "0",
+      "--font-display": '"Segoe UI", sans-serif', "--font-body": '"Segoe UI", sans-serif',
+      "--clip": "0px", "--radius": "6px",
+    },
+    ramp: [ // viridis: perceptually uniform, safe for all common CVD types
+      [0.00, [68, 1, 84]], [0.25, [59, 82, 139]], [0.50, [33, 145, 140]],
+      [0.75, [94, 201, 98]], [1.00, [253, 231, 37]],
+    ],
+    border: "#1a1a1a", dim: "#d0d0d0", empty: "#ebebeb",
+    light: true,
+  },
+};
+
+const DEFAULT_THEME = "cyberpunk";
+let currentThemeKey = DEFAULT_THEME;
+
+function applyTheme(key) {
+  const t = THEMES[key];
+  if (!t) return;
+  currentThemeKey = key;
+  for (const [k, v] of Object.entries(t.vars)) document.documentElement.style.setProperty(k, v);
+  setBasemap(key);
+  // re-render all map visuals with the new ramp
+  if (window.worldData) {
+    rebuild();
+    if (selectedCountryISO3) {
+      const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
+      drawCityCircles(inCountry);
+      const layer = findFeatureLayer(selectedCountryISO3);
+      openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+    }
+  }
+  try { localStorage.setItem("pba-theme", key); } catch (e) { /* private mode */ }
+  announce(`Theme changed to ${t.name}.`);
+}
+
+function initThemePicker() {
+  const sel = document.getElementById("theme-select");
+  for (const [key, t] of Object.entries(THEMES)) {
+    const opt = document.createElement("option");
+    opt.value = key; opt.textContent = t.name;
+    sel.appendChild(opt);
+  }
+  let saved = null;
+  try { saved = localStorage.getItem("pba-theme"); } catch (e) { /* ignore */ }
+  sel.value = saved && THEMES[saved] ? saved : DEFAULT_THEME;
+  applyTheme(sel.value);
+  sel.addEventListener("change", () => applyTheme(sel.value));
+}
+
+// ======================= Heat colors (theme ramp) =======================
+function heatColor(count, max) {
+  const t = THEMES[currentThemeKey];
+  if (!count) return { fill: t.empty, stroke: t.dim, opacity: 0.5 };
+  const f = Math.min(1, Math.sqrt(count / max)); // sqrt scale so low counts are visible
+  const stops = t.ramp;
+  let c0 = stops[0], c1 = stops[stops.length - 1];
+  for (let i = 0; i < stops.length - 1; i++) {
+    if (f >= stops[i][0] && f <= stops[i + 1][0]) { c0 = stops[i]; c1 = stops[i + 1]; break; }
+  }
+  const frac = (f - c0[0]) / (c1[0] - c0[0] || 1);
+  const rgb = c0[1].map((v, i) => Math.round(v + frac * (c1[1][i] - v)));
+  return { fill: `rgb(${rgb.join(",")})`, stroke: t.border, opacity: 1 };
+}
+
+// ======================= World choropleth layer =======================
+function buildWorldLayer() {
+  if (worldLayer) { map.removeLayer(worldLayer); worldLayer = null; }
+  const max = Math.max(1, ...Object.values(counts));
+
+  worldLayer = L.geoJSON(window.worldData, {
+    style: feature => {
+      const c = counts[feature.id] || 0;
+      const col = heatColor(c, max);
+      return {
+        color: c ? col.stroke : THEMES[currentThemeKey].dim,
+        weight: c ? 1.2 : 0.5,
+        fillColor: col.fill,
+        fillOpacity: c ? 0.55 + 0.45 * Math.min(1, c / max) : 0.3,
+        opacity: col.opacity,
+      };
+    },
+    onEachFeature: (feature, layer) => {
+      const c = counts[feature.id] || 0;
+      const name = feature.properties.name || feature.id;
+      layer.bindTooltip(`<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"}`, {
+        className: "map-tooltip", sticky: true,
+      });
+      layer.on("mouseover", () => {
+        if (selectedCountryISO3) return;
+        layer.setStyle({
+          weight: c ? 2.5 : 1.2,
+          color: THEMES[currentThemeKey].border,
+          fillOpacity: c ? 0.85 : 0.45,
+        });
+      });
+      layer.on("mouseout", () => {
+        if (selectedCountryISO3) return;
+        const col = heatColor(c, max);
+        layer.setStyle({
+          weight: c ? 1.2 : 0.5,
+          color: c ? col.stroke : THEMES[currentThemeKey].dim,
+          fillOpacity: c ? 0.55 + 0.45 * Math.min(1, c / max) : 0.3,
+        });
+      });
+      layer.on("click", () => selectCountry(feature.id, name));
+    },
+  }).addTo(map);
+
+  updateLegend(max);
+}
+
+// ======================= Legend =======================
+function updateLegend(max) {
+  const sw = document.getElementById("legend-swatches");
+  sw.innerHTML = "";
+  for (let i = 0; i < 8; i++) {
+    const v = max * Math.pow(i / 7, 2);
+    const col = heatColor(Math.max(v, 0.5), max);
+    const d = document.createElement("div");
+    d.style.background = col.fill;
+    sw.appendChild(d);
+  }
+  document.getElementById("legend-max").textContent = max;
+}
+
+// ======================= Country drill-down =======================
+function selectCountry(iso3, name) {
+  selectedCountryISO3 = iso3;
+  const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
+  if (!inCountry.length) return;
+
+  // Zoom so the country fills the page. If the country's polygon is much wider
+  // than the spread of actual attack locations (Alaska/Hawaii for US, overseas
+  // territories for France), zoom to the data instead so the view stays tight.
+  const layer = findFeatureLayer(iso3);
+  if (layer) {
+    let b = layer.getBounds();
+    const polyWidth = b.getEast() - b.getWest();
+    const pts = inCountry.filter(a => a.lat !== null && a.lng !== null);
+    const dataBounds = L.latLngBounds(pts.map(a => [a.lat, a.lng]));
+    if (dataBounds.isValid()) {
+      const dataWidth = dataBounds.getEast() - dataBounds.getWest();
+      if (polyWidth > 60 && polyWidth > dataWidth * 2.5) {
+        b = dataBounds;
+      }
+    }
+    // Extra padding on small screens where header + bottom sheet eat the viewport
+    const pad = window.innerWidth < 900 ? 0.45 : 0.25;
+    map.fitBounds(b.pad(pad), { animate: true });
+  }
+
+  // Dim world layer, highlight selected with theme border glow
+  if (worldLayer) {
+    worldLayer.eachLayer(l => {
+      const sel = l.feature.id === iso3;
+      l.setStyle({
+        fillOpacity: sel ? 0.12 : 0.04,
+        opacity: sel ? 1 : 0.15,
+        weight: sel ? 2 : 0.5,
+        color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim,
+      });
+    });
+  }
+
+  drawCityCircles(inCountry);
+  openPanel(name, inCountry);
+  announceCountry(iso3, name, inCountry.length);
+  document.getElementById("btn-world").style.display = "";
+}
+
+function findFeatureLayer(iso3) {
+  if (!worldLayer) return null;
+  let found = null;
+  worldLayer.eachLayer(l => { if (l.feature.id === iso3) found = l; });
+  return found;
+}
+
+function drawCityCircles(inCountry) {  if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
+  // group by city coordinate
+  const byCity = new Map();
+  for (const a of inCountry) {
+    const key = `${a.city}|${a.lat}|${a.lng}`;
+    if (!byCity.has(key)) byCity.set(key, { city: a.city, lat: a.lat, lng: a.lng, items: [] });
+    byCity.get(key).items.push(a);
+  }
+  const groups = [...byCity.values()].sort((x, y) => y.items.length - x.items.length);
+  const maxCount = groups[0].items.length;
+  const minCount = groups[groups.length - 1].items.length;
+
+  cityLayer = L.layerGroup().addTo(map);
+  for (const g of groups) {
+    const t = maxCount === minCount ? 1 : (g.items.length - minCount) / (maxCount - minCount);
+    const radius = 10 + 30 * Math.sqrt(t);
+    const heat = heatColor(g.items.length, maxCount);
+    const circle = L.circleMarker([g.lat, g.lng], {
+      radius,
+      color: THEMES[currentThemeKey].border,
+      weight: 2,
+      fillColor: heat.fill,
+      fillOpacity: 0.8,
+      pane: "cities",
+      className: "neon-city",
+    });
+    // pulsing halo
+    const halo = L.circleMarker([g.lat, g.lng], {
+      radius: radius + 6,
+      stroke: false,
+      fillColor: heat.fill,
+      fillOpacity: 0.25,
+      pane: "cities",
+      className: "neon-pulse",
+      interactive: false,
+    });
+    circle.bindTooltip(
+      `<strong>${g.city}</strong><br>${g.items.length} attack${g.items.length === 1 ? "" : "s"}`,
+      { className: "map-tooltip" }
+    );
+    circle.on("click", () => {
+      openPanel(g.city ? `${g.city}` : "Region", g.items, g.items[0].country);
+    });
+    cityLayer.addLayer(halo);
+    cityLayer.addLayer(circle);
+  }
+}
+
+// ======================= Side panel =======================
+function openPanel(title, items, countryName) {
+  const panel = document.getElementById("panel");
+  document.getElementById("panel-title").textContent = title;
+  document.getElementById("panel-sub").textContent =
+    `${items.length} attack${items.length === 1 ? "" : "s"} recorded`;
+  const list = document.getElementById("panel-list");
+  list.setAttribute("role", "list");
+  list.innerHTML = "";
+  for (const a of items) {
+    const div = document.createElement("div");
+    div.className = "attack-item";
+    div.setAttribute("role", "listitem");
+    div.setAttribute("tabindex", "0");
+    const links = (a.links || []).map(l => ` <a href="${l.url}" target="_blank" rel="noopener">${l.label || "link"}</a>`).join("");
+    div.innerHTML = `
+      <div class="date">${a.date.raw}${a.city ? " — " + a.city : ""}</div>
+      <div class="loc">Victim: ${escapeHtml(a.victim || "Unidentified")}</div>
+      <div class="desc">${escapeHtml(a.description)}${links}</div>`;
+    list.appendChild(div);
+  }
+  panel.classList.add("open");
+  // Let Leaflet re-measure now that the panel may have changed the layout
+  setTimeout(() => map.invalidateSize(), 320);
+}
+
+function escapeHtml(s) {
+  return String(s ?? "").replace(/[&<>"']/g, m => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m]));
+}
+
+document.getElementById("panel-close").addEventListener("click", () => {
+  document.getElementById("panel").classList.remove("open");
+});
+
+// ======================= World view reset =======================
+function worldView() {
+  selectedCountryISO3 = null;
+  if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
+  document.getElementById("panel").classList.remove("open");
+  document.getElementById("btn-world").style.display = "none";
+  map.fitBounds(worldViewBounds());
+  rebuild();
+  announceFilterState();
+}
+document.getElementById("btn-world").addEventListener("click", worldView);
+
+// ======================= Year filter =======================
+const yrMin = document.getElementById("yr-min");
+const yrMax = document.getElementById("yr-max");
+const yrLabel = document.getElementById("year-label");
+
+// ---------- Year thumb tooltip ----------
+const thumbTip = document.getElementById("thumb-tip");
+const rangeWrap = document.getElementById("range-wrap");
+let tipTarget = null; // which slider is hovered/dragged
+
+function thumbPosition(input) {
+  // horizontal position of the range input's thumb, in px within the wrap
+  const min = parseFloat(input.min), max = parseFloat(input.max);
+  const w = input.clientWidth;
+  const t = (parseFloat(input.value) - min) / (max - min);
+  // thumbs have ~16px width; track is inset by half a thumb on each side
+  const pad = 8;
+  return pad + t * (w - pad * 2);
+}
+
+function showThumbTip(input) {
+  tipTarget = input;
+  thumbTip.textContent = input.value;
+  thumbTip.style.left = thumbPosition(input) + "px";
+  thumbTip.classList.add("visible");
+}
+
+function updateThumbTip() {
+  if (tipTarget) {
+    thumbTip.textContent = tipTarget.value;
+    thumbTip.style.left = thumbPosition(tipTarget) + "px";
+  }
+}
+
+for (const input of [yrMin, yrMax]) {
+  input.addEventListener("mouseenter", () => showThumbTip(input));
+  input.addEventListener("mouseleave", () => { tipTarget = null; thumbTip.classList.remove("visible"); });
+  input.addEventListener("input", () => { if (tipTarget === input) updateThumbTip(); });
+  // Touch: show tooltip on drag start, hide shortly after drag ends
+  input.addEventListener("touchstart", () => showThumbTip(input), { passive: true });
+  input.addEventListener("touchend", () => {
+    setTimeout(() => { tipTarget = null; thumbTip.classList.remove("visible"); }, 900);
+  }, { passive: true });
+}
+// when thumbs cross (values swap), keep the tooltip pinned to the hovered element
+new MutationObserver(() => updateThumbTip()).observe(yrLabel, { childList: true });
+window.addEventListener("resize", updateThumbTip);
+
+function syncYears() {
+  let lo = parseInt(yrMin.value, 10), hi = parseInt(yrMax.value, 10);
+  if (lo > hi) [lo, hi] = [hi, lo];
+  yearMin = lo; yearMax = hi;
+  yrLabel.textContent = lo === hi ? `Year: ${lo}` : `Years: ${lo}–${hi}`;
+
+  const wrap = document.getElementById("range-wrap");
+  const w = wrap.clientWidth || 300;
+  const span = YEARS.MAX - YEARS.MIN;
+  const left = ((lo - YEARS.MIN) / span) * w;
+  const right = ((hi - YEARS.MIN) / span) * w;
+  const fill = document.getElementById("range-fill");
+  fill.style.left = left + "px";
+  fill.style.width = (right - left) + "px";
+  updateThumbTip();
+
+  // Announce filter changes to screen readers (debounced for drag)
+  clearTimeout(announceFilterState._t);
+  announceFilterState._t = setTimeout(announceFilterState, 300);
+
+  if (selectedCountryISO3) {
+    // stay in country view, refresh circles + panel
+    const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
+    drawCityCircles(inCountry);
+    const layer = findFeatureLayer(selectedCountryISO3);
+    openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+  }
+  computeCounts();
+  buildWorldLayer();
+  if (selectedCountryISO3 && worldLayer) {
+    worldLayer.eachLayer(l => {
+      const sel = l.feature.id === selectedCountryISO3;
+      l.setStyle({ fillOpacity: sel ? 0.12 : 0.04, opacity: sel ? 1 : 0.15, weight: sel ? 2 : 0.5, color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim });
+    });
+  }
+}
+
+yrMin.addEventListener("input", syncYears);
+yrMax.addEventListener("input", syncYears);
+window.addEventListener("resize", syncYears);
+
+document.getElementById("btn-all").addEventListener("click", () => {
+  yrMin.value = YEARS.MIN; yrMax.value = YEARS.MAX; syncYears();
+});
+document.getElementById("btn-latest").addEventListener("click", () => {
+  yrMin.value = YEARS.MAX; yrMax.value = YEARS.MAX; syncYears();
+});
+
+function rebuild() {
+  computeCounts();
+  buildWorldLayer();
+  if (selectedCountryISO3) {
+    worldLayer.eachLayer(l => {
+      const sel = l.feature.id === selectedCountryISO3;
+      l.setStyle({ fillOpacity: sel ? 0.12 : 0.04, opacity: sel ? 1 : 0.15, weight: sel ? 2 : 0.5, color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim });
+    });
+  }
+}
+
+initThemePicker();
+setBasemap(DEFAULT_THEME);
+buildGraticule();
+loadAll().then(syncYears).catch(err => {
+  document.body.insertAdjacentHTML("afterbegin",
+    `<div style="position:absolute;top:60px;left:12px;z-index:2000;background:rgba(10,6,24,0.95);border:1px solid #ff2ec4;color:#eae6ff;padding:12px;border-radius:0;box-shadow:0 0 16px rgba(255,46,196,0.5);font-size:13px;font-family:Rajdhani,sans-serif">
+     Failed to load data: ${escapeHtml(err.message)}. Serve the dashboard over HTTP (e.g. <code>python3 -m http.server</code>) rather than opening the file directly.</div>`);
+});
+</script>
+</body>
+</html>
