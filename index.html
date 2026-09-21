@@ -309,15 +309,6 @@
   }
   .country-label span { opacity: 0.95; }
 
-  /* ---------- Basemap tint & terrain styling ---------- */
-  #basemap-tint {
-    position: absolute; inset: 0; z-index: 399; pointer-events: none;
-    mix-blend-mode: multiply;
-  }
-  .basemap-tinted { filter: saturate(0.9) contrast(1.05); }
-  .basemap-plain { filter: none; }
-  .basemap-labels { opacity: 0.9; }
-
   /* ---------- Graticule labels ---------- */
   .graticule-label {
     font-family: var(--font-display);
@@ -439,7 +430,6 @@
 
 <div id="grid-ocean" aria-hidden="true"></div>
 <div id="horizon-glow" aria-hidden="true"></div>
-<div id="basemap-tint" aria-hidden="true"></div>
 <div id="map" role="application"
      aria-label="Interactive world map of physical Bitcoin attacks. Countries are colored by number of attacks; select a country to zoom in and view city-level details. Use the year sliders to filter by year."></div>
 
@@ -530,56 +520,18 @@ function goWorldView() {
 goWorldView();
 map.createPane("cities");
 map.getPane("cities").style.zIndex = 450;
-// Choropleth pane: above terrain tiles (200) and tint (399), below city
-// circles (450). Kept at 75% opacity so the topographic basemap shows through.
+// Choropleth pane: above the grid-ocean backdrop, below city circles (450).
+// Fully opaque now that the topographic basemap is gone.
 map.createPane("world-choro");
 const worldChoroPane = map.getPane("world-choro");
 worldChoroPane.style.zIndex = 401;
-worldChoroPane.style.opacity = "0.75";
 worldChoroPane.style.pointerEvents = "auto";
-
-// ======================= Topographic basemap (theme-aware) =======================
-// Base terrain: OpenTopoMap (real topographic contours — free, no API key).
-// Place-name labels come from our own theme-aware label layer (see buildCountryLabels)
-// plus CARTO's label-only tiles for city-level detail at high zoom.
-const BASEMAP_STYLES = {
-  cyberpunk:    { terrain: true, labels: true, dark: true, tint: "#160b3d", tintOp: 0.55 },
-  synthwave:    { terrain: true, labels: true, dark: true, tint: "#2d1b4e", tintOp: 0.55 },
-  matrix:       { terrain: true, labels: true, dark: true, tint: "#021200", tintOp: 0.6 },
-  bladerunner:  { terrain: true, labels: true, dark: true, tint: "#1a1d26", tintOp: 0.55 },
-  vaporwave:    { terrain: true, labels: true, dark: true, tint: "#2f2a52", tintOp: 0.5 },
-  outrun:       { terrain: true, labels: true, dark: true, tint: "#180a2e", tintOp: 0.55 },
-  miami:        { terrain: true, labels: true, dark: true, tint: "#1e2a48", tintOp: 0.5 },
-  tokyo:        { terrain: true, labels: true, dark: true, tint: "#171a23", tintOp: 0.5 },
-  goldrush:     { terrain: true, labels: true, dark: true, tint: "#1a1408", tintOp: 0.55 },
-  terminal:     { terrain: true, labels: true, dark: true, tint: "#161006", tintOp: 0.6 },
-  arctic:       { terrain: true, labels: false, dark: true, tint: "#102033", tintOp: 0.35 },
-  colorblind:   { terrain: true, labels: true, dark: false, tint: null, tintOp: 0 },
-};
-
-const TERRAIN_URL = "https://{s}.tile.opentopomap.org/{z}/{x}/{y}.png";
-const TERRAIN_ATTR = "Map data: © OpenStreetMap contributors, SRTM | Map style: © OpenTopoMap (CC-BY-SA)";
-
-let basemapLayer = null;
-let basemapLabelsLayer = null;
-
-function setBasemap(key) {
-  const s = BASEMAP_STYLES[key] || BASEMAP_STYLES.cyberpunk;
-  if (basemapLayer) { map.removeLayer(basemapLayer); basemapLayer = null; }
-  if (basemapLabelsLayer) { map.removeLayer(basemapLabelsLayer); basemapLabelsLayer = null; }
-  // CARTO label-only tiles removed: they conflicted with the theme-drawn
-  // graticule and country/city labels.
-  basemapLayer = L.tileLayer(TERRAIN_URL, {
-    attribution: TERRAIN_ATTR, subdomains: "abc", maxZoom: 12, minZoom: 2,
-    className: s.dark ? "basemap-tinted" : "basemap-plain",
-  }).addTo(map);
-  // tint overlay div sits between tiles and vectors, colored per theme
-  const tintEl = document.getElementById("basemap-tint");
-  if (tintEl) {
-    tintEl.style.background = s.tint || "transparent";
-    tintEl.style.opacity = s.tintOp;
-  }
-}
+// Internal-details pane (states/provinces): just above the choropleth so the
+// faint lines read as texture on the country fills.
+map.createPane("details");
+const detailsPane = map.getPane("details");
+detailsPane.style.zIndex = 402;
+detailsPane.style.pointerEvents = "none";
 
 // ======================= Graticule (topographic markings) =======================
 // Latitude/longitude grid with degree labels, styled per theme.
@@ -628,6 +580,52 @@ function buildGraticule() {
 }
 
 map.on("zoomend moveend", () => { buildGraticule(); buildCountryLabels(); });
+
+// ======================= Country-internal details =======================
+// Faint admin-1 boundaries (states / provinces / regions) drawn over the
+// choropleth so countries read as more than flat silhouettes. Loaded from
+// Natural Earth 110m admin-1 (via unpkg mirror of the geojson repo).
+let detailsData = null;          // GeoJSON FeatureCollection
+let detailsLayer = null;         // Leaflet layer group
+let detailsLoading = false;
+
+const DETAILS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_110m_admin_1_states_provinces.geojson";
+
+async function loadDetails() {
+  if (detailsData || detailsLoading) return;
+  detailsLoading = true;
+  try {
+    const res = await fetch(DETAILS_URL);
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    detailsData = await res.json();
+    detailsLoading = false;
+    buildDetails();
+  } catch (e) {
+    detailsLoading = false;
+    console.warn("internal details unavailable:", e.message);
+  }
+}
+
+function buildDetails() {
+  if (detailsLayer) { map.removeLayer(detailsLayer); detailsLayer = null; }
+  if (!detailsData) { loadDetails(); return; }
+
+  const style = getComputedStyle(document.documentElement);
+  // derive a faint line color from the theme: muted grid color
+  const lineColor = style.getPropertyValue("--grid-color").trim() || "rgba(0,240,255,0.10)";
+
+  detailsLayer = L.geoJSON(detailsData, {
+    pane: "details",
+    style: {
+      color: lineColor,
+      weight: 0.6,
+      opacity: 0.5,
+      fill: false,
+      interactive: false,
+    },
+  });
+  detailsLayer.addTo(map);
+}
 
 // ======================= Country name labels (legibility-aware) =======================
 // Draw each country's name at its polygon centroid, on top of the choropleth.
@@ -1008,7 +1006,6 @@ function applyTheme(key) {
   if (!t) return;
   currentThemeKey = key;
   for (const [k, v] of Object.entries(t.vars)) document.documentElement.style.setProperty(k, v);
-  setBasemap(key);
   // re-render all map visuals with the new ramp
   if (window.worldData) {
     rebuild();
@@ -1376,6 +1373,7 @@ document.getElementById("btn-latest").addEventListener("click", () => {
 function rebuild() {
   computeCounts();
   buildWorldLayer();
+  buildDetails();
   buildCountryLabels();
   if (selectedCountryISO3) {
     // keep heat fills; only re-highlight the selected country's border
@@ -1387,7 +1385,6 @@ function rebuild() {
 }
 
 initThemePicker();
-setBasemap(DEFAULT_THEME);
 buildGraticule();
 loadAll().then(syncYears).catch(err => {
   document.body.insertAdjacentHTML("afterbegin",
