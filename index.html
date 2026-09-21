@@ -1030,9 +1030,13 @@ async function showRegionOutlines(iso3) {
       );
       layer.on("mouseover", () => layer.setStyle({ fillOpacity: 0.8 }));
       layer.on("mouseout", () => layer.setStyle({ fillOpacity: 1 }));
-      // Click: list this region's attacks in the side panel
+      // Click: list this region's attacks in the side panel — always
+      // re-opens the panel even if the user closed it with ✕.
       layer.on("click", () => {
-        if (c) openPanel(`${name}`, items);
+        if (c) {
+          panelCountryClosed = false;
+          openPanel(`${name}`, items);
+        }
       });
     },
   });
@@ -1502,10 +1506,12 @@ function applyTheme(key) {
   if (window.worldData) {
     rebuild();
     if (selectedCountryISO3) {
-      const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
       showRegionOutlines(selectedCountryISO3);
-      const layer = findFeatureLayer(selectedCountryISO3);
-      openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+      if (!panelCountryClosed) {
+        const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
+        const layer = findFeatureLayer(selectedCountryISO3);
+        openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+      }
     }
   }
   try { localStorage.setItem("pba-theme", key); } catch (e) { /* private mode */ }
@@ -1612,8 +1618,16 @@ function buildWorldLayer() {
         });
       });
       layer.on("click", () => {
-        // If already zoomed into this country, don't reset the zoom.
-        if (selectedCountryISO3 === feature.id) return;
+        // If already zoomed into this country, don't reset the zoom —
+        // but if the user had closed the country panel with ✕, re-open it.
+        if (selectedCountryISO3 === feature.id) {
+          if (panelCountryClosed) {
+            panelCountryClosed = false;
+            const inCountry = filteredAttacks().filter(a => a.iso3 === feature.id);
+            openPanel(name, inCountry);
+          }
+          return;
+        }
         selectCountry(feature.id, name);
       });
     },
@@ -1724,7 +1738,8 @@ function selectCountry(iso3, name) {
   applyDrillStyles(iso3);
 
   showRegionOutlines(iso3);
-  panelWorldClosed = false; // drilling in resets the close state
+  panelWorldClosed = false;   // drilling in resets the world close state
+  panelCountryClosed = false; // and the country close state
   openPanel(name, inCountry);
   announceCountry(iso3, name, inCountry.length);
   document.getElementById("btn-world").style.display = "";
@@ -1742,9 +1757,13 @@ function findFeatureLayer(iso3) {
 // mode "country": full panel (drilled into a country / city).
 // mode "world":   collapsed header-only box listing the total; click
 //                "Expand" to reveal the full filtered attack list.
-let panelWorldExpanded = false; // user's expand choice for world view
-let panelWorldClosed = false;   // user explicitly closed the world summary box
+let panelWorldExpanded = false;    // user's expand choice for world view
+let panelCountryExpanded = true;   // user's expand choice for country view (default: expanded)
+let panelWorldClosed = false;      // user explicitly closed the world summary box
+let panelCountryClosed = false;    // user explicitly closed the country panel (reopened on next click)
+let currentPanelMode = "world";    // last openPanel mode (drives which toggle the expand button affects)
 function openPanel(title, items, countryName, mode = "country") {
+  currentPanelMode = mode;
   const panel = document.getElementById("panel");
   document.getElementById("panel-title").textContent = title;
   document.getElementById("panel-sub").textContent =
@@ -1770,11 +1789,14 @@ function openPanel(title, items, countryName, mode = "country") {
     // auto-collapse unless the user previously expanded it
     panel.classList.toggle("collapsed", !panelWorldExpanded);
     expandBtn.style.display = "";
+    expandBtn.textContent = panelWorldExpanded ? "Collapse" : "Expand";
     expandBtn.setAttribute("aria-expanded", String(panelWorldExpanded));
   } else {
-    panel.classList.remove("collapsed");
-    expandBtn.style.display = "none";
-    expandBtn.setAttribute("aria-expanded", "false");
+    // country mode: same expand/collapse affordance; expanded by default
+    panel.classList.toggle("collapsed", !panelCountryExpanded);
+    expandBtn.style.display = "";
+    expandBtn.textContent = panelCountryExpanded ? "Collapse" : "Expand";
+    expandBtn.setAttribute("aria-expanded", String(panelCountryExpanded));
   }
 
   panel.classList.add("open");
@@ -1789,19 +1811,30 @@ function escapeHtml(s) {
 
 document.getElementById("panel-close").addEventListener("click", () => {
   document.getElementById("panel").classList.remove("open");
-  // don't auto-reopen the world summary until state changes again
-  panelWorldClosed = true;
+  // don't auto-reopen until state changes again — track per mode so
+  // clicking inside the drilled country re-displays the panel.
+  if (currentPanelMode === "country") panelCountryClosed = true;
+  else panelWorldClosed = true;
   scheduleSliderRefresh();
 });
 
 document.getElementById("panel-expand").addEventListener("click", () => {
   const panel = document.getElementById("panel");
-  panelWorldExpanded = !panelWorldExpanded;
-  panel.classList.toggle("collapsed", !panelWorldExpanded);
-  document.getElementById("panel-expand").setAttribute("aria-expanded", String(panelWorldExpanded));
+  const expandBtn = document.getElementById("panel-expand");
+  let expanded;
+  if (currentPanelMode === "country") {
+    panelCountryExpanded = !panelCountryExpanded;
+    expanded = panelCountryExpanded;
+  } else {
+    panelWorldExpanded = !panelWorldExpanded;
+    expanded = panelWorldExpanded;
+  }
+  panel.classList.toggle("collapsed", !expanded);
+  expandBtn.textContent = expanded ? "Collapse" : "Expand";
+  expandBtn.setAttribute("aria-expanded", String(expanded));
   setTimeout(() => map.invalidateSize(), 330);
   scheduleSliderRefresh();
-  if (panelWorldExpanded) {
+  if (expanded) {
     announce("Full attack list expanded.");
   } else {
     announce("Attack list minimized.");
@@ -1932,11 +1965,13 @@ function syncYears() {
   announceFilterState._t = setTimeout(announceFilterState, 300);
 
   if (selectedCountryISO3) {
-    // stay in country view, refresh region choropleth + panel
-    const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
+    // stay in country view, refresh region choropleth + panel (don't reopen if user closed it)
     showRegionOutlines(selectedCountryISO3);
-    const layer = findFeatureLayer(selectedCountryISO3);
-    openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+    if (!panelCountryClosed) {
+      const inCountry = filteredAttacks().filter(a => a.iso3 === selectedCountryISO3);
+      const layer = findFeatureLayer(selectedCountryISO3);
+      openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+    }
   } else if (window.worldData && !panelWorldClosed) {
     // world view: collapsed header box with the filtered total
     openPanel("All attacks", filteredAttacks(), null, "world");
