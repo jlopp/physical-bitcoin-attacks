@@ -768,6 +768,48 @@ async function loadDetails() {
   return detailsFetchPromise;
 }
 
+// ======================= Populated places (region populations) =======================
+// Natural Earth populated places (7.3k cities with pop_max). Summed per
+// admin-1 region, they give a per-capita denominator for region stats.
+// Loaded lazily alongside the admin-1 data (needed only on drill-in).
+let placesData = null;
+let placesFetchPromise = null;
+let regionPops = null; // Map: region feature -> estimated population
+
+const PLACES_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places_simple.geojson";
+
+async function loadPlaces() {
+  if (placesData) return placesFetchPromise;
+  placesFetchPromise = (async () => {
+    try {
+      const res = await fetch(PLACES_URL);
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      placesData = await res.json();
+    } catch (e) {
+      placesFetchPromise = null;
+      console.warn("populated places unavailable:", e.message);
+    }
+  })();
+  return placesFetchPromise;
+}
+
+// Estimated population of each admin-1 region: sum of pop_max for every
+// populated place falling inside the region polygon (point-in-polygon).
+function computeRegionPops(feats) {
+  const pops = new Map();
+  if (!placesData) return pops;
+  for (const f of feats) {
+    let pop = 0;
+    for (const p of placesData.features) {
+      const c = p.geometry && p.geometry.coordinates;
+      if (!c) continue;
+      if (pointInGeometry(c[1], c[0], f.geometry)) pop += (p.properties.pop_max || 0);
+    }
+    pops.set(f, pop);
+  }
+  return pops;
+}
+
 function buildDetails() {
   if (detailsLayer) { map.removeLayer(detailsLayer); detailsLayer = null; }
   // No eager fetch here: the 10m admin-1 file is ~40MB, so it's only
@@ -859,7 +901,9 @@ function pointInGeometry(lat, lng, geom) {
 
 // Build the region choropleth for the zoomed-in country: assign each
 // geocoded attack in the country to its admin-1 region via point-in-polygon,
-// then color regions on the theme gradient relative to the busiest one.
+// then color regions on the theme gradient — total attacks or per-capita,
+// matching the global metric toggle. Tooltips show per-region stats;
+// clicking a region lists its attacks in the side panel.
 async function showRegionOutlines(iso3) {
   hideRegionOutlines();
   if (!iso3) return;
@@ -868,23 +912,46 @@ async function showRegionOutlines(iso3) {
     await loadDetails();
     if (selectedCountryISO3 !== iso3 || !detailsData) return;
   }
+  if (!placesData) {
+    // region populations (for per-capita mode) — non-blocking fallback ok
+    await loadPlaces();
+  }
   const feats = regionFeatures(iso3);
   if (!feats.length) return;
 
   // Assign each geocoded attack to its admin-1 region
-  const regionCount = new Map(); // feature -> attack count
+  const regionAttacks = new Map(); // feature -> [attack, ...]
   const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
-  for (const f of feats) regionCount.set(f, 0);
+  for (const f of feats) regionAttacks.set(f, []);
   for (const a of inCountry) {
     if (a.lat === null || a.lng === null) continue;
     for (const f of feats) {
       if (pointInGeometry(a.lat, a.lng, f.geometry)) {
-        regionCount.set(f, regionCount.get(f) + 1);
+        regionAttacks.get(f).push(a);
         break;
       }
     }
   }
-  const maxRegion = Math.max(1, ...regionCount.values());
+
+  // Region populations (millions) for per-capita mode. Zero-attack regions
+  // are excluded from the scale; 1-attack regions follow the same
+  // "pin to median color" rule as the country choropleth.
+  if (!regionPops || regionPops.size !== feats.length) regionPops = computeRegionPops(feats);
+  const regionValue = f => {
+    const c = regionAttacks.get(f).length;
+    if (colorMetric === "total") return { value: c };
+    if (c === 1) return { forced: true };
+    const pop = regionPops.get(f) || 0;
+    return { value: pop ? c / pop : 0 };
+  };
+  let maxRegion = 1e-9;
+  for (const f of feats) {
+    const v = regionValue(f);
+    if (!v.forced && regionAttacks.get(f).length >= 2) maxRegion = Math.max(maxRegion, v.value);
+  }
+  const mid = THEMES[currentThemeKey].ramp[Math.floor(THEMES[currentThemeKey].ramp.length / 2)];
+  const midFill = `rgb(${mid[1].join(",")})`;
+
   // Match the country exterior border color (theme border, e.g. neon cyan),
   // not the faint CSS --border var — region borders must read clearly.
   const borderColor = THEMES[currentThemeKey].border;
@@ -894,25 +961,33 @@ async function showRegionOutlines(iso3) {
     pane: "details",
     renderer: detailsRenderer,
     style: feature => {
-      const c = regionCount.get(feature) || 0;
-      const col = heatColor(c, maxRegion);
+      const v = regionValue(feature);
+      const fill = v.forced ? midFill : heatColor(v.value, maxRegion).fill;
+      const rel = v.forced ? 0.5 : Math.min(1, v.value / maxRegion);
       return {
         color: borderColor,
         weight: 2.5,
         opacity: 1,
-        fillColor: col.fill,
-        fillOpacity: c ? 0.55 + 0.45 * Math.min(1, c / maxRegion) : 0.12,
+        fillColor: fill,
+        fillOpacity: regionAttacks.get(feature).length ? 0.55 + 0.45 * rel : 0.12,
       };
     },
     onEachFeature: (feature, layer) => {
-      const c = regionCount.get(feature) || 0;
+      const items = regionAttacks.get(feature);
+      const c = items.length;
       const name = feature.properties.name || feature.properties.gn_name || "Region";
+      const popM = (regionPops.get(feature) || 0) / 1e6;
       layer.bindTooltip(
-        `<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"}`,
+        `<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"} total` +
+        (popM > 0 ? `<br>${(c / popM).toFixed(2)} per million citizens` : ""),
         { className: "map-tooltip", sticky: true }
       );
       layer.on("mouseover", () => layer.setStyle({ weight: 3.5, color: hoverColor }));
       layer.on("mouseout", () => layer.setStyle({ weight: 2.5, color: borderColor }));
+      // Click: list this region's attacks in the side panel
+      layer.on("click", () => {
+        if (c) openPanel(`${name}`, items);
+      });
     },
   });
   regionOutlineLayer.addTo(map);
@@ -1388,6 +1463,8 @@ metricSwitch.addEventListener("change", () => {
   metricLabel.textContent = metricSwitch.checked ? "Per capita" : "Total attacks";
   metricSwitch.setAttribute("aria-checked", String(metricSwitch.checked));
   if (window.worldData) rebuild();
+  // also refresh the drilled-in region choropleth with the new metric
+  if (selectedCountryISO3) showRegionOutlines(selectedCountryISO3);
   announce(metricSwitch.checked
     ? "Heatmap now shows attacks per capita."
     : "Heatmap now shows total attacks.");
@@ -1534,15 +1611,15 @@ function selectCountry(iso3, name) {
     });
   }
 
-  // Keep the world choropleth fully in place (pane never hides on drill-down):
-  // heat fills stay, only the selected country's border is highlighted.
+  // Keep the world choropleth fully in place (pane never hides on drill-down).
+  // No highlight rectangle around the selected country — the region borders
+  // of the drill-down view provide the country boundary instead.
   if (worldLayer) {
     worldLayer.eachLayer(l => {
-      const sel = l.feature.id === iso3;
       l.setStyle({
-        color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim,
-        weight: sel ? 2.5 : 0.5,
-        opacity: sel ? 1 : 0.6,
+        color: THEMES[currentThemeKey].dim,
+        weight: 0.5,
+        opacity: 0.6,
       });
     });
   }
@@ -1768,10 +1845,9 @@ function syncYears() {
   computeCounts();
   buildWorldLayer();
   if (selectedCountryISO3 && worldLayer) {
-    // keep heat fills; only re-highlight the selected country's border
+    // no highlight rectangle on the selected country (region borders draw it)
     worldLayer.eachLayer(l => {
-      const sel = l.feature.id === selectedCountryISO3;
-      l.setStyle({ color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim, weight: sel ? 2.5 : 0.5, opacity: sel ? 1 : 0.6 });
+      l.setStyle({ color: THEMES[currentThemeKey].dim, weight: 0.5, opacity: 0.6 });
     });
   }
 }
@@ -1793,10 +1869,9 @@ function rebuild() {
   buildDetails();
   buildCountryLabels();
   if (selectedCountryISO3) {
-    // keep heat fills; only re-highlight the selected country's border
+    // no highlight rectangle on the selected country (region borders draw it)
     worldLayer.eachLayer(l => {
-      const sel = l.feature.id === selectedCountryISO3;
-      l.setStyle({ color: sel ? THEMES[currentThemeKey].border : THEMES[currentThemeKey].dim, weight: sel ? 2.5 : 0.5, opacity: sel ? 1 : 0.6 });
+      l.setStyle({ color: THEMES[currentThemeKey].dim, weight: 0.5, opacity: 0.6 });
     });
   }
 }
