@@ -213,6 +213,18 @@
     display: flex; flex-direction: column; backdrop-filter: blur(10px);
   }
   #panel.open { transform: translateX(0); }
+  /* Collapsed (world view): a compact header-only box. The list is hidden
+     until the user clicks the expand button. */
+  #panel.collapsed #panel-list { display: none; }
+  #panel.collapsed {
+    bottom: auto;
+    border-bottom: 1px solid var(--pink);
+    box-shadow: -6px 0 24px color-mix(in srgb, var(--pink) 25%, transparent),
+                0 6px 24px color-mix(in srgb, var(--pink) 25%, transparent);
+  }
+  #panel.collapsed #panel-expand::after { content: " ▾"; }
+  #panel:not(.collapsed) #panel-expand::after { content: " ▴"; }
+  .panel-actions { display: flex; align-items: center; gap: 6px; }
   #panel-head {
     padding: 14px 16px; border-bottom: 1px solid var(--border);
     display: flex; justify-content: space-between; align-items: flex-start; gap: 8px;
@@ -380,6 +392,9 @@
     }
     #panel.open { transform: translateY(0); }
     #panel-head h2 { font-size: 0.812rem; }
+    /* Collapsed world summary: compact sheet anchored at the bottom edge */
+    #panel.collapsed { bottom: 0; height: auto; max-height: none; }
+    #panel.collapsed #panel-list { display: none; }
 
     /* --- Legend shrinks & moves above the bottom sheet --- */
     #legend { bottom: 10px; right: 10px; padding: 7px 10px; font-size: 0.625rem; }
@@ -474,7 +489,10 @@
       <h2 id="panel-title">Country</h2>
       <div class="sub" id="panel-sub"></div>
     </div>
-    <button id="panel-close">✕</button>
+    <div class="panel-actions">
+      <button id="panel-expand" aria-expanded="false" aria-controls="panel-list" style="display:none">Expand</button>
+      <button id="panel-close">✕</button>
+    </div>
   </div>
   <div id="panel-list"></div>
 </div>
@@ -1216,6 +1234,7 @@ function selectCountry(iso3, name) {
   }
 
   drawCityCircles(inCountry);
+  panelWorldClosed = false; // drilling in resets the close state
   openPanel(name, inCountry);
   announceCountry(iso3, name, inCountry.length);
   document.getElementById("btn-world").style.display = "";
@@ -1277,7 +1296,13 @@ function drawCityCircles(inCountry) {  if (cityLayer) { map.removeLayer(cityLaye
 }
 
 // ======================= Side panel =======================
-function openPanel(title, items, countryName) {
+// ======================= Side panel =======================
+// mode "country": full panel (drilled into a country / city).
+// mode "world":   collapsed header-only box listing the total; click
+//                "Expand" to reveal the full filtered attack list.
+let panelWorldExpanded = false; // user's expand choice for world view
+let panelWorldClosed = false;   // user explicitly closed the world summary box
+function openPanel(title, items, countryName, mode = "country") {
   const panel = document.getElementById("panel");
   document.getElementById("panel-title").textContent = title;
   document.getElementById("panel-sub").textContent =
@@ -1297,9 +1322,23 @@ function openPanel(title, items, countryName) {
       <div class="desc">${escapeHtml(a.description)}${links}</div>`;
     list.appendChild(div);
   }
+
+  const expandBtn = document.getElementById("panel-expand");
+  if (mode === "world") {
+    // auto-collapse unless the user previously expanded it
+    panel.classList.toggle("collapsed", !panelWorldExpanded);
+    expandBtn.style.display = "";
+    expandBtn.setAttribute("aria-expanded", String(panelWorldExpanded));
+  } else {
+    panel.classList.remove("collapsed");
+    expandBtn.style.display = "none";
+    expandBtn.setAttribute("aria-expanded", "false");
+  }
+
   panel.classList.add("open");
   // Let Leaflet re-measure now that the panel may have changed the layout
   setTimeout(() => map.invalidateSize(), 320);
+  scheduleSliderRefresh();
 }
 
 function escapeHtml(s) {
@@ -1308,17 +1347,37 @@ function escapeHtml(s) {
 
 document.getElementById("panel-close").addEventListener("click", () => {
   document.getElementById("panel").classList.remove("open");
+  // don't auto-reopen the world summary until state changes again
+  panelWorldClosed = true;
+  scheduleSliderRefresh();
+});
+
+document.getElementById("panel-expand").addEventListener("click", () => {
+  const panel = document.getElementById("panel");
+  panelWorldExpanded = !panelWorldExpanded;
+  panel.classList.toggle("collapsed", !panelWorldExpanded);
+  document.getElementById("panel-expand").setAttribute("aria-expanded", String(panelWorldExpanded));
+  setTimeout(() => map.invalidateSize(), 330);
+  scheduleSliderRefresh();
+  if (panelWorldExpanded) {
+    announce("Full attack list expanded.");
+  } else {
+    announce("Attack list minimized.");
+  }
 });
 
 // ======================= World view reset =======================
 function worldView() {
   selectedCountryISO3 = null;
   if (cityLayer) { map.removeLayer(cityLayer); cityLayer = null; }
-  document.getElementById("panel").classList.remove("open");
   document.getElementById("btn-world").style.display = "none";
   goWorldView();
   rebuild();
   announceFilterState();
+  scheduleSliderRefresh();
+  // re-open as the collapsed world-view summary box (unless user closed it)
+  panelWorldClosed = false; // state changed: back to world view
+  if (window.worldData) openPanel("All attacks", filteredAttacks(), null, "world");
 }
 document.getElementById("btn-world").addEventListener("click", worldView);
 
@@ -1341,6 +1400,37 @@ function thumbPosition(input) {
   // thumbs have ~16px width; track is inset by half a thumb on each side
   const pad = 8;
   return pad + t * (w - pad * 2);
+}
+
+// Draw the fill between the two thumbs using the SAME math as thumbPosition
+// so the line never extends past either thumb.
+function updateRangeFill() {
+  const fill = document.getElementById("range-fill");
+  if (!fill) return;
+  const left = thumbPosition(yrMin);
+  const right = thumbPosition(yrMax);
+  fill.style.left = left + "px";
+  fill.style.width = Math.max(0, right - left) + "px";
+}
+
+// Re-measure the slider geometry — needed after anything that can change the
+// header layout (panel open/close, wrapping) so the fill and tooltip never
+// sit at stale pixel positions. Fires on the next frame and again after the
+// 320ms panel transition finishes.
+let fillRaf = 0;
+function scheduleSliderRefresh() {
+  if (!fillRaf) {
+    fillRaf = requestAnimationFrame(() => {
+      fillRaf = 0;
+      updateRangeFill();
+      updateThumbTip();
+    });
+  }
+  clearTimeout(scheduleSliderRefresh._t);
+  scheduleSliderRefresh._t = setTimeout(() => {
+    updateRangeFill();
+    updateThumbTip();
+  }, 340);
 }
 
 function showThumbTip(input) {
@@ -1384,7 +1474,7 @@ for (const input of [yrMin, yrMax]) {
 }
 // when thumbs cross (values swap), keep the tooltip pinned to the hovered element
 new MutationObserver(() => updateThumbTip()).observe(yrLabel, { childList: true });
-window.addEventListener("resize", updateThumbTip);
+window.addEventListener("resize", () => { updateRangeFill(); updateThumbTip(); });
 
 function syncYears() {
   let lo = parseInt(yrMin.value, 10), hi = parseInt(yrMax.value, 10);
@@ -1392,14 +1482,7 @@ function syncYears() {
   yearMin = lo; yearMax = hi;
   yrLabel.textContent = lo === hi ? `Year: ${lo}` : `Years: ${lo}–${hi}`;
 
-  const wrap = document.getElementById("range-wrap");
-  const w = wrap.clientWidth || 300;
-  const span = YEARS.MAX - YEARS.MIN;
-  const left = ((lo - YEARS.MIN) / span) * w;
-  const right = ((hi - YEARS.MIN) / span) * w;
-  const fill = document.getElementById("range-fill");
-  fill.style.left = left + "px";
-  fill.style.width = (right - left) + "px";
+  updateRangeFill();
   updateThumbTip();
 
   // Announce filter changes to screen readers (debounced for drag)
@@ -1412,6 +1495,9 @@ function syncYears() {
     drawCityCircles(inCountry);
     const layer = findFeatureLayer(selectedCountryISO3);
     openPanel(layer ? (layer.feature.properties.name || selectedCountryISO3) : selectedCountryISO3, inCountry);
+  } else if (window.worldData && !panelWorldClosed) {
+    // world view: collapsed header box with the filtered total
+    openPanel("All attacks", filteredAttacks(), null, "world");
   }
   computeCounts();
   buildWorldLayer();
