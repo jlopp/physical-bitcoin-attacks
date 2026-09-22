@@ -4,8 +4,17 @@
 <meta charset="utf-8">
 <title>Physical Bitcoin Attacks — Interactive Map</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="preconnect" href="https://unpkg.com">
+<link rel="preconnect" href="https://raw.githubusercontent.com">
+<link rel="preload" as="fetch" href="attacks.json" crossorigin>
+<link rel="preload" as="fetch" href="https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json" crossorigin>
+<!-- Defer Leaflet CSS so it doesn't block first paint; the custom <style> below
+     already frames the page, and Leaflet's own tiles/markers appear after JS+data load.
+     The preload form starts the fetch in parallel; onload swaps it to a real stylesheet. -->
+<link rel="preload" as="style" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" /></noscript>
+<script defer src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   :root {
     /* Defaults = Cyberpunk. Overridden at runtime by applyTheme(). */
@@ -240,7 +249,7 @@
     background: linear-gradient(180deg, color-mix(in srgb, var(--bg2) 96%, transparent), color-mix(in srgb, var(--bg) 96%, transparent));
     border-left: 1px solid var(--pink);
     box-shadow: -6px 0 24px color-mix(in srgb, var(--pink) 25%, transparent);
-    transform: translateX(100%); transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateX(100%); transition: transform 0.3s ease;
     display: flex; flex-direction: column; backdrop-filter: blur(10px);
   }
   #panel.open { transform: translateX(0); }
@@ -552,6 +561,8 @@
 </div>
 
 <script>
+// Run after parsing completes (i.e. after deferred scripts like Leaflet have executed).
+document.addEventListener("DOMContentLoaded", function () {
 // ======================= ISO2 -> ISO3 (only countries present in the data) =======================
 const ISO2_TO_3 = {
   AE:"ARE", AR:"ARG", AT:"AUT", AU:"AUS", BE:"BEL", BG:"BGR", BR:"BRA",
@@ -1323,7 +1334,7 @@ async function loadAll() {
   // (Same-origin fetch: serve over HTTP, e.g. `python3 -m http.server`)
   const [attackRes, worldRes] = await Promise.all([
     fetch("attacks.json"),
-    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"),
+    fetch("https://raw.githubusercontent.com/johan/world.geo.json/master/countries.geo.json"), // preloaded in <head> to break the network chain
   ]);
   if (!attackRes.ok) throw new Error(`Failed to load attacks.json (HTTP ${attackRes.status})`);
   attacks = await attackRes.json();
@@ -2179,6 +2190,7 @@ loadAll().then(syncYears).catch(err => {
   document.body.insertAdjacentHTML("afterbegin",
     `<div style="position:absolute;top:60px;left:12px;z-index:2000;background:rgba(10,6,24,0.95);border:1px solid #ff2ec4;color:#eae6ff;padding:12px;border-radius:0;box-shadow:0 0 16px rgba(255,46,196,0.5);font-size:13px;font-family:Rajdhani,sans-serif">
      Failed to load data: ${escapeHtml(err.message)}. Serve the dashboard over HTTP (e.g. <code>python3 -m http.server</code>) rather than opening the file directly.</div>`);
+});
 });
 </script>
 </body>
