@@ -321,6 +321,16 @@
   }
   .leaflet-bar a:hover { background: var(--cyan) !important; color: var(--bg) !important; }
   .leaflet-container { font-family: var(--font-body); background: transparent; }
+  /* Suppress the browser default focus ring on clicked map vectors. Chrome
+     draws a rectangular outline around the focused SVG path's bounding box
+     (visible after clicking a country/region), which reads as a stray border
+     around the map. Map shapes aren't keyboard-focus targets here, so hiding
+     the ring costs nothing in accessibility. */
+  .leaflet-pane svg:focus,
+  .leaflet-pane path:focus,
+  .leaflet-interactive:focus {
+    outline: none !important;
+  }
 
   /* ---------- Pulse animations ---------- */
   .neon-pulse { animation: cityPulse 2.2s ease-in-out infinite; }
@@ -507,7 +517,7 @@
 <div id="grid-ocean" aria-hidden="true"></div>
 <div id="horizon-glow" aria-hidden="true"></div>
 <div id="map" role="application"
-     aria-label="Interactive world map of physical Bitcoin attacks. Countries are colored by attacks per capita; select a country to zoom in and view region-level details. Use the year sliders to filter by year."></div>
+     aria-label="Interactive world map of physical Bitcoin attacks. Countries are colored by attacks per capita; select a country to view its region-level details in place. Use the year sliders to filter by year."></div>
 
 <!-- Screen reader announcements for filter/selection changes -->
 <div id="sr-live" class="sr-only" role="status" aria-live="polite"></div>
@@ -1833,66 +1843,9 @@ function selectCountry(iso3, name) {
   const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
   if (!inCountry.length) return;
 
-  // Ensure Leaflet's measured size is current before fitBounds — on mobile the
-  // header can wrap to extra rows and the bottom sheet can change layout, and
-  // a stale size makes fitBounds compute the wrong zoom or no-op.
-  map.invalidateSize();
-
-  // Zoom so the country is centered and fills ~75% of the screen.
-  const layer = findFeatureLayer(iso3);
-  if (layer) {
-    let b = layer.getBounds();
-
-    // USA: zoom to the mainland (contiguous states) only — the full polygon
-    // (Alaska + Hawaii) would zoom the map out to near world scale.
-    if (iso3 === "USA") {
-      b = L.latLngBounds([[24.5, -125], [49.5, -66.5]]);
-    } else {
-      // Other countries with far-flung territory (France, etc.): if the
-      // polygon is much wider than the actual attack data, zoom to the data.
-      const polyWidth = b.getEast() - b.getWest();
-      const pts = inCountry.filter(a => a.lat !== null && a.lng !== null);
-      const dataBounds = L.latLngBounds(pts.map(a => [a.lat, a.lng]));
-      if (dataBounds.isValid()) {
-        const dataWidth = dataBounds.getEast() - dataBounds.getWest();
-        if (polyWidth > 60 && polyWidth > dataWidth * 2.5) {
-          b = dataBounds;
-        }
-      }
-    }
-
-    // 75% fill: pad each side by 12.5% of the viewport. On small screens,
-    // the bottom sheet (country attack list) covers the lower part of the
-    // map — put that occluded height into the bottom padding so the country
-    // centers in the area visible ABOVE the sheet.
-    const size = map.getSize();
-    const px = size.x * 0.125;
-    let py = size.y * 0.125;
-    // Small screens: the bottom sheet (attack list) slides up over the lower
-    // part of the map, so add its occluded height to the bottom padding —
-    // but clamp it. With the sheet's 40–55vh estimate plus the base padding,
-    // total vertical padding could exceed ~50% of a short phone viewport,
-    // which leaves fitBounds too little room and collapses the zoom back to
-    // a near-world view (the "drill-down doesn't render" bug on mobile).
-    // Cap total bottom padding at 30% of viewport height so fitBounds always
-    // has enough space to land on the country.
-    if (window.innerWidth < 900) {
-      py += 30;
-      // It's 40vh on phones (<=640px) and 55vh up to 900px; assume the worst.
-      const sheetVh = window.innerWidth <= 640 ? 0.40 : 0.55;
-      py += size.y * sheetVh * 0.8;
-      py = Math.min(py, size.y * 0.30);
-    }
-    map.fitBounds(b, {
-      paddingTopLeft: L.point(Math.round(px), Math.round(size.y * 0.10)),
-      paddingBottomRight: L.point(Math.round(px), Math.round(py)),
-      // No zoom/pan animation here: the heavy region work below is deferred to
-      // the next frame, and an animated fitBounds was racing it (and visibly
-      // failing to zoom on mobile). An instant jump guarantees the map lands
-      // on the country.
-      animate: false,
-    });
-  }
+  // Deliberately no fitBounds / setView / pan here: the viewport stays exactly
+  // where the user left it. Region details render in place at the current
+  // zoom, whether or not the country is on screen.
 
   // Drilled-in view: the selected country's whole-country fill and stroke are
   // completely removed — ONLY the regional choropleth (built by
@@ -1902,8 +1855,7 @@ function selectCountry(iso3, name) {
 
   // Defer the expensive region-choropleth build (point-in-polygon population
   // math, edge-segment hashing, layer construction) to the next frame so the
-  // fitBounds above is applied and painted first — previously this ran
-  // synchronously and stalled the zoom on the same frame.
+  // drill styles above are applied and painted first.
   const targetIso = iso3;
   requestAnimationFrame(() => {
     if (selectedCountryISO3 === targetIso) showRegionOutlines(targetIso);
