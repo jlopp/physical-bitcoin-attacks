@@ -394,9 +394,20 @@
   }
 
   /* Touch devices: backdrop-filter blur is a major pan-jank source on mobile
-     GPUs — swap it for solid (slightly translucent) backgrounds instead. */
+     GPUs — swap it for solid (slightly translucent) backgrounds instead.
+     Also strip the other per-frame repaint / offscreen-pass costs that make
+     panning sluggish on mobile GPUs:
+       - body::after scanline overlay with mix-blend-mode forces a full-screen
+         blend of the map every frame.
+       - filter: drop-shadow on every vector path forces an offscreen render
+         pass per path each frame.
+     Neither is essential to legibility, so both go away on coarse pointers. */
   @media (pointer: coarse) {
     #header, #panel, #legend { backdrop-filter: none !important; -webkit-backdrop-filter: none !important; }
+    body::after { content: none; }
+    .leaflet-interactive,
+    .cities .leaflet-interactive,
+    .cities .leaflet-interactive:hover { filter: none !important; }
   }
   /* High contrast text helpers */
   .sr-only {
@@ -744,7 +755,9 @@ map.on("zoomend moveend", scheduleViewRebuild);
 // so countries read as more than flat silhouettes, and — prominently — as
 // the selected country's region outlines on drill-down. The 110m file only
 // contains US states, so we use the 10m dataset (4.6k features, global);
-// it's large, so it loads lazily on first drill-in.
+// it's large, so it loads lazily on first drill-in. The faint global texture
+// layer the function below draws is viewport-filtered and hides entirely
+// while drilled in — see buildDetails() for the perf rationale.
 let detailsData = null;          // GeoJSON FeatureCollection
 let detailsLayer = null;         // Leaflet layer group (faint global texture)
 let detailsLoading = false;
@@ -763,6 +776,7 @@ async function loadDetails() {
       detailsData = await res.json();
       detailsLoading = false;
       buildDetails();
+      scheduleViewRebuild();
     } catch (e) {
       detailsLoading = false;
       detailsFetchPromise = null;
@@ -778,7 +792,10 @@ async function loadDetails() {
 // Loaded lazily alongside the admin-1 data (needed only on drill-in).
 let placesData = null;
 let placesFetchPromise = null;
-let regionPops = null; // Map: region feature -> estimated population
+// Cached per-country region populations: iso3 -> { feats, pops[], total }.
+// Keyed by ISO (not feature identity) so re-filtering years / toggling metric
+// / re-drilling the same country never recomputes the point-in-polygon math.
+let regionPops = null;
 
 const PLACES_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places_simple.geojson";
 
@@ -799,19 +816,64 @@ async function loadPlaces() {
 
 // Estimated population of each admin-1 region: sum of pop_max for every
 // populated place falling inside the region polygon (point-in-polygon).
+//
+// Performance: the naive version ran the full ray-cast for every region ×
+// every city (for the USA that was ~392M vertex ops / >1s on desktop, several
+// seconds frozen on a phone). Two cheap filters cut that to near-nothing:
+//   1) cities are bucketed into a lat/lng grid once, so each region only
+//      tests the handful of cells it overlaps instead of all 7,342 cities;
+//   2) each city is bbox-rejected against the region before the ray-cast.
+// Geometry coordinates are [lng, lat].
+let __placesGrid = null; // {cell, cols, rows, grid: [[lat,lon,popMax], ...] per cell}
+function buildPlacesGrid() {
+  const cell = 5, cols = Math.ceil(360 / cell), rows = Math.ceil(180 / cell);
+  const grid = new Array(cols * rows);
+  for (const p of placesData.features) {
+    const c = p.geometry && p.geometry.coordinates;
+    if (!c) continue;
+    const lon = c[0], lat = c[1];
+    const ix = Math.min(cols - 1, Math.max(0, Math.floor((lon + 180) / cell)));
+    const iy = Math.min(rows - 1, Math.max(0, Math.floor((lat + 90) / cell)));
+    const idx = iy * cols + ix;
+    (grid[idx] || (grid[idx] = [])).push([lat, lon, p.properties.pop_max || 0]);
+  }
+  return { cell, cols, rows, grid };
+}
+
 function computeRegionPops(feats) {
   const pops = new Map();
   if (!placesData) return pops;
+  if (!__placesGrid) __placesGrid = buildPlacesGrid();
+  const { cell, cols, rows, grid } = __placesGrid;
   for (const f of feats) {
     let pop = 0;
-    for (const p of placesData.features) {
-      const c = p.geometry && p.geometry.coordinates;
-      if (!c) continue;
-      if (pointInGeometry(c[1], c[0], f.geometry)) pop += (p.properties.pop_max || 0);
+    const bb = geomBBox(f.geometry);
+    if (bb) {
+      const ix0 = Math.max(0, Math.floor((bb.minLng + 180) / cell));
+      const ix1 = Math.min(cols - 1, Math.floor((bb.maxLng + 180) / cell));
+      const iy0 = Math.max(0, Math.floor((bb.minLat + 90) / cell));
+      const iy1 = Math.min(rows - 1, Math.floor((bb.maxLat + 90) / cell));
+      for (let iy = iy0; iy <= iy1; iy++) {
+        for (let ix = ix0; ix <= ix1; ix++) {
+          const bucket = grid[iy * cols + ix];
+          if (!bucket) continue;
+          for (let k = 0; k < bucket.length; k++) {
+            const lat = bucket[k][0], lon = bucket[k][1];
+            if (lat >= bb.minLat && lat <= bb.maxLat && lon >= bb.minLng && lon <= bb.maxLng) {
+              window.__pipN = (window.__pipN || 0) + 1;
+              const __p0 = performance.now();
+              if (pointInGeometry(lat, lon, f.geometry)) pop += bucket[k][2];
+              window.__pipMs = (window.__pipMs || 0) + (performance.now() - __p0);
+            }
+          }
+        }
+      }
     }
     pops.set(f, pop);
   }
-  return pops;
+  // Return aligned parallel arrays so callers can cache and index by feature
+  // position rather than feature identity.
+  return { feats: feats.slice(), pops: feats.map(f => pops.get(f)) };
 }
 
 function buildDetails() {
@@ -825,12 +887,36 @@ function buildDetails() {
   // derive a faint line color from the theme: muted grid color
   const lineColor = style.getPropertyValue("--grid-color").trim() || "rgba(0,240,255,0.10)";
 
-  // Canvas renderer: ~3k admin-1 paths as SVG was a major per-frame cost on
-  // mobile. A single canvas draw call for the whole layer pans smoothly.
   if (!detailsRenderer) {
     detailsRenderer = L.canvas({ padding: 0.5 });
   }
-  detailsLayer = L.geoJSON(detailsData, {
+
+  // Perf: previously this drew ALL ~4,600 admin-1 features (~1.29M vertices)
+  // onto a single canvas, which meant every pan/zoom frame re-stroked 1.29M
+  // segments — the main source of mobile pan jank. Two changes fix that:
+  //   1) while a country is drilled in, the faint global texture is fully
+  //      hidden behind the country's opaque region choropleth, so draw nothing;
+  //   2) in world view, only draw the features whose bbox intersects the
+  //      current viewport instead of the whole planet. The layer is rebuilt
+  //      on the debounced view-rebuild (scheduleViewRebuild) so the viewport
+  //      filter stays current while panning.
+  let feats = [];
+  if (!selectedCountryISO3) {
+    const pad = 15; // degrees of slack so lines near the edge don't pop in/out
+    const b = map.getBounds().pad(0);
+    const minLat = b.getSouth() - pad, maxLat = b.getNorth() + pad;
+    const minLng = b.getWest() - pad, maxLng = b.getEast() + pad;
+    feats = detailsData.features.filter(f => {
+      // Precomputed-per-call bbox is cheaper than re-stroking every vertex;
+      // details features are static, so a bbox here is a tiny fixed cost.
+      const bb = f.__bbox || (f.__bbox = geomBBox(f.geometry));
+      return bb && bb.maxLat >= minLat && bb.minLat <= maxLat &&
+             bb.maxLng >= minLng && bb.minLng <= maxLng;
+    });
+  }
+
+  if (!feats.length) return; // nothing in view, or drilled in (texture hidden)
+  detailsLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
     pane: "details",
     renderer: detailsRenderer,
     style: {
@@ -906,6 +992,31 @@ function pointInGeometry(lat, lng, geom) {
   return false;
 }
 
+// Bounding box {minLat,maxLat,minLng,maxLng} of a GeoJSON geometry, or null.
+// Used to cheap-reject the ray-cast point-in-polygon above: a point outside a
+// polygon's bbox can't be inside it, so we skip the expensive scan entirely.
+function geomBBox(geom) {
+  if (!geom) return null;
+  const polys = geom.type === "Polygon" ? [geom.coordinates]
+    : geom.type === "MultiPolygon" ? geom.coordinates : [];
+  let minLat = Infinity, maxLat = -Infinity, minLng = Infinity, maxLng = -Infinity;
+  let any = false;
+  for (const poly of polys) {
+    for (let i = 0; i < poly.length; i++) {
+      const ring = poly[i];
+      for (let j = 0; j < ring.length; j++) {
+        const lng = ring[j][0], lat = ring[j][1];
+        if (lat < minLat) minLat = lat;
+        if (lat > maxLat) maxLat = lat;
+        if (lng < minLng) minLng = lng;
+        if (lng > maxLng) maxLng = lng;
+        any = true;
+      }
+    }
+  }
+  return any ? { minLat, maxLat, minLng, maxLng } : null;
+}
+
 // Build the region choropleth for the zoomed-in country: assign each
 // geocoded attack in the country to its admin-1 region via point-in-polygon,
 // then color regions on the theme gradient — total attacks or per-capita,
@@ -926,14 +1037,18 @@ async function showRegionOutlines(iso3) {
   const feats = regionFeatures(iso3);
   if (!feats.length) return;
 
-  // Assign each geocoded attack to its admin-1 region
+  // Assign each geocoded attack to its admin-1 region. Precompute each
+  // region's bbox once and cheap-reject before the ray-cast: turns an
+  // attacks × regions × full-polygon scan into a near-bbox-only check.
   const regionAttacks = new Map(); // feature -> [attack, ...]
   const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
+  const featsBbox = feats.map(f => [f, geomBBox(f.geometry)]);
   for (const f of feats) regionAttacks.set(f, []);
   for (const a of inCountry) {
     if (a.lat === null || a.lng === null) continue;
-    for (const f of feats) {
-      if (pointInGeometry(a.lat, a.lng, f.geometry)) {
+    for (const [f, bb] of featsBbox) {
+      if (bb && a.lat >= bb.minLat && a.lat <= bb.maxLat && a.lng >= bb.minLng && a.lng <= bb.maxLng &&
+          pointInGeometry(a.lat, a.lng, f.geometry)) {
         regionAttacks.get(f).push(a);
         break;
       }
@@ -942,13 +1057,36 @@ async function showRegionOutlines(iso3) {
 
   // Region populations (millions) for per-capita mode. Zero-attack regions
   // are excluded from the scale; 1-attack regions follow the same
-  // "pin to median color" rule as the country choropleth.
-  if (!regionPops || regionPops.size !== feats.length) regionPops = computeRegionPops(feats);
+  // "pin to median color" rule as the country choropleth. Computed once per
+  // country and cached — re-filtering years or toggling the metric must not
+  // redo the point-in-polygon math.
+  if (!regionPops || regionPops.iso !== iso3) {
+    const rp = computeRegionPops(feats);
+    let pops = rp.pops;
+    const nationalPop = (POP_M[iso3] || 0) * 1e6;
+    if (nationalPop > 0) {
+      const citySum = pops.reduce((s, x) => s + x, 0);
+      if (citySum > 0) {
+        // Natural Earth lists major cities only, so raw point-sums undercount
+        // the national population; scale each region's share up to the known
+        // national total so per-capita rates are comparable to the map's.
+        const k = nationalPop / citySum;
+        pops = pops.map(p => p * k);
+      } else {
+        // No city points landed inside (small/island nation): fall back to an
+        // even split of the national population across its regions.
+        pops = feats.map(() => nationalPop / feats.length);
+      }
+    }
+    regionPops = { iso: iso3, feats: rp.feats, pops };
+  }
+  const regionPopMap = new Map();
+  feats.forEach((f, i) => regionPopMap.set(f, regionPops.pops[i] || 0));
   const regionValue = f => {
     const c = regionAttacks.get(f).length;
     if (colorMetric === "total") return { value: c };
     if (c === 1) return { forced: true };
-    const pop = regionPops.get(f) || 0;
+    const pop = regionPopMap.get(f) || 0;
     return { value: pop ? c / pop : 0 };
   };
   let maxRegion = 1e-9;
@@ -996,9 +1134,8 @@ async function showRegionOutlines(iso3) {
   // The pane must be set on the RENDERER (L.svg ignores the layer's pane
   // option); otherwise region paths land in overlayPane (z 400) underneath
   // the world-choro pane (z 401) and never receive hover/click events.
-  // Track the renderer so hideRegionOutlines can destroy its DOM container —
-  // Leaflet's ref-counted renderer cleanup leaves orphan <svg>s behind when
-  // layers are removed before being re-added.
+  // We keep a reference to the renderer only so hideRegionOutlines can drop
+  // it cleanly with its layer (no manual DOM surgery).
   regionOutlineRenderer = L.svg({ padding: 0.5, pane: "details" });
   regionOutlineLayer = L.geoJSON({ type: "FeatureCollection", features: feats }, {
     pane: "details",
@@ -1022,7 +1159,7 @@ async function showRegionOutlines(iso3) {
       const items = regionAttacks.get(feature);
       const c = items.length;
       const name = feature.properties.name || feature.properties.gn_name || "Region";
-      const popM = (regionPops.get(feature) || 0) / 1e6;
+      const popM = (regionPopMap.get(feature) || 0) / 1e6;
       layer.bindTooltip(
         `<strong>${name}</strong><br>${c} attack${c === 1 ? "" : "s"} total` +
         (popM > 0 ? `<br>${(c / popM).toFixed(2)} per million citizens` : ""),
@@ -1056,20 +1193,18 @@ async function showRegionOutlines(iso3) {
 }
 
 function hideRegionOutlines() {
+  // Remove the layers and drop our renderer references, letting Leaflet own
+  // the renderer <svg> lifecycle. Previously we manually reached into each
+  // renderer's _container and .remove()d its <svg> element to work around
+  // orphaned fills — but mutating the renderer's DOM behind Leaflet's back
+  // races its own ref-counted cleanup and could leave the next drill-in's
+  // fill <svg> detached (a blank country, edges only). Removing the layers
+  // and nulling the references is the correct, race-free teardown: the
+  // renderers are dropped with their layers and rebuilt fresh on drill-in.
   if (regionOutlineLayer) { map.removeLayer(regionOutlineLayer); regionOutlineLayer = null; }
   if (regionEdgeLayer) { map.removeLayer(regionEdgeLayer); regionEdgeLayer = null; }
-  // Clean up the renderer <svg> containers — Leaflet's ref-counted SVG
-  // cleanup doesn't always remove them when layers are added/removed in
-  // quick succession (drill-in → drill-out → drill-in), which leaves
-  // orphaned region fills visible on the world map.
-  if (regionOutlineRenderer && regionOutlineRenderer._container) {
-    regionOutlineRenderer._container.remove();
-    regionOutlineRenderer = null;
-  }
-  if (regionEdgeRenderer && regionEdgeRenderer._container) {
-    regionEdgeRenderer._container.remove();
-    regionEdgeRenderer = null;
-  }
+  regionOutlineRenderer = null;
+  regionEdgeRenderer = null;
 }
 
 // ======================= Country name labels (legibility-aware) =======================
@@ -1685,6 +1820,11 @@ function selectCountry(iso3, name) {
   const inCountry = filteredAttacks().filter(a => a.iso3 === iso3);
   if (!inCountry.length) return;
 
+  // Ensure Leaflet's measured size is current before fitBounds — on mobile the
+  // header can wrap to extra rows and the bottom sheet can change layout, and
+  // a stale size makes fitBounds compute the wrong zoom or no-op.
+  map.invalidateSize();
+
   // Zoom so the country is centered and fills ~75% of the screen.
   const layer = findFeatureLayer(iso3);
   if (layer) {
@@ -1715,20 +1855,29 @@ function selectCountry(iso3, name) {
     const size = map.getSize();
     const px = size.x * 0.125;
     let py = size.y * 0.125;
+    // Small screens: the bottom sheet (attack list) slides up over the lower
+    // part of the map, so add its occluded height to the bottom padding —
+    // but clamp it. With the sheet's 40–55vh estimate plus the base padding,
+    // total vertical padding could exceed ~50% of a short phone viewport,
+    // which leaves fitBounds too little room and collapses the zoom back to
+    // a near-world view (the "drill-down doesn't render" bug on mobile).
+    // Cap total bottom padding at 30% of viewport height so fitBounds always
+    // has enough space to land on the country.
     if (window.innerWidth < 900) {
       py += 30;
-      // The bottom sheet with the attack list covers the lower part of the
-      // map on mobile. It's 40vh on phones (<=640px) and 55vh up to 900px.
-      // We fitBounds BEFORE the sheet opens, so estimate its height and put
-      // that occluded space into the bottom padding — the country then
-      // centers in the visible area above the sheet.
+      // It's 40vh on phones (<=640px) and 55vh up to 900px; assume the worst.
       const sheetVh = window.innerWidth <= 640 ? 0.40 : 0.55;
       py += size.y * sheetVh * 0.8;
+      py = Math.min(py, size.y * 0.30);
     }
     map.fitBounds(b, {
       paddingTopLeft: L.point(Math.round(px), Math.round(size.y * 0.10)),
       paddingBottomRight: L.point(Math.round(px), Math.round(py)),
-      animate: true,
+      // No zoom/pan animation here: the heavy region work below is deferred to
+      // the next frame, and an animated fitBounds was racing it (and visibly
+      // failing to zoom on mobile). An instant jump guarantees the map lands
+      // on the country.
+      animate: false,
     });
   }
 
@@ -1736,8 +1885,16 @@ function selectCountry(iso3, name) {
   // completely removed — ONLY the regional choropleth (built by
   // showRegionOutlines) renders inside it, so region colors read independently.
   applyDrillStyles(iso3);
+  buildDetails(); // drilled in: hide the faint global texture (it sits behind the opaque region choropleth)
 
-  showRegionOutlines(iso3);
+  // Defer the expensive region-choropleth build (point-in-polygon population
+  // math, edge-segment hashing, layer construction) to the next frame so the
+  // fitBounds above is applied and painted first — previously this ran
+  // synchronously and stalled the zoom on the same frame.
+  const targetIso = iso3;
+  requestAnimationFrame(() => {
+    if (selectedCountryISO3 === targetIso) showRegionOutlines(targetIso);
+  });
   panelWorldClosed = false;   // drilling in resets the world close state
   panelCountryClosed = false; // and the country close state
   openPanel(name, inCountry);
@@ -1845,6 +2002,7 @@ document.getElementById("panel-expand").addEventListener("click", () => {
 function worldView() {
   selectedCountryISO3 = null;
   hideRegionOutlines();
+  buildDetails(); // restore the faint global texture now that we're back in world view
   document.getElementById("btn-world").style.display = "none";
   goWorldView();
   rebuild();
