@@ -764,7 +764,8 @@ let detailsLoading = false;
 let detailsRenderer = null;      // shared canvas renderer (perf on mobile)
 let detailsFetchPromise = null;  // in-flight fetch (prevents duplicate loads)
 
-const DETAILS_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson";
+// minified version of https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_admin_1_states_provinces.geojson
+const DETAILS_URL = "./tools/ne_10m_admin_1_states_provinces.min.json";
 
 async function loadDetails() {
   if (detailsData || detailsLoading) return detailsFetchPromise;
@@ -797,7 +798,8 @@ let placesFetchPromise = null;
 // / re-drilling the same country never recomputes the point-in-polygon math.
 let regionPops = null;
 
-const PLACES_URL = "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places_simple.geojson";
+// minified version of https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_populated_places_simple.geojson
+const PLACES_URL = "./tools/ne_10m_populated_places_simple.min.json";
 
 async function loadPlaces() {
   if (placesData) return placesFetchPromise;
