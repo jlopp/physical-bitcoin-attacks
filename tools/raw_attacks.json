@@ -16,13 +16,7 @@
         "label": "(original link)",
         "url": "http://www.wired.com/2014/12/finney-swat/"
       }
-    ],
-    "city": "Santa Barbara",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.42,
-    "lng": -119.7
+    ]
   },
   {
     "date": {
@@ -41,13 +35,7 @@
         "label": "(original link)",
         "url": "https://www.coindesk.com/bitcoin-atm-thieves-strike-atlanta-smoke-shop"
       }
-    ],
-    "city": "Atlanta",
-    "region": "Georgia",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 33.75,
-    "lng": -84.39
+    ]
   },
   {
     "date": {
@@ -66,13 +54,7 @@
         "label": "(original link)",
         "url": "https://www.parool.nl/amsterdam/dieven-stelen-twee-amsterdamse-bitcoin-betaalautomaten~a3853460/"
       }
-    ],
-    "city": "Amsterdam",
-    "region": "",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 52.37,
-    "lng": 4.9
+    ]
   },
   {
     "date": {
@@ -91,13 +73,7 @@
         "label": "(original link)",
         "url": "http://observer.com/2015/02/bitcoin-crime-wave-breaks-out-in-nyc/"
       }
-    ],
-    "city": "New York",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.71,
-    "lng": -74.01
+    ]
   },
   {
     "date": {
@@ -116,13 +92,7 @@
         "label": "(original link)",
         "url": "https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html"
       }
-    ],
-    "city": "New York",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.71,
-    "lng": -74.01
+    ]
   },
   {
     "date": {
@@ -141,13 +111,7 @@
         "label": "(original link)",
         "url": "https://www.ad.nl/binnenland/dieven-stelen-2000-euro-uit-bitcoinautomaat-in-delft~a315113e/"
       }
-    ],
-    "city": "Delft",
-    "region": "",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 52.01,
-    "lng": 4.36
+    ]
   },
   {
     "date": {
@@ -166,13 +130,7 @@
         "label": "(original link)",
         "url": "http://kauno.diena.lt/naujienos/kaunas/nusikaltimai-ir-nelaimes/ne-bernvakario-pokstas-kaune-buvo-pagrobtas-bitkoinu-prekeivis-827044"
       }
-    ],
-    "city": "Kaunas",
-    "region": "",
-    "country": "Lithuania",
-    "country_code": "LT",
-    "lat": 54.9,
-    "lng": 23.93
+    ]
   },
   {
     "date": {
@@ -191,13 +149,7 @@
         "label": "(original link)",
         "url": "http://touch.sun-sentinel.com/#section/-1/article/p2p-87972478/"
       }
-    ],
-    "city": "West Palm Beach",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 26.71,
-    "lng": -80.05
+    ]
   },
   {
     "date": {
@@ -216,13 +168,7 @@
         "label": "(original link)",
         "url": "https://www.toronto.com/news-story/6810325-toronto-police-arrest-teens-in-string-of-bitcoin-related-robberies/"
       }
-    ],
-    "city": "Toronto",
-    "region": "Ontario",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 43.65,
-    "lng": -79.38
+    ]
   },
   {
     "date": {
@@ -241,13 +187,7 @@
         "label": "(original link)",
         "url": "https://bitsonline.com/bitcoin-atm-stolen-netherlands/"
       }
-    ],
-    "city": "Oudenbosch",
-    "region": "",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 51.59,
-    "lng": 4.53
+    ]
   },
   {
     "date": {
@@ -270,13 +210,7 @@
         "label": "robber's side of the story",
         "url": "https://localbitcoins.com/forums/#!/general-discussion:unfreeze-my-account"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -295,13 +229,7 @@
         "label": "(original link)",
         "url": "https://www1.folha.uol.com.br/cotidiano/2017/05/1880569-bandidos-pedem-dinheiro-digital-para-libertar-refem-de-sequestro.shtml"
       }
-    ],
-    "city": "Florianópolis",
-    "region": "Santa Catarina",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 27.6,
-    "lng": -48.55
+    ]
   },
   {
     "date": {
@@ -320,13 +248,7 @@
         "label": "(original link)",
         "url": "https://www.khaleejtimes.com/news/crime-and-courts/3-fake-dubai-cops-kidnap-traders-/to-rob-bitcoins"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -345,13 +267,7 @@
         "label": "(original link)",
         "url": "https://www.tokyoreporter.com/japan/nagoya/bitcoin-murder-nagoya-woman-likely-killed-on-evening-she-went-missing/"
       }
-    ],
-    "city": "Gifu",
-    "region": "",
-    "country": "Japan",
-    "country_code": "JP",
-    "lat": 35.39,
-    "lng": 136.72
+    ]
   },
   {
     "date": {
@@ -370,13 +286,7 @@
         "label": "(original link)",
         "url": "https://www.obozrevatel.com/kiyany/crime/v-kieve-iz-parnya-vyibivali-bitcoin-na-summu-pochti-50-tyis-doll.htm"
       }
-    ],
-    "city": "Kyiv",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 50.45,
-    "lng": 30.52
+    ]
   },
   {
     "date": {
@@ -395,13 +305,7 @@
         "label": "(original link)",
         "url": "https://www.cbs17.com/news/durham-man-says-enemies-called-911-to-report-false-hostage-situation/"
       }
-    ],
-    "city": "Durham",
-    "region": "North Carolina",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 35.99,
-    "lng": -78.9
+    ]
   },
   {
     "date": {
@@ -420,13 +324,7 @@
         "label": "(original link)",
         "url": "https://www.20minutes.fr/toulouse/2180483-20171203-toulouse-quatre-jeunes-sequestres-forces-transferer-bitcoins"
       }
-    ],
-    "city": "Toulouse",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.6,
-    "lng": 1.44
+    ]
   },
   {
     "date": {
@@ -445,13 +343,7 @@
         "label": "(original link)",
         "url": "http://da.co.la.ca.us/media/news/discount-bitcoin-bandits-plead-robbery-would-be-buyers"
       }
-    ],
-    "city": "Los Angeles",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.05,
-    "lng": -118.24
+    ]
   },
   {
     "date": {
@@ -470,13 +362,7 @@
         "label": "(original link)",
         "url": "https://www.nydailynews.com/new-york/nyc-crime/ny-metro-crypto-robbery-arrests-20180612-story.html"
       }
-    ],
-    "city": "New York",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.71,
-    "lng": -74.01
+    ]
   },
   {
     "date": {
@@ -495,13 +381,7 @@
         "label": "(original link)",
         "url": "https://www.dailysabah.com/investigations/2017/11/15/turkish-police-detain-gang-who-stole-bitcoins-worth-283m"
       }
-    ],
-    "city": "Istanbul",
-    "region": "",
-    "country": "Turkey",
-    "country_code": "TR",
-    "lat": 41.01,
-    "lng": 28.98
+    ]
   },
   {
     "date": {
@@ -528,13 +408,7 @@
         "label": "(original link)",
         "url": "https://www.vanityfair.com/news/2019/11/the-big-bitcoin-heist"
       }
-    ],
-    "city": "Reykjavik",
-    "region": "",
-    "country": "Iceland",
-    "country_code": "IS",
-    "lat": 64.15,
-    "lng": -21.94
+    ]
   },
   {
     "date": {
@@ -553,13 +427,7 @@
         "label": "(original link)",
         "url": "https://www.reuters.com/article/us-ukraine-kidnapping/ukraine-kidnappers-free-bitcoin-analyst-after-1-mln-ransom-paid-idUSKBN1EN1QB"
       }
-    ],
-    "city": "Kyiv",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 50.45,
-    "lng": 30.52
+    ]
   },
   {
     "date": {
@@ -578,13 +446,7 @@
         "label": "(original link)",
         "url": "https://www.courtlistener.com/docket/69198689/1/united-states-v-iza/"
       }
-    ],
-    "city": "Los Angeles",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.05,
-    "lng": -118.24
+    ]
   },
   {
     "date": {
@@ -603,13 +465,7 @@
         "label": "(original link)",
         "url": "https://fox6now.com/2018/01/11/convicted-felon-accused-of-firing-gun-inside-downtown-milwaukee-condo-during-bitcoin-argument/"
       }
-    ],
-    "city": "Milwaukee",
-    "region": "Wisconsin",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 43.04,
-    "lng": -87.91
+    ]
   },
   {
     "date": {
@@ -628,13 +484,7 @@
         "label": "(original link)",
         "url": "https://cointelegraph.com/news/russia-blogger-who-boasted-about-crypto-wealth-beaten-and-robbed-for-425k"
       }
-    ],
-    "city": "Leningrad Oblast",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 60.0,
-    "lng": 31.0
+    ]
   },
   {
     "date": {
@@ -653,13 +503,7 @@
         "label": "(original link)",
         "url": "https://forum.thaivisa.com/topic/1020825-russian-gang-steal-bitcoin-worth-millions-from-young-russian-couple-in-phuket-condo-extortion/"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -678,13 +522,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-crime/article/2129665/hong-kong-bitcoin-trader-lured-bogus-meeting-and-robbed"
       }
-    ],
-    "city": "North Point",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.29,
-    "lng": 114.2
+    ]
   },
   {
     "date": {
@@ -703,13 +541,7 @@
         "label": "(original link)",
         "url": "http://www.cbc.ca/news/canada/ottawa/robbery-ottawa-search-bitcoin-1.4501719"
       }
-    ],
-    "city": "Ottawa",
-    "region": "",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 45.42,
-    "lng": -75.7
+    ]
   },
   {
     "date": {
@@ -728,13 +560,7 @@
         "label": "(original link)",
         "url": "http://www.telegraph.co.uk/news/2018/01/28/britains-first-bitcoin-heist-trader-forced-gunpoint-transfer/"
       }
-    ],
-    "city": "Moulsford",
-    "region": "Oxfordshire",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.62,
-    "lng": -1.14
+    ]
   },
   {
     "date": {
@@ -753,13 +579,7 @@
         "label": "(original link)",
         "url": "https://www.11alive.com/article/news/crime/five-arrested-in-plot-to-break-into-forsyth-county-home-to-steal-bitcoin/85-551507487"
       }
-    ],
-    "city": "Cumming",
-    "region": "Georgia",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.21,
-    "lng": -84.14
+    ]
   },
   {
     "date": {
@@ -778,13 +598,7 @@
         "label": "(original link)",
         "url": "https://bizlim.com/crypto/news/odessa-robbery-for-1-5-million-uah-on-the-sale-of-crypto-currency.html"
       }
-    ],
-    "city": "Odessa",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 46.48,
-    "lng": 30.73
+    ]
   },
   {
     "date": {
@@ -803,13 +617,7 @@
         "label": "(original link)",
         "url": "https://www.indiatoday.in/crime/story/gujarat-cops-kidnap-surat-builder-extort-bitcoins-worth-rs-13-crore-1208579-2018-04-09"
       }
-    ],
-    "city": "Amreli",
-    "region": "Gujarat",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 21.6,
-    "lng": 71.22
+    ]
   },
   {
     "date": {
@@ -828,13 +636,7 @@
         "label": "(original link)",
         "url": "http://www.arabnews.com/node/1251816/world"
       }
-    ],
-    "city": "Taichung",
-    "region": "",
-    "country": "Taiwan",
-    "country_code": "TW",
-    "lat": 24.15,
-    "lng": 120.67
+    ]
   },
   {
     "date": {
@@ -853,13 +655,7 @@
         "label": "(original link)",
         "url": "https://cointelegraph.com/news/moscow-man-mutilated-and-mugged-for-1-million-in-bitcoin-local-sources-report"
       }
-    ],
-    "city": "Moscow",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 55.76,
-    "lng": 37.62
+    ]
   },
   {
     "date": {
@@ -878,13 +674,7 @@
         "label": "(original link)",
         "url": "https://cointelegraph.com/news/russian-crypto-developer-beaten-robbed-of-300-btc-on-moscow-streets"
       }
-    ],
-    "city": "Moscow",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 55.76,
-    "lng": 37.62
+    ]
   },
   {
     "date": {
@@ -903,13 +693,7 @@
         "label": "(original link)",
         "url": "https://www.norwichbulletin.com/news/20181016/police-2-rhode-island-women-charged-in-killingly-home-invasion"
       }
-    ],
-    "city": "Killingly",
-    "region": "Connecticut",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 41.84,
-    "lng": -71.87
+    ]
   },
   {
     "date": {
@@ -928,13 +712,7 @@
         "label": "(original link)",
         "url": "https://ain.ua/2018/11/26/zaderzhali-gryppy-kotoraja-vykrala-majnera/amp/"
       }
-    ],
-    "city": "Kyiv",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 50.45,
-    "lng": 30.52
+    ]
   },
   {
     "date": {
@@ -953,13 +731,7 @@
         "label": "(original link)",
         "url": "https://www.dallasnews.com/news/crime/2018/04/20/robbers-douse-clerks-with-pepper-spray-steal-from-bitcoin-atms-in-irving-and-mesquite/"
       }
-    ],
-    "city": "Irving & Mesquite",
-    "region": "Texas",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 32.77,
-    "lng": -96.8
+    ]
   },
   {
     "date": {
@@ -978,13 +750,7 @@
         "label": "(original link)",
         "url": "https://www.straitstimes.com/singapore/courts-crime/malaysian-here-to-buy-bitcoins-ends-up-being-robbed-of-365000"
       }
-    ],
-    "city": "Singapore",
-    "region": "",
-    "country": "Singapore",
-    "country_code": "SG",
-    "lat": 1.35,
-    "lng": 103.82
+    ]
   },
   {
     "date": {
@@ -1003,13 +769,7 @@
         "label": "(original link)",
         "url": "https://www.miamiherald.com/news/local/crime/article208997064.html"
       }
-    ],
-    "city": "Miami",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 25.76,
-    "lng": -80.19
+    ]
   },
   {
     "date": {
@@ -1028,13 +788,7 @@
         "label": "(original link)",
         "url": "https://www.khaleejtimes.com/news/crime/bitcoin-heist-dubai-police-arrest-10-recover-dh7-million"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -1053,13 +807,7 @@
         "label": "(original link)",
         "url": "https://milano.repubblica.it/cronaca/2018/06/07/news/milano_truffa_bitcoin_soldi_falsi_milano_arresti-198392710/"
       }
-    ],
-    "city": "Milan",
-    "region": "",
-    "country": "Italy",
-    "country_code": "IT",
-    "lat": 45.46,
-    "lng": 9.19
+    ]
   },
   {
     "date": {
@@ -1078,13 +826,7 @@
         "label": "(original link)",
         "url": "https://bitsonline.com/skycoin-community-drama-synth/"
       }
-    ],
-    "city": "China",
-    "region": "",
-    "country": "China",
-    "country_code": "CN",
-    "lat": 35.0,
-    "lng": 105.0
+    ]
   },
   {
     "date": {
@@ -1103,13 +845,7 @@
         "label": "(original link)",
         "url": "https://www.heute.at/oesterreich/oberoesterreich/story/Home-Invasion-Kryptowaehrung-Baby-52821906"
       }
-    ],
-    "city": "Wels",
-    "region": "",
-    "country": "Austria",
-    "country_code": "AT",
-    "lat": 48.17,
-    "lng": 14.03
+    ]
   },
   {
     "date": {
@@ -1132,13 +868,7 @@
         "label": "forum post by victim",
         "url": "https://localbitcoins.com/forums/#!/general-discussion:armed-break-inhome-invasio"
       }
-    ],
-    "city": "Northborough",
-    "region": "Massachusetts",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 42.35,
-    "lng": -71.64
+    ]
   },
   {
     "date": {
@@ -1157,13 +887,7 @@
         "label": "(original link)",
         "url": "https://nypost.com/2018/11/06/friends-accused-of-torturing-pal-to-steal-his-cryptocurrency/"
       }
-    ],
-    "city": "New York",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.71,
-    "lng": -74.01
+    ]
   },
   {
     "date": {
@@ -1182,13 +906,7 @@
         "label": "(original link)",
         "url": "https://www.vice.com/en/article/z3exxx/instagram-influencer-robbed-cryptocurrency"
       }
-    ],
-    "city": "Manchester",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.48,
-    "lng": -2.24
+    ]
   },
   {
     "date": {
@@ -1207,13 +925,7 @@
         "label": "(original link)",
         "url": "https://sowetourban.co.za/55082/man-beaten-drugged-tortured-coin/"
       }
-    ],
-    "city": "Lanseria (Johannesburg)",
-    "region": "",
-    "country": "South Africa",
-    "country_code": "ZA",
-    "lat": 25.94,
-    "lng": 27.93
+    ]
   },
   {
     "date": {
@@ -1232,13 +944,7 @@
         "label": "(original link)",
         "url": "https://futurism.com/robbers-tortured-man-drill-steal-cryptocurrency"
       }
-    ],
-    "city": "Drouwenerveen",
-    "region": "Drenthe",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 52.98,
-    "lng": 6.78
+    ]
   },
   {
     "date": {
@@ -1257,13 +963,7 @@
         "label": "(original link)",
         "url": "https://www.northants.police.uk/news/2019-03-15/bitcoin-machine-stolen-far-cotton-robbery-–-witness-appeal"
       }
-    ],
-    "city": "Northampton (Far Cotton)",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 52.23,
-    "lng": -0.9
+    ]
   },
   {
     "date": {
@@ -1282,13 +982,7 @@
         "label": "(original link)",
         "url": "https://www.dawn.com/news/1472132/gang-demanding-ransom-in-bitcoin-busted"
       }
-    ],
-    "city": "Lahore",
-    "region": "Punjab",
-    "country": "Pakistan",
-    "country_code": "PK",
-    "lat": 31.55,
-    "lng": 74.34
+    ]
   },
   {
     "date": {
@@ -1307,13 +1001,7 @@
         "label": "(original link)",
         "url": "https://www.tv2.no/a/10828524/"
       }
-    ],
-    "city": "Oslo",
-    "region": "",
-    "country": "Norway",
-    "country_code": "NO",
-    "lat": 59.91,
-    "lng": 10.75
+    ]
   },
   {
     "date": {
@@ -1332,13 +1020,7 @@
         "label": "(original link)",
         "url": "https://www.newsweek.com/cryptocurrency-traders-abducted-tortured-india-criminal-gang-arrested-bitcoin-ransom-1449274"
       }
-    ],
-    "city": "Jaipur",
-    "region": "Rajasthan",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 26.91,
-    "lng": 75.79
+    ]
   },
   {
     "date": {
@@ -1357,13 +1039,7 @@
         "label": "(original link)",
         "url": "https://www.birminghammail.co.uk/news/midlands-news/watch-masked-raiders-hold-up-16599570"
       }
-    ],
-    "city": "Birmingham (Sparkhill)",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 52.45,
-    "lng": -1.88
+    ]
   },
   {
     "date": {
@@ -1386,13 +1062,7 @@
         "label": "(original link)",
         "url": "https://ooe.orf.at/stories/3006096/"
       }
-    ],
-    "city": "Wels",
-    "region": "",
-    "country": "Austria",
-    "country_code": "AT",
-    "lat": 48.17,
-    "lng": 14.03
+    ]
   },
   {
     "date": {
@@ -1411,13 +1081,7 @@
         "label": "(original link)",
         "url": "https://www.theweek.in/news/india/2019/08/31/kingpin-of-485-crore-kerala-bitcoin-scam-murdered-in-dehradun.html"
       }
-    ],
-    "city": "Dehradun",
-    "region": "Uttarakhand",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 30.32,
-    "lng": 78.03
+    ]
   },
   {
     "date": {
@@ -1436,13 +1100,7 @@
         "label": "(original link)",
         "url": "https://livecoins.com.br/policia-civil-em-florianopolis-captura-foragido-por-sequestro-de-investidor-de-bitcoin-de-rondonia-apos-sete-anos/"
       }
-    ],
-    "city": "Porto Velho",
-    "region": "Rondônia",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 8.74,
-    "lng": -63.9
+    ]
   },
   {
     "date": {
@@ -1461,13 +1119,7 @@
         "label": "(original link)",
         "url": "https://www.castanet.net/news/Vernon/270823/Vernon-grocery-store-thieves-break-into-bitcoin-ATM"
       }
-    ],
-    "city": "Vernon",
-    "region": "British Columbia",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 50.27,
-    "lng": -119.27
+    ]
   },
   {
     "date": {
@@ -1486,13 +1138,7 @@
         "label": "(original link)",
         "url": "https://www.vanguardngr.com/2020/02/4-arrested-over-killing-of-delta-pdp-member/"
       }
-    ],
-    "city": "Abraka",
-    "region": "Delta",
-    "country": "Nigeria",
-    "country_code": "NG",
-    "lat": 5.8,
-    "lng": 6.08
+    ]
   },
   {
     "date": {
@@ -1511,13 +1157,7 @@
         "label": "(original link)",
         "url": "https://www.lancs.live/news/lancashire-news/kidnapped-teen-crypto-trader-hid-25569752"
       }
-    ],
-    "city": "Preston",
-    "region": "Lancashire",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.76,
-    "lng": -2.7
+    ]
   },
   {
     "date": {
@@ -1536,13 +1176,7 @@
         "label": "(original link)",
         "url": "https://tnp.straitstimes.com/news/singapore/man-out-bail-cheating-charges-allegedly-kidnapped-thailand"
       }
-    ],
-    "city": "Bangkok",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 13.76,
-    "lng": 100.5
+    ]
   },
   {
     "date": {
@@ -1561,13 +1195,7 @@
         "label": "(original link)",
         "url": "https://philadelphia.cbslocal.com/2020/01/23/philadelphia-police-searching-for-2-suspects-who-broke-into-bitcoin-machine-stole-cash-box/"
       }
-    ],
-    "city": "Philadelphia",
-    "region": "Pennsylvania",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 39.95,
-    "lng": -75.17
+    ]
   },
   {
     "date": {
@@ -1586,13 +1214,7 @@
         "label": "(original link)",
         "url": "https://www.newsandstar.co.uk/news/21324960.carlisle-cryptocurrency-robbers-gun-knife---court/"
       }
-    ],
-    "city": "Carlisle",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 54.89,
-    "lng": -2.93
+    ]
   },
   {
     "date": {
@@ -1611,13 +1233,7 @@
         "label": "(original link)",
         "url": "https://news.stv.tv/west-central/man-was-brains-behind-1-2m-bitcoin-theft-which-saw-woman-hit-with-toblerone"
       }
-    ],
-    "city": "Blantyre",
-    "region": "Scotland",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 55.86,
-    "lng": -4.09
+    ]
   },
   {
     "date": {
@@ -1640,13 +1256,7 @@
         "label": "(original link)",
         "url": "https://e.vnexpress.net/news/news/hcmc-cops-charged-with-1-6-mln-bitcoin-robbery-4393892.html"
       }
-    ],
-    "city": "Ho Chi Minh City",
-    "region": "",
-    "country": "Vietnam",
-    "country_code": "VN",
-    "lat": 10.82,
-    "lng": 106.63
+    ]
   },
   {
     "date": {
@@ -1661,13 +1271,7 @@
         "label": "2 subjects pry open BTM in broad daylight",
         "url": "https://www.facebook.com/ELPOLICE/videos/277210370075309/"
       }
-    ],
-    "city": "East Lansdowne",
-    "region": "Pennsylvania",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 39.94,
-    "lng": -75.27
+    ]
   },
   {
     "date": {
@@ -1686,13 +1290,7 @@
         "label": "(original link)",
         "url": "https://www.rollingstone.com/culture/culture-features/crypto-heist-teenage-hacker-ellis-pinsky-1367400/"
       }
-    ],
-    "city": "Irvington",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 41.04,
-    "lng": -73.8
+    ]
   },
   {
     "date": {
@@ -1711,13 +1309,7 @@
         "label": "(original link)",
         "url": "https://www.thesun.co.uk/news/16238655/student-forced-bitcoin-knifepoint-cops/"
       }
-    ],
-    "city": "Kent",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.2,
-    "lng": 0.7
+    ]
   },
   {
     "date": {
@@ -1736,13 +1328,7 @@
         "label": "(original link)",
         "url": "https://policecontrol.info/novini/kerivnyky-kiberdepartmentu-sbu-vykraly-ta-vyvezly-v-lis-pidpryyemtsya-katuvaly-ta-zmusyly-viddaty-7-bitkoyiniv-80-tys-yim-ogolosyly-pidozryy/"
       }
-    ],
-    "city": "Kyiv",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 50.45,
-    "lng": 30.52
+    ]
   },
   {
     "date": {
@@ -1761,13 +1347,7 @@
         "label": "(original link)",
         "url": "https://www.vernonmorningstar.com/news/suspects-ram-kelowna-business-in-attempt-to-steal-bitcoin-atm/"
       }
-    ],
-    "city": "Kelowna",
-    "region": "British Columbia",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 49.89,
-    "lng": -119.5
+    ]
   },
   {
     "date": {
@@ -1786,13 +1366,7 @@
         "label": "(original link)",
         "url": "https://forklog.com/zhitel-latvii-planiroval-ubijstvo-vladeltsev-kriptovalyut-na-polmilliona-evro/"
       }
-    ],
-    "city": "Riga",
-    "region": "",
-    "country": "Latvia",
-    "country_code": "LV",
-    "lat": 56.95,
-    "lng": 24.11
+    ]
   },
   {
     "date": {
@@ -1811,13 +1385,7 @@
         "label": "(original link)",
         "url": "https://gulfnews.com/uae/crime/dubai-shepherd-jailed-for-stealing-camel-1.76101765"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -1836,13 +1404,7 @@
         "label": "(original link)",
         "url": "https://tp.npu.gov.ua/news/kriminal/operativniki-ternopolya-zatrimali-grupu-osib-yaka-vikrala-avto-pozbavila-voli-cholovika-ta-vimagala-u-nogo-800-tisyach-dolariv/"
       }
-    ],
-    "city": "Ternopil",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 49.55,
-    "lng": 25.59
+    ]
   },
   {
     "date": {
@@ -1861,13 +1423,7 @@
         "label": "(original link)",
         "url": "https://timesofmalta.com/articles/view/victim-describes-his-disbelief-as-700000-disappeared-under-his-nose.882790"
       }
-    ],
-    "city": "Sliema",
-    "region": "",
-    "country": "Malta",
-    "country_code": "MT",
-    "lat": 35.91,
-    "lng": 14.5
+    ]
   },
   {
     "date": {
@@ -1886,13 +1442,7 @@
         "label": "(original link)",
         "url": "https://www.thestandard.com.hk/breaking-news/section/4/162670/Gang-of-six-rob-more-than-HK$3-million-in-bitcoin-from-trader,-flee-after-kicking-him-out-of-the-car"
       }
-    ],
-    "city": "Chai Wan",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.27,
-    "lng": 114.24
+    ]
   },
   {
     "date": {
@@ -1911,13 +1461,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3118249/gang-snatches-hk35-million-hong-kong-cryptocurrency"
       }
-    ],
-    "city": "Kwun Tong",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.31,
-    "lng": 114.22
+    ]
   },
   {
     "date": {
@@ -1936,13 +1480,7 @@
         "label": "(original link)",
         "url": "https://www.tvp.info/51937085/olsztyn-napad-na-kantor-z-uzyciem-broni-strzelal-do-pracownikow-kantoru-skardziono-zloto-policja-szuka-sprawcy-tvp-info"
       }
-    ],
-    "city": "Olsztyn",
-    "region": "",
-    "country": "Poland",
-    "country_code": "PL",
-    "lat": 53.78,
-    "lng": 20.48
+    ]
   },
   {
     "date": {
@@ -1961,13 +1499,7 @@
         "label": "(original link)",
         "url": "https://www.aftonbladet.se/nyheter/krim/a/Gajal6/bevapnad-bitcoin-liga-trangde-sig-in-hos-par--kom-over-miljonbelopp"
       }
-    ],
-    "city": "Stockholm",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 59.33,
-    "lng": 18.07
+    ]
   },
   {
     "date": {
@@ -1986,13 +1518,7 @@
         "label": "(original link)",
         "url": "https://www.geo.tv/latest/335861-gujranwala-police-catch-two-suspects-in-pakistans-first-bitcoin-robbery-case"
       }
-    ],
-    "city": "Gujranwala",
-    "region": "Punjab",
-    "country": "Pakistan",
-    "country_code": "PK",
-    "lat": 32.16,
-    "lng": 74.19
+    ]
   },
   {
     "date": {
@@ -2011,13 +1537,7 @@
         "label": "(original link)",
         "url": "https://livecoins.com.br/brasileiro-dono-de-banco-e-sequestrado-e-perde-48-bitcoins/"
       }
-    ],
-    "city": "Recife",
-    "region": "Pernambuco",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": -8.05,
-    "lng": -34.9
+    ]
   },
   {
     "date": {
@@ -2036,13 +1556,7 @@
         "label": "(original link)",
         "url": "https://www.stadtmagazin-muenchen24.de/bitcoin-raub-in-muenchen-taeter-erbeuten-virtuelles-geld-im-wert-von-knapp-100-000-euro-87276"
       }
-    ],
-    "city": "Munich",
-    "region": "",
-    "country": "Germany",
-    "country_code": "DE",
-    "lat": 48.14,
-    "lng": 11.58
+    ]
   },
   {
     "date": {
@@ -2061,13 +1575,7 @@
         "label": "(original link)",
         "url": "https://www.mendovoz.com/actualidad/policiales/2021/3/19/le-robaron-350-mil-un-joven-en-guaymallen-98425.html"
       }
-    ],
-    "city": "Mendoza",
-    "region": "",
-    "country": "Argentina",
-    "country_code": "AR",
-    "lat": -32.89,
-    "lng": -68.84
+    ]
   },
   {
     "date": {
@@ -2086,13 +1594,7 @@
         "label": "(original link)",
         "url": "https://zbroya.info/uk/blog/20398_na-zaporizhzhi-mainer-dav-zbroinu-vidsich-grabizhnikam/"
       }
-    ],
-    "city": "Zaporizhzhia",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 47.84,
-    "lng": 35.14
+    ]
   },
   {
     "date": {
@@ -2111,13 +1613,7 @@
         "label": "(original link)",
         "url": "https://calgaryherald.com/news/crime/police-seek-suspects-in-canyon-meadows-home-invasion"
       }
-    ],
-    "city": "Calgary",
-    "region": "Alberta",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 51.05,
-    "lng": -114.07
+    ]
   },
   {
     "date": {
@@ -2136,13 +1632,7 @@
         "label": "(original link)",
         "url": "https://www.theguardian.com/uk-news/2021/oct/18/man-jailed-for-kidnapping-boy-who-was-said-to-have-made-money-from-bitcoin"
       }
-    ],
-    "city": "Bradford",
-    "region": "Yorkshire",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.8,
-    "lng": -1.75
+    ]
   },
   {
     "date": {
@@ -2161,13 +1651,7 @@
         "label": "(original link)",
         "url": "https://www.washingtonpost.com/dc-md-va/2022/02/03/son-spikes-dads-tea-crypto/"
       }
-    ],
-    "city": "Bethesda",
-    "region": "Maryland",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 38.98,
-    "lng": -77.1
+    ]
   },
   {
     "date": {
@@ -2186,13 +1670,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/woman-20-gets-5-year-jail-term-after-stealing-usd-87k-worth-of-crypto-from-man-in-dating-app-scam.htm"
       }
-    ],
-    "city": "Gyeonggi Province",
-    "region": "",
-    "country": "South Korea",
-    "country_code": "KR",
-    "lat": 37.4,
-    "lng": 127.2
+    ]
   },
   {
     "date": {
@@ -2211,13 +1689,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3137401/hong-kong-cryptocurrency-trader-targeted-hk2-million"
       }
-    ],
-    "city": "Kwun Tong",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.31,
-    "lng": 114.22
+    ]
   },
   {
     "date": {
@@ -2236,13 +1708,7 @@
         "label": "(original link)",
         "url": "https://opsporingverzocht.avrotros.nl/zaken/item/overvallers-aan-de-haal-met-waardevolle-cryptomunten/"
       }
-    ],
-    "city": "Leeuwarden",
-    "region": "",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 53.2,
-    "lng": 5.79
+    ]
   },
   {
     "date": {
@@ -2261,13 +1727,7 @@
         "label": "(original link)",
         "url": "https://epp.genproc.gov.ru/web/proc_55/mass-media/news?item=85667782"
       }
-    ],
-    "city": "Omsk",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 54.99,
-    "lng": 73.37
+    ]
   },
   {
     "date": {
@@ -2286,13 +1746,7 @@
         "label": "(original link)",
         "url": "https://blog.keys.casa/casa-client-case-study-the-tinder-trap/"
       }
-    ],
-    "city": "Colombia",
-    "region": "",
-    "country": "Colombia",
-    "country_code": "CO",
-    "lat": 4.6,
-    "lng": -74.1
+    ]
   },
   {
     "date": {
@@ -2311,13 +1765,7 @@
         "label": "(original link)",
         "url": "http://saharareporters.com/2021/12/20/breaking-inspector-general-orders-probe-police-extortion-n22million-worth-bitcoin-real"
       }
-    ],
-    "city": "Lagos",
-    "region": "",
-    "country": "Nigeria",
-    "country_code": "NG",
-    "lat": 6.45,
-    "lng": 3.39
+    ]
   },
   {
     "date": {
@@ -2336,13 +1784,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3142919/bitcoin-trader-robbed-hk3-million-cash-when-sellers"
       }
-    ],
-    "city": "Tsim Sha Tsui",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.3,
-    "lng": 114.17
+    ]
   },
   {
     "date": {
@@ -2361,13 +1803,7 @@
         "label": "(original link)",
         "url": "https://www.gulftoday.ae/news/2022/02/14/4-steal-dhs350000-through-fake-bitcoin-deal"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -2386,13 +1822,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/crypto-trader-s-murder-blamed-on-social-media-bragging-11376.htm"
       }
-    ],
-    "city": "São Pedro da Aldeia",
-    "region": "Rio de Janeiro",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 22.83,
-    "lng": -42.1
+    ]
   },
   {
     "date": {
@@ -2411,13 +1841,7 @@
         "label": "(original link)",
         "url": "https://www.estrepublicain.fr/faits-divers-justice/2021/10/22/assassinat-a-plancher-bas-l-etudiant-tue-pour-200-000-de-cryptomonnaie"
       }
-    ],
-    "city": "Plancher-Bas",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.58,
-    "lng": 6.83
+    ]
   },
   {
     "date": {
@@ -2436,13 +1860,7 @@
         "label": "(original link)",
         "url": "https://www.reuters.com/markets/currencies/abkhazias-illegal-bitcoin-miners-face-new-threat-thieves-2022-01-06/"
       }
-    ],
-    "city": "Abkhazia",
-    "region": "",
-    "country": "Georgia",
-    "country_code": "GE",
-    "lat": 43.0,
-    "lng": 41.0
+    ]
   },
   {
     "date": {
@@ -2461,13 +1879,7 @@
         "label": "(original link)",
         "url": "https://www.nzherald.co.nz/nz/crypto-heist-500000-reward-for-a-safe-containing-4m-cryptocurrency/YHRIPG5P37UW6EAWA4I42GAXNA/"
       }
-    ],
-    "city": "Westmere (Auckland)",
-    "region": "",
-    "country": "New Zealand",
-    "country_code": "NZ",
-    "lat": 36.87,
-    "lng": 174.72
+    ]
   },
   {
     "date": {
@@ -2486,13 +1898,7 @@
         "label": "(original link)",
         "url": "https://news.bitcoin.com/court-to-try-2-russians-for-stealing-86-bitcoins-from-crypto-miner/"
       }
-    ],
-    "city": "Tomsk",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 56.49,
-    "lng": 84.95
+    ]
   },
   {
     "date": {
@@ -2511,13 +1917,7 @@
         "label": "(original link)",
         "url": "https://www.nbcbayarea.com/news/local/thieves-break-into-silicon-valley-liquor-store-to-steal-bitcoin-atm/2677196/"
       }
-    ],
-    "city": "South Bay (Silicon Valley)",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 37.3,
-    "lng": -121.9
+    ]
   },
   {
     "date": {
@@ -2536,13 +1936,7 @@
         "label": "(original link)",
         "url": "https://www.vice.com/en/article/n7nwwq/man-shot-dead-in-hail-of-gunfire-over-crypto-mining-rigs-police-say"
       }
-    ],
-    "city": "Abkhazia",
-    "region": "",
-    "country": "Georgia",
-    "country_code": "GE",
-    "lat": 43.0,
-    "lng": 41.0
+    ]
   },
   {
     "date": {
@@ -2561,13 +1955,7 @@
         "label": "(original link)",
         "url": "https://www.elespanol.com/espana/20211103/fundador-tuenti-denuncia-secuestro-manos-millones-bitcoin/624188600_0.html"
       }
-    ],
-    "city": "Madrid",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 40.42,
-    "lng": -3.7
+    ]
   },
   {
     "date": {
@@ -2586,13 +1974,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3156021/hong-kong-police-hunt-triad-gang-members-who-kidnapped"
       }
-    ],
-    "city": "Hong Kong",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.32,
-    "lng": 114.17
+    ]
   },
   {
     "date": {
@@ -2611,13 +1993,7 @@
         "label": "(original link)",
         "url": "https://www.reuters.com/world/thieves-rip-bitcoin-atm-barcelona-crypto-store-2021-11-12/"
       }
-    ],
-    "city": "Barcelona",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 41.39,
-    "lng": 2.17
+    ]
   },
   {
     "date": {
@@ -2636,13 +2012,7 @@
         "label": "(original link)",
         "url": "https://www.courtlistener.com/docket/69198689/1/united-states-v-iza/"
       }
-    ],
-    "city": "Los Angeles",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.05,
-    "lng": -118.24
+    ]
   },
   {
     "date": {
@@ -2661,13 +2031,7 @@
         "label": "(original link)",
         "url": "https://www.reuters.com/markets/currencies/abkhazias-illegal-bitcoin-miners-face-new-threat-thieves-2022-01-06/"
       }
-    ],
-    "city": "Sukhumi",
-    "region": "Abkhazia",
-    "country": "Georgia",
-    "country_code": "GE",
-    "lat": 43.0,
-    "lng": 41.02
+    ]
   },
   {
     "date": {
@@ -2686,13 +2050,7 @@
         "label": "(original link)",
         "url": "https://www.cnnindonesia.com/nasional/20211228141520-12-739596/bule-rampok-uang-dan-bitcoin-wn-italia-di-bali-senilai-total-rp58-m"
       }
-    ],
-    "city": "Bali",
-    "region": "",
-    "country": "Indonesia",
-    "country_code": "ID",
-    "lat": 8.41,
-    "lng": 115.19
+    ]
   },
   {
     "date": {
@@ -2711,13 +2069,7 @@
         "label": "(original link)",
         "url": "https://www.rtlnieuws.nl/nieuws/nederland/artikel/5274213/vincent-everts-overvallen-trendwatcher-bitcoin-amsterdam"
       }
-    ],
-    "city": "Amsterdam",
-    "region": "",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 52.37,
-    "lng": 4.9
+    ]
   },
   {
     "date": {
@@ -2736,13 +2088,7 @@
         "label": "(original link)",
         "url": "https://www.thunderbaypolice.ca/news/eleven-inmates-charges-following-serious-30-hour-assault-and-extortion-incident"
       }
-    ],
-    "city": "Thunder Bay",
-    "region": "Ontario",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 48.38,
-    "lng": -89.25
+    ]
   },
   {
     "date": {
@@ -2761,13 +2107,7 @@
         "label": "(original link)",
         "url": "https://www.analyticsinsight.net/news/russian-officer-jailed-for-bitcoin-theft-as-market-prices-slide"
       }
-    ],
-    "city": "Ufa",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 54.74,
-    "lng": 55.97
+    ]
   },
   {
     "date": {
@@ -2786,13 +2126,7 @@
         "label": "(original link)",
         "url": "https://www.localmemphis.com/article/news/crime/atm-taken-truck-crash-memphis-tennessee-gas-station/522-de0f5754-0996-436b-9ca0-8b62fb7831bd"
       }
-    ],
-    "city": "Memphis",
-    "region": "Tennessee",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 35.15,
-    "lng": -90.05
+    ]
   },
   {
     "date": {
@@ -2811,13 +2145,7 @@
         "label": "(original link)",
         "url": "https://www.hln.be/antwerpen/drie-verdachten-van-homeinvasion-blijven-in-de-cel~a243e41b/"
       }
-    ],
-    "city": "Hoboken (Antwerp)",
-    "region": "",
-    "country": "Belgium",
-    "country_code": "BE",
-    "lat": 51.18,
-    "lng": 4.36
+    ]
   },
   {
     "date": {
@@ -2840,13 +2168,7 @@
         "label": "recorded a video detailing the ordeal",
         "url": "https://www.youtube.com/watch?v=yWPMHy7zB8M"
       }
-    ],
-    "city": "France",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 46.6,
-    "lng": 2.3
+    ]
   },
   {
     "date": {
@@ -2865,13 +2187,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.co.uk/news/article-12145317/Missouri-doctor-shot-dead-Ozarks-lake-previously-kidnapped-claims-brother.html"
       }
-    ],
-    "city": "Missouri",
-    "region": "",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 38.3,
-    "lng": -92.5
+    ]
   },
   {
     "date": {
@@ -2890,13 +2206,7 @@
         "label": "(original link)",
         "url": "https://www.indiatoday.in/cities/pune/story/8-including-cop-arrested-for-kidnapping-man-to-extort-bitcoin-worth-rs-300-crore-1907933-2022-02-02"
       }
-    ],
-    "city": "Pune",
-    "region": "Maharashtra",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 18.52,
-    "lng": 73.86
+    ]
   },
   {
     "date": {
@@ -2915,13 +2225,7 @@
         "label": "(original link)",
         "url": "https://timesofindia.indiatimes.com/city/surat/cryptocurrency-deal-turns-into-2cr-dacoity/articleshow/89392699.cms"
       }
-    ],
-    "city": "Surat",
-    "region": "Gujarat",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 21.17,
-    "lng": 72.83
+    ]
   },
   {
     "date": {
@@ -2940,13 +2244,7 @@
         "label": "(original link)",
         "url": "https://nypost.com/2022/02/09/brooklyn-crypto-consultant-hog-tied-beaten-during-home-invasion/"
       }
-    ],
-    "city": "Brooklyn",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.68,
-    "lng": -73.94
+    ]
   },
   {
     "date": {
@@ -2965,13 +2263,7 @@
         "label": "(original link)",
         "url": "https://www.khaleejtimes.com/crime/dubai-four-men-fined-dh1-7-million-for-stealing-cash-from-bitcoin-trader"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -2990,13 +2282,7 @@
         "label": "(original link)",
         "url": "https://wsvn.com/news/local/miami-dade/edgewater-man-says-hes-out-about-1m-after-armed-robber-steals-phone-with-crypto-wallet-app-pricey-watch/"
       }
-    ],
-    "city": "Miami",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 25.76,
-    "lng": -80.19
+    ]
   },
   {
     "date": {
@@ -3015,13 +2301,7 @@
         "label": "(original link)",
         "url": "https://timesofindia.indiatimes.com/city/pune/woman-cop-suspended-for-bid-to-extort-crypto-from-trader/articleshow/89980215.cms"
       }
-    ],
-    "city": "Pune",
-    "region": "Maharashtra",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 18.52,
-    "lng": 73.86
+    ]
   },
   {
     "date": {
@@ -3040,13 +2320,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.co.uk/news/article-10663677/Crypto-expert-33-shot-robber-targeting-450k-watch-speaks-out.html"
       }
-    ],
-    "city": "New York",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.71,
-    "lng": -74.01
+    ]
   },
   {
     "date": {
@@ -3065,13 +2339,7 @@
         "label": "(original link)",
         "url": "https://www.courtlistener.com/docket/69198689/1/united-states-v-iza/"
       }
-    ],
-    "city": "Los Angeles",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.05,
-    "lng": -118.24
+    ]
   },
   {
     "date": {
@@ -3090,13 +2358,7 @@
         "label": "(original link)",
         "url": "https://www.khaleejtimes.com/crime/dubai-dh4-million-stolen-from-bitcoin-trader-9-people-jailed"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -3115,13 +2377,7 @@
         "label": "(original link)",
         "url": "https://www.svt.se/nyheter/lokalt/ost/par-bands-och-misshandlades-i-hemmet-ranades-pa-kryptovaluta"
       }
-    ],
-    "city": "Norrköping",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 58.59,
-    "lng": 16.19
+    ]
   },
   {
     "date": {
@@ -3140,13 +2396,7 @@
         "label": "(original link)",
         "url": "https://www.theguardian.com/technology/2022/may/08/crypto-muggings-thieves-in-london-target-digital-investors-by-taking-phones"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -3165,13 +2415,7 @@
         "label": "(original link)",
         "url": "https://gulfnews.com/uae/crime/dubai-cryptocurrency-expert-assaulted-by-investors-for-losing-money-1.88182017"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -3190,13 +2434,7 @@
         "label": "(original link)",
         "url": "https://www.themalaysianinsight.com/s/383948"
       }
-    ],
-    "city": "Klang",
-    "region": "Selangor",
-    "country": "Malaysia",
-    "country_code": "MY",
-    "lat": 3.04,
-    "lng": 101.45
+    ]
   },
   {
     "date": {
@@ -3215,13 +2453,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/ex-mitsubishi-electric-ceos-son-charged-with-violent-crypto-theft.htm"
       }
-    ],
-    "city": "Osaka",
-    "region": "",
-    "country": "Japan",
-    "country_code": "JP",
-    "lat": 34.69,
-    "lng": 135.5
+    ]
   },
   {
     "date": {
@@ -3240,13 +2472,7 @@
         "label": "(original link)",
         "url": "https://www.khaleejtimes.com/crime/dubai-man-robbed-of-dh183000-lured-after-being-lured-by-fake-bitcoin-deal"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -3265,13 +2491,7 @@
         "label": "(original link)",
         "url": "https://bits.media/neizvestnye-razgrabili-krupnuyu-mayning-fermu-na-skladakh-pod-moskvoy/"
       }
-    ],
-    "city": "Kuchino (Moscow Oblast)",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 55.75,
-    "lng": 37.98
+    ]
   },
   {
     "date": {
@@ -3290,13 +2510,7 @@
         "label": "(original link)",
         "url": "https://brescia.corriere.it/notizie/cronaca/22_agosto_11/manerba-minacciato-un-coltello-rapinato-bitcoin-9593a038-18b5-11ed-a928-dd18874affa6.shtml"
       }
-    ],
-    "city": "Manerba del Garda",
-    "region": "",
-    "country": "Italy",
-    "country_code": "IT",
-    "lat": 45.58,
-    "lng": 10.55
+    ]
   },
   {
     "date": {
@@ -3315,13 +2529,7 @@
         "label": "(original link)",
         "url": "https://timesofindia.indiatimes.com/city/lucknow/uttar-pradesh-three-take-rs-1-3-crore-ransom-in-bitcoins-from-realtor-held/articleshow/93603640.cms"
       }
-    ],
-    "city": "Vrindavan Yojana (Lucknow)",
-    "region": "Uttar Pradesh",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 26.85,
-    "lng": 81.0
+    ]
   },
   {
     "date": {
@@ -3340,13 +2548,7 @@
         "label": "(original link)",
         "url": "https://www.richmond-news.com/local-news/richmond-man-arrested-for-home-invasion-10m-crypto-theft-7873869"
       }
-    ],
-    "city": "Richmond",
-    "region": "British Columbia",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 49.17,
-    "lng": -123.14
+    ]
   },
   {
     "date": {
@@ -3365,13 +2567,7 @@
         "label": "(original link)",
         "url": "https://krebsonsecurity.com/2022/09/botched-crypto-mugging-lands-three-u-k-men-in-jail/"
       }
-    ],
-    "city": "Lincolnshire",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.2,
-    "lng": -0.2
+    ]
   },
   {
     "date": {
@@ -3390,13 +2586,7 @@
         "label": "(original link)",
         "url": "https://www.cbc.ca/news/canada/manitoba/bitcoin-robbery-winnipeg-1.6582916"
       }
-    ],
-    "city": "Winnipeg",
-    "region": "Manitoba",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 49.9,
-    "lng": -97.14
+    ]
   },
   {
     "date": {
@@ -3415,13 +2605,7 @@
         "label": "(original link)",
         "url": "https://fox5sandiego.com/news/border-report/group-linked-to-9-kidnappings-in-three-states/"
       }
-    ],
-    "city": "Delray Beach",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 26.46,
-    "lng": -80.07
+    ]
   },
   {
     "date": {
@@ -3440,13 +2624,7 @@
         "label": "(original link)",
         "url": "https://www.matichon.co.th/region/news_3584663"
       }
-    ],
-    "city": "Koh Samui",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 9.51,
-    "lng": 100.01
+    ]
   },
   {
     "date": {
@@ -3465,13 +2643,7 @@
         "label": "(original link)",
         "url": "https://fox5sandiego.com/news/border-report/group-linked-to-9-kidnappings-in-three-states/"
       }
-    ],
-    "city": "Homestead",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 25.47,
-    "lng": -80.48
+    ]
   },
   {
     "date": {
@@ -3490,13 +2662,7 @@
         "label": "(original link)",
         "url": "https://www.yorkregion.com/news/crime/stripped-naked-kidnapper-sentenced-after-woman-tortured-in-search-of-1m-in-bitcoin/article_31b62635-2f9d-508e-8c97-04a1c2aa5b7a.html"
       }
-    ],
-    "city": "Barrie",
-    "region": "Ontario",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 44.39,
-    "lng": -79.69
+    ]
   },
   {
     "date": {
@@ -3515,13 +2681,7 @@
         "label": "(original link)",
         "url": "https://toronto.ctvnews.ca/ontario-crypto-king-kidnapped-tortured-in-an-attempt-to-get-millions-in-ransom-documents-say-1.6325928"
       }
-    ],
-    "city": "Toronto",
-    "region": "Ontario",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 43.65,
-    "lng": -79.38
+    ]
   },
   {
     "date": {
@@ -3540,13 +2700,7 @@
         "label": "(original link)",
         "url": "https://www.rt.com/russia/567577-bitcoin-kidnapping-moscow-police/"
       }
-    ],
-    "city": "Moscow",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 55.76,
-    "lng": 37.62
+    ]
   },
   {
     "date": {
@@ -3565,13 +2719,7 @@
         "label": "(original link)",
         "url": "https://nltimes.nl/2024/08/22/man-convicted-violent-bitcoin-robbery-classified-ad-deal-separate-shooting"
       }
-    ],
-    "city": "Lelystad",
-    "region": "",
-    "country": "Netherlands",
-    "country_code": "NL",
-    "lat": 52.51,
-    "lng": 5.47
+    ]
   },
   {
     "date": {
@@ -3590,13 +2738,7 @@
         "label": "(original link)",
         "url": "https://www.thephuketnews.com/russians-assaulted-in-armed-extortion-robbed-of-us-45k-in-cash-crypto-86552.php"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -3615,13 +2757,7 @@
         "label": "(original link)",
         "url": "https://wublock.substack.com/p/interview-with-a-chinese-businessman"
       }
-    ],
-    "city": "Philippines",
-    "region": "",
-    "country": "Philippines",
-    "country_code": "PH",
-    "lat": 12.9,
-    "lng": 121.8
+    ]
   },
   {
     "date": {
@@ -3640,13 +2776,7 @@
         "label": "(original link)",
         "url": "https://fox5sandiego.com/news/border-report/group-linked-to-9-kidnappings-in-three-states/"
       }
-    ],
-    "city": "Little Elm",
-    "region": "Texas",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 33.16,
-    "lng": -96.94
+    ]
   },
   {
     "date": {
@@ -3665,13 +2795,7 @@
         "label": "(original link)",
         "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/covered-burns-bruises-begged-can-30900995"
       }
-    ],
-    "city": "Salford",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.48,
-    "lng": -2.29
+    ]
   },
   {
     "date": {
@@ -3690,13 +2814,7 @@
         "label": "(original link)",
         "url": "https://elcaso.elnacional.cat/es/noticias/asalto-empresa-criptomonedas-eixample-pillados-propietario-amordazaban-conserje_956094102.html"
       }
-    ],
-    "city": "Barcelona",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 41.39,
-    "lng": 2.17
+    ]
   },
   {
     "date": {
@@ -3715,13 +2833,7 @@
         "label": "(original link)",
         "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/covered-burns-bruises-begged-can-30900995"
       }
-    ],
-    "city": "Salford",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.48,
-    "lng": -2.29
+    ]
   },
   {
     "date": {
@@ -3740,13 +2852,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.com/news/melbourne/article-14196073/TikTok-kidnapper-Catherine-Colivas-bitcoin.html"
       }
-    ],
-    "city": "Melbourne",
-    "region": "Victoria",
-    "country": "Australia",
-    "country_code": "AU",
-    "lat": 37.81,
-    "lng": 144.96
+    ]
   },
   {
     "date": {
@@ -3765,13 +2871,7 @@
         "label": "(original link)",
         "url": "https://getblock.net/en/news/crypto-blogger-yuri-boytsov-had-284-000-stolen-in-bitcoins"
       }
-    ],
-    "city": "Bali",
-    "region": "",
-    "country": "Indonesia",
-    "country_code": "ID",
-    "lat": 8.41,
-    "lng": 115.19
+    ]
   },
   {
     "date": {
@@ -3790,13 +2890,7 @@
         "label": "(original link)",
         "url": "https://es.beincrypto.com/colombia-bitcoiner-extranjero-sufre-robo-de-20000-en-btc/"
       }
-    ],
-    "city": "Medellín",
-    "region": "",
-    "country": "Colombia",
-    "country_code": "CO",
-    "lat": 6.24,
-    "lng": -75.58
+    ]
   },
   {
     "date": {
@@ -3815,13 +2909,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.com/news/article-11865165/Belmore-kidnapping-inside-story-Peter-Vuong-bed-influencer-Angel-Bowyer.html"
       }
-    ],
-    "city": "Sydney",
-    "region": "New South Wales",
-    "country": "Australia",
-    "country_code": "AU",
-    "lat": 33.87,
-    "lng": 151.21
+    ]
   },
   {
     "date": {
@@ -3840,13 +2928,7 @@
         "label": "(original link)",
         "url": "https://www.indiatimes.com/news/india/noida-couple-stage-robbery-in-their-home-to-get-friends-crypto-investment-worth-crores-arrested/articleshow/127031227.html"
       }
-    ],
-    "city": "Noida",
-    "region": "Uttar Pradesh",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 28.54,
-    "lng": 77.39
+    ]
   },
   {
     "date": {
@@ -3865,13 +2947,7 @@
         "label": "(original link)",
         "url": "https://protos.com/four-suspects-face-death-penalty-in-south-korea-crypto-murder-case/"
       }
-    ],
-    "city": "Seoul",
-    "region": "",
-    "country": "South Korea",
-    "country_code": "KR",
-    "lat": 37.57,
-    "lng": 126.98
+    ]
   },
   {
     "date": {
@@ -3890,13 +2966,7 @@
         "label": "(original link)",
         "url": "https://www.khaleejtimes.com/uae/crime/dubai-4-expats-jailed-for-robbing-woman-of-dh42000-using-cash-to-buy-bitcoin"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -3915,13 +2985,7 @@
         "label": "(original link)",
         "url": "https://www.wral.com/story/durham-couple-forced-to-wire-150k-of-cryptocurrency-at-gunpoint-during-home-invasion-police-investigating/20819450/"
       }
-    ],
-    "city": "Durham",
-    "region": "North Carolina",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 35.99,
-    "lng": -78.9
+    ]
   },
   {
     "date": {
@@ -3940,13 +3004,7 @@
         "label": "(original link)",
         "url": "https://www.surinenglish.com/malaga/benalmadena-torremolinos/this-how-police-freed-kidnapped-crypto-currency-20230504081331-nt.html"
       }
-    ],
-    "city": "Benalmádena",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 36.6,
-    "lng": -4.55
+    ]
   },
   {
     "date": {
@@ -3965,13 +3023,7 @@
         "label": "(original link)",
         "url": "https://abc13.com/post/smash-and-grab-robbery-smokies-smoke-shop-truck-crashes-into-beechnut-store-crash/13302865/?userab=abcn_du_cat_topic_feature_holdout-474*variant_b_redesign-1939%2Cotv_web_content_rec-539*variant_c_trending-2268%2Cotv_search_page_design_unification-546*variant_a_control-2299%2Cabcn_popular_reads_exp-542*variant_b_7days_filter-2288"
       }
-    ],
-    "city": "Houston",
-    "region": "Texas",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 29.76,
-    "lng": -95.37
+    ]
   },
   {
     "date": {
@@ -3990,13 +3042,7 @@
         "label": "(original link)",
         "url": "https://www.globes.co.il/news/article.aspx?did=1001449527"
       }
-    ],
-    "city": "Tel Aviv",
-    "region": "",
-    "country": "Israel",
-    "country_code": "IL",
-    "lat": 32.09,
-    "lng": 34.78
+    ]
   },
   {
     "date": {
@@ -4015,13 +3061,7 @@
         "label": "(original link)",
         "url": "https://www.audacy.com/1010wins/news/local/fake-fbi-agents-in-porsche-tase-tie-couple-in-queens"
       }
-    ],
-    "city": "Queens",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.73,
-    "lng": -73.79
+    ]
   },
   {
     "date": {
@@ -4040,13 +3080,7 @@
         "label": "(original link)",
         "url": "https://france3-regions.franceinfo.fr/pays-de-la-loire/sarthe/le-mans/un-proces-aux-assises-requis-apres-l-enlevement-dans-la-sarthe-du-pere-de-l-influenceur-teufeurs-3286131.html"
       }
-    ],
-    "city": "Cures",
-    "region": "Sarthe",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.96,
-    "lng": 0.19
+    ]
   },
   {
     "date": {
@@ -4065,13 +3099,7 @@
         "label": "(original link)",
         "url": "https://www.thephuketnews.com/russian-mma-fighter-khusein-twin-brother-arrested-for-kidnap-torture-extortion-in-phuket-89533.php"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -4090,13 +3118,7 @@
         "label": "(original link)",
         "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/covered-burns-bruises-begged-can-30900995"
       }
-    ],
-    "city": "Cadishead",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.43,
-    "lng": -2.43
+    ]
   },
   {
     "date": {
@@ -4115,13 +3137,7 @@
         "label": "(original link)",
         "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/covered-burns-bruises-begged-can-30900995"
       }
-    ],
-    "city": "Salford",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.48,
-    "lng": -2.29
+    ]
   },
   {
     "date": {
@@ -4140,13 +3156,7 @@
         "label": "(original link)",
         "url": "https://www.lt.se/2023-11-08/ranarna-ar-ute-efter-bitcoin"
       }
-    ],
-    "city": "Södertälje",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 59.2,
-    "lng": 17.63
+    ]
   },
   {
     "date": {
@@ -4165,13 +3175,7 @@
         "label": "(original link)",
         "url": "https://rustavi2.ge/ka/news/268474"
       }
-    ],
-    "city": "Tbilisi",
-    "region": "",
-    "country": "Georgia",
-    "country_code": "GE",
-    "lat": 41.72,
-    "lng": 44.79
+    ]
   },
   {
     "date": {
@@ -4190,13 +3194,7 @@
         "label": "(original link)",
         "url": "https://www.aftonbladet.se/nyheter/a/EQPmnG/grovt-ran-soder-om-stockholm-bundna-i-timmar-enligt-uppgift"
       }
-    ],
-    "city": "Rönninge",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 59.17,
-    "lng": 17.76
+    ]
   },
   {
     "date": {
@@ -4215,13 +3213,7 @@
         "label": "(original link)",
         "url": "https://en.cryptonomist.ch/2023/11/13/extortion-world-crypto-wallets-binance-executives-robbed/"
       }
-    ],
-    "city": "Montenegro",
-    "region": "",
-    "country": "Montenegro",
-    "country_code": "ME",
-    "lat": 42.7,
-    "lng": 19.4
+    ]
   },
   {
     "date": {
@@ -4240,13 +3232,7 @@
         "label": "(original link)",
         "url": "https://www.oregonlive.com/crime/2024/10/kidnapped-for-crypto-4-men-flew-from-florida-to-portland-tied-a-man-to-a-post-before-stealing-his-cryptocurrency-feds-say.html"
       }
-    ],
-    "city": "Portland",
-    "region": "Oregon",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 45.52,
-    "lng": -122.68
+    ]
   },
   {
     "date": {
@@ -4265,13 +3251,7 @@
         "label": "(original link)",
         "url": "https://www.manchestereveningnews.co.uk/news/greater-manchester-news/covered-burns-bruises-begged-can-30900995"
       }
-    ],
-    "city": "Salford",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 53.48,
-    "lng": -2.29
+    ]
   },
   {
     "date": {
@@ -4286,13 +3266,7 @@
         "label": "Miner kidnapped from home, ransomed, rescued by police.",
         "url": "https://archive.is/XIPFP"
       }
-    ],
-    "city": "Izhevsk",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 56.85,
-    "lng": 53.2
+    ]
   },
   {
     "date": {
@@ -4311,13 +3285,7 @@
         "label": "(original link)",
         "url": "https://observatornews.ro/eveniment/celebru-om-de-afaceri-din-cluj-rapit-si-torturat-pentru-codul-de-la-criptomonede-talharii-iau-taiat-un-deget-558888.html"
       }
-    ],
-    "city": "Cluj-Napoca",
-    "region": "",
-    "country": "Romania",
-    "country_code": "RO",
-    "lat": 46.77,
-    "lng": 23.6
+    ]
   },
   {
     "date": {
@@ -4336,13 +3304,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/2735294/5-russians-arrested-in-crypto-abduction-case"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -4361,13 +3323,7 @@
         "label": "(original link)",
         "url": "https://www.justice.gov/usao-dc/pr/gothferrari-sentenced-78-months-prison-role-massive-cryptocurrency-heist"
       }
-    ],
-    "city": "Winnsboro",
-    "region": "Texas",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 32.96,
-    "lng": -95.29
+    ]
   },
   {
     "date": {
@@ -4386,13 +3342,7 @@
         "label": "(original link)",
         "url": "https://www.fox10phoenix.com/news/fake-uber-driver-allegedly-stole-thousands-crypto-from-customers"
       }
-    ],
-    "city": "Scottsdale",
-    "region": "Arizona",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 33.49,
-    "lng": -111.93
+    ]
   },
   {
     "date": {
@@ -4411,13 +3361,7 @@
         "label": "(original link)",
         "url": "https://www.cbc.ca/news/canada/montreal/suspects-arrested-montreal-calgary-crypto-kidnapping-1.7203455"
       }
-    ],
-    "city": "Montreal",
-    "region": "Quebec",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 45.5,
-    "lng": -73.57
+    ]
   },
   {
     "date": {
@@ -4432,13 +3376,7 @@
         "label": "Gang of 6 Russians robs Russian man and wife at coffee shop for 1.8 million baht in BTC.",
         "url": "https://archive.is/EnzIt"
       }
-    ],
-    "city": "Koh Samui",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 9.51,
-    "lng": 100.01
+    ]
   },
   {
     "date": {
@@ -4453,13 +3391,7 @@
         "label": "4 men rob suspected Chinese crypto gambling ring of $3M USD.",
         "url": "https://archive.is/ZW6GW"
       }
-    ],
-    "city": "Singapore (Lianhe Zaobao)",
-    "region": "",
-    "country": "Singapore",
-    "country_code": "SG",
-    "lat": 1.29,
-    "lng": 103.85
+    ]
   },
   {
     "date": {
@@ -4478,13 +3410,7 @@
         "label": "(original link)",
         "url": "https://www.msn.com/en-ca/news/canada/b-c-family-tortured-for-13-hours-by-thieves-impersonating-mailmen-in-2m-crypto-heist/ar-AA1QU0ko"
       }
-    ],
-    "city": "Port Moody",
-    "region": "British Columbia",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 49.28,
-    "lng": -122.85
+    ]
   },
   {
     "date": {
@@ -4499,13 +3425,7 @@
         "label": "Belgian barber brags about being successful crypto dealer to impress woman. She invites him to her luxury flat, which ends up being a wrench attack trap. Turned out he only had £6.71 in crypto. Attackers were quickly caught because they had rented an AirBNB for the trap.",
         "url": "https://archive.is/EBmqW"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -4520,13 +3440,7 @@
         "label": "3 men armed with machetes invade home, force owner to transfer 1,000+ ETH.",
         "url": "https://archive.is/u3sUN"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -4545,13 +3459,7 @@
         "label": "(original link)",
         "url": "https://www.lapresse.ca/actualites/justice-et-faits-divers/2025-12-11/une-femme-coupable-de-sequestration/un-influenceur-en-cryptomonnaie-battu-a-mort-dans-une-salle-de-torture.php"
       }
-    ],
-    "city": "Montreal",
-    "region": "Quebec",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 45.5,
-    "lng": -73.57
+    ]
   },
   {
     "date": {
@@ -4570,13 +3478,7 @@
         "label": "(original link)",
         "url": "https://www.thetimes.com/uk/crime/article/gang-kidnapped-barber-they-mistook-for-crypto-billionaire-n0hgdshvm"
       }
-    ],
-    "city": "Tseung Kwan O",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.31,
-    "lng": 114.26
+    ]
   },
   {
     "date": {
@@ -4595,13 +3497,7 @@
         "label": "(original link)",
         "url": "https://www.ouest-france.fr/societe/justice/ils-menacent-un-homme-pour-de-la-cryptomonnaie-trois-jeunes-condamnes-pour-extorsion-a-angers-9b3310c6-6c61-11ef-8186-bc3b55f9d8c3"
       }
-    ],
-    "city": "Angers",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.47,
-    "lng": -0.55
+    ]
   },
   {
     "date": {
@@ -4620,13 +3516,7 @@
         "label": "(original link)",
         "url": "https://www.bernama.com/tv/news.php?id=2328296"
       }
-    ],
-    "city": "Cyberjaya",
-    "region": "Selangor",
-    "country": "Malaysia",
-    "country_code": "MY",
-    "lat": 2.92,
-    "lng": 101.77
+    ]
   },
   {
     "date": {
@@ -4645,13 +3535,7 @@
         "label": "(original link)",
         "url": "https://www.khaosodenglish.com/news/2024/07/15/5-foreigners-arrested-for-violent-robbery-of-british-crypto-trader-in-bangkok/"
       }
-    ],
-    "city": "Bangkok",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 13.76,
-    "lng": 100.5
+    ]
   },
   {
     "date": {
@@ -4670,13 +3554,7 @@
         "label": "(original link)",
         "url": "https://indianexpress.com/article/cities/pune/share-trading-coach-kidnapped-robbed-cryptocurrency-worth-rs-16-l-9475959/"
       }
-    ],
-    "city": "Bavdhan (Pune)",
-    "region": "Maharashtra",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 18.51,
-    "lng": 73.77
+    ]
   },
   {
     "date": {
@@ -4695,13 +3573,7 @@
         "label": "(original link)",
         "url": "https://censor.net/en/photonews/3502062/u_kyyevi_vbyly_inozemtsya_cholovika_vykraly_ta_pograbuvaly"
       }
-    ],
-    "city": "Kyiv",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 50.45,
-    "lng": 30.52
+    ]
   },
   {
     "date": {
@@ -4720,13 +3592,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.com/news/article-13995147/Aussie-billionaire-Tim-Heath-kidnapping.html"
       }
-    ],
-    "city": "Tallinn",
-    "region": "",
-    "country": "Estonia",
-    "country_code": "EE",
-    "lat": 59.44,
-    "lng": 24.75
+    ]
   },
   {
     "date": {
@@ -4745,13 +3611,7 @@
         "label": "(original link)",
         "url": "https://www.teletica.com/sucesos/asaltantes-de-turistas-israelies-sustrajeron-unos-700-mil-en-bitcoin_364777"
       }
-    ],
-    "city": "Puntarenas",
-    "region": "",
-    "country": "Costa Rica",
-    "country_code": "CR",
-    "lat": 9.98,
-    "lng": -84.84
+    ]
   },
   {
     "date": {
@@ -4770,13 +3630,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/2847737/chinese-gang-hunted-for-b70m-robbery"
       }
-    ],
-    "city": "Bangkok",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 13.76,
-    "lng": 100.5
+    ]
   },
   {
     "date": {
@@ -4795,13 +3649,7 @@
         "label": "(original link)",
         "url": "https://www.ctvnews.ca/montreal/article/3-men-facing-kidnapping-robbery-and-other-charges-in-crypto-theft-montreal-police/"
       }
-    ],
-    "city": "Verdun (Montreal)",
-    "region": "Quebec",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 45.43,
-    "lng": -73.57
+    ]
   },
   {
     "date": {
@@ -4820,13 +3668,7 @@
         "label": "(original link)",
         "url": "https://krebsonsecurity.com/2024/10/lamborghini-carjackers-lured-by-243m-cyberheist/"
       }
-    ],
-    "city": "Danbury",
-    "region": "Connecticut",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 41.39,
-    "lng": -73.45
+    ]
   },
   {
     "date": {
@@ -4845,13 +3687,7 @@
         "label": "(original link)",
         "url": "https://mothership.sg/2024/09/police-arrest-cryptocurrency-hougang/"
       }
-    ],
-    "city": "Hougang",
-    "region": "",
-    "country": "Singapore",
-    "country_code": "SG",
-    "lat": 1.37,
-    "lng": 103.89
+    ]
   },
   {
     "date": {
@@ -4870,13 +3706,7 @@
         "label": "(original link)",
         "url": "https://www.eltrecetv.com.ar/telenoche/2024/09/17/un-financista-se-encontro-con-una-mujer-que-conocio-en-tinder-le-vaciaron-las-cuentas-y-fue-asesinado/"
       }
-    ],
-    "city": "Villa Carlos Paz",
-    "region": "Córdoba",
-    "country": "Argentina",
-    "country_code": "AR",
-    "lat": -31.42,
-    "lng": -64.5
+    ]
   },
   {
     "date": {
@@ -4891,13 +3721,7 @@
         "label": "2 men posed as police, kidnapped victim, held a gun at his head for an hour and demanded 14 bitcoin from him. They failed to get any BTC, let the victim go, and were arrested 2 months later.",
         "url": "https://web.archive.org/web/20241225224323/https://btvnovinite.bg/bulgaria/otvlichane-ot-mnimi-policai-za-14-bitkojna-razkaz-na-sluzhitel-na-sdvr-samo-pred-btv.html"
       }
-    ],
-    "city": "Sofia",
-    "region": "",
-    "country": "Bulgaria",
-    "country_code": "BG",
-    "lat": 42.7,
-    "lng": 23.32
+    ]
   },
   {
     "date": {
@@ -4916,13 +3740,7 @@
         "label": "(original link)",
         "url": "https://www.chicagotribune.com/2025/02/11/chicago-kidnapping-cryptocurrency/"
       }
-    ],
-    "city": "Chicago",
-    "region": "Illinois",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 41.88,
-    "lng": -87.63
+    ]
   },
   {
     "date": {
@@ -4941,13 +3759,7 @@
         "label": "(original link)",
         "url": "https://www.msn.com/en-us/news/crime/florida-teens-kidnap-las-vegas-man-drive-him-to-arizona-desert-steal-4m-in-cryptocurrency-police/ar-AA1EvkGd"
       }
-    ],
-    "city": "Las Vegas",
-    "region": "Nevada",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 36.17,
-    "lng": -115.14
+    ]
   },
   {
     "date": {
@@ -4966,13 +3778,7 @@
         "label": "(original link)",
         "url": "https://livecoins.com.br/reforma-de-escritorio-em-sp-termina-em-roubo-de-r-300-000-apos-vitima-comentar-com-trabalhadores-que-investia-em-bitcoin/"
       }
-    ],
-    "city": "São Paulo",
-    "region": "",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 23.55,
-    "lng": -46.63
+    ]
   },
   {
     "date": {
@@ -4991,13 +3797,7 @@
         "label": "(original link)",
         "url": "https://www.lapresse.ca/actualites/justice-et-faits-divers/2025-01-06/tentative-alleguee-d-enlevement/ils-avaient-de-l-equipement-pour-me-torturer.php"
       }
-    ],
-    "city": "Victoriaville",
-    "region": "Quebec",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 46.06,
-    "lng": -71.96
+    ]
   },
   {
     "date": {
@@ -5016,13 +3816,7 @@
         "label": "(original link)",
         "url": "https://www.cbc.ca/news/canada/toronto/kidnapping-toronto-businessman-cryptocurrency-1.7376679"
       }
-    ],
-    "city": "Toronto",
-    "region": "Ontario",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 43.65,
-    "lng": -79.38
+    ]
   },
   {
     "date": {
@@ -5045,13 +3839,7 @@
         "label": "(original link)",
         "url": "https://www.khaosodenglish.com/news/2024/11/11/foreign-gang-nabbed-for-250000-crypto-robbery-of-ukrainian-in-phuket/"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -5070,13 +3858,7 @@
         "label": "(original link)",
         "url": "https://tribune.com.pk/story/2511031/genz-quant-kids-dog-kidnapped-following-doxing"
       }
-    ],
-    "city": "United States",
-    "region": "",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 39.8,
-    "lng": -98.6
+    ]
   },
   {
     "date": {
@@ -5095,13 +3877,7 @@
         "label": "(original link)",
         "url": "https://www.yahoo.com/news/las-vegas-sex-worker-accused-213917372.html?guccounter=2"
       }
-    ],
-    "city": "Las Vegas",
-    "region": "Nevada",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 36.17,
-    "lng": -115.14
+    ]
   },
   {
     "date": {
@@ -5120,13 +3896,7 @@
         "label": "(original link)",
         "url": "https://finance.sina.com.cn/blockchain/roll/2025-03-25/doc-ineqwfyn5785127.shtml"
       }
-    ],
-    "city": "Chengdu",
-    "region": "Sichuan",
-    "country": "China",
-    "country_code": "CN",
-    "lat": 30.57,
-    "lng": 104.07
+    ]
   },
   {
     "date": {
@@ -5145,13 +3915,7 @@
         "label": "(original link)",
         "url": "https://hoodline.com/2025/12/tarrant-county-burglar-sentenced-to-45-years-after-guilty-plea-in-violent-cryptocurrency-robbery/"
       }
-    ],
-    "city": "North Richland Hills",
-    "region": "Texas",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 32.83,
-    "lng": -97.23
+    ]
   },
   {
     "date": {
@@ -5170,13 +3934,7 @@
         "label": "(original link)",
         "url": "https://www.9news.com.au/national/police-hunt-crypto-atm-thieves-in-melbourne-shopping-centre-ram-raid-mickleham/8e7b6106-ab8c-4374-82b5-76f147c42da8"
       }
-    ],
-    "city": "Melbourne",
-    "region": "Victoria",
-    "country": "Australia",
-    "country_code": "AU",
-    "lat": 37.81,
-    "lng": 144.96
+    ]
   },
   {
     "date": {
@@ -5191,13 +3949,7 @@
         "label": "A Russian gang of 4 men ambushed a Ukrainian on the road in Bali. The victim was kidnapped and beaten until he handed over $200,000 in cryptocurrency from his Binance account. The gang leader was arrested a month later trying to flee to Dubai.",
         "url": "https://archive.is/gIh5V"
       }
-    ],
-    "city": "Ungasan",
-    "region": "Bali",
-    "country": "Indonesia",
-    "country_code": "ID",
-    "lat": 8.8,
-    "lng": 115.16
+    ]
   },
   {
     "date": {
@@ -5216,13 +3968,7 @@
         "label": "(original link)",
         "url": "https://www.graphic.com.gh/news/general-news/ghana-news-cryptocurrency-fiasco-businessman-appeals-to-a-g-over-assault-kidnapping.html"
       }
-    ],
-    "city": "Laboma Beach (Accra)",
-    "region": "Greater Accra",
-    "country": "Ghana",
-    "country_code": "GH",
-    "lat": 5.57,
-    "lng": -0.18
+    ]
   },
   {
     "date": {
@@ -5241,13 +3987,7 @@
         "label": "(original link)",
         "url": "https://www.vrt.be/vrtnws/en/2024/12/24/failed-kidnap-attempt-victim-was-bitcoin-millionaires-wife/"
       }
-    ],
-    "city": "Brussels",
-    "region": "",
-    "country": "Belgium",
-    "country_code": "BE",
-    "lat": 50.85,
-    "lng": 4.35
+    ]
   },
   {
     "date": {
@@ -5266,13 +4006,7 @@
         "label": "(original link)",
         "url": "https://in-cyprus.philenews.com/local/christmas-eve-limassol-heist-as-man-gets-away-with-100-thousand-in-cash/"
       }
-    ],
-    "city": "Limassol",
-    "region": "",
-    "country": "Cyprus",
-    "country_code": "CY",
-    "lat": 34.68,
-    "lng": 33.05
+    ]
   },
   {
     "date": {
@@ -5291,13 +4025,7 @@
         "label": "(original link)",
         "url": "https://tribune.com.pk/story/2519807/crypto-trader-abducted-in-police-mobile-looted-of-rs-90-million-in-karachi"
       }
-    ],
-    "city": "Karachi",
-    "region": "Sindh",
-    "country": "Pakistan",
-    "country_code": "PK",
-    "lat": 24.86,
-    "lng": 67.01
+    ]
   },
   {
     "date": {
@@ -5316,13 +4044,7 @@
         "label": "Victim tried to show them an empty wallet at first but they were not convinced and threatened to waterboard him.",
         "url": "https://www.the-independent.com/news/world/americas/crime/lapd-israeli-gangster-stole-teen-cryptowallet-b2870557.html"
       }
-    ],
-    "city": "Los Angeles",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.05,
-    "lng": -118.24
+    ]
   },
   {
     "date": {
@@ -5341,13 +4063,7 @@
         "label": "(original link)",
         "url": "https://cryptoast.fr/pere-influenceur-crypto-sequestre-soir-nouvel-an/"
       }
-    ],
-    "city": "Saint-Genis-Pouilly",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 46.25,
-    "lng": 6.05
+    ]
   },
   {
     "date": {
@@ -5366,13 +4082,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/2934201/russian-attacked-robbed"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -5391,13 +4101,7 @@
         "label": "(original link)",
         "url": "https://www.local10.com/news/local/2025/01/15/feds-arrest-goons-they-say-plotted-to-kidnap-rob-miami-jeweler-one-good-bop-should-do-it/"
       }
-    ],
-    "city": "Miami",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 25.76,
-    "lng": -80.19
+    ]
   },
   {
     "date": {
@@ -5416,13 +4120,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/2940227/police-hunt-suspects-in-b10m-pattaya-crypto-robbery"
       }
-    ],
-    "city": "Pattaya",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 12.93,
-    "lng": 100.88
+    ]
   },
   {
     "date": {
@@ -5441,13 +4139,7 @@
         "label": "(original link)",
         "url": "https://www.philstar.com/nation/2025/01/20/2415405/korean-bitcoin-trader-rescued-batangas"
       }
-    ],
-    "city": "Makati",
-    "region": "Metro Manila",
-    "country": "Philippines",
-    "country_code": "PH",
-    "lat": 14.56,
-    "lng": 121.03
+    ]
   },
   {
     "date": {
@@ -5466,13 +4158,7 @@
         "label": "(original link)",
         "url": "https://btc-pulse.com/south-korean-police-arrest-gang-of-chinese-crypto/"
       }
-    ],
-    "city": "Jeju",
-    "region": "",
-    "country": "South Korea",
-    "country_code": "KR",
-    "lat": 33.5,
-    "lng": 126.5
+    ]
   },
   {
     "date": {
@@ -5499,13 +4185,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/suspected-french-crypto-kidnapping-ringleader-snared-in-morocco-second-suspect-sought/"
       }
-    ],
-    "city": "Vierzon",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.26,
-    "lng": 2.08
+    ]
   },
   {
     "date": {
@@ -5524,13 +4204,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/un-pro-des-cryptomonnaies-enleve-pres-de-troyes-quatre-personnes-interpellees-25-01-2025-DTP7ZSO3CJBARCCG2VWPQJBLAM.php"
       }
-    ],
-    "city": "Troyes",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.3,
-    "lng": 4.07
+    ]
   },
   {
     "date": {
@@ -5549,13 +4223,7 @@
         "label": "(original link)",
         "url": "https://g1.globo.com/sp/sorocaba-jundiai/noticia/2025/01/31/familia-e-rendida-dentro-de-casa-e-forcada-a-transferir-us-16-mil-em-criptomoedas-para-criminosos.ghtml"
       }
-    ],
-    "city": "Campo Limpo Paulista",
-    "region": "São Paulo",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 23.21,
-    "lng": -46.7
+    ]
   },
   {
     "date": {
@@ -5574,13 +4242,7 @@
         "label": "(original link)",
         "url": "https://bitcoinke.io/2025/06/romance-crypto-theft-in-lagos/"
       }
-    ],
-    "city": "Okota (Lagos)",
-    "region": "",
-    "country": "Nigeria",
-    "country_code": "NG",
-    "lat": 6.47,
-    "lng": 3.34
+    ]
   },
   {
     "date": {
@@ -5599,13 +4261,7 @@
         "label": "(original link)",
         "url": "https://livecoins.com.br/operacao-criptonita-mira-quadrilha-focada-em-sequestro-de-investidores-de-criptomoedas-em-sao-paulo/"
       }
-    ],
-    "city": "São Paulo",
-    "region": "",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 23.55,
-    "lng": -46.63
+    ]
   },
   {
     "date": {
@@ -5624,13 +4280,7 @@
         "label": "(original link)",
         "url": "https://www.diariosur.es/sucesos/secuestrado-avisa-madre-30000-euros-liberar-broker-20250208001540-nt.html"
       }
-    ],
-    "city": "Costa del Sol",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 36.5,
-    "lng": -4.8
+    ]
   },
   {
     "date": {
@@ -5649,13 +4299,7 @@
         "label": "(original link)",
         "url": "https://cryptoast.fr/liste-enlevements-agressions-lies-cryptomonnaies-france/"
       }
-    ],
-    "city": "Paris",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.35
+    ]
   },
   {
     "date": {
@@ -5674,13 +4318,7 @@
         "label": "(original link)",
         "url": "https://www.mk.co.kr/en/society/11249711"
       }
-    ],
-    "city": "Jeju City",
-    "region": "",
-    "country": "South Korea",
-    "country_code": "KR",
-    "lat": 33.5,
-    "lng": 126.53
+    ]
   },
   {
     "date": {
@@ -5699,13 +4337,7 @@
         "label": "(original link)",
         "url": "https://news.tuoitre.vn/ho-chi-minh-city-police-free-chinese-man-from-chinese-kidnapping-ring-10385050.htm"
       }
-    ],
-    "city": "Ho Chi Minh City",
-    "region": "",
-    "country": "Vietnam",
-    "country_code": "VN",
-    "lat": 10.82,
-    "lng": 106.63
+    ]
   },
   {
     "date": {
@@ -5724,13 +4356,7 @@
         "label": "(original link)",
         "url": "https://www.globalguardian.com/global-digest/crypto-physical-risks?hs_amp=true"
       }
-    ],
-    "city": "Sweden",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 60.1,
-    "lng": 15.0
+    ]
   },
   {
     "date": {
@@ -5749,13 +4375,7 @@
         "label": "(original link)",
         "url": "https://www.20min.ch/fr/story/vaud-un-francais-poursuivi-pour-agression-liee-a-un-vol-de-cryptos-103545470"
       }
-    ],
-    "city": "Le Mont-sur-Lausanne",
-    "region": "Vaud",
-    "country": "Schweiz/Suisse/Svizzera/Svizra",
-    "country_code": "CH",
-    "lat": 46.55,
-    "lng": 6.64
+    ]
   },
   {
     "date": {
@@ -5774,13 +4394,7 @@
         "label": "(original link)",
         "url": "https://decrypt.co/308472/police-investigating-amouranth-home-invasion-bitcoin"
       }
-    ],
-    "city": "Houston",
-    "region": "Texas",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 29.76,
-    "lng": -95.37
+    ]
   },
   {
     "date": {
@@ -5799,13 +4413,7 @@
         "label": "(original link)",
         "url": "https://hk.on.cc/hk/bkn/cnt/news/20250314/bkn-20250314000054979-0314_00822_001.html"
       }
-    ],
-    "city": "Lai Chi Kok",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.33,
-    "lng": 114.15
+    ]
   },
   {
     "date": {
@@ -5824,13 +4432,7 @@
         "label": "(original link)",
         "url": "https://livecoins.com.br/brasileira-e-sequestrada-e-liberada-apos-pagamento-de-r-3-3-milhoes-em-bitcoin/"
       }
-    ],
-    "city": "Imbiribeira (Recife)",
-    "region": "Pernambuco",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 8.09,
-    "lng": -34.92
+    ]
   },
   {
     "date": {
@@ -5849,13 +4451,7 @@
         "label": "(original link)",
         "url": "https://www.cryptotimes.io/2025/04/04/spaniard-alleges-250m-crypto-theft-in-sao-paulo-kidnapping/"
       }
-    ],
-    "city": "Ipiranga (São Paulo)",
-    "region": "São Paulo",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 23.63,
-    "lng": -46.6
+    ]
   },
   {
     "date": {
@@ -5874,13 +4470,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3304169/man-slashed-during-attempted-robbery-popular-hong-kong-tourist-area"
       }
-    ],
-    "city": "Tsim Sha Tsui",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.3,
-    "lng": 114.17
+    ]
   },
   {
     "date": {
@@ -5899,13 +4489,7 @@
         "label": "(original link)",
         "url": "https://www.rappler.com/philippines/timeline-anson-que-killing-kidnapping-case/"
       }
-    ],
-    "city": "Meycauayan",
-    "region": "Bulacan",
-    "country": "Philippines",
-    "country_code": "PH",
-    "lat": 14.74,
-    "lng": 120.96
+    ]
   },
   {
     "date": {
@@ -5924,13 +4508,7 @@
         "label": "(original link)",
         "url": "https://www.trtworld.com/article/92e9109bcf2f"
       }
-    ],
-    "city": "Southern Spain",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 36.8,
-    "lng": -4.4
+    ]
   },
   {
     "date": {
@@ -5945,13 +4523,7 @@
         "label": "Gang poses as police, kidnaps victim, forces him to hand over Bitcoin.",
         "url": "https://archive.is/fpCPj"
       }
-    ],
-    "city": "PIB Colony (Karachi)",
-    "region": "Sindh",
-    "country": "Pakistan",
-    "country_code": "PK",
-    "lat": 24.92,
-    "lng": 67.06
+    ]
   },
   {
     "date": {
@@ -5978,13 +4550,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/suspected-french-crypto-kidnapping-ringleader-snared-in-morocco-second-suspect-sought/"
       }
-    ],
-    "city": "Paris",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.35
+    ]
   },
   {
     "date": {
@@ -6003,13 +4569,7 @@
         "label": "(original link)",
         "url": "https://nypost.com/2025/05/23/us-news/kentucky-crypto-investor-allegedly-tortured-captive-italian-tourist-for-weeks-in-luxury-nyc-apartment-sources/"
       }
-    ],
-    "city": "New York",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.71,
-    "lng": -74.01
+    ]
   },
   {
     "date": {
@@ -6028,13 +4588,7 @@
         "label": "(original link)",
         "url": "https://www.mylondon.news/news/zone-1-news/american-tourist-london-loses-123k-31673388"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -6061,13 +4615,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/suspected-french-crypto-kidnapping-ringleader-snared-in-morocco-second-suspect-sought/"
       }
-    ],
-    "city": "Paris",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.35
+    ]
   },
   {
     "date": {
@@ -6086,13 +4634,7 @@
         "label": "(original link)",
         "url": "https://www.ultimahora.com/ciudadanos-chinos-son-expulsados-tras-asalto-a-granja-de-criptomoneria-en-coronel-bogado"
       }
-    ],
-    "city": "Coronel Bogado",
-    "region": "Itapúa",
-    "country": "Paraguay",
-    "country_code": "PY",
-    "lat": 27.44,
-    "lng": -55.66
+    ]
   },
   {
     "date": {
@@ -6111,13 +4653,7 @@
         "label": "(original link)",
         "url": "https://decrypt.co/321273/crypto-founder-abducted-500k-gunpoint"
       }
-    ],
-    "city": "Kampala",
-    "region": "",
-    "country": "Uganda",
-    "country_code": "UG",
-    "lat": 0.35,
-    "lng": 32.58
+    ]
   },
   {
     "date": {
@@ -6136,13 +4672,7 @@
         "label": "(original link)",
         "url": "https://cryptorank.io/news/feed/0c9b8-man-loses-wallet-crypto-kidnapping-france"
       }
-    ],
-    "city": "Normandy",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.2,
-    "lng": 0.4
+    ]
   },
   {
     "date": {
@@ -6161,13 +4691,7 @@
         "label": "(original link)",
         "url": "https://www.mk.co.kr/en/society/11323217"
       }
-    ],
-    "city": "Seoul",
-    "region": "",
-    "country": "South Korea",
-    "country_code": "KR",
-    "lat": 37.57,
-    "lng": 126.98
+    ]
   },
   {
     "date": {
@@ -6190,13 +4714,7 @@
         "label": "(original link)",
         "url": "https://cryptonews.com/news/suspected-french-crypto-kidnapping-ringleader-snared-in-morocco-second-suspect-sought/"
       }
-    ],
-    "city": "Nantes",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.22,
-    "lng": -1.55
+    ]
   },
   {
     "date": {
@@ -6215,13 +4733,7 @@
         "label": "(original link)",
         "url": "https://www.clarin.com/policiales/secuestraron-pareja-rusos-obligaron-transferir-43-mil-dolares-criptomonedas-chechenos-profugos_0_r63bWRgaro.html"
       }
-    ],
-    "city": "Buenos Aires",
-    "region": "",
-    "country": "Argentina",
-    "country_code": "AR",
-    "lat": -34.61,
-    "lng": -58.38
+    ]
   },
   {
     "date": {
@@ -6240,13 +4752,7 @@
         "label": "(original link)",
         "url": "https://www.ouest-france.fr/economie/cryptomonnaie/enlevements-dans-les-cryptomonnaies-un-trader-tiktokeur-enleve-et-sequestre-e36c1c9a-49e5-11f0-b660-c6a4d2b5307d"
       }
-    ],
-    "city": "Juvisy-sur-Orge",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.76,
-    "lng": 2.37
+    ]
   },
   {
     "date": {
@@ -6265,13 +4771,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/val-de-marne-94/maisons-alfort-ils-sequestrent-un-homme-pour-sa-cle-contenant-de-la-cryptomonnaie-19-06-2025-WU22L25EARDGPG3U2KWVG22VXQ.php"
       }
-    ],
-    "city": "Maisons-Alfort",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.81,
-    "lng": 2.44
+    ]
   },
   {
     "date": {
@@ -6290,13 +4790,7 @@
         "label": "(original link)",
         "url": "https://g1.globo.com/go/goias/noticia/2025/07/03/ex-assessor-da-alego-e-preso-apos-tentar-fugir-para-os-eua-suspeito-de-planejar-sequestro-de-empresario.ghtml"
       }
-    ],
-    "city": "Goiânia",
-    "region": "Goiás",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 16.68,
-    "lng": -49.25
+    ]
   },
   {
     "date": {
@@ -6315,13 +4809,7 @@
         "label": "(original link)",
         "url": "https://indianexpress.com/article/cities/bangalore/businessman-robbed-conversion-cryptocurrency-arrested-10094685/"
       }
-    ],
-    "city": "Bengaluru",
-    "region": "Karnataka",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 12.97,
-    "lng": 77.59
+    ]
   },
   {
     "date": {
@@ -6340,13 +4828,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/3061233/two-arrested-in-b3-4m-robbery-at-mall-car-park"
       }
-    ],
-    "city": "Bangkok",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 13.76,
-    "lng": 100.5
+    ]
   },
   {
     "date": {
@@ -6365,13 +4847,7 @@
         "label": "(original link)",
         "url": "https://www.mylondon.news/news/east-london-news/thugs-attacked-traumatised-city-worker-33970593"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -6390,13 +4866,7 @@
         "label": "(original link)",
         "url": "https://www.bfmtv.com/police-justice/info-bfmtv-cryptomonnaies-une-femme-violemment-agressee-a-son-domicile-dans-les-hauts-de-seine_AN-202507070726.html"
       }
-    ],
-    "city": "Suresnes",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.23
+    ]
   },
   {
     "date": {
@@ -6415,13 +4885,7 @@
         "label": "(original link)",
         "url": "https://www.nbcnewyork.com/queens/man-tasered-queens-kidnap-beaten-group/6341283/"
       }
-    ],
-    "city": "Queens",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.73,
-    "lng": -73.79
+    ]
   },
   {
     "date": {
@@ -6440,13 +4904,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.com/news/article-16023625/Crypto-torture-gang-Bitcoin-millionaires-forced-strip-naked-held-two-days-blackmail-ordeal.html"
       }
-    ],
-    "city": "London",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.51,
-    "lng": -0.13
+    ]
   },
   {
     "date": {
@@ -6465,13 +4923,7 @@
         "label": "(original link)",
         "url": "https://www.patrika.com/jodhpur-news/case-of-recovery-of-crypto-currency-in-jodhpur-police-station-four-constables-suspended-and-arrested-19786204"
       }
-    ],
-    "city": "Jodhpur",
-    "region": "Rajasthan",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 26.24,
-    "lng": 73.02
+    ]
   },
   {
     "date": {
@@ -6490,13 +4942,7 @@
         "label": "(original link)",
         "url": "https://indianexpress.com/article/cities/ahmedabad/ahmedabad-youth-kidnapped-cryptocurrency-10128267/"
       }
-    ],
-    "city": "Ahmedabad",
-    "region": "Gujarat",
-    "country": "India",
-    "country_code": "IN",
-    "lat": 23.03,
-    "lng": 72.58
+    ]
   },
   {
     "date": {
@@ -6515,13 +4961,7 @@
         "label": "(original link)",
         "url": "https://globalnation.inquirer.net/287127/pnp-akg-4-chinese-arrested-for-alleged-kidnapping"
       }
-    ],
-    "city": "Parañaque",
-    "region": "Metro Manila",
-    "country": "Philippines",
-    "country_code": "PH",
-    "lat": 14.48,
-    "lng": 121.02
+    ]
   },
   {
     "date": {
@@ -6540,13 +4980,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/paris-un-professionnel-de-la-cryptomonnaie-agresse-dans-un-palace-des-beaux-quartiers-06-08-2025-D632HLSIFJHZNGKHHSPP6S3CPE.php"
       }
-    ],
-    "city": "Paris",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.35
+    ]
   },
   {
     "date": {
@@ -6569,13 +5003,7 @@
         "label": "Nine people were later charged, with one man apprehended.",
         "url": "https://archive.is/TfirS"
       }
-    ],
-    "city": "Oslo",
-    "region": "",
-    "country": "Norway",
-    "country_code": "NO",
-    "lat": 59.91,
-    "lng": 10.75
+    ]
   },
   {
     "date": {
@@ -6590,13 +5018,7 @@
         "label": "Chinese nationals kidnap man, hold him hostage for a day until he hands over 60,000 USDT.",
         "url": "https://archive.is/CpNB6"
       }
-    ],
-    "city": "Colombo",
-    "region": "",
-    "country": "Sri Lanka",
-    "country_code": "LK",
-    "lat": 6.93,
-    "lng": 79.86
+    ]
   },
   {
     "date": {
@@ -6615,13 +5037,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/parissaint-germain-en-laye-un-ex-trader-en-cryptomonnaie-aurait-ete-enleve-et-sequestre-27-08-2025-IXD737GI2RFFVGZIKUJFZXXCU4.php"
       }
-    ],
-    "city": "Paris",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.35
+    ]
   },
   {
     "date": {
@@ -6640,13 +5056,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/3096244/russian-wanted-over-phuket-crypto-heist-arrested-hiding-in-car-on-koh-samui"
       }
-    ],
-    "city": "Phuket",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 7.89,
-    "lng": 98.39
+    ]
   },
   {
     "date": {
@@ -6665,13 +5075,7 @@
         "label": "(original link)",
         "url": "https://www.rts.ch/info/monde/2025/article/un-jeune-suisse-enleve-en-france-libere-par-un-commando-du-gign-28988735.html"
       }
-    ],
-    "city": "Valence",
-    "region": "Drôme",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 44.93,
-    "lng": 4.89
+    ]
   },
   {
     "date": {
@@ -6690,13 +5094,7 @@
         "label": "(original link)",
         "url": "https://www.svt.se/nyheter/lokalt/uppsala/fangelsestraff-for-brutala-kryptoranet-i-tobo"
       }
-    ],
-    "city": "Tobo",
-    "region": "Uppsala",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 60.13,
-    "lng": 17.92
+    ]
   },
   {
     "date": {
@@ -6715,13 +5113,7 @@
         "label": "(original link)",
         "url": "https://wrps.ca/news/police-investigate-robbery-involving-abduction-cambridge"
       }
-    ],
-    "city": "Cambridge",
-    "region": "Ontario",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 43.36,
-    "lng": -80.31
+    ]
   },
   {
     "date": {
@@ -6740,13 +5132,7 @@
         "label": "(original link)",
         "url": "https://www.ynet.co.il/news/article/syf4n9xpxg"
       }
-    ],
-    "city": "Herzliya",
-    "region": "",
-    "country": "Israel",
-    "country_code": "IL",
-    "lat": 32.16,
-    "lng": 34.84
+    ]
   },
   {
     "date": {
@@ -6765,13 +5151,7 @@
         "label": "(original link)",
         "url": "https://www.cbsnews.com/minnesota/news/receipt-rented-vehicle-texas-brothers-charged-kidnapping-robbery/"
       }
-    ],
-    "city": "Grant",
-    "region": "Minnesota",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 45.55,
-    "lng": -93.86
+    ]
   },
   {
     "date": {
@@ -6790,13 +5170,7 @@
         "label": "(original link)",
         "url": "https://www.ocregister.com/2025/12/09/7-suspects-arrested-in-irvine-home-invasion-robbery-targeting-cryptocurrency/"
       }
-    ],
-    "city": "Irvine",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 33.68,
-    "lng": -117.79
+    ]
   },
   {
     "date": {
@@ -6815,13 +5189,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/yvelines-un-nouveau-professionnel-des-cryptomonnaies-cible-par-une-equipe-de-truands-26-09-2025-OTSKDQDH75G5HCBYH4LK5MRXOM.php"
       }
-    ],
-    "city": "Rambouillet",
-    "region": "Yvelines",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.64,
-    "lng": 1.83
+    ]
   },
   {
     "date": {
@@ -6840,13 +5208,7 @@
         "label": "(original link)",
         "url": "https://www.aftonbladet.se/nyheter/a/Rr77qd/aftonbladet-direkt?pinnedEntry=1411017&_sp_pass_consent=true"
       }
-    ],
-    "city": "Tierp",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 60.34,
-    "lng": 17.5
+    ]
   },
   {
     "date": {
@@ -6865,13 +5227,7 @@
         "label": "(original link)",
         "url": "https://www.europe1.fr/faits-divers/info-europe-1-chantage-a-la-cryptomonnaie-une-mere-et-ses-deux-enfants-menaces-par-des-malfaiteurs-cagoules-774753"
       }
-    ],
-    "city": "Val-de-Marne",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.78,
-    "lng": 2.48
+    ]
   },
   {
     "date": {
@@ -6890,13 +5246,7 @@
         "label": "(original link)",
         "url": "https://www.cryptopolitan.com/russian-crypto-fraudster-and-wife-dubai/"
       }
-    ],
-    "city": "Dubai",
-    "region": "",
-    "country": "United Arab Emirates",
-    "country_code": "AE",
-    "lat": 25.2,
-    "lng": 55.27
+    ]
   },
   {
     "date": {
@@ -6915,13 +5265,7 @@
         "label": "(original link)",
         "url": "https://hk.npu.gov.ua/news/politseiski-kharkova-zatrymaly-trokh-vykradachiv-iaki-utrymuvaly-cholovika-u-pidvali-ta-vidibraly-v-noho-ponad-97-tysiach-dolariv-u-hotivtsi-ta-kryptovaliuti"
       }
-    ],
-    "city": "Kharkiv",
-    "region": "",
-    "country": "Ukraine",
-    "country_code": "UA",
-    "lat": 49.99,
-    "lng": 36.23
+    ]
   },
   {
     "date": {
@@ -6940,13 +5284,7 @@
         "label": "(original link)",
         "url": "https://www.thejakartapost.com/indonesia/2025/10/24/popular-russian-influencer-says-he-was-kidnapped-robbed-by-compatriots-in-bali.html"
       }
-    ],
-    "city": "Sanur Beach",
-    "region": "Bali",
-    "country": "Indonesia",
-    "country_code": "ID",
-    "lat": 8.7,
-    "lng": 115.26
+    ]
   },
   {
     "date": {
@@ -6973,13 +5311,7 @@
         "label": "(original link)",
         "url": "https://www.ici.fr/hauts-de-france/somme-80/revelles/somme-neuf-et-cinq-ans-de-prison-pour-avoir-sequestre-une-famille-avec-enfants-et-tente-de-voler-de-la-cryptomonnaie-6162274"
       }
-    ],
-    "city": "Revelles",
-    "region": "Somme",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.86,
-    "lng": 2.2
+    ]
   },
   {
     "date": {
@@ -6998,13 +5330,7 @@
         "label": "(original link)",
         "url": "https://tribune.com.pk/story/2575027/ccd-cop-held-for-orchestrating-businessmans-kidnapping"
       }
-    ],
-    "city": "Kahna (Lahore)",
-    "region": "Punjab",
-    "country": "Pakistan",
-    "country_code": "PK",
-    "lat": 31.35,
-    "lng": 74.35
+    ]
   },
   {
     "date": {
@@ -7023,13 +5349,7 @@
         "label": "(original link)",
         "url": "https://www.khaosodenglish.com/news/2025/11/23/south-korean-3-thais-held-in-bangkok-kidnapping-case/"
       }
-    ],
-    "city": "Bangkok",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 13.76,
-    "lng": 100.5
+    ]
   },
   {
     "date": {
@@ -7048,13 +5368,7 @@
         "label": "(original link)",
         "url": "https://www.khaosodenglish.com/news/2025/11/23/south-korean-3-thais-held-in-bangkok-kidnapping-case/"
       }
-    ],
-    "city": "Oxford",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.75,
-    "lng": -1.26
+    ]
   },
   {
     "date": {
@@ -7073,13 +5387,7 @@
         "label": "(original link)",
         "url": "https://www.ultimahora.com/intento-de-asalto-a-una-mineria-de-criptomonedas-deja-saldo-de-dos-muertos-el-dueno-y-un-delincuente"
       }
-    ],
-    "city": "Ciudad del Este",
-    "region": "Alto Paraná",
-    "country": "Paraguay",
-    "country_code": "PY",
-    "lat": 25.52,
-    "lng": -54.64
+    ]
   },
   {
     "date": {
@@ -7098,13 +5406,7 @@
         "label": "(original link)",
         "url": "https://www.sfchronicle.com/crime/article/sf-cryptocurrency-robbery-21203804.php"
       }
-    ],
-    "city": "San Francisco",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 37.77,
-    "lng": -122.42
+    ]
   },
   {
     "date": {
@@ -7123,13 +5425,7 @@
         "label": "(original link)",
         "url": "https://www.lejsl.com/faits-divers-justice/2025/11/24/une-nouvelle-tentative-d-enlevement-sur-fond-de-cryptomonnaie"
       }
-    ],
-    "city": "Chalon-sur-Saône",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 46.78,
-    "lng": 4.85
+    ]
   },
   {
     "date": {
@@ -7148,13 +5444,7 @@
         "label": "(original link)",
         "url": "https://www.rbc.ru/spb_sz/23/11/2025/69232f6c9a7947d86f1e90a2"
       }
-    ],
-    "city": "St. Petersburg",
-    "region": "",
-    "country": "Russia",
-    "country_code": "RU",
-    "lat": 59.93,
-    "lng": 30.34
+    ]
   },
   {
     "date": {
@@ -7173,13 +5463,7 @@
         "label": "(original link)",
         "url": "https://www.oe24.at/oesterreich/chronik/wien/feuer-mord-in-wien-zwei-festnahmen/658860793"
       }
-    ],
-    "city": "Vienna",
-    "region": "",
-    "country": "Austria",
-    "country_code": "AT",
-    "lat": 48.21,
-    "lng": 16.37
+    ]
   },
   {
     "date": {
@@ -7198,13 +5482,7 @@
         "label": "(original link)",
         "url": "https://newsday.co.tt/2025/12/01/arouca-man-robbed-while-buying-crypto-currency-in-carpark/"
       }
-    ],
-    "city": "Trincity",
-    "region": "",
-    "country": "Trinidad and Tobago",
-    "country_code": "TT",
-    "lat": 10.63,
-    "lng": -61.34
+    ]
   },
   {
     "date": {
@@ -7227,13 +5505,7 @@
         "label": "(original link)",
         "url": "https://www.ici.fr/auvergne-rhone-alpes/savoie-73/challes-les-eaux/cryptomonnaie-trois-hommes-interpelles-par-la-section-de-recherche-de-chambery-a-la-suite-d-un-enlevement-a-challes-9380800"
       }
-    ],
-    "city": "Challes-les-Eaux",
-    "region": "Savoie",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 45.56,
-    "lng": 5.99
+    ]
   },
   {
     "date": {
@@ -7252,13 +5524,7 @@
         "label": "(original link)",
         "url": "https://www.rtl.fr/actu/justice-faits-divers/info-rtl-nouveau-kidnapping-violent-possiblement-lie-aux-cryptomonnaies-le-pere-d-un-entrepreneur-enleve-dans-le-val-d-oise-7900573268"
       }
-    ],
-    "city": "Val-d'Oise",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.1,
-    "lng": 2.1
+    ]
   },
   {
     "date": {
@@ -7277,13 +5543,7 @@
         "label": "(original link)",
         "url": "https://vemediaonline.co.uk/rapper-buckfiddy-arrested-for-1m-crypto-jewellery-robbery/"
       }
-    ],
-    "city": "Miami",
-    "region": "Florida",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 25.76,
-    "lng": -80.19
+    ]
   },
   {
     "date": {
@@ -7302,13 +5562,7 @@
         "label": "(original link)",
         "url": "https://www.trtworld.com/article/92e9109bcf2f"
       }
-    ],
-    "city": "Spain",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 40.2,
-    "lng": -3.7
+    ]
   },
   {
     "date": {
@@ -7327,13 +5581,7 @@
         "label": "(original link)",
         "url": "https://www.nicematin.com/faits-divers/cryptomonnaie-un-lyceen-toulonnais-sequestre-sa-famille-menacee-10665698"
       }
-    ],
-    "city": "Toulon",
-    "region": "Var",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.12,
-    "lng": 5.93
+    ]
   },
   {
     "date": {
@@ -7352,13 +5600,7 @@
         "label": "(original link)",
         "url": "https://www.dimsumdaily.hk/attempted-armed-robbery-at-mong-kok-crypto-exchange-owner-injured-but-no-losses/"
       }
-    ],
-    "city": "Mong Kok",
-    "region": "Kowloon",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.32,
-    "lng": 114.17
+    ]
   },
   {
     "date": {
@@ -7377,13 +5619,7 @@
         "label": "(original link)",
         "url": "https://www.bbc.com/news/articles/c60qxvngnjj8o"
       }
-    ],
-    "city": "Solihull",
-    "region": "England",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 52.41,
-    "lng": -1.78
+    ]
   },
   {
     "date": {
@@ -7402,13 +5638,7 @@
         "label": "(original link)",
         "url": "https://www.sfchronicle.com/crime/article/crypto-wrench-attack-home-invasion-22088091.php"
       }
-    ],
-    "city": "San Jose",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 37.34,
-    "lng": -121.89
+    ]
   },
   {
     "date": {
@@ -7427,13 +5657,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/un-investisseur-en-cryptomonnaie-et-sa-compagne-sequestres-a-leur-domicile-de-la-rochelle-des-virements-effectues-par-les-ravisseurs-18-12-2025-KN6YFKOQ2NCCPEGXLZP2ZTYX4A.php"
       }
-    ],
-    "city": "La Rochelle",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 46.16,
-    "lng": -1.15
+    ]
   },
   {
     "date": {
@@ -7452,13 +5676,7 @@
         "label": "(original link)",
         "url": "https://www.scmp.com/news/hong-kong/law-and-crime/article/3337263/hong-kong-police-arrest-15-over-meticulously-planned-1-billion-yen-robbery"
       }
-    ],
-    "city": "Sheung Wan",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.29,
-    "lng": 114.15
+    ]
   },
   {
     "date": {
@@ -7477,13 +5695,7 @@
         "label": "(original link)",
         "url": "https://www.sfchronicle.com/crime/article/crypto-wrench-attack-home-invasion-22088091.php"
       }
-    ],
-    "city": "Sunnyvale",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 37.37,
-    "lng": -122.04
+    ]
   },
   {
     "date": {
@@ -7502,13 +5714,7 @@
         "label": "(original link)",
         "url": "https://www.bangkokpost.com/thailand/general/3166759/police-imposters-arrested-for-abducting-chinese-man-for-ransom"
       }
-    ],
-    "city": "Bangkok",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 13.76,
-    "lng": 100.5
+    ]
   },
   {
     "date": {
@@ -7527,13 +5733,7 @@
         "label": "(original link)",
         "url": "https://www.sfchronicle.com/crime/article/crypto-wrench-attack-home-invasion-22088091.php"
       }
-    ],
-    "city": "Los Angeles",
-    "region": "California",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 34.05,
-    "lng": -118.24
+    ]
   },
   {
     "date": {
@@ -7552,13 +5752,7 @@
         "label": "(original link)",
         "url": "https://www.bienpublic.com/faits-divers-justice/2026/01/18/enlevement-sur-fond-d-arnaque-a-la-cryptomonnaie-les-trois-prevenus-restent-detenus"
       }
-    ],
-    "city": "Dijon",
-    "region": "Côte-d'Or",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.32,
-    "lng": 5.04
+    ]
   },
   {
     "date": {
@@ -7577,13 +5771,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/victime-dun-vol-de-cryptomonnaie-une-jeune-femme-sequestree-par-plusieurs-individus-cagoules-a-manosque-06-01-2026-WS2ED2I3UFHB7JRDMUE2XXRVYI.php"
       }
-    ],
-    "city": "Manosque",
-    "region": "Alpes-de-Haute-Provence",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.83,
-    "lng": 5.78
+    ]
   },
   {
     "date": {
@@ -7602,13 +5790,7 @@
         "label": "(original link)",
         "url": "https://actu.fr/pays-de-la-loire/le-mans_72181/toute-une-famille-sequestree-dans-cette-commune-de-la-sarthe-sur-fond-de-vol-de-cryptomonnaie_63711209.html"
       }
-    ],
-    "city": "La Chapelle-Saint-Aubin",
-    "region": "Sarthe",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.03,
-    "lng": 0.17
+    ]
   },
   {
     "date": {
@@ -7627,13 +5809,7 @@
         "label": "(original link)",
         "url": "https://www.ouest-france.fr/societe/faits-divers/jai-entendu-des-cris-dans-la-rue-enleve-au-petit-matin-pour-ses-cryptomonnaies-pres-de-cholet-f97a7740-ed71-11f0-ae78-1a0629cc1f87"
       }
-    ],
-    "city": "Saint-Léger-sous-Cholet",
-    "region": "Maine-et-Loire",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.16,
-    "lng": -0.74
+    ]
   },
   {
     "date": {
@@ -7652,13 +5828,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/yvelines-78/un-investisseur-en-cryptomonnaies-et-sa-famille-ligotes-et-tabasses-chez-eux-dans-les-yvelines-11-01-2026-ZMJMDGSKBRBAJC5DODWC2AHHJU.php"
       }
-    ],
-    "city": "Verneuil-sur-Seine",
-    "region": "Yvelines",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.97,
-    "lng": 1.97
+    ]
   },
   {
     "date": {
@@ -7677,13 +5847,7 @@
         "label": "(original link)",
         "url": "https://www.gva.be/regio/antwerpen/regio-antwerpen/zoersel/gangsters-zoeken-naar-cryptomunten-en-binden-bewoonster-60-vast-in-zoersel-virtuele-munten-steeds-vaker-beoogde-buit/122929883.html"
       }
-    ],
-    "city": "Zoersel",
-    "region": "",
-    "country": "Belgium",
-    "country_code": "BE",
-    "lat": 51.1,
-    "lng": 4.69
+    ]
   },
   {
     "date": {
@@ -7702,13 +5866,7 @@
         "label": "(original link)",
         "url": "https://spilled.gg/ratirl-home-invasion-subathon-months/"
       }
-    ],
-    "city": "Sweden",
-    "region": "",
-    "country": "Sweden",
-    "country_code": "SE",
-    "lat": 60.1,
-    "lng": 15.0
+    ]
   },
   {
     "date": {
@@ -7727,13 +5885,7 @@
         "label": "(original link)",
         "url": "https://www.ledauphine.com/faits-divers-justice/2026/01/17/un-couple-de-retraites-kidnappe-a-sallanches-pour-8-millions-d-euros"
       }
-    ],
-    "city": "Sallanches",
-    "region": "Haute-Savoie",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 45.94,
-    "lng": 6.63
+    ]
   },
   {
     "date": {
@@ -7752,13 +5904,7 @@
         "label": "(original link)",
         "url": "https://www.abs-cbn.com/news/nation/2026/1/16/police-rescue-chinese-national-from-kidnappers-2000"
       }
-    ],
-    "city": "Pasay",
-    "region": "Metro Manila",
-    "country": "Philippines",
-    "country_code": "PH",
-    "lat": 14.54,
-    "lng": 121.0
+    ]
   },
   {
     "date": {
@@ -7777,13 +5923,7 @@
         "label": "(original link)",
         "url": "https://journalducoin.com/actualites/police-stoppe-commando-couple-crypto/"
       }
-    ],
-    "city": "Paris",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.35
+    ]
   },
   {
     "date": {
@@ -7802,13 +5942,7 @@
         "label": "(original link)",
         "url": "https://en.haberler.com/pure-chinese-torture-what-they-did-to-the-19596022/"
       }
-    ],
-    "city": "Arnavutköy (Istanbul)",
-    "region": "",
-    "country": "Turkey",
-    "country_code": "TR",
-    "lat": 41.18,
-    "lng": 28.72
+    ]
   },
   {
     "date": {
@@ -7827,13 +5961,7 @@
         "label": "(original link)",
         "url": "https://www.franceinfo.fr/replay-radio/le-choix-franceinfo/temoignage-le-but-c-est-que-ton-fils-sorte-les-millions-16-heures-de-sevices-le-recit-glacant-d-un-retraite-victime-d-un-enlevement-lie-aux-cryptomonnaies_7907888.html"
       }
-    ],
-    "city": "Voiron",
-    "region": "Isère",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 45.36,
-    "lng": 5.59
+    ]
   },
   {
     "date": {
@@ -7852,13 +5980,7 @@
         "label": "(original link)",
         "url": "https://www.journaldemontreal.com/2026/05/07/violations-de-domicile-une-famille-montrealaise-prise-pour-cible-pour-de-la-cryptomonnaie"
       }
-    ],
-    "city": "Montreal",
-    "region": "Quebec",
-    "country": "Canada",
-    "country_code": "CA",
-    "lat": 45.5,
-    "lng": -73.57
+    ]
   },
   {
     "date": {
@@ -7877,13 +5999,7 @@
         "label": "(original link)",
         "url": "https://www.fox10phoenix.com/news/targeted-scottsdale-home-invasion-linked-alleged-66m-cryptocurrency-plot.amp"
       }
-    ],
-    "city": "Scottsdale",
-    "region": "Arizona",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 33.49,
-    "lng": -111.93
+    ]
   },
   {
     "date": {
@@ -7902,13 +6018,7 @@
         "label": "(original link)",
         "url": "https://www.ledauphine.com/faits-divers-justice/2026/02/06/cryptomonnaies-une-iseroise-et-sa-mere-enlevees-par-un-commando-avant-d-etre-liberees-30-heures-plus-tard-dans-la-drome"
       }
-    ],
-    "city": "Saint-Martin-le-Vinoux",
-    "region": "Isère",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 45.21,
-    "lng": 5.73
+    ]
   },
   {
     "date": {
@@ -7927,13 +6037,7 @@
         "label": "(original link)",
         "url": "https://www.rtl.fr/actu/justice-faits-divers/info-rtl-cryptomonnaies-une-nouvelle-famille-sequestree-en-seine-et-marne-7900599500"
       }
-    ],
-    "city": "Juilly",
-    "region": "Seine-et-Marne",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.98,
-    "lng": 2.66
+    ]
   },
   {
     "date": {
@@ -7952,13 +6056,7 @@
         "label": "(original link)",
         "url": "https://www.rtl.fr/actu/justice-faits-divers/info-rtl-cryptomonnaies-le-patron-de-binance-france-mastodonte-du-secteur-vise-par-une-tentative-de-home-jacking-7900601034"
       }
-    ],
-    "city": "Val-de-Marne",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.78,
-    "lng": 2.48
+    ]
   },
   {
     "date": {
@@ -7977,13 +6075,7 @@
         "label": "(original link)",
         "url": "https://www.rtl.fr/actu/justice-faits-divers/info-rtl-cryptomonnaies-le-patron-de-binance-france-mastodonte-du-secteur-vise-par-une-tentative-de-home-jacking-7900601034"
       }
-    ],
-    "city": "Vaucresson",
-    "region": "Hauts-de-Seine",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.84,
-    "lng": 2.16
+    ]
   },
   {
     "date": {
@@ -8002,13 +6094,7 @@
         "label": "(original link)",
         "url": "https://spdblotter.seattle.gov/2026/02/24/man-posing-as-mail-carrier-assaults-phinney-ridge-resident-and-demands-crypto/"
       }
-    ],
-    "city": "Seattle",
-    "region": "Washington",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 47.61,
-    "lng": -122.33
+    ]
   },
   {
     "date": {
@@ -8027,13 +6113,7 @@
         "label": "(original link)",
         "url": "https://protos.com/game-developer-sillytuna-reports-losing-24m-of-crypto-in-uk-wrench-attack/"
       }
-    ],
-    "city": "Hung Hom",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.3,
-    "lng": 114.19
+    ]
   },
   {
     "date": {
@@ -8052,13 +6132,7 @@
         "label": "(original link)",
         "url": "https://news.tvb.com/tc/greaterchina/69ac3e0d101d7dfc2604ca2b"
       }
-    ],
-    "city": "Hung Hom",
-    "region": "",
-    "country": "Hong Kong",
-    "country_code": "HK",
-    "lat": 22.3,
-    "lng": 114.19
+    ]
   },
   {
     "date": {
@@ -8077,13 +6151,7 @@
         "label": "(original link)",
         "url": "https://www.estrepublicain.fr/economie/2026/03/16/agresses-par-de-faux-policiers-armes-et-cagoules-l-appat-de-cryptomonnaie"
       }
-    ],
-    "city": "Nancy",
-    "region": "Meurthe-et-Moselle",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.69,
-    "lng": 6.18
+    ]
   },
   {
     "date": {
@@ -8102,13 +6170,7 @@
         "label": "(original link)",
         "url": "https://chicago.suntimes.com/chicago-gangs/2026/04/28/chicago-crime-lil-zay-osama-drill-rap-winnetka-robbery"
       }
-    ],
-    "city": "Winnetka",
-    "region": "Illinois",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 42.11,
-    "lng": -87.74
+    ]
   },
   {
     "date": {
@@ -8127,13 +6189,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/yvelines-78/le-chesnay-rocquencourt-900-000-euros-en-bitcoin-derobes-lors-dun-violent-home-jacking-09-03-2026-L2ZCB6SJSRB5VJJQEYSMI2ASTM.php"
       }
-    ],
-    "city": "Le Chesnay-Rocquencourt",
-    "region": "Yvelines",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.83,
-    "lng": 2.07
+    ]
   },
   {
     "date": {
@@ -8152,13 +6208,7 @@
         "label": "(original link)",
         "url": "https://www.tf1info.fr/justice-faits-divers/vaires-sur-marne-elle-aurait-ete-prise-pour-cible-par-erreur-une-famille-sequestree-pour-des-cryptomonnaies-bitcoin-en-seine-et-marne-2429354.html"
       }
-    ],
-    "city": "Vaires-sur-Marne",
-    "region": "Seine-et-Marne",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.86,
-    "lng": 2.61
+    ]
   },
   {
     "date": {
@@ -8177,13 +6227,7 @@
         "label": "(original link)",
         "url": "https://france3-regions.franceinfo.fr/paris-ile-de-france/seine-et-marne/sequestration-d-une-famille-en-lien-avec-les-cryptomonnaies-trois-hommes-mis-en-examen-3315843.html"
       }
-    ],
-    "city": "Essonne",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.5,
-    "lng": 2.4
+    ]
   },
   {
     "date": {
@@ -8202,13 +6246,7 @@
         "label": "(original link)",
         "url": "https://www.lagazettefrance.fr/article/haute-savoie-quatre-mises-en-examen-pour-une-tentative-d-extorsion-de-cryptoactifs"
       }
-    ],
-    "city": "Taninges",
-    "region": "Haute-Savoie",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 46.1,
-    "lng": 6.58
+    ]
   },
   {
     "date": {
@@ -8227,13 +6265,7 @@
         "label": "(original link)",
         "url": "https://www.ouest-france.fr/economie/cryptomonnaie/enlevements-dans-le-milieu-de-la-cryptomonnaie-un-patron-cible-par-des-hommes-armes-la-nuit-derniere-pres-de-nantes-8cab17f0-2142-11f1-a6e8-58f5162ee52a"
       }
-    ],
-    "city": "Loire-Atlantique",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.3,
-    "lng": -1.7
+    ]
   },
   {
     "date": {
@@ -8252,13 +6284,7 @@
         "label": "(original link)",
         "url": "https://okdiario.com/sucesos/tres-serbios-intentan-secuestrar-millonario-canadiense-criptomonedas-calle-moda-madrid-16433101"
       }
-    ],
-    "city": "Madrid",
-    "region": "",
-    "country": "Spain",
-    "country_code": "ES",
-    "lat": 40.42,
-    "lng": -3.7
+    ]
   },
   {
     "date": {
@@ -8277,13 +6303,7 @@
         "label": "(original link)",
         "url": "https://www.lefigaro.fr/flash-actu/cryptomonnaies-trois-nouvelles-mises-en-examen-apres-un-rapt-dans-le-sud-ouest-20260507"
       }
-    ],
-    "city": "Péchabou",
-    "region": "Haute-Garonne",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.49,
-    "lng": 1.5
+    ]
   },
   {
     "date": {
@@ -8302,13 +6322,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/boulogne-les-agresseurs-ciblent-jeune-investisseur-en-crypto-se-trompent-dadresse-et-finissent-en-garde-a-vue-07-04-2026-WESX3VDQLNALFLW4UUQRVMVXHU.php"
       }
-    ],
-    "city": "Boulogne-Billancourt",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.83,
-    "lng": 2.24
+    ]
   },
   {
     "date": {
@@ -8327,13 +6341,7 @@
         "label": "(original link)",
         "url": "https://france3-regions.franceinfo.fr/grand-est/bas-rhin/strasbourg-0/cryptomonnaie-deux-hommes-interpelles-pour-enlevement-et-sequestration-d-une-jeune-femme-a-strasbourg-3349945.html"
       }
-    ],
-    "city": "Strasbourg",
-    "region": "Bas-Rhin",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.58,
-    "lng": 7.75
+    ]
   },
   {
     "date": {
@@ -8352,13 +6360,7 @@
         "label": "(original link)",
         "url": "https://www.dailymail.co.uk/news/article-15726453/Terror-Home-Counties-wealthy-crypto-boss-held-knifepoint-robbery.html"
       }
-    ],
-    "city": "Maidenhead",
-    "region": "Berkshire",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.52,
-    "lng": -0.72
+    ]
   },
   {
     "date": {
@@ -8377,13 +6379,7 @@
         "label": "(original link)",
         "url": "https://france3-regions.franceinfo.fr/nouvelle-aquitaine/pyrenees-atlantiques/bayonne/cinq-hommes-cagoules-sequestrent-les-occupants-d-une-villa-du-pays-basque-pour-retrouver-un-chef-d-entreprise-lie-aux-cryptomonnaies-3334103.html"
       }
-    ],
-    "city": "Anglet",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.48,
-    "lng": -1.51
+    ]
   },
   {
     "date": {
@@ -8402,13 +6398,7 @@
         "label": "(original link)",
         "url": "https://actu.fr/occitanie/saint-jean-de-vedas_34270/tentative-de-sequestration-d-une-famille-pour-la-cryptomonnaie-pres-de-montpellier-l-auteur-ecroue_64164851.html"
       }
-    ],
-    "city": "Saint-Jean-de-Védas",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.57,
-    "lng": 3.83
+    ]
   },
   {
     "date": {
@@ -8427,13 +6417,7 @@
         "label": "(original link)",
         "url": "https://www.franceinfo.fr/economie/bitcoin/info-franceinfo-cryptomonnaies-une-mere-et-son-fils-enleves-puis-liberes-par-le-gign_7936862.html"
       }
-    ],
-    "city": "Val-de-Marne",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.78,
-    "lng": 2.48
+    ]
   },
   {
     "date": {
@@ -8452,13 +6436,7 @@
         "label": "(original link)",
         "url": "https://www.nst.com.my/news/nation/2026/05/1434963/three-south-koreans-court-over-rm396mil-genting-highlands-crypto"
       }
-    ],
-    "city": "Malacca",
-    "region": "",
-    "country": "Malaysia",
-    "country_code": "MY",
-    "lat": 2.2,
-    "lng": 102.25
+    ]
   },
   {
     "date": {
@@ -8477,13 +6455,7 @@
         "label": "(original link)",
         "url": "https://www.letelegramme.fr/finistere/ploudalmezeau-29830/a-ploudalmezeau-une-famille-sequestree-puis-delestee-de-700-000-eur-en-cryptomonnaies-exclusif-7030440.php"
       }
-    ],
-    "city": "Ploudalmézeau",
-    "region": "Finistère",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.61,
-    "lng": -4.67
+    ]
   },
   {
     "date": {
@@ -8502,13 +6474,7 @@
         "label": "(original link)",
         "url": "https://theasianmirror.com/latest/79185/karachi-airport-abduction-digital-account-robbery-8600/"
       }
-    ],
-    "city": "Karachi",
-    "region": "Sindh",
-    "country": "Pakistan",
-    "country_code": "PK",
-    "lat": 24.86,
-    "lng": 67.01
+    ]
   },
   {
     "date": {
@@ -8523,13 +6489,7 @@
         "label": "(original link)",
         "url": "https://www.facebook.com/crimeasianews/posts/three-british-nationals-wanted-for-armed-robbery-of-businessman-on-koh-samui-the/122110417971072195/"
       }
-    ],
-    "city": "Koh Samui",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 9.51,
-    "lng": 100.01
+    ]
   },
   {
     "date": {
@@ -8548,13 +6508,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/faits-divers/bondy-frappees-et-ligotees-au-petit-matin-les-victimes-du-home-jacking-navaient-pas-de-cryptomonnaie-09-05-2026-IOMODLNJEZGJHOUEN37Z3NS2VM.php"
       }
-    ],
-    "city": "Bondy",
-    "region": "Seine-Saint-Denis",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.9,
-    "lng": 2.49
+    ]
   },
   {
     "date": {
@@ -8573,13 +6527,7 @@
         "label": "(original link)",
         "url": "https://www.dna.fr/faits-divers-justice/2026/05/11/cryptomonnaie-et-tentative-d-enlevement-quatre-personnes-en-garde-a-vue"
       }
-    ],
-    "city": "Ottrott",
-    "region": "Bas-Rhin",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.46,
-    "lng": 7.42
+    ]
   },
   {
     "date": {
@@ -8598,13 +6546,7 @@
         "label": "(original link)",
         "url": "https://www.lejdd.fr/Societe/info-jdd-seine-et-marne-lepouse-dun-entrepreneur-en-cryptomonnaies-victime-dune-tentative-denlevement-174468"
       }
-    ],
-    "city": "Seine-et-Marne",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.6,
-    "lng": 3.0
+    ]
   },
   {
     "date": {
@@ -8623,13 +6565,7 @@
         "label": "(original link)",
         "url": "https://www.ouest-france.fr/societe/faits-divers/un-investisseur-en-cryptomonnaie-enleve-et-sequestre-a-mulhouse-quatre-personnes-interpellees-36c03fb4-60bc-11f1-8c24-b38534c94fba"
       }
-    ],
-    "city": "Mulhouse",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 47.75,
-    "lng": 7.34
+    ]
   },
   {
     "date": {
@@ -8648,13 +6584,7 @@
         "label": "(original link)",
         "url": "https://livecoins.com.br/influenciador-de-criptomoedas-e-sequestrado-no-es-mas-consegue-fugir/"
       }
-    ],
-    "city": "Vitória",
-    "region": "Espírito Santo",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": 20.32,
-    "lng": -40.34
+    ]
   },
   {
     "date": {
@@ -8673,13 +6603,7 @@
         "label": "(original link)",
         "url": "https://www.laprovence.com/article/faits-divers-justice/2193885092828214/quatre-hommes-arretes-en-plein-braquage-sur-fond-de-cryptomonnaies-pres-de-marseille"
       }
-    ],
-    "city": "Marseille",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.3,
-    "lng": 5.37
+    ]
   },
   {
     "date": {
@@ -8698,13 +6622,7 @@
         "label": "(original link)",
         "url": "https://www.laprovence.com/article/faits-divers-justice/2193885092828214/quatre-hommes-arretes-en-plein-braquage-sur-fond-de-cryptomonnaies-pres-de-marseille"
       }
-    ],
-    "city": "Gignac-la-Nerthe",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.39,
-    "lng": 5.22
+    ]
   },
   {
     "date": {
@@ -8723,13 +6641,7 @@
         "label": "(original link)",
         "url": "https://www.ici.fr/hauts-de-france/somme-80/grivesnes/somme-un-couple-sequestre-chez-lui-et-cible-de-plusieurs-intrusions-pour-de-la-cryptomonnaie-qu-il-ne-possede-pas-9784554"
       }
-    ],
-    "city": "Grivesnes",
-    "region": "Somme",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.78,
-    "lng": 2.47
+    ]
   },
   {
     "date": {
@@ -8748,13 +6660,7 @@
         "label": "(original link)",
         "url": "https://www.ici.fr/hauts-de-france/somme-80/grivesnes/somme-un-couple-sequestre-chez-lui-et-cible-de-plusieurs-intrusions-pour-de-la-cryptomonnaie-qu-il-ne-possede-pas-9784554"
       }
-    ],
-    "city": "Grivesnes",
-    "region": "Somme",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.78,
-    "lng": 2.47
+    ]
   },
   {
     "date": {
@@ -8773,13 +6679,7 @@
         "label": "(original link)",
         "url": "https://hoodline.com/2026/07/forest-hills-crypto-heist-flops-as-armed-trio-botches-ledger-grab-cops-say/"
       }
-    ],
-    "city": "Queens",
-    "region": "New York",
-    "country": "United States",
-    "country_code": "US",
-    "lat": 40.73,
-    "lng": -73.79
+    ]
   },
   {
     "date": {
@@ -8798,13 +6698,7 @@
         "label": "(original link)",
         "url": "https://balidiscovery.com/russian-in-bali-kidnapped-for-30-hours-forced-to-hand-over-crypto-account/"
       }
-    ],
-    "city": "Pecatu",
-    "region": "Bali",
-    "country": "Indonesia",
-    "country_code": "ID",
-    "lat": 8.82,
-    "lng": 115.17
+    ]
   },
   {
     "date": {
@@ -8823,13 +6717,7 @@
         "label": "(original link)",
         "url": "https://www.bandab.com.br/nacional/falsos-policiais-sequestram-empresario-extorquem-750-mil/amp/"
       }
-    ],
-    "city": "Ribeirão Preto",
-    "region": "São Paulo",
-    "country": "Brazil",
-    "country_code": "BR",
-    "lat": -21.18,
-    "lng": -47.81
+    ]
   },
   {
     "date": {
@@ -8848,13 +6736,7 @@
         "label": "(original link)",
         "url": "https://www.leparisien.fr/val-d-oise-95/une-famille-sequestree-et-violentee-pour-100-euros-de-cryptomonnaies-six-suspects-mis-en-examen-apres-un-home-jacking-a-taverny-23-09-2026-2PJADY7AEVD6FH2AW7KIAL4TWE.php"
       }
-    ],
-    "city": "Taverny",
-    "region": "Île-de-France",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.03,
-    "lng": 2.22
+    ]
   },
   {
     "date": {
@@ -8873,13 +6755,7 @@
         "label": "(original link)",
         "url": "https://crimeasia.com/british-tourist-held-hostage-and-has-crypto-stolen-by-acquaintances-while-watching-world-cup-game-in-thailand"
       }
-    ],
-    "city": "Pattaya",
-    "region": "",
-    "country": "Thailand",
-    "country_code": "TH",
-    "lat": 12.93,
-    "lng": 100.88
+    ]
   },
   {
     "date": {
@@ -8898,13 +6774,7 @@
         "label": "(original link)",
         "url": "https://www.ici.fr/hauts-de-france/somme-80/grivesnes/somme-un-couple-sequestre-chez-lui-et-cible-de-plusieurs-intrusions-pour-de-la-cryptomonnaie-qu-il-ne-possede-pas-9784554"
       }
-    ],
-    "city": "Grivesnes",
-    "region": "Somme",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 49.78,
-    "lng": 2.47
+    ]
   },
   {
     "date": {
@@ -8923,13 +6793,7 @@
         "label": "(original link)",
         "url": "https://www.europe1.fr/faits-divers/info-europe-1-yvelines-un-home-jacking-sur-fond-de-cryptomonnaies-dejoue-la-nuit-derniere-un-suspect-de-20-ans-interpelle-998715?amp"
       }
-    ],
-    "city": "Montigny-le-Bretonneux",
-    "region": "Yvelines",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.78,
-    "lng": 2.04
+    ]
   },
   {
     "date": {
@@ -8948,13 +6812,7 @@
         "label": "(original link)",
         "url": "https://actu.fr/nouvelle-aquitaine/rion-des-landes_40243/un-couple-sequestre-et-enleve-dans-les-landes-pour-ses-bitcoins-et-de-la-cryptomonnaie-deux-hommes-interpelles_64671438.html"
       }
-    ],
-    "city": "Rion-des-Landes",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.88,
-    "lng": -0.95
+    ]
   },
   {
     "date": {
@@ -8973,13 +6831,7 @@
         "label": "(original link)",
         "url": "https://www.ouest-france.fr/societe/faits-divers/info-ouest-france-une-famille-sequestree-par-erreur-pour-des-cryptomonnaies-pres-de-rennes-une-enquete-ouverte-0b30fa26-a7a9-11f1-8a27-1e0c4eb5e395"
       }
-    ],
-    "city": "Vern-sur-Seiche",
-    "region": "Ille-et-Vilaine",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.05,
-    "lng": -1.65
+    ]
   },
   {
     "date": {
@@ -8998,13 +6850,7 @@
         "label": "(original link)",
         "url": "https://www.europe1.fr/faits-divers/info-europe-1-yvelines-sequestre-pour-ses-cryptomonnaies-il-parvient-a-sechapper-1033703"
       }
-    ],
-    "city": "Jouy-en-Josas",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 48.76,
-    "lng": 2.27
+    ]
   },
   {
     "date": {
@@ -9023,13 +6869,7 @@
         "label": "(original link)",
         "url": "https://www.midilibre.fr/2026/08/31/un-couple-dales-ligote-et-menace-chez-eux-par-des-braqueurs-armes-leur-enfant-present-13529688.php"
       }
-    ],
-    "city": "Alès",
-    "region": "Gard",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 44.13,
-    "lng": 4.08
+    ]
   },
   {
     "date": {
@@ -9048,13 +6888,7 @@
         "label": "(original link)",
         "url": "https://www.ibtimes.co.uk/cryptocurrency-heist-suspected-murder-camilo-septimo-keyboardist-family-1818572"
       }
-    ],
-    "city": "Atizapán de Zaragoza",
-    "region": "Estado de México",
-    "country": "Mexico",
-    "country_code": "MX",
-    "lat": 19.56,
-    "lng": -99.23
+    ]
   },
   {
     "date": {
@@ -9073,13 +6907,7 @@
         "label": "(original link)",
         "url": "https://www.franceinfo.fr/economie/bitcoin/a-nice-deux-personnes-sequestrees-chez-elles-et-un-compte-de-cryptomonnaies-d-une-valeur-de-25-000-dollars-derobe_8180891.html"
       }
-    ],
-    "city": "Nice",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 43.7,
-    "lng": 7.27
+    ]
   },
   {
     "date": {
@@ -9098,12 +6926,6 @@
         "label": "(original link)",
         "url": "https://www.bfmtv.com/grand-littoral/une-famille-dont-le-pere-travaille-dans-la-cryptomonnaie-sequestree-et-ligotee-a-son-domicile-de-vendin-le-vieil-quatre-suspects-en-fuite_AN-202609200176.html"
       }
-    ],
-    "city": "Vendin-le-Vieil",
-    "region": "",
-    "country": "France",
-    "country_code": "FR",
-    "lat": 50.44,
-    "lng": 3.0
+    ]
   }
 ]

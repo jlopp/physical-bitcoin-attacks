@@ -31,6 +31,18 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # Regenerate attacks.json from README.md so the deployed site always
+      # reflects the latest table, even if the committed attacks.json is stale:
+      #   parse_readme.py  -> tools/raw_attacks.json
+      #   autofill_geo.py  -> geocodes locations missing from geocode.py's GEO
+      #                        table via Nominatim + polygon verification and
+      #                        appends them to geocode.py
+      #   geocode.py       -> attacks.json
+      - name: Regenerate attacks.json from README
+        run: |
+          python3 tools/parse_readme.py
+          python3 tools/autofill_geo.py
+          python3 tools/geocode.py
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact
