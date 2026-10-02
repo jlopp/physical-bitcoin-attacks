@@ -54,41 +54,9 @@ Add a new row to the table in `README.md`, in chronological order:
 - **Location**: `City, Region/State, Country` where possible. The country must be last.
 - **Description**: one concise sentence with the incident and outcome, as markdown links.
 
-### Adding the attack to attacks.json
+### Regenerating attacks.json (should not be necessary)
 
-Each entry in `attacks.json` mirrors a README row:
-
-```json
-{
-  "date": { "raw": "January 15, 2027", "year": 2027 },
-  "victim": "Victim Name",
-  "location": "City, Region, Country",
-  "description": "Short description of the attack",
-  "links": [
-    { "label": "Short description of the attack", "url": "https://archive.is/example" },
-    { "label": "(original link)", "url": "https://www.example.com/article" }
-  ],
-  "city": "City",
-  "region": "Region",
-  "country": "Country",
-  "country_code": "XX",
-  "lat": 12.34,
-  "lng": 56.78
-}
-```
-
-Field requirements:
-
-| Field | Notes |
-| :--- | :--- |
-| `date.year` | Integer, required. Extracted from `date.raw`. |
-| `location` | Must **exactly match** the README's Location cell (the parser keys off this). |
-| `country_code` | Two-letter ISO 3166-1 alpha-2 code (e.g., `US`, `FR`, `HK`). |
-| `lat` / `lng` | Decimal degrees for the city (or country centroid if only the country is known). Be precise — this drives the dashboard map. |
-
-### Regenerating attacks.json (recommended)
-
-Rather than hand-editing `attacks.json`, you can regenerate it from the README:
+The `attacks.json` file should get automatically updated by our GitHub workflow when a commit is merged, but you can regenerate it from the README:
 
 ```bash
 python3 tools/parse_readme.py   # README table -> tools/raw_attacks.json
@@ -105,7 +73,7 @@ Then re-run `geocode.py` and commit the updated `attacks.json`.
 
 ### Submitting
 
-1. Open a pull request with both the README row and the `attacks.json` entry (or regenerated file)
+1. Open a pull request with both the README row
 2. Include a source link for the incident in your PR description
 3. Maintainers may ask for additional sources if the incident is not widely reported
 
