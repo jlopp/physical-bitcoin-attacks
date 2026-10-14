@@ -18,7 +18,7 @@ WORLD = ("https://raw.githubusercontent.com/nvkelso/natural-earth-vector/"
 
 ISO2_TO_3 = {
     "AE": "ARE", "AR": "ARG", "AT": "AUT", "AU": "AUS", "BE": "BEL",
-    "BG": "BGR", "BR": "BRA", "CA": "CAN", "CN": "CHN", "CO": "COL",
+    "BD": "BGD", "BG": "BGR", "BR": "BRA", "CA": "CAN", "CN": "CHN", "CO": "COL",
     "CR": "CRI", "CY": "CYP", "DE": "DEU", "EE": "EST", "ES": "ESP",
     "FR": "FRA", "GB": "GBR", "GE": "GEO", "GH": "GHA", "HK": "HKG",
     "ID": "IDN", "IL": "ISR", "IN": "IND", "IS": "ISL", "IT": "ITA",

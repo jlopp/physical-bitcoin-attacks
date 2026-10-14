@@ -2913,7 +2913,7 @@
       "year": 2021
     },
     "victim": "O.P. and D.A",
-    "location": "Alanya, Tepe neighborhood, Turkey",
+    "location": "Alanya, Tepe district, Turkey",
     "description": "",
     "links": [
       {
@@ -3170,7 +3170,7 @@
       "year": 2022
     },
     "victim": "63 y/o guard",
-    "location": "Chekchema, Charia district, Kostroma oblast, Russia",
+    "location": "Shekshema, Sharya district, Kostroma oblast, Russia",
     "description": "",
     "links": [
       {
@@ -3495,11 +3495,11 @@
       "year": 2022
     },
     "victim": "Unidentified mining company employees",
-    "location": "Udomlya urban okrug, Tver Oblast, Russia",
+    "location": "Udomlya, Tver Oblast, Russia",
     "description": "",
     "links": [
       {
-        "label": "In April 2022, three men violently robbed employees guarding a mining facility in Udomlya urban okrug (Tver Oblast) and fled with company funds and mining servers worth over RUB 5.7 million in vehicles fitted with fake license plates. The court sentenced them to 8 years 6 months to 9 years 6 months in strict- and special-regime penal colonies (ruling reported March 2025).",
+        "label": "In April 2022, three men violently robbed employees guarding a mining facility in Udomlya (Tver Oblast) and fled with company funds and mining servers worth over RUB 5.7 million in vehicles fitted with fake license plates. The court sentenced them to 8 years 6 months to 9 years 6 months in strict- and special-regime penal colonies (ruling reported March 2025).",
         "url": "https://gorod-kimry.ru/news/11556/"
       }
     ]
@@ -4989,7 +4989,7 @@
       "year": 2023
     },
     "victim": "Crypto entreprenuer",
-    "location": "Rudny, Sverdlovsk Oblast, Russia",
+    "location": "Rudny, Yekaterinburg, Russia",
     "description": "",
     "links": [
       {
@@ -6525,21 +6525,6 @@
       {
         "label": "Four men posing as police officers came to an online entrepreneur's home, accused him of treason over alleged cooperation with a Russian, and coerced him into transferring nearly UAH 10 million (~USD 250,000) in crypto, cashed out the same day. The four were notified of suspicion of group extortion under martial law in early September 2024, two held without bail; searches uncovered fake press and law-enforcement ID cards, ammunition and luxury cars.",
         "url": "https://www.ukrinform.ua/rubric-regions/3901471-u-kievi-zatrimali-fejkovih-pravoohoronciv-aki-vidibrali-u-kriptobiznesmena-250-tisac.html"
-      }
-    ]
-  },
-  {
-    "date": {
-      "raw": "September 2024",
-      "year": 2024
-    },
-    "victim": "Nick Drakon",
-    "location": "Not specified, United States",
-    "description": "",
-    "links": [
-      {
-        "label": "Nick Drakon, CEO of crypto research platform Revelo Intel, revealed on X that an organized group held him at gunpoint during a home invasion, threatening his wife and infant son to force him to empty his wallets and custodial accounts; stolen funds mixed his personal assets with Revelo's treasury and undistributed profits. He resigned, gave up his equity and promised 30% of future profits to affected investors; no arrests reported.",
-        "url": "https://cointelegraph.com/news/revelo-intel-ceo-resigns-robbed-at-gunpoint"
       }
     ]
   },
@@ -10508,11 +10493,11 @@
       "year": 2026
     },
     "victim": "A.H",
-    "location": "Alanya, Mahmutlar neighborhood, Turkey",
+    "location": "Mahmutlar, Alanya, Turkey",
     "description": "",
     "links": [
       {
-        "label": "In Alanya (Antalya), four hooded armed individuals intercepted a 46-year-old Ukrainian woman in her residence hallway, forced her inside and tied her hands, then made her unlock her crypto account via facial recognition and transferred EUR 18,000, also taking EUR 5,000, USD 7,000, ~200 g of gold and a watch worth USD 10,000. The gendarmerie's JASAT arrested the four suspects, who had fled; the loot was found in their vehicle and returned, and all four were remanded to Alanya's L-type prison.",
+        "label": "In Alanya's Mahmutlar district, four hooded armed individuals intercepted a 46-year-old Ukrainian woman in her residence hallway, forced her inside and tied her hands, then made her unlock her crypto account via facial recognition and transferred EUR 18,000, also taking EUR 5,000, USD 7,000, ~200 g of gold and a watch worth USD 10,000. The gendarmerie's JASAT arrested the four suspects, who had fled; the loot was found in their vehicle and returned, and all four were remanded to Alanya's L-type prison.",
         "url": "https://www.milliyet.com.tr/gundem/alanyada-silahli-kripto-gaspi-zorla-yuz-tanima-yaptirip-18-bin-avroyu-aktardilar-4-supheli-tutuklandi-7537158"
       }
     ]
@@ -10602,11 +10587,11 @@
       "year": 2026
     },
     "victim": "Sillytuna",
-    "location": "Hung Hom, Kowloon, Hong Kong",
+    "location": "London, England",
     "description": "",
     "links": [
       {
-        "label": "Game developer and erstwhile crypto enthusiast Sillytuna has reported being forced to hand over almost $24 million worth of crypto in a violent robbery.",
+        "label": "UK game developer and erstwhile crypto enthusiast Sillytuna has reported being forced to hand over almost $24 million worth of crypto in a violent robbery.",
         "url": "https://archive.is/LaSFn"
       },
       {
