@@ -12,7 +12,7 @@ This list tracks **physical ("meatspace") attacks targeting people or entities b
 ### In scope
 
 - **Home invasions / armed robberies** where attackers demanded crypto transfers, seed phrases, or hardware wallets
-- **Kidnappings for crypto ransom**, including of family members of crypto holders
+- **Kidnappings for crypto ransom** only if the victim or family members are crypto holders
 - **In-person trade robberies** — ambushes during face-to-face buys/sells of crypto for cash
 - **SWATting and extortion** with a crypto demand, when the victim was targeted for their crypto involvement
 - **Violent attacks on crypto businesses** (exchanges, BTM operators, mining farms)
@@ -23,7 +23,7 @@ This list tracks **physical ("meatspace") attacks targeting people or entities b
 ### Out of scope
 
 - Purely digital incidents (exchange hacks, SIM swaps, phishing) with no physical-world attack
-- Ordinary street crime where crypto was coincidental (e.g., a phone stolen that happened to have a wallet app, with no evidence of targeting)
+- Kidnappings / ransom of wealthy people with no connection to crypto where it just happens to be the demanded payment method
 - Fraud/scams that did not involve physical force or threat (e.g., romance scams executed entirely online)
 - Verbal threats or online harassment with no physical action
 - **Unverified or purely rumored incidents** — we require at least one credible published source (news article, police report, court document)
