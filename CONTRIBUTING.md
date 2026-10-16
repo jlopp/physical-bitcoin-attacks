@@ -12,7 +12,7 @@ This list tracks **physical ("meatspace") attacks targeting people or entities b
 ### In scope
 
 - **Home invasions / armed robberies** where attackers demanded crypto transfers, seed phrases, or hardware wallets
-- **Kidnappings for crypto ransom**, including of family members of crypto holders
+- **Kidnappings for crypto ransom** only if the victim or family members are crypto holders
 - **In-person trade robberies** — ambushes during face-to-face buys/sells of crypto for cash
 - **SWATting and extortion** with a crypto demand, when the victim was targeted for their crypto involvement
 - **Violent attacks on crypto businesses** (exchanges, BTM operators, mining farms)
@@ -23,7 +23,7 @@ This list tracks **physical ("meatspace") attacks targeting people or entities b
 ### Out of scope
 
 - Purely digital incidents (exchange hacks, SIM swaps, phishing) with no physical-world attack
-- Ordinary street crime where crypto was coincidental (e.g., a phone stolen that happened to have a wallet app, with no evidence of targeting)
+- Kidnappings / ransom of wealthy people with no connection to crypto where it just happens to be the demanded payment method
 - Fraud/scams that did not involve physical force or threat (e.g., romance scams executed entirely online)
 - Verbal threats or online harassment with no physical action
 - **Unverified or purely rumored incidents** — we require at least one credible published source (news article, police report, court document)
@@ -39,18 +39,18 @@ This list tracks **physical ("meatspace") attacks targeting people or entities b
 Attack entries live in two places that must be kept in sync:
 
 1. **`README.md`** — the human-readable table (the canonical list)
-2. **`attacks.json`** — the machine-readable data powering [the dashboard](./index.html)
+2. **`attacks.json`** — the machine-readable data powering [the dashboard](https://jlopp.github.io/physical-bitcoin-attacks/)
 
 ### Adding an attack to README.md
 
-Add a new row to the table in `README.md`, in chronological order:
+Add a new row to the table in `README.md`, in chronological order, this format:
 
 ```
-| January 15, 2027 | Victim Name | City, Region, Country | [Short description of the attack](https://archive.is/example) [(original link)](https://www.example.com/article) |
+| January 15 2027 | Victim Name | City, Region, Country | [Short description of the attack](https://archive.is/example) [(original link)](https://www.example.com/article) |
 ```
 
-- **Date**: as precise as known. Use `Month Day, Year` when known; `Month, Year` or `?, Year` when partially known.
-- **Victim**: name if publicly reported; otherwise a short anonymous descriptor (`Unidentified`, `34 y/o man`, etc.)
+- **Date**: as precise as known. Use `Month Day Year` when known; `Month Year` or `Year` when partially known. If a granular part of the date is unknown, position the new row at the top of the entries for that month or year.
+- **Victim**: name if publicly reported; otherwise a short generic descriptor (`Unidentified`, `34 y/o man`, "Couple", "Brothers", "Teenagers", etc.)
 - **Location**: `City, Region/State, Country` where possible. The country must be last.
 - **Description**: one concise sentence with the incident and outcome, as markdown links.
 
@@ -73,7 +73,7 @@ Then re-run `geocode.py` and commit the updated `attacks.json`.
 
 ### Submitting
 
-1. Open a pull request with both the README row
+1. Open a pull request with a new README.md row
 2. Include a source link for the incident in your PR description
 3. Maintainers may ask for additional sources if the incident is not widely reported
 
