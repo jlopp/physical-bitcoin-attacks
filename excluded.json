@@ -1,0 +1,65 @@
+[
+  {
+    "id": "WA075",
+    "date": "2021-11-27",
+    "precision": "day",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "type": "Held captive at home",
+    "assets": [
+      "BTC",
+      "cash"
+    ],
+    "asset_classes": [
+      "BTC",
+      "Cash"
+    ],
+    "amount": "EUR 9,689 taken (withdrawals at Geldmaat with his card + transfers from his ING account to buy bitcoins on an account opened in his name under duress); total material damages awarded by the court: EUR 10,546.24 (including EUR 9,998 in amounts taken)",
+    "amount_usd": 11000,
+    "description": "On the night of November 27-28, 2021, a man lured via Instagram into an Amsterdam hotel room was surprised naked in the bathroom by about seven attackers, one of them armed with a knife: bound with tape then handcuffed, gagged, his head covered with a taped towel, he spent the night locked in the toilet under the guard of two men, with a knife held to his throat to make him give up his banking codes. Forced to call ING claiming he wanted to buy bitcoins in order to get his account unblocked, he saw 8,698 euros transferred between 00:04 and 05:36 to a cryptocurrency platform where a verified account had been opened in his name; the verification selfie, later handed over to police by the platform, shows him bare-chested and handcuffed. One of the participants was sentenced on January 11, 2024 by the Amsterdam court to 3 years in prison for these acts and two other violent robberies.",
+    "victims": "A man referred to as \"aangever 2\" in the judgment (identity protected), lured via Instagram",
+    "outcome": "EUR 8,698 converted to cryptocurrency + EUR 1,000 withdrawn; at least one defendant sentenced on January 11, 2024 by the Amsterdam court to 3 years in prison for these acts and two other violent robberies (Sadiyat and Segam investigations)",
+    "target": "Personal assets",
+    "target_reason": "A private individual lured via Instagram is forced to transfer funds from his personal bank account to a crypto account opened in his name.",
+    "harm": "Victim physically unharmed",
+    "confined": true,
+    "weapon": "Knife or blade",
+    "source1": "https://data.rechtspraak.nl/uitspraken/content?id=ECLI:NL:RBAMS:2024:110",
+    "source1_name": "Rechtbank Amsterdam, judgment ECLI:NL:RBAMS:2024:110 of 11 January 2024 (Rechtspraak.nl, official judicial source)",
+    "source2": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:110",
+    "source2_name": "Rechtspraak.nl — accessible version of the same judgment",
+    "confidence": "Medium",
+    "in_reference_list": true
+  },
+  {
+    "id": "WA494",
+    "date": "2025-01-14",
+    "precision": "day",
+    "city": "Taoyuan (empty lot near a Hi-Life convenience store; district redacted in the judgment)",
+    "country": "Taiwan",
+    "type": "Robbery during an in-person trade",
+    "assets": [
+      "Unspecified crypto",
+      "TWD fiat"
+    ],
+    "asset_classes": [
+      "Other"
+    ],
+    "amount": "TWD 350,000 in cash and two phones",
+    "amount_usd": 10600,
+    "description": "Lin Su-hsia (林素霞), whom scammers had convinced that she had to buy cryptocurrency to pay a tax, had been given the LINE contact of a \"crypto dealer\", Chiang Yu-hsiang. Learning that she would come to buy TWD 350,000 worth of crypto, he decided to rob her and recruited a friend, Chen Po-hao, and a minor. At around 3:30 p.m. on 14 January 2025 in Taoyuan, while she waited on an empty lot near the convenience store where they were to meet, the minor snatched her phone and her handbag containing the TWD 350,000; she held on to the bag and was dragged some distance before letting go. The trio, who had come from Taichung by high-speed rail and car, split the loot in a toilet at Taipei high-speed rail station.",
+    "victims": "Lin Su-hsia (林素霞), a private crypto buyer who had already been scammed",
+    "outcome": "The Taoyuan District Court (114年度訴字第801號, 30 October 2025) found robbery with violence, since the victim had been dragged: Chiang 7 years 6 months, Chen 5 years 10 months; the minor was dealt with by the Taichung juvenile court. The High Court dismissed Chiang's appeal on 30 April 2026 (115年度上訴字第739號).",
+    "target": "Personal assets",
+    "target_reason": "A private individual who came with her cash to buy crypto from a so-called dealer and was robbed by him.",
+    "harm": "Outcome unknown",
+    "confined": false,
+    "weapon": "None",
+    "source1": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TYDM%2c114%2c%e8%a8%b4%2c801%2c20251030%2c2",
+    "source1_name": "Tribunal de district de Taoyuan, 114年度訴字第801號 (30.10.2025)",
+    "source2": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c115%2c%e4%b8%8a%e8%a8%b4%2c739%2c20260430%2c1",
+    "source2_name": "Haute Cour, 115年度上訴字第739號 (30.04.2026)",
+    "confidence": "Medium",
+    "in_reference_list": true
+  }
+]

@@ -1500,6 +1500,35 @@
   },
   {
     "date": {
+      "raw": "November 30 2019",
+      "year": 2019
+    },
+    "victim": "Relatives of Claudio Oliveira",
+    "location": "Anápolis, Goiás, Brazil",
+    "description": "",
+    "links": [
+      {
+        "label": "The mother (68) and former sister-in-law (31) of Claudio Oliveira, founder of Grupo Bitcoin Banco nicknamed the \"bitcoin king\", were abducted in Anápolis. The kidnappers, reportedly a blocked client of the group, demanded by video call the equivalent of BRL 8 million in bitcoin. Both women were freed unharmed by police the next day, no ransom was paid.",
+        "url": "https://web.archive.org/web/20191214194501/https://www.plural.jor.br/noticias/vizinhanca/rei-do-bitcoin-policia-ouve-vitimas-e-descarta-fraude-em-sequestro/"
+      },
+      {
+        "label": "(original link)",
+        "url": "https://www.plural.jor.br/noticias/vizinhanca/rei-do-bitcoin-policia-ouve-vitimas-e-descarta-fraude-em-sequestro/"
+      },
+      {
+        "label": "(more)",
+        "url": "https://livecoins.com.br/mae-ex-cunhada-rei-do-bitcoin-sequestradas-amarradas-ameacadas/"
+      }
+    ],
+    "city": "Anápolis",
+    "region": "Goiás",
+    "country": "Brasil",
+    "country_code": "BR",
+    "lat": -16.33,
+    "lng": -48.95
+  },
+  {
+    "date": {
       "raw": "2020",
       "year": 2020
     },
@@ -1957,31 +1986,6 @@
       "raw": "September 2020",
       "year": 2020
     },
-    "victim": "Male Freshman",
-    "location": "Kent, England",
-    "description": "",
-    "links": [
-      {
-        "label": "Student robbed of bitcoin at knifepoint during first week at university.",
-        "url": "https://archive.is/wH3Y2"
-      },
-      {
-        "label": "(original link)",
-        "url": "https://www.thesun.co.uk/news/16238655/student-forced-bitcoin-knifepoint-cops/"
-      }
-    ],
-    "city": "Kent",
-    "region": "",
-    "country": "United Kingdom",
-    "country_code": "GB",
-    "lat": 51.2,
-    "lng": 0.7
-  },
-  {
-    "date": {
-      "raw": "September 2020",
-      "year": 2020
-    },
     "victim": "Five foreigners",
     "location": "Castelo Branco, Portugal",
     "description": "",
@@ -2051,6 +2055,27 @@
     "country_code": "BR",
     "lat": -5.33,
     "lng": -39.72
+  },
+  {
+    "date": {
+      "raw": "September 21 2020",
+      "year": 2020
+    },
+    "victim": "Male Freshman",
+    "location": "Canterbury, Kent, England",
+    "description": "",
+    "links": [
+      {
+        "label": "8 men invaded dorm room of Canterbury Christ Church University fresher at about 1:30 a.m., threatened him with a knife; they made off with GBP 6,000 in bitcoin and GBP 3,000. 3 men were arrested but no one was prosecuted, no funds recovered.",
+        "url": "https://www.kentonline.co.uk/canterbury/news/fresher-loses-6-000-in-20-minute-mugging-254519/"
+      }
+    ],
+    "city": "Canterbury",
+    "region": "England",
+    "country": "United Kingdom",
+    "country_code": "GB",
+    "lat": 51.28,
+    "lng": 1.08
   },
   {
     "date": {
@@ -2637,7 +2662,7 @@
     "description": "",
     "links": [
       {
-        "label": "Robbers steal bitcoin worth almost 100,000 Euros",
+        "label": "Victim showed his \"business partners\" his unlocked phone displaying a Bitcoin wallet with nearly EUR 100,000; they grabbed it and fled. Police arrested three suspects aged 21 to 29 from Waldkraiburg, with a fourth arrested in Munich on March 31.",
         "url": "https://archive.is/H8Qix"
       },
       {
@@ -2843,6 +2868,27 @@
       {
         "label": "(original link)",
         "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCDM%2C110%2C%E9%87%8D%E8%A8%B4%2C1772%2C20220727%2C6"
+      }
+    ],
+    "city": "Taichung",
+    "region": "",
+    "country": "Taiwan",
+    "country_code": "TW",
+    "lat": 24.15,
+    "lng": 120.67
+  },
+  {
+    "date": {
+      "raw": "May 28 2021",
+      "year": 2021
+    },
+    "victim": "Three victims",
+    "location": "Taichung, Taiwan",
+    "description": "",
+    "links": [
+      {
+        "label": "Chen Sheng-lin (陳聖霖), already sentenced for robbing a USDT buyer in 2020 but not yet in prison, posed on Telegram as a USDT seller to three buyers and met them in a rented meeting room on the 20th floor of a tower on Wenxin Road in Taichung; once the cash was counted, he returned with two accomplices and all three pepper-sprayed the buyers in the face, taking TWD 1,773,700 from the table, a backpack with TWD 100,000 and a phone before fleeing. All three were convicted on April 21 2022 by the Taichung District Court (110年度訴字第1390號) of armed group robbery.",
+        "url": "https://news.ltn.com.tw/news/society/breakingnews/3621845"
       }
     ],
     "city": "Taichung",
@@ -3262,7 +3308,7 @@
     "description": "",
     "links": [
       {
-        "label": "Trader robbed of HK$3 million at knifepoint",
+        "label": "Victim agreed to withdraw HKD 3.28 million from a crypto exchange company for a commission; in the building's service stairwell four masked South Asian men surrounded him, one brandishing a 5-inch knife that cut his right palm, then tied him up and took his bag containing the HKD 3.28 million plus HKD 10,000 of his own money.",
         "url": "https://archive.is/CeCA8"
       },
       {
@@ -3301,6 +3347,31 @@
     "country_code": "AE",
     "lat": 25.07,
     "lng": 55.19
+  },
+  {
+    "date": {
+      "raw": "August 2021",
+      "year": 2021
+    },
+    "victim": "34 y/o programmer",
+    "location": "Omsk, Russia",
+    "description": "",
+    "links": [
+      {
+        "label": "3 Moscow residents traveled to Omsk fake police ID cards, rented cars and apartments to cover their tracks and studied the routine of a 34-year-old programmer for an international financial organization; posing as police officers they intercepted him at the entrance to his building, drove him to an isolated location and, under psychological pressure and threats of violence, made him transfer 3 million rubles and 25 bitcoins. The three were arrested on their way back to Moscow and prosecuted for large-scale organized theft and document forgery.",
+        "url": "https://archive.is/Pvkcr"
+      },
+      {
+        "label": "(original link)",
+        "url": "https://epp.genproc.gov.ru/web/proc_55/mass-media/news?item=85667782"
+      }
+    ],
+    "city": "Omsk",
+    "region": "",
+    "country": "Russia",
+    "country_code": "RU",
+    "lat": 54.99,
+    "lng": 73.37
   },
   {
     "date": {
@@ -4716,7 +4787,7 @@
     "description": "",
     "links": [
       {
-        "label": "4 men invade home, tie up man, steal $450K from safe.",
+        "label": "4 men invade home, tie up man, steal $450K from safe. Attackers were arrested and convicted months later.",
         "url": "https://archive.is/Ri5N9"
       },
       {
@@ -5341,7 +5412,7 @@
     "description": "",
     "links": [
       {
-        "label": "Son of Mitsubishi Electric CEO + 7 men kidnap, torture gym member for crypto assets.",
+        "label": "Son of Mitsubishi Electric CEO + 7 men kidnap, torture gym member for crypto assets. Attackers were later arrested but funds were not recovered.",
         "url": "https://archive.is/UWS2L"
       },
       {
@@ -5530,6 +5601,31 @@
     "country_code": "NL",
     "lat": 51.45,
     "lng": 6.05
+  },
+  {
+    "date": {
+      "raw": "July 28 2022",
+      "year": 2022
+    },
+    "victim": "Hung Ping-lien & Lin Yu-tung",
+    "location": "Taichung, Taiwan",
+    "description": "",
+    "links": [
+      {
+        "label": "Attacker learned victim was a crypto trader, lured him and his friend to a motel in Taichung where he and three accomplices, carrying two realistic-looking pistols, held them at gunpoint, ordering him to hand over his cryptocurrency and banking passwords, and beating him when a wrong password locked the account; he gave up only TWD 900. Attackers were later arrested and convicted.",
+        "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCDM%2c112%2c%e8%a8%b4%2c383%2c20240924%2c9"
+      },
+      {
+        "label": "appeal judgment",
+        "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCHM%2c113%2c%e4%b8%8a%e8%a8%b4%2c756%2c20250107%2c1"
+      }
+    ],
+    "city": "Taichung",
+    "region": "",
+    "country": "Taiwan",
+    "country_code": "TW",
+    "lat": 24.15,
+    "lng": 120.67
   },
   {
     "date": {
@@ -7862,6 +7958,10 @@
       {
         "label": "Miner kidnapped from home, ransomed, rescued by police.",
         "url": "https://archive.is/XIPFP"
+      },
+      {
+        "label": "(original link)",
+        "url": "https://www.cryptopolitan.com/cryptocurrency-miner-kidnapped-in-izhevsk/"
       }
     ],
     "city": "городской округ Ижевск",
@@ -10104,12 +10204,12 @@
       "raw": "December 24 2024",
       "year": 2024
     },
-    "victim": "Unidentified Man",
+    "victim": "32 y/o Vietnamese man & mother",
     "location": "Limassol, Cyprus",
     "description": "",
     "links": [
       {
-        "label": "Christmas Eve Limassol heist as man gets away with 100 thousand Euros in cash",
+        "label": "Victims arrived with EUR 100,000 in a suitcase to buy cryptocurrency from a 29-year-old Swede he had transacted with since 2022; as soon as the bag was opened the Swede grabbed it while an accomplice struck the victim on the head until he bled, then fled on foot and tried to reach Turkey by sea before being handed over to Cypriot authorities. Attackers were convicted 2 years later.",
         "url": "https://archive.is/WgL08"
       },
       {
@@ -10230,7 +10330,7 @@
     "description": "",
     "links": [
       {
-        "label": "An armed group of four former police officers — including two National Police colonels — and a civilian accomplice kidnapped at least four crypto-sector entrepreneurs, surveilling targets, traveling in official vehicles while posing as police, holding victims at gunpoint and forcing them to transfer cryptocurrency or sign fictitious debt acknowledgments; about USD 2,200,000 was handed over in total, one Kyiv-abducted victim having to raise USD 5,000,000 partly through borrowing. The Kyiv oblast prosecutor's office closed the investigation and referred the case to court at the end of May 2026 for banditry, kidnapping, unlawful confinement, robbery and extortion.",
+        "label": "An armed group of four former police officers and a civilian accomplice kidnapped at least four crypto-sector entrepreneurs, surveilling targets, traveling in official vehicles while posing as police, holding victims at gunpoint and forcing them to transfer cryptocurrency or sign fictitious debt acknowledgments; about USD 2,200,000 was handed over in total. Attackers charged with banditry, kidnapping, unlawful confinement, robbery and extortion.",
         "url": "https://web.archive.org/web/20260618145435/https://bits.media/byvshikh-politseyskikh-obvinili-v-pokhishchenii-kriptobiznesmenov-radi-vykupa/"
       },
       {
@@ -11166,6 +11266,27 @@
   },
   {
     "date": {
+      "raw": "March 20 2025",
+      "year": 2025
+    },
+    "victim": "40 y/o man",
+    "location": "Lille, Antwerp Kempen, Belgium",
+    "description": "",
+    "links": [
+      {
+        "label": "During the night of March 20 2025, four men broke into a house on Wechelsebaan in Lille, beat and tied up the 40-year-old occupant while talking about cryptocurrency, but realized they had the wrong target after opening his phone and left; police found him shirtless, tied with a belt, gagged with tape and with a bruised eye. Only the driver, a 25-year-old from Mol, was tried by the Turnhout criminal court in September 2026, with judgment expected on October 28 2026; the other attackers and those who ordered the attack remain unidentified.",
+        "url": "https://www.gva.be/regio/antwerpen/kempen/lille/vergis-homejacking-in-lille-met-cryptogeld-als-doelwit-toen-ze-gsm-van-slachtoffer-openden-merkten-ze-hun-fout/162361775.html"
+      }
+    ],
+    "city": "Lille",
+    "region": "Hauts-de-France",
+    "country": "France",
+    "country_code": "FR",
+    "lat": 50.64,
+    "lng": 3.06
+  },
+  {
+    "date": {
       "raw": "March 21 2025",
       "year": 2025
     },
@@ -11269,12 +11390,12 @@
       "raw": "April 2025",
       "year": 2025
     },
-    "victim": "Unidentified",
+    "victim": "37 y/o Dutch man",
     "location": "Spain",
     "description": "",
     "links": [
       {
-        "label": "Five arrested for kidnapping, killing man in plot to steal his crypto assets.",
+        "label": "Masked armed individuals attacked a couple, shooting man in the leg as he tried to flee, then held both victims for several hours in a house while trying to access their crypto wallets; the woman was released around midnight and the man's body was found shortly afterwards in a wooded area. Attackers were arrested in December.",
         "url": "https://archive.is/FwjIT"
       },
       {
@@ -12288,7 +12409,7 @@
       "raw": "July 12 2025",
       "year": 2025
     },
-    "victim": "2 men in 20s",
+    "victim": "2 French men in 20s",
     "location": "London, England",
     "description": "",
     "links": [
@@ -12795,6 +12916,27 @@
   },
   {
     "date": {
+      "raw": "September 6 2025",
+      "year": 2025
+    },
+    "victim": "Lai Yi-wei (賴奕瑋)",
+    "location": "Banqiao, New Taipei, Taiwan",
+    "description": "",
+    "links": [
+      {
+        "label": "Victim targeted via a fake Litmatch investment profile that referred him to a supposed exchanger, handed TWD 2 million in cash to collector Yeh Hung-yu; after receiving a single test USDT he tried to call off the deal and take back the bag, and Yeh chased him and pepper-sprayed him while trying to wrench the bag away, until passers-by stepped in and Yeh drove off. Yeh was arrested the same day.",
+        "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=PCDM%2c114%2c%e8%a8%b4%2c1209%2c20260514%2c1"
+      }
+    ],
+    "city": "新北市",
+    "region": "",
+    "country": "臺灣",
+    "country_code": "TW",
+    "lat": 25.01,
+    "lng": 121.46
+  },
+  {
+    "date": {
       "raw": "September 7 2025",
       "year": 2025
     },
@@ -12838,6 +12980,27 @@
     "country_code": "IN",
     "lat": 28.57,
     "lng": 77.33
+  },
+  {
+    "date": {
+      "raw": "September 15 2025",
+      "year": 2025
+    },
+    "victim": "Yang Chin-ming (楊錦明)",
+    "location": "Taichung, Taiwan",
+    "description": "",
+    "links": [
+      {
+        "label": "A Telegram organiser who had learned the victim wanted to buy USDC and told Chiang Ping-hsun to pepper spray the buyer, tie him up and destroy the dashcam; He pepper-sprayed Yang and tried to leave with the money, but Yang held him back and pinned him down until the driver who had brought Chiang called the police. Chiang, arrested on the spot, received a suspended sentence of 1 year 10 months.",
+        "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TCDM%2c114%2c%e8%a8%b4%2c1466%2c20260210%2c1"
+      }
+    ],
+    "city": "Taichung",
+    "region": "",
+    "country": "Taiwan",
+    "country_code": "TW",
+    "lat": 24.15,
+    "lng": 120.67
   },
   {
     "date": {
@@ -14558,6 +14721,27 @@
   },
   {
     "date": {
+      "raw": "January 29 2026",
+      "year": 2026
+    },
+    "victim": "Unidentified man",
+    "location": "Miaoli, Taiwan",
+    "description": "",
+    "links": [
+      {
+        "label": "A Telegram group called \"台中火車站\" set up a fake crypto sale. Three minors sent by taxi met him at the scooter park of Miaoli station and, while he was handing them bundles to count, one of them pepper-sprayed his eyes on a coordinator's instructions and ran off with TWD 4 million, the other two taking TWD 160,000. The first minor missed the getaway car; the victim caught and pinned him down, taking back the TWD 4 million. The adult coordinator was sentenced on to 7 years 2 months for aggravated armed group robbery; the three minors were referred to the juvenile court.",
+        "url": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=MLDM%2c115%2c%e8%a8%b4%2c451%2c20260626%2c2"
+      }
+    ],
+    "city": "苗栗縣",
+    "region": "",
+    "country": "臺灣",
+    "country_code": "TW",
+    "lat": 24.56,
+    "lng": 120.82
+  },
+  {
+    "date": {
       "raw": "January 31 2026",
       "year": 2026
     },
@@ -14633,7 +14817,7 @@
     "description": "",
     "links": [
       {
-        "label": "Mother & daughter kidnapped during home invasion. They were released after 30 hours with injuries.",
+        "label": "A commando broke down the door of the home of a 35-year-old Grenoble magistrate and abducted her along with her 67-year-old mother, demanding a cryptocurrency ransom from the magistrate's partner, who works in a start-up with cryptocurrency activities; the two women, injured, freed themselves after about 30 hours of captivity in a garage. No ransom paid.",
         "url": "https://archive.is/QKe0h"
       },
       {
@@ -15038,12 +15222,12 @@
       "raw": "March 8 2026",
       "year": 2026
     },
-    "victim": "Unidentified",
+    "victim": "Crypto Executive",
     "location": "Winnetka, Illinois, United States",
     "description": "",
     "links": [
       {
-        "label": "A man posing as a food delivery driver gained access to a home; armed intruders invaded, took the occupant hostage and demanded access to cryptocurrency. Six suspects were arrested and charged.",
+        "label": "Fake delivery person used to gain entry and invade home at gunpoint. Demanded victim's ledger; the victim bit an attacker's finger and fled when a child arrived home. Attackers took jewelry and electronic devices but failed to obtain any cryptocurrency",
         "url": "https://archive.is/U9vKH"
       },
       {
@@ -16360,6 +16544,31 @@
   },
   {
     "date": {
+      "raw": "July 25 2026",
+      "year": 2026
+    },
+    "victim": "Unidentified man",
+    "location": "Toronto, Ontario, Canada",
+    "description": "",
+    "links": [
+      {
+        "label": "7 men, 3 of them Canadian military, abducted a cryptocurrency holder but released him after failing to gain access to his funds.",
+        "url": "https://archive.is/WGfsY"
+      },
+      {
+        "label": "(original link)",
+        "url": "https://winnipeg.citynews.ca/2026/10/14/toronto-police-abduction-investigation-canadian-armed-forces/"
+      }
+    ],
+    "city": "Toronto",
+    "region": "Ontario",
+    "country": "Canada",
+    "country_code": "CA",
+    "lat": 43.65,
+    "lng": -79.38
+  },
+  {
+    "date": {
       "raw": "July 21 2026",
       "year": 2026
     },
@@ -16840,12 +17049,12 @@
       "raw": "October 6 2026",
       "year": 2026
     },
-    "victim": "Unidentified",
+    "victim": "Kutay Aslan",
     "location": "Nong Prue, Pattaya, Thailand",
     "description": "",
     "links": [
       {
-        "label": "Three armed robbers stormed a luxury home, taking cash and Rolex watches before forcing a foreign victim to transfer cryptocurrency worth US$820,000.",
+        "label": "Three armed robbers stormed a luxury home, taking cash and Rolex watches before forcing a Turkish businessman to transfer cryptocurrency worth US$820,000. Arrest warrants were issued for 5 Chinese nationals.",
         "url": "https://archive.is/Zhpei"
       },
       {
