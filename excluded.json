@@ -1,5 +1,102 @@
 [
   {
+    "id": "L039",
+    "date": "2022-03",
+    "precision": "month",
+    "city": "Dubai (Naif district)",
+    "country": "United Arab Emirates",
+    "type": "Home invasion",
+    "assets": [
+      "cash (United Arab Emirates dirhams, in a safe)"
+    ],
+    "asset_classes": [
+      "Cash"
+    ],
+    "amount": "AED 1,700,000",
+    "amount_usd": 462900,
+    "description": "A bitcoin trader was attacked at his home in the Naif district of Dubai by four men who used a false pretext of a wrong address to force entry, threatened him with a knife at his throat, then tied his hands and feet with plastic rope before retrieving the key to a safe hidden under a table. The attackers stole AED 1.7 million belonging to the victim's business partner, who discovered the scene after being alerted by phone. Having entered the country illegally, the four suspects were arrested and confessed to the facts; on appeal (September 2022), they were sentenced to 3 years in prison each and a joint fine of AED 1.7 million, with deportation upon completion of their sentence.",
+    "victims": "A bitcoin trader (identity not disclosed), resident in Dubai",
+    "outcome": "Part of the stolen sum was recovered in the suspects' possession; the 4 attackers were sentenced to 3 years in prison each and a joint fine of AED 1.7 million (upheld by the Dubai Court of Appeal in September 2022), followed by deportation from the country.",
+    "target": "Undetermined",
+    "target_reason": "Khaleej Times states only that the AED 1.7 million was in \"a safe that belonged to his trading partner\": the source does not say whether this cash was the partner's private funds or the shared treasury of a two-person trading operation (the victim was therefore not acting \"alone and on his own behalf\"). No company is named, but nothing allows one to state that this was purely personal wealth either: undetermined.",
+    "harm": "Victim physically unharmed",
+    "confined": true,
+    "weapon": "Knife or blade",
+    "source1": "https://www.khaleejtimes.com/uae/crime/dubai-four-men-fined-dh1-7-million-for-stealing-cash-from-bitcoin-trader",
+    "source1_name": "Khaleej Times",
+    "source2": "https://www.gulftoday.ae/news/2022/09/05/gang-jailed-for-stealing-dhs17-million-from-trader",
+    "source2_name": "Gulf Today",
+    "confidence": "Medium",
+    "in_reference_list": true
+  },
+  {
+    "id": "L087",
+    "date": "2024-04-18",
+    "precision": "day",
+    "city": "Bukit Timah, King Albert Park, Singapore",
+    "country": "Singapore",
+    "type": "Home invasion",
+    "assets": [
+      "USDT (Tether)",
+      "cash (SGD, USD, UAE dirhams)",
+      "luxury watches (Richard Mille, Rolex)",
+      "Ferrari car key",
+      "smartwatch"
+    ],
+    "asset_classes": [
+      "USDT",
+      "Cash",
+      "Valuables",
+      "Vehicle"
+    ],
+    "amount": "approximately S$4,341,328 (~US$3.2 million) in cash, cryptocurrency and valuables",
+    "amount_usd": 3200000,
+    "description": "On the night of April 18, 2024, a group of at least five men armed with machetes (parangs) and baseball bats broke into a luxury bungalow (GCB) along King Albert Park, in Bukit Timah, robbing eleven people present (aged 25-45) of a total haul of approximately S$4.34 million (~US$3.2 million) in cash (SGD, USD, dirhams), cryptocurrency (USDT) and luxury watches (Richard Mille, Rolex). The hardest-hit victim, a 29-year-old woman, lost more than S$3.9 million alone, including nearly US$2.64 million in Tether (USDT). Five Malaysians were charged with armed robbery in a gang after being arrested in Singapore or extradited from Malaysia, two of them having fled to Johor Bahru before being handed over to the Singapore police in late April.",
+    "victims": "Eleven victims aged 25 to 45 (identities undisclosed), the most heavily robbed being a 29-year-old woman",
+    "outcome": "Judgment of 14 September 2026: six Malaysians sentenced (a seventh, Muhammad Yusuf Kassim, is at large): Wong Chi Shan and Goh Boon Tong 12 years 11 months in prison and 24 strokes of the cane, Mohd Hamidon Ahmed 10 and a half years, Mohd Hashim Ismail 8 years 8 months, Kartik Palaniappan and Muhammad Tauffiq Ahmad Fauzi 7 years 8 months. The cryptocurrency had been transferred from the host's phone to a wallet controlled by the robbers; police recovered about S$1.69 million in crypto.",
+    "target": "Personal assets",
+    "target_reason": "The charge sheets detail individual losses (USDT in personal accounts, cash, Richard Mille/Rolex watches, Ferrari key) suffered by private individuals in a private residence; no commercial entity is mentioned as a victim.",
+    "harm": "Victim physically unharmed",
+    "confined": false,
+    "weapon": "Knife or blade",
+    "source1": "https://www.channelnewsasia.com/singapore/king-albert-park-armed-gang-robbery-bukit-timah-malaysians-millions-4324676",
+    "source1_name": "CNA (Channel News Asia)",
+    "source2": "https://mothership.sg/2024/05/2-msians-arrested-gang-robber-king-albert-park/",
+    "source2_name": "Mothership.sg",
+    "confidence": "High",
+    "in_reference_list": true
+  },
+  {
+    "id": "WA239",
+    "date": "2024-09",
+    "precision": "month",
+    "city": "Not specified",
+    "country": "United States",
+    "type": "Home invasion",
+    "assets": [
+      "unspecified cryptocurrency"
+    ],
+    "asset_classes": [
+      "Unspecified cryptocurrency"
+    ],
+    "amount": "Unknown (personal funds, treasury and undistributed profits of Revelo Intel, Revelo Ventures funds)",
+    "amount_usd": null,
+    "description": "Nick Drakon, CEO of the crypto research platform Revelo Intel, revealed in a message posted on X on September 5, 2024 that he had been the victim of a home invasion: an organized group held him at gunpoint and threatened his wife and their eight-month-old son to force him to empty his wallets and log into several custodial crypto accounts. The stolen funds mixed his personal assets with the treasury and undistributed profits of Revelo Intel and Revelo Ventures funds pending settlement; Drakon suggested there were signs of inside involvement within Revelo Ventures. He resigned in favor of COO Vu Benson, gave up his equity stake, and promised 30% of future profits to affected investors; no arrests have been reported.",
+    "victims": "Nick Drakon, CEO of Revelo Intel, his wife, and their 8-month-old son",
+    "outcome": "Personal and company crypto assets stolen; CEO resigned; no arrest reported",
+    "target": "Business assets",
+    "target_reason": "The stolen funds mixed the CEO's personal assets with the treasury/undistributed profits of Revelo Intel and Revelo Ventures funds, with the corporate share being the more detailed and larger portion.",
+    "harm": "Victim physically unharmed",
+    "confined": true,
+    "weapon": "Firearm",
+    "source1": "https://cointelegraph.com/news/revelo-intel-ceo-resigns-robbed-at-gunpoint",
+    "source1_name": "Bits.media",
+    "source2": "https://protos.com/gunman-forces-revelo-fund-manager-to-drain-investors-crypto/",
+    "source2_name": "",
+    "confidence": "Low",
+    "in_reference_list": false
+  },
+  {
     "id": "WA075",
     "date": "2021-11-27",
     "precision": "day",
@@ -61,5 +158,5 @@
     "source2_name": "Haute Cour, 115年度上訴字第739號 (30.04.2026)",
     "confidence": "Medium",
     "in_reference_list": true
-  }
+  },
 ]
