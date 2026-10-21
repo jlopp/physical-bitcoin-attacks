@@ -583,6 +583,12 @@ GEO = {
     'Odesa, Ukraine': ('Одеса', 'Одеська область', 'Україна', 'UA', 46.48, 30.73),
     'Tokyo, Japan': ('東京都', '', '日本', 'JP', 35.68, 139.76),
     'Zagreb, Croatia': ('Grad Zagreb', '', 'Hrvatska', 'HR', 45.81, 15.98),
+    "Almere, Netherlands": ("Almere", "", "Netherlands", "NL", 52.37, 5.22),
+    "Rotterdam, Netherlands": ("Rotterdam", "", "Netherlands", "NL", 51.92, 4.48),
+    "Sint-Oedenrode, Netherlands": ("Sint-Oedenrode", "", "Netherlands", "NL", 51.57, 5.46),
+    "Saint-Augustin-de-Desmaures, Quebec, Canada": ("Saint-Augustin-de-Desmaures", "Quebec", "Canada", "CA", 46.74, -71.46),
+    'Nikolskoye, Belgorod Oblast, Russia': ('Никольское', 'Белгородская область', 'Россия', 'RU', 50.52, 36.60),
+    'Usolye-Sibirskoye, Irkutsk Oblast, Russia': ('Усолье-Сибирское', 'Иркутская область', 'Россия', 'RU', 52.75, 103.65),
 }
 
 
