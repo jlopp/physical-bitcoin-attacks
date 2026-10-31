@@ -3500,6 +3500,21 @@
       "raw": "October 2021",
       "year": 2021
     },
+    "victim": "Robert \"Billy\" Ewell",
+    "location": "New Orleans, Louisiana, United States",
+    "description": "",
+    "links": [
+      {
+        "label": "A Texas tourist on Bourbon Street believes he was drugged with GHB before two women posing as Uber drivers offered him a ride; during the 25-minute trip to a hotel 1.2 miles away they took his phone and used his apps to drain about USD 16,000 from his cryptocurrency account, two-factor authentication being useless once the phone was taken from an incapacitated person. The case is known only from the victim's own account and no arrests have been reported.",
+        "url": "https://www.kltv.com/2021/12/11/tourist-tells-houston-tv-station-he-was-drugged-robbed-16k-cryptocurrency-bourbon-street-visit"
+      }
+    ]
+  },
+  {
+    "date": {
+      "raw": "October 2021",
+      "year": 2021
+    },
     "victim": "Miner",
     "location": "Tomsk, Russia",
     "description": "",

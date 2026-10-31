@@ -34,6 +34,7 @@ GEO = {
     "Miami Beach, Florida, United States": ("Miami Beach", "Florida", "United States", "US", 25.79, -80.13),
     "Milwaukee, Wisconsin, United States": ("Milwaukee", "Wisconsin", "United States", "US", 43.04, -87.91),
     "Missouri, United States": ("Missouri", "", "United States", "US", 38.30, -92.50),
+    "New Orleans, Louisiana, United States": ("New Orleans", "Louisiana", "United States", "US", 29.95, -90.07),
     "New York, New York, United States": ("New York", "New York", "United States", "US", 40.71, -74.01),
     "North Richmond Hills, Texas, United States": ("North Richland Hills", "Texas", "United States", "US", 32.83, -97.23),
     "Northborough, Massachussetts, United States": ("Northborough", "Massachusetts", "United States", "US", 42.35, -71.64),

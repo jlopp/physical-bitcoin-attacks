@@ -190,6 +190,24 @@
     "in_reference_list": false
   },
   {
+    "id": "WA026",
+    "date": "2021-02",
+    "precision": "month",
+    "city": "Seoul (Gangnam-gu, Nonhyeon-dong)",
+    "country": "South Korea",
+    "description": "From February 2021 to February 2022, Kim (35), a former organized-crime member, forced an IT company CEO into a bitcoin \"investment\" then unilaterally demanded a 30% return, extorting approximately KRW 14.6 billion (of which KRW 4.86 billion was formally established) from the victim, his employees, his family and his associates. At least 19 incidents of violence were recorded: confinement under permanent surveillance in a Gangnam hotel, threats of acid attacks against the victim's parents, and, in early February 2022, the confinement of two employees for 13 hours in a Nonhyeon-dong office where they were beaten with a baseball bat and threatened with a knife. The 16 gang members were arrested between February and early May 2023, 8 of them placed in detention.",
+    "status": "excluded",
+    "criterion": "3.3a",
+    "note": "The sources establish an aim other than obtaining cryptocurrency: a debt, a dispute or a business conflict.",
+    "missing": "",
+    "removed_on": "2026-10-16",
+    "last_reviewed": "2026-10-22",
+    "criteria_version": "1.1",
+    "source1": "https://imnews.imbc.com/replay/2023/nw1700/article/6482335_36184.html",
+    "source2": "https://www.mt.co.kr/society/2023/05/10/2023051008201284664",
+    "in_reference_list": false
+  },
+  {
     "id": "WA033",
     "date": "2021-03-28",
     "precision": "day",
