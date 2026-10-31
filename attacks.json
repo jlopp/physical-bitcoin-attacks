@@ -329,7 +329,7 @@
     "region": "Santa Catarina",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 27.6,
+    "lat": -27.6,
     "lng": -48.55
   },
   {
@@ -1946,7 +1946,7 @@
     "region": "",
     "country": "South Africa",
     "country_code": "ZA",
-    "lat": 25.94,
+    "lat": -25.94,
     "lng": 27.93
   },
   {
@@ -2271,7 +2271,7 @@
     "region": "Rondônia",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 8.74,
+    "lat": -8.74,
     "lng": -63.9
   },
   {
@@ -2600,7 +2600,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -4421,7 +4421,7 @@
     "region": "Rio de Janeiro",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 22.83,
+    "lat": -22.83,
     "lng": -42.1
   },
   {
@@ -4521,7 +4521,7 @@
     "region": "",
     "country": "New Zealand",
     "country_code": "NZ",
-    "lat": 36.87,
+    "lat": -36.87,
     "lng": 174.72
   },
   {
@@ -5367,7 +5367,7 @@
     "region": "",
     "country": "Indonesia",
     "country_code": "ID",
-    "lat": 8.41,
+    "lat": -8.41,
     "lng": 115.19
   },
   {
@@ -5721,7 +5721,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -6892,7 +6892,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -7138,7 +7138,7 @@
     "region": "Santa Catarina",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 27.6,
+    "lat": -27.6,
     "lng": -48.55
   },
   {
@@ -7980,7 +7980,7 @@
     "region": "Victoria",
     "country": "Australia",
     "country_code": "AU",
-    "lat": 37.81,
+    "lat": -37.81,
     "lng": 144.96
   },
   {
@@ -8055,7 +8055,7 @@
     "region": "",
     "country": "Indonesia",
     "country_code": "ID",
-    "lat": 8.41,
+    "lat": -8.41,
     "lng": 115.19
   },
   {
@@ -8130,7 +8130,7 @@
     "region": "New South Wales",
     "country": "Australia",
     "country_code": "AU",
-    "lat": 33.87,
+    "lat": -33.87,
     "lng": 151.21
   },
   {
@@ -10589,7 +10589,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -10881,7 +10881,7 @@
     "region": "Victoria",
     "country": "Australia",
     "country_code": "AU",
-    "lat": 37.81,
+    "lat": -37.81,
     "lng": 144.96
   },
   {
@@ -11423,7 +11423,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -11652,7 +11652,7 @@
     "region": "",
     "country": "Indonesia",
     "country_code": "ID",
-    "lat": 8.41,
+    "lat": -8.41,
     "lng": 115.19
   },
   {
@@ -11827,7 +11827,7 @@
     "region": "Victoria",
     "country": "Australia",
     "country_code": "AU",
-    "lat": 37.81,
+    "lat": -37.81,
     "lng": 144.96
   },
   {
@@ -11873,7 +11873,7 @@
     "region": "Bali",
     "country": "Indonesia",
     "country_code": "ID",
-    "lat": 8.8,
+    "lat": -8.8,
     "lng": 115.16
   },
   {
@@ -11948,7 +11948,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -12481,7 +12481,7 @@
     "region": "São Paulo",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.21,
+    "lat": -23.21,
     "lng": -46.7
   },
   {
@@ -12531,7 +12531,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -12631,7 +12631,7 @@
     "region": "Victoria",
     "country": "Australia",
     "country_code": "AU",
-    "lat": 37.81,
+    "lat": -37.81,
     "lng": 144.96
   },
   {
@@ -12706,7 +12706,7 @@
     "region": "",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.55,
+    "lat": -23.55,
     "lng": -46.63
   },
   {
@@ -13223,7 +13223,7 @@
     "region": "Pernambuco",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 8.09,
+    "lat": -8.09,
     "lng": -34.92
   },
   {
@@ -13248,7 +13248,7 @@
     "region": "São Paulo",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 23.63,
+    "lat": -23.63,
     "lng": -46.6
   },
   {
@@ -13781,7 +13781,7 @@
     "region": "Itapúa",
     "country": "Paraguay",
     "country_code": "PY",
-    "lat": 27.44,
+    "lat": -27.44,
     "lng": -55.66
   },
   {
@@ -14085,7 +14085,7 @@
     "region": "Goiás",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 16.68,
+    "lat": -16.68,
     "lng": -49.25
   },
   {
@@ -15465,7 +15465,7 @@
     "region": "Bali",
     "country": "Indonesia",
     "country_code": "ID",
-    "lat": 8.7,
+    "lat": -8.7,
     "lng": 115.26
   },
   {
@@ -18199,7 +18199,7 @@
     "country": "France",
     "country_code": "FR",
     "lat": 48.61,
-    "lng": -4.67
+    "lng": 4.67
   },
   {
     "date": {
@@ -18694,7 +18694,7 @@
     "region": "Espírito Santo",
     "country": "Brazil",
     "country_code": "BR",
-    "lat": 20.32,
+    "lat": -20.32,
     "lng": -40.34
   },
   {
@@ -18969,7 +18969,7 @@
     "region": "Bali",
     "country": "Indonesia",
     "country_code": "ID",
-    "lat": 8.82,
+    "lat": -8.82,
     "lng": 115.17
   },
   {
