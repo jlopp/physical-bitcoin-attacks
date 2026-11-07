@@ -43,6 +43,11 @@ jobs:
           python3 tools/parse_readme.py
           python3 tools/autofill_geo.py
           python3 tools/geocode.py
+      # Fail the build if any coordinate falls outside its country. attacks.json
+      # is generated from geocode.py, so a bad GEO table entry would otherwise
+      # deploy silently. This gate is what makes --fix meaningful.
+      - name: Verify coordinates
+        run: python3 tools/audit_coords.py --gate
       - name: Setup Pages
         uses: actions/configure-pages@v5
       - name: Upload artifact

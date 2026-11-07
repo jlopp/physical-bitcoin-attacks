@@ -1,0 +1,57 @@
+# Validate data changes on pull requests without deploying.
+#
+# The deploy workflow (static.yml) regenerates attacks.json on every push to
+# master. Contributors can't see that regeneration locally, so a row that
+# geocodes badly only surfaces after merge. This workflow runs the same
+# pipeline on the PR and fails early.
+name: Validate data
+
+on:
+  pull_request:
+    paths:
+      - 'README.md'
+      - 'attacks.json'
+      - 'excluded.json'
+      - 'tools/**'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      # autofill_geo.py calls Nominatim for locations missing from geocode.py's
+      # GEO table, which is fine on a PR (it fails closed), but the network
+      # dependency makes the check flaky. Skip autofill and let geocode.py
+      # report MISSING GEO instead — that is the actionable signal for a
+      # contributor who forgot to add a location.
+      - name: Parse README
+        run: python3 tools/parse_readme.py
+
+      - name: Geocode (expects GEO entries to already exist)
+        run: python3 tools/geocode.py
+
+      - name: Verify coordinates
+        run: python3 tools/audit_coords.py --gate
+
+      # Catch drift where a committed attacks.json no longer matches what the
+      # generators produce — the exact failure mode that hid the bad
+      # southern-hemisphere coordinates.
+      - name: Check attacks.json is up to date
+        run: |
+          if ! git diff --quiet -- attacks.json; then
+            echo "::error::attacks.json is out of date with README.md/geocode.py."
+            echo "Run: python3 tools/parse_readme.py && python3 tools/geocode.py"
+            git diff --stat -- attacks.json
+            exit 1
+          fi
+          echo "attacks.json is in sync."

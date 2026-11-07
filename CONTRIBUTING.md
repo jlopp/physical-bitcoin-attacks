@@ -36,10 +36,10 @@ This list tracks **physical ("meatspace") attacks targeting people or entities b
 
 ## How to update the data
 
-Attack entries live in two places that must be kept in sync:
+Attack entries live in two places:
 
-1. **`README.md`** — the human-readable table (the canonical list)
-2. **`attacks.json`** — the machine-readable data powering [the dashboard](https://jlopp.github.io/physical-bitcoin-attacks/)
+1. **`README.md`** — the human-readable table. **This is the only file you edit by hand.**
+2. **`attacks.json`** — the machine-readable data powering [the dashboard](https://jlopp.github.io/physical-bitcoin-attacks/). This is a **build artifact**.
 
 ### Adding an attack to README.md
 
@@ -56,20 +56,47 @@ Add a new row to the table in `README.md`, in chronological order, this format:
 
 ### Regenerating attacks.json (should not be necessary)
 
-The `attacks.json` file should get automatically updated by our GitHub workflow when a commit is merged, but you can regenerate it from the README:
+**`attacks.json` is generated. Do not hand-edit it.** The GitHub workflow
+(`.github/workflows/static.yml`) re-runs the pipeline on every push to `master`
+and deploys the result, so any manual change to `attacks.json` is silently
+overwritten. If a coordinate is wrong, fix `tools/geocode.py` — that is the
+source of truth. The PR check (`validate.yml`) fails if `attacks.json` is out
+of sync with the generators.
+
+To regenerate locally from the README:
 
 ```bash
 python3 tools/parse_readme.py   # README table -> tools/raw_attacks.json
+python3 tools/autofill_geo.py   # (optional) geocode locations missing from GEO
 python3 tools/geocode.py        # adds coordinates + country codes -> attacks.json
 ```
 
 `geocode.py` contains a lookup table of known locations. **If your new attack's location isn't in the table yet**, the script will fail with a `MISSING GEO` listing — add the new location to the `GEO` dictionary in `tools/geocode.py` following the existing pattern:
 
+**Watch the sign on latitude:** it is negative in the southern hemisphere
+(`-23.55` for São Paulo, not `23.55`). A dropped minus sign still looks
+plausible and used to go unnoticed, so `audit_coords.py` now verifies every
+point against country polygons and fails the build if one lands in the wrong
+hemisphere.
+
 ```python
 "City, Region, Country": ("City", "Region", "Country", "XX", 12.34, 56.78),
 ```
 
-Then re-run `geocode.py` and commit the updated `attacks.json`.
+Then re-run `geocode.py` and commit both `tools/geocode.py` and `attacks.json`.
+
+### Auditing coordinates
+
+```bash
+python3 tools/audit_coords.py           # report only, always exits 0
+python3 tools/audit_coords.py --gate    # exit 1 if anything is misplaced (used in CI)
+python3 tools/audit_coords.py --fix     # repair geocode.py in place, then regenerate
+```
+
+`--fix` patches the `GEO` dict in `geocode.py`, **not** `attacks.json`, so the
+repair survives regeneration and shows up in review. Review the diff it
+produces before committing. Polygons are vendored in
+`tools/ne_10m_admin_0_countries.min.json` so the check runs offline.
 
 ### Submitting
 
