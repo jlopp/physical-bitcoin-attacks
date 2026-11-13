@@ -574,6 +574,7 @@ GEO = {
     'Yerevan, Armenia': ('Երևան', '', 'Հայաստան', 'AM', 40.18, 44.51),
     'Yichun, Jiangxi province, China': ('宜春市', '江西省', '中国', 'CN', 28.38, 115.02),
     'Yingge, New Taipei, Taiwan': ('新北市', '', '臺灣', 'TW', 24.96, 121.35),
+    'Yonghe, New Taipei, Taiwan': ('新北市', '', '臺灣', 'TW', 25.01, 121.51),
     'Yongin, Gyeonggi, South Korea': ('용인시', '', '대한민국', 'KR', 37.24, 127.18),
     'Yuzhnouralsk, Chelyabinsk Oblast, Russia': ('Южноуральск', 'Челябинская область', 'Россия', 'RU', 54.44, 61.27),
     'Zandvoort, Netherlands': ('Zandvoort', 'Noord-Holland', 'Nederland', 'NL', 52.37, 4.53),
