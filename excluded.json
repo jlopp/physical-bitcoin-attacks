@@ -1,72 +1,5 @@
 [
   {
-    "id": "L039",
-    "date": "2022-03",
-    "precision": "month",
-    "city": "Dubai (Naif district)",
-    "country": "United Arab Emirates",
-    "type": "Home invasion",
-    "assets": [
-      "cash (United Arab Emirates dirhams, in a safe)"
-    ],
-    "asset_classes": [
-      "Cash"
-    ],
-    "amount": "AED 1,700,000",
-    "amount_usd": 462900,
-    "description": "A bitcoin trader was attacked at his home in the Naif district of Dubai by four men who used a false pretext of a wrong address to force entry, threatened him with a knife at his throat, then tied his hands and feet with plastic rope before retrieving the key to a safe hidden under a table. The attackers stole AED 1.7 million belonging to the victim's business partner, who discovered the scene after being alerted by phone. Having entered the country illegally, the four suspects were arrested and confessed to the facts; on appeal (September 2022), they were sentenced to 3 years in prison each and a joint fine of AED 1.7 million, with deportation upon completion of their sentence.",
-    "victims": "A bitcoin trader (identity not disclosed), resident in Dubai",
-    "outcome": "Part of the stolen sum was recovered in the suspects' possession; the 4 attackers were sentenced to 3 years in prison each and a joint fine of AED 1.7 million (upheld by the Dubai Court of Appeal in September 2022), followed by deportation from the country.",
-    "target": "Undetermined",
-    "target_reason": "Khaleej Times states only that the AED 1.7 million was in \"a safe that belonged to his trading partner\": the source does not say whether this cash was the partner's private funds or the shared treasury of a two-person trading operation (the victim was therefore not acting \"alone and on his own behalf\"). No company is named, but nothing allows one to state that this was purely personal wealth either: undetermined.",
-    "harm": "Victim physically unharmed",
-    "confined": true,
-    "weapon": "Knife or blade",
-    "source1": "https://www.khaleejtimes.com/uae/crime/dubai-four-men-fined-dh1-7-million-for-stealing-cash-from-bitcoin-trader",
-    "source1_name": "Khaleej Times",
-    "source2": "https://www.gulftoday.ae/news/2022/09/05/gang-jailed-for-stealing-dhs17-million-from-trader",
-    "source2_name": "Gulf Today",
-    "confidence": "Medium",
-    "in_reference_list": true
-  },
-  {
-    "id": "L087",
-    "date": "2024-04-18",
-    "precision": "day",
-    "city": "Bukit Timah, King Albert Park, Singapore",
-    "country": "Singapore",
-    "type": "Home invasion",
-    "assets": [
-      "USDT (Tether)",
-      "cash (SGD, USD, UAE dirhams)",
-      "luxury watches (Richard Mille, Rolex)",
-      "Ferrari car key",
-      "smartwatch"
-    ],
-    "asset_classes": [
-      "USDT",
-      "Cash",
-      "Valuables",
-      "Vehicle"
-    ],
-    "amount": "approximately S$4,341,328 (~US$3.2 million) in cash, cryptocurrency and valuables",
-    "amount_usd": 3200000,
-    "description": "On the night of April 18, 2024, a group of at least five men armed with machetes (parangs) and baseball bats broke into a luxury bungalow (GCB) along King Albert Park, in Bukit Timah, robbing eleven people present (aged 25-45) of a total haul of approximately S$4.34 million (~US$3.2 million) in cash (SGD, USD, dirhams), cryptocurrency (USDT) and luxury watches (Richard Mille, Rolex). The hardest-hit victim, a 29-year-old woman, lost more than S$3.9 million alone, including nearly US$2.64 million in Tether (USDT). Five Malaysians were charged with armed robbery in a gang after being arrested in Singapore or extradited from Malaysia, two of them having fled to Johor Bahru before being handed over to the Singapore police in late April.",
-    "victims": "Eleven victims aged 25 to 45 (identities undisclosed), the most heavily robbed being a 29-year-old woman",
-    "outcome": "Judgment of 14 September 2026: six Malaysians sentenced (a seventh, Muhammad Yusuf Kassim, is at large): Wong Chi Shan and Goh Boon Tong 12 years 11 months in prison and 24 strokes of the cane, Mohd Hamidon Ahmed 10 and a half years, Mohd Hashim Ismail 8 years 8 months, Kartik Palaniappan and Muhammad Tauffiq Ahmad Fauzi 7 years 8 months. The cryptocurrency had been transferred from the host's phone to a wallet controlled by the robbers; police recovered about S$1.69 million in crypto.",
-    "target": "Personal assets",
-    "target_reason": "The charge sheets detail individual losses (USDT in personal accounts, cash, Richard Mille/Rolex watches, Ferrari key) suffered by private individuals in a private residence; no commercial entity is mentioned as a victim.",
-    "harm": "Victim physically unharmed",
-    "confined": false,
-    "weapon": "Knife or blade",
-    "source1": "https://www.channelnewsasia.com/singapore/king-albert-park-armed-gang-robbery-bukit-timah-malaysians-millions-4324676",
-    "source1_name": "CNA (Channel News Asia)",
-    "source2": "https://mothership.sg/2024/05/2-msians-arrested-gang-robber-king-albert-park/",
-    "source2_name": "Mothership.sg",
-    "confidence": "High",
-    "in_reference_list": true
-  },
-  {
     "id": "WA239",
     "date": "2024-09",
     "precision": "month",
@@ -95,69 +28,6 @@
     "source2_name": "",
     "confidence": "Low",
     "in_reference_list": false
-  },
-  {
-    "id": "WA075",
-    "date": "2021-11-27",
-    "precision": "day",
-    "city": "Amsterdam",
-    "country": "Netherlands",
-    "type": "Held captive at home",
-    "assets": [
-      "BTC",
-      "cash"
-    ],
-    "asset_classes": [
-      "BTC",
-      "Cash"
-    ],
-    "amount": "EUR 9,689 taken (withdrawals at Geldmaat with his card + transfers from his ING account to buy bitcoins on an account opened in his name under duress); total material damages awarded by the court: EUR 10,546.24 (including EUR 9,998 in amounts taken)",
-    "amount_usd": 11000,
-    "description": "On the night of November 27-28, 2021, a man lured via Instagram into an Amsterdam hotel room was surprised naked in the bathroom by about seven attackers, one of them armed with a knife: bound with tape then handcuffed, gagged, his head covered with a taped towel, he spent the night locked in the toilet under the guard of two men, with a knife held to his throat to make him give up his banking codes. Forced to call ING claiming he wanted to buy bitcoins in order to get his account unblocked, he saw 8,698 euros transferred between 00:04 and 05:36 to a cryptocurrency platform where a verified account had been opened in his name; the verification selfie, later handed over to police by the platform, shows him bare-chested and handcuffed. One of the participants was sentenced on January 11, 2024 by the Amsterdam court to 3 years in prison for these acts and two other violent robberies.",
-    "victims": "A man referred to as \"aangever 2\" in the judgment (identity protected), lured via Instagram",
-    "outcome": "EUR 8,698 converted to cryptocurrency + EUR 1,000 withdrawn; at least one defendant sentenced on January 11, 2024 by the Amsterdam court to 3 years in prison for these acts and two other violent robberies (Sadiyat and Segam investigations)",
-    "target": "Personal assets",
-    "target_reason": "A private individual lured via Instagram is forced to transfer funds from his personal bank account to a crypto account opened in his name.",
-    "harm": "Victim physically unharmed",
-    "confined": true,
-    "weapon": "Knife or blade",
-    "source1": "https://data.rechtspraak.nl/uitspraken/content?id=ECLI:NL:RBAMS:2024:110",
-    "source1_name": "Rechtbank Amsterdam, judgment ECLI:NL:RBAMS:2024:110 of 11 January 2024 (Rechtspraak.nl, official judicial source)",
-    "source2": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:110",
-    "source2_name": "Rechtspraak.nl — accessible version of the same judgment",
-    "confidence": "Medium",
-    "in_reference_list": true
-  },
-  {
-    "id": "WA494",
-    "date": "2025-01-14",
-    "precision": "day",
-    "city": "Taoyuan (empty lot near a Hi-Life convenience store; district redacted in the judgment)",
-    "country": "Taiwan",
-    "type": "Robbery during an in-person trade",
-    "assets": [
-      "Unspecified crypto",
-      "TWD fiat"
-    ],
-    "asset_classes": [
-      "Other"
-    ],
-    "amount": "TWD 350,000 in cash and two phones",
-    "amount_usd": 10600,
-    "description": "Lin Su-hsia (林素霞), whom scammers had convinced that she had to buy cryptocurrency to pay a tax, had been given the LINE contact of a \"crypto dealer\", Chiang Yu-hsiang. Learning that she would come to buy TWD 350,000 worth of crypto, he decided to rob her and recruited a friend, Chen Po-hao, and a minor. At around 3:30 p.m. on 14 January 2025 in Taoyuan, while she waited on an empty lot near the convenience store where they were to meet, the minor snatched her phone and her handbag containing the TWD 350,000; she held on to the bag and was dragged some distance before letting go. The trio, who had come from Taichung by high-speed rail and car, split the loot in a toilet at Taipei high-speed rail station.",
-    "victims": "Lin Su-hsia (林素霞), a private crypto buyer who had already been scammed",
-    "outcome": "The Taoyuan District Court (114年度訴字第801號, 30 October 2025) found robbery with violence, since the victim had been dragged: Chiang 7 years 6 months, Chen 5 years 10 months; the minor was dealt with by the Taichung juvenile court. The High Court dismissed Chiang's appeal on 30 April 2026 (115年度上訴字第739號).",
-    "target": "Personal assets",
-    "target_reason": "A private individual who came with her cash to buy crypto from a so-called dealer and was robbed by him.",
-    "harm": "Outcome unknown",
-    "confined": false,
-    "weapon": "None",
-    "source1": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TYDM%2c114%2c%e8%a8%b4%2c801%2c20251030%2c2",
-    "source1_name": "Tribunal de district de Taoyuan, 114年度訴字第801號 (30.10.2025)",
-    "source2": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c115%2c%e4%b8%8a%e8%a8%b4%2c739%2c20260430%2c1",
-    "source2_name": "Haute Cour, 115年度上訴字第739號 (30.04.2026)",
-    "confidence": "Medium",
-    "in_reference_list": true
   },
   {
     "id": "WA123",
@@ -907,6 +777,105 @@
     "criteria_version": "1.1",
     "source1": "https://english.pravda.ru/news/hotspots/165992-bali-body-parts-ukrainian-igor-komarov-kidnapping/",
     "source2": "https://www.ibtimes.co.uk/ukrainian-mans-bali-vacation-kidnapping-case-1780721",
+    "in_reference_list": false
+  },
+  {
+    "id": "L290",
+    "date": "2015-02-09",
+    "precision": "day",
+    "city": "Williamsburg, Brooklyn, New York",
+    "country": "United States",
+    "description": "On February 9, 2015, Dwayne Richards, a New York City firefighter based in lower Manhattan, was held up, stabbed in the arm and robbed in Williamsburg, Brooklyn, after meeting people under the pretext of exchanging bitcoin for cash. He survived and declined to comment. The Brooklyn robbery was reported as a bitcoin theft by the New York Observer on February 20, 2015 and repeated by Fox News and other outlets, but when CNBC asked the NYPD about it in June 2015 the police said the incident was not bitcoin related: his credit card and PIN were stolen.",
+    "status": "excluded",
+    "criterion": "3.1",
+    "note": "The crypto motive is not established: the NYPD told CNBC the February 9 2015 Williamsburg stabbing was not bitcoin related, and that the victim's credit card and PIN were taken instead. The $1,100 figure printed alongside the case came from a separate May 27 2015 Crown Heights Craigslist robbery.",
+    "missing": "A police or court source establishing that the attackers sought bitcoin rather than card credentials.",
+    "removed_on": "2026-11-15",
+    "last_reviewed": "2026-11-15",
+    "criteria_version": "1.1",
+    "source1": "https://www.cnbc.com/2015/06/05/new-york-city-man-robbed-at-gunpoint-for-bitcoin.html",
+    "source2": "https://observer.com/2015/02/bitcoin-crime-wave-breaks-out-in-nyc/",
+    "in_reference_list": false
+  },
+  {
+    "id": "WA581",
+    "date": "2026-04-13",
+    "precision": "day",
+    "city": "North Paravur (Ernakulam district), Kerala",
+    "country": "India",
+    "description": "On 13 April 2026, five men from Malappuram, Palakkad, Pollachi and Salem who had entrusted money to a man presenting himself as a cryptocurrency trading expert, invested in staking on the NIVEX Exchange - Luma Protocol platform (Singapore), went to his rented home and demanded their money back. They held a knife to his neck, beat him, took his phone and transferred digital assets worth $20,000 from a blockchain wallet to one of their own. They broke open a cupboard, took a backup hard disk and his PAN and Aadhaar cards, and forced him to sign two blank sheets of paper. Around 9 a.m. on 14 April they forcibly drove him to his sister's rented home on Vrindavan Road in North Paravur and left with his electric car (INR 3.5 million).",
+    "status": "excluded",
+    "criterion": "3.3a",
+    "note": "The sources establish an aim other than obtaining cryptocurrency: the five men had entrusted money to the victim for a staking investment that did not pay out, came to demand its return, and the High Court of Kerala recorded a repayment undertaking the victim had signed. This is debt-recovery violence, not a robbery targeting his own crypto holdings.",
+    "missing": "",
+    "removed_on": "2026-11-15",
+    "last_reviewed": "2026-11-15",
+    "criteria_version": "1.1",
+    "source1": "https://indiankanoon.org/doc/18276364/",
+    "source2": "",
+    "in_reference_list": false
+  },
+  {
+    "id": "WA075",
+    "date": "2021-11-27",
+    "precision": "day",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "type": "Held captive at home",
+    "assets": [
+      "BTC",
+      "cash"
+    ],
+    "asset_classes": [
+      "BTC",
+      "Cash"
+    ],
+    "amount": "EUR 9,689 taken (withdrawals at Geldmaat with his card + transfers from his ING account to buy bitcoins on an account opened in his name under duress); total material damages awarded by the court: EUR 10,546.24 (including EUR 9,998 in amounts taken)",
+    "amount_usd": 11000,
+    "description": "On the night of November 27-28, 2021, a man lured via Instagram into an Amsterdam hotel room was surprised naked in the bathroom by about seven attackers, one of them armed with a knife: bound with tape then handcuffed, gagged, his head covered with a taped towel, he spent the night locked in the toilet under the guard of two men, with a knife held to his throat to make him give up his banking codes. Forced to call ING claiming he wanted to buy bitcoins in order to get his account unblocked, he saw 8,698 euros transferred between 00:04 and 05:36 to a cryptocurrency platform where a verified account had been opened in his name; the verification selfie, later handed over to police by the platform, shows him bare-chested and handcuffed. One of the participants was sentenced on January 11, 2024 by the Amsterdam court to 3 years in prison for these acts and two other violent robberies.",
+    "victims": "A man referred to as \"aangever 2\" in the judgment (identity protected), lured via Instagram",
+    "outcome": "EUR 8,698 converted to cryptocurrency + EUR 1,000 withdrawn; at least one defendant sentenced on January 11, 2024 by the Amsterdam court to 3 years in prison for these acts and two other violent robberies (Sadiyat and Segam investigations)",
+    "target": "Personal assets",
+    "target_reason": "A private individual lured via Instagram is forced to transfer funds from his personal bank account to a crypto account opened in his name.",
+    "harm": "Victim physically unharmed",
+    "confined": true,
+    "weapon": "Knife or blade",
+    "source1": "https://data.rechtspraak.nl/uitspraken/content?id=ECLI:NL:RBAMS:2024:110",
+    "source1_name": "Rechtbank Amsterdam, judgment ECLI:NL:RBAMS:2024:110 of 11 January 2024 (Rechtspraak.nl, official judicial source)",
+    "source2": "https://uitspraken.rechtspraak.nl/details?id=ECLI:NL:RBAMS:2024:110",
+    "source2_name": "Rechtspraak.nl — accessible version of the same judgment",
+    "confidence": "Medium",
+    "in_reference_list": false
+  },
+  {
+    "id": "WA494",
+    "date": "2025-01-14",
+    "precision": "day",
+    "city": "Taoyuan (empty lot near a Hi-Life convenience store; district redacted in the judgment)",
+    "country": "Taiwan",
+    "type": "Robbery during an in-person trade",
+    "assets": [
+      "Unspecified crypto",
+      "TWD fiat"
+    ],
+    "asset_classes": [
+      "Other"
+    ],
+    "amount": "TWD 350,000 in cash and two phones",
+    "amount_usd": 10600,
+    "description": "Lin Su-hsia (林素霞), whom scammers had convinced that she had to buy cryptocurrency to pay a tax, had been given the LINE contact of a \"crypto dealer\", Chiang Yu-hsiang. Learning that she would come to buy TWD 350,000 worth of crypto, he decided to rob her and recruited a friend, Chen Po-hao, and a minor. At around 3:30 p.m. on 14 January 2025 in Taoyuan, while she waited on an empty lot near the convenience store where they were to meet, the minor snatched her phone and her handbag containing the TWD 350,000; she held on to the bag and was dragged some distance before letting go. The trio, who had come from Taichung by high-speed rail and car, split the loot in a toilet at Taipei high-speed rail station.",
+    "victims": "Lin Su-hsia (林素霞), a private crypto buyer who had already been scammed",
+    "outcome": "The Taoyuan District Court (114年度訴字第801號, 30 October 2025) found robbery with violence, since the victim had been dragged: Chiang 7 years 6 months, Chen 5 years 10 months; the minor was dealt with by the Taichung juvenile court. The High Court dismissed Chiang's appeal on 30 April 2026 (115年度上訴字第739號).",
+    "target": "Personal assets",
+    "target_reason": "A private individual who came with her cash to buy crypto from a so-called dealer and was robbed by him.",
+    "harm": "Outcome unknown",
+    "confined": false,
+    "weapon": "None",
+    "source1": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TYDM%2c114%2c%e8%a8%b4%2c801%2c20251030%2c2",
+    "source1_name": "Tribunal de district de Taoyuan, 114年度訴字第801號 (30.10.2025)",
+    "source2": "https://judgment.judicial.gov.tw/FJUD/data.aspx?ty=JD&id=TPHM%2c115%2c%e4%b8%8a%e8%a8%b4%2c739%2c20260430%2c1",
+    "source2_name": "Haute Cour, 115年度上訴字第739號 (30.04.2026)",
+    "confidence": "Medium",
     "in_reference_list": false
   }
 ]
