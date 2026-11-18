@@ -20485,5 +20485,26 @@
     "country_code": "FR",
     "lat": 46.67,
     "lng": -1.43
+  },
+  {
+    "date": {
+      "raw": "November 17 2026",
+      "year": 2026
+    },
+    "victim": "Ez (@Ejeula88)",
+    "location": "Spain",
+    "description": "Intruders broke into a crypto investor's home in Spain, held knives to his face and threatened to kill him. They stole ~$700k from his main wallet.",
+    "links": [
+      {
+        "label": "Intruders broke into a crypto investor's home in Spain, held knives to his face and threatened to kill him. They stole ~$700k from his main wallet.",
+        "url": "https://x.com/Ejeula88/status/2123012546558931176"
+      }
+    ],
+    "city": "Spain",
+    "region": "",
+    "country": "Spain",
+    "country_code": "ES",
+    "lat": 40.2,
+    "lng": -3.7
   }
 ]
